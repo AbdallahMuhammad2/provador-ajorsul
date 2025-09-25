@@ -1,0 +1,19 @@
+/* Extracted CSS Block 525 */
+/* Size: 662 chars */
+
+),
+            this.setDirty(h)
+        }
+        ,
+        this.userData.separateEnvMapIntensity = !0,
+        o && this.setValues(o),
+        this.materialExtensions = MaterialExtender.RegisterExtensions(this, (c = o == null ? void 0 : o.customMaterialExtensions) !== null && c !== void 0 ? c : [])
+    }
+    registerMaterialExtensions(o) {
+        this.materialExtensions = [...this.materialExtensions, ...MaterialExtender.RegisterExtensions(this, o)]
+    }
+    unregisterMaterialExtensions(o) {}
+    onBeforeCompile(o, c) {
+        MaterialExtender.ApplyMaterialExtensions(this, o, this.materialExtensions, c),
+        this.dispatchEvent({
+            type: 

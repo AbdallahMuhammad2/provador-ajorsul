@@ -1,0 +1,17 @@
+/* Extracted CSS Block 824 */
+/* Size: 773 chars */
+
+\)/gi.exec(ut)) === null || _e === void 0 ? void 0 : _e[1];
+            if (pt) {
+                const ht = new Image;
+                ht.src = pt,
+                await new Promise( (_t, vt) => {
+                    ht.onload = () => _t(),
+                    ht.onerror = () => vt(),
+                    ht.complete && _t()
+                }
+                ),
+                at.drawImage(ht, Math.floor(ht.width * c.x * h / o.width), Math.floor(ht.height * c.y * h / o.height), Math.floor(ht.width * c.width * h / o.width), Math.floor(ht.height * c.height * h / o.height), 0, 0, it.width, it.height)
+            }
+        } else
+            at.fillStyle = o.style.background || ((nt = o.parentElement) === null || nt === void 0 ? void 0 : nt.style.backgroundColor) || 

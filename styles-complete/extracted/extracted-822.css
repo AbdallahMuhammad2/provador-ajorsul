@@ -1,0 +1,11 @@
+/* Extracted CSS Block 822 */
+/* Size: 304 chars */
+
+ ? new FFMPEGRecorder(this._viewer.canvas,{
+            frameRate: this.videoFrameRate,
+            mimeType: this.mimeType
+        }) : new ImageSequenceRecorder(this._viewer.canvas,{
+            frameRate: this.videoFrameRate,
+            mimeType: this.mimeType
+        }),
+        c.addEventListener(

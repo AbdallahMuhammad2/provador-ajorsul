@@ -1,0 +1,13 @@
+/* Extracted CSS Block 586 */
+/* Size: 275 chars */
+
+), zstddec_module_g).then(this._init),
+        zstddec_module_A)
+    }
+    _init(o) {
+        zstddec_module_I = o.instance,
+        zstddec_module_g.env.emscripten_notify_memory_growth(0)
+    }
+    decode(o, c=0) {
+        if (!zstddec_module_I)
+            throw new Error(

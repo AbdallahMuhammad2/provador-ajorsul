@@ -1,0 +1,13 @@
+/* Extracted CSS Block 1002 */
+/* Size: 1002 chars */
+
+]]
+        }
+          , Ht = {
+            XYZE: [[new three_module.eaF(new three_module.Gu$(.1,10,8),vt)], [new three_module.eaF(Dt(.5, 1),St), null, [0, Math.PI / 2, 0]]],
+            X: [[new three_module.eaF(Dt(.5, .5),b)], [new three_module.eaF(It,b), [0, 0, 0], [0, 0, -Math.PI / 2]], [new three_module.eaF(At.clone().translate(.5, 0, 0),it), [0, 0, 0], [-Math.PI / 2, -Math.PI / 2, -Math.PI / 2]]],
+            Y: [[new three_module.eaF(Dt(.5, .5),_e), null, [0, 0, -Math.PI / 2]], [new three_module.eaF(It,_e)], [new three_module.eaF(At.clone().rotateZ(-Math.PI / 2).translate(0, .5, 0),at), [0, 0, 0], [Math.PI / 2, 0, 0]]],
+            Z: [[new three_module.eaF(Dt(.5, .5),nt), null, [0, Math.PI / 2, 0]], [new three_module.eaF(It,nt), null, [Math.PI / 2, 0, 0]], [new three_module.eaF(At.clone().rotateZ(-Math.PI).translate(0, 0, .5),ut), [0, 0, 0], [0, Math.PI / 2, 0]]]
+        }
+          , Kt = {
+            AXIS: [[new three_module.N1A(Pt,_.clone()), [-1e3, 0, 0], null, [1e6, 1, 1], 

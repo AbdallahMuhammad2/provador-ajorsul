@@ -1,0 +1,23 @@
+/* Extracted CSS Block 891 */
+/* Size: 556 chars */
+
+) {
+        var _;
+        await this.loadLibrary(),
+        Array.isArray(d) || (d = [d]);
+        const b = [];
+        o ? d.forEach(_e => _e.traverse(nt => {
+            nt.geometry && b.push(nt.geometry)
+        }
+        )) : d.forEach(_e => {
+            _e.geometry && b.push(_e.geometry)
+        }
+        ),
+        await ((_ = this._unwrapper) === null || _ === void 0 ? void 0 : _.packAtlas(b, c, h))
+    }
+    _useNormalsChanged() {
+        this._unwrapper && (this._unwrapper.useNormals = this.useNormals)
+    }
+}
+;
+XAtlasPlugin.PluginType = 

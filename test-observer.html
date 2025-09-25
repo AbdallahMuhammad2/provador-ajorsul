@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ring Try-On - Observer Test</title>
+    <meta name="description" content="Virtual ring try-on application with modular enhancements">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/main.css">
+
+    <style>
+        body {
+            margin: 0;
+            background: #000;
+            font-family: Arial, sans-serif;
+        }
+
+        #canvasContainer {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #webgi-canvas {
+            width: 100%;
+            height: 100%;
+            max-width: 800px;
+            max-height: 600px;
+        }
+
+        #assetManagerLoadingScreen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            transition: opacity 0.5s ease;
+        }
+
+        #assetManagerLoadingScreenContent {
+            text-align: center;
+            color: white;
+        }
+
+        .loadingScreenLogoImage {
+            width: 100px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .loader {
+            border: 3px solid #333;
+            border-top: 3px solid #fff;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .loadingScreenProcessState {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        #loadingProgress {
+            font-size: 14px;
+            color: #ccc;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main canvas container -->
+    <div id="canvasContainer">
+        <canvas id="webgi-canvas" width="800" height="600"></canvas>
+    </div>
+
+    <!-- UI Container -->
+    <div id="tweakpaneUiContainer"></div>
+
+    <!-- Loading screen -->
+    <div id="assetManagerLoadingScreen">
+        <div id="assetManagerLoadingScreenContent">
+            <div class="loadingScreenLogoElement">
+                <img src="https://static.webgi.xyz/logo.svg" alt="WebGI" class="loadingScreenLogoImage">
+            </div>
+            <div class="loadingScreenLoadingElement">
+                <div class="loader"></div>
+            </div>
+            <div class="loadingScreenProcessState">Loading Ring Try-On...</div>
+            <div id="loadingProgress">Starting observer system...</div>
+        </div>
+    </div>
+
+    <!-- Load the original WebGI system -->
+    <script type="module" src="./index.js"></script>
+
+    <!-- Load our observer enhancement system -->
+    <script type="module" src="./src/main-observer.js"></script>
+
+    <!-- Monitor for success -->
+    <script>
+        console.log('🧪 Observer Ring Try-On Test Started');
+
+        // Simple monitoring
+        let monitorCount = 0;
+        const monitor = setInterval(() => {
+            monitorCount++;
+
+            const status = {
+                originalSetup: !!window.setupViewer,
+                webgi: !!window.WEBGI,
+                vto: !!window.ij_vto,
+                observer: !!window.observeAndEnhanceSystem,
+                canvas: !!document.getElementById('webgi-canvas')
+            };
+
+            console.log(`📊 Monitor ${monitorCount}:`, status);
+
+            // Success criteria
+            if (status.originalSetup && status.webgi && status.vto && status.observer) {
+                console.log('🎉 SUCCESS: Both original and modular systems are ready!');
+                clearInterval(monitor);
+            }
+
+            if (monitorCount >= 30) {
+                console.log('⏰ Monitor timeout after 30 checks');
+                clearInterval(monitor);
+            }
+        }, 1000);
+
+        // Error monitoring
+        window.addEventListener('error', (e) => {
+            console.error('❌ Error:', e.message);
+        });
+
+        // Page load monitoring
+        window.addEventListener('load', () => {
+            console.log('📄 Page fully loaded');
+        });
+    </script>
+</body>
+</html>

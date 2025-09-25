@@ -1,0 +1,12 @@
+/* Extracted CSS Block 721 */
+/* Size: 266 chars */
+
+, o);
+        const h = this.writer
+          , _ = h.json
+          , b = h.extensionsUsed
+          , _e = {};
+        o.name && (_e.name = o.name),
+        _e.color = o.color.toArray(),
+        _e.intensity = o.intensity,
+        o.isDirectionalLight ? _e.type = 

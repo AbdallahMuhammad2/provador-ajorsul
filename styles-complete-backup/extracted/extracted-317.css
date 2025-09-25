@@ -1,0 +1,9 @@
+/* Extracted CSS Block 317 */
+/* Size: 274 chars */
+
+,
+                Array.isArray(this.texture) ? this.texture.forEach(ht => {
+                    ht.__target = this,
+                    ht.userData || (ht.userData = {}),
+                    ht.colorSpace = h.colorSpace,
+                    ht.toJSON = () => (console.warn(

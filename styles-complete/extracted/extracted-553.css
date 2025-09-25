@@ -1,0 +1,15 @@
+/* Extracted CSS Block 553 */
+/* Size: 693 chars */
+
+,
+                this._x = 0;
+            if (this.currentTime <= this.animationDuration + 50) {
+                const b = this.currentSphericalPosition.clone();
+                b.theta += this._x * this.rotationDistance,
+                this._viewer.scene.activeCamera.position.setFromSpherical(b).add(this._viewer.scene.activeCamera.target),
+                this._viewer.scene.activeCamera.positionUpdated()
+            }
+            const c = this._viewer.container.getBoundingClientRect()
+              , h = c.width / 2 + -this._x * Math.min(this.animationDistance, c.width / 4)
+              , _ = c.height / 2 + this.yOffset * c.height / 2;
+            this.cursorEl.style.transform = 

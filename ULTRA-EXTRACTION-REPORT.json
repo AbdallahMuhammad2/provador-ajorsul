@@ -1,0 +1,25 @@
+{
+  "timestamp": "2025-09-18T01:17:18.939Z",
+  "source": {
+    "file": "index-minified-backup.js",
+    "size": "5.37MB"
+  },
+  "extraction": {
+    "css": {
+      "totalBlocks": 1156,
+      "files": 1156
+    },
+    "javascript": {
+      "webpackModules": 37,
+      "standaloneFunctions": 1191,
+      "standaloneClasses": 448,
+      "standaloneConstants": 230,
+      "totalItems": 1906
+    },
+    "functionalBlocks": 1797
+  },
+  "output": {
+    "directories": 12,
+    "totalFiles": 3065
+  }
+}

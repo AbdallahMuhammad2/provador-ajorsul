@@ -1,0 +1,18 @@
+/* Extracted CSS Block 1037 */
+/* Size: 324 chars */
+
+, !0, 1)
+    }
+    add(d) {
+        this.animSet.push(d),
+        d.parent = this,
+        this.refreshUi()
+    }
+    remove(d) {
+        const o = this.animSet.indexOf(d);
+        o >= 0 && (this.animSet.splice(o, 1),
+        d.parent = void 0,
+        this.refreshUi())
+    }
+    async animate(d=!1) {
+        typeof d != 

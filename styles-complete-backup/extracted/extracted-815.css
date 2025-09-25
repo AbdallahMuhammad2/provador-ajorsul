@@ -1,0 +1,12 @@
+/* Extracted CSS Block 815 */
+/* Size: 494 chars */
+
+,
+        this.videoFrameRate = 30,
+        this._recorders = {},
+        this._renderToScreenDisabled = !1,
+        this._preRender = () => {
+            var o, c, h;
+            if (this.convergeMode && (!((o = this._recorder) === null || o === void 0) && o.isRecording())) {
+                const _ = this._viewer.renderer.composer.renderToScreen;
+                this._viewer.renderer.composer.renderToScreen = ((h = (c = this._viewer) === null || c === void 0 ? void 0 : c.getPluginByType(

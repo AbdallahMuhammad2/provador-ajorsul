@@ -1,0 +1,46 @@
+/* Extracted CSS Block 263 */
+/* Size: 1662 chars */
+
+, new Fn(ft,3));
+                const xt = new Gs({
+                    fog: !1,
+                    toneMapped: !1
+                });
+                this.cone = new iu(mt,xt),
+                this.add(this.cone),
+                this.update()
+            }
+            dispose() {
+                this.cone.geometry.dispose(),
+                this.cone.material.dispose()
+            }
+            update() {
+                this.light.updateWorldMatrix(!0, !1),
+                this.light.target.updateWorldMatrix(!0, !1);
+                const tt = this.light.distance ? this.light.distance : 1e3
+                  , lt = tt * Math.tan(this.light.angle);
+                this.cone.scale.set(lt, lt, tt),
+                JA.setFromMatrixPosition(this.light.target.matrixWorld),
+                this.cone.lookAt(JA),
+                this.color !== void 0 ? this.cone.material.color.set(this.color) : this.cone.material.color.copy(this.light.color)
+            }
+        }
+        const np = new Er
+          , d0 = new no
+          , Py = new no;
+        class sE extends iu {
+            constructor(tt) {
+                const lt = ZA(tt)
+                  , mt = new bo
+                  , ft = []
+                  , xt = []
+                  , Ct = new Gn(0,0,1)
+                  , Mt = new Gn(0,1,0);
+                for (let Lt = 0; Lt < lt.length; Lt++) {
+                    const Nt = lt[Lt];
+                    Nt.parent && Nt.parent.isBone && (ft.push(0, 0, 0),
+                    ft.push(0, 0, 0),
+                    xt.push(Ct.r, Ct.g, Ct.b),
+                    xt.push(Mt.r, Mt.g, Mt.b))
+                }
+                mt.setAttribute(

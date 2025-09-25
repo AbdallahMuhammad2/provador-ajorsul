@@ -1,0 +1,14 @@
+/* Extracted CSS Block 980 */
+/* Size: 363 chars */
+
+);
+        this.options.zIndex && (_.style.zIndex = this.options.zIndex),
+        this.wrapper = utility.createDomTree({
+            dom: _,
+            children: [this.window]
+        }),
+        this.dom = utility.createDomTree({
+            dom: utility.createDiv(),
+            children: [this.wrapper]
+        });
+        let b = this.options.position.split(

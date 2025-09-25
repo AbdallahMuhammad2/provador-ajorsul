@@ -1,0 +1,12 @@
+/* Extracted CSS Block 370 */
+/* Size: 312 chars */
+
+,
+                hidden: () => !this.transparent,
+                getValue: () => this.userData.inverseAlphaMap === !0,
+                setValue: o => {
+                    this.userData.inverseAlphaMap = o || void 0,
+                    this.setDirty()
+                }
+            }, {
+                type: 

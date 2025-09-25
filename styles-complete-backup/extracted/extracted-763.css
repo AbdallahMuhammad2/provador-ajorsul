@@ -1,0 +1,24 @@
+/* Extracted CSS Block 763 */
+/* Size: 1024 chars */
+
+);
+                    continue
+                }
+                throw vt
+            }
+            b.set(it, pt);
+            const ht = o.createAccessorDef(at);
+            ht.count = pt.numIndices,
+            o.accessorIndexMap.set(at, ut.length),
+            ut.push(ht),
+            pt.numVertices > 65534 && index_modern_Accessor.getComponentSize(ht.componentType) <= 2 ? ht.componentType = index_modern_Accessor.ComponentType.UNSIGNED_INT : pt.numVertices > 254 && index_modern_Accessor.getComponentSize(ht.componentType) <= 1 && (ht.componentType = index_modern_Accessor.ComponentType.UNSIGNED_SHORT);
+            for (const vt of nt.listSemantics()) {
+                const bt = nt.getAttribute(vt);
+                if (pt.attributeIDs[vt] === void 0)
+                    continue;
+                const St = o.createAccessorDef(bt);
+                St.count = pt.numVertices,
+                o.accessorIndexMap.set(bt, ut.length),
+                ut.push(St)
+            }
+            const _t = nt.getAttribute(

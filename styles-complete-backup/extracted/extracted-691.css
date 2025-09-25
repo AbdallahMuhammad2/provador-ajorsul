@@ -1,0 +1,15 @@
+/* Extracted CSS Block 691 */
+/* Size: 306 chars */
+
+ ? new TextDecoder().decode(_) : _);
+        var _
+    }
+}
+class STLLoadPlugin extends I$2 {
+    constructor() {
+        super(...arguments),
+        this.dependencies = [AssetManagerPlugin]
+    }
+    async onAdded(o) {
+        var c, h;
+        this._importer || (this._importer = new Importer(STLLoader,[

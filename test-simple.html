@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ring Try-On - Simple Test</title>
+    <meta name="description" content="Virtual ring try-on application with hand tracking">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/main.css">
+
+    <style>
+        body {
+            margin: 0;
+            background: #000;
+            font-family: Arial, sans-serif;
+        }
+
+        #canvasContainer {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #webgi-canvas {
+            width: 100%;
+            height: 100%;
+            max-width: 800px;
+            max-height: 600px;
+        }
+
+        #assetManagerLoadingScreen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            transition: opacity 0.5s ease;
+        }
+
+        #assetManagerLoadingScreenContent {
+            text-align: center;
+            color: white;
+        }
+
+        .loadingScreenLogoImage {
+            width: 100px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .loader {
+            border: 3px solid #333;
+            border-top: 3px solid #fff;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .loadingScreenProcessState {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main canvas container -->
+    <div id="canvasContainer">
+        <canvas id="webgi-canvas" width="800" height="600"></canvas>
+    </div>
+
+    <!-- UI Container -->
+    <div id="tweakpaneUiContainer"></div>
+
+    <!-- Loading screen -->
+    <div id="assetManagerLoadingScreen">
+        <div id="assetManagerLoadingScreenContent">
+            <div class="loadingScreenLogoElement">
+                <img src="https://static.webgi.xyz/logo.svg" alt="WebGI" class="loadingScreenLogoImage">
+            </div>
+            <div class="loadingScreenLoadingElement">
+                <div class="loader"></div>
+            </div>
+            <div class="loadingScreenProcessState">Loading Ring Try-On...</div>
+        </div>
+    </div>
+
+    <!-- Load only the WebGI bundle - it handles everything -->
+    <script type="module" src="./index.js"></script>
+
+    <!-- Monitor the loading process -->
+    <script>
+        console.log('🧪 Simple Ring Try-On Test Started');
+
+        // Monitor WebGI loading
+        let attempts = 0;
+        const monitor = setInterval(() => {
+            attempts++;
+            console.log(`📊 Status Check ${attempts}:`, {
+                WEBGI: !!window.WEBGI,
+                ViewerApp: !!window.ViewerApp,
+                setupViewer: !!window.setupViewer,
+                ij_vto: !!window.ij_vto,
+                canvas: !!document.getElementById('webgi-canvas')
+            });
+
+            // Check if WebGI globals are available
+            if (window.WEBGI || window.ViewerApp) {
+                console.log('✅ WebGI detected! Available globals:');
+                Object.keys(window).filter(k =>
+                    k.includes('webgi') || k.includes('WebGI') || k.includes('Viewer') ||
+                    k.includes('Material') || k.includes('Camera') || k.includes('Renderer')
+                ).forEach(key => {
+                    console.log(`  - ${key}: ${typeof window[key]}`);
+                });
+            }
+
+            if (attempts >= 50) {
+                clearInterval(monitor);
+                console.log('⏰ Monitoring timeout after 50 checks');
+            }
+
+            // Clear monitor when VTO and WebGI are ready
+            if (window.ij_vto && (window.WEBGI || window.ViewerApp)) {
+                console.log('🎉 Both WebGI and VTO are ready!');
+                clearInterval(monitor);
+
+                // Hide loading screen after a delay
+                setTimeout(() => {
+                    const loadingScreen = document.getElementById('assetManagerLoadingScreen');
+                    if (loadingScreen) {
+                        loadingScreen.style.opacity = '0';
+                        loadingScreen.style.pointerEvents = 'none';
+                        console.log('📺 Loading screen hidden');
+                    }
+                }, 2000);
+            }
+        }, 1000);
+
+        // Window load event
+        window.addEventListener('load', () => {
+            console.log('📄 Page fully loaded');
+        });
+
+        // Error monitoring
+        window.addEventListener('error', (e) => {
+            console.error('❌ Page error:', e.message);
+            if (e.message.includes('container')) {
+                console.log('🔍 Container error - checking canvas element...');
+                const canvas = document.getElementById('webgi-canvas');
+                console.log('Canvas element:', canvas);
+            }
+        });
+    </script>
+</body>
+</html>

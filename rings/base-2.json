@@ -1,0 +1,76 @@
+{
+  "name": "Anel Base 2 - Prata Elegante",
+  "material": "prata polida com micro zircônias",
+  "type": "elegance",
+  "modelScaleFactor": 0.46,
+  "modelPosition": {
+    "x": 0,
+    "y": -0.008,
+    "z": 0
+  },
+  "modelRotation": {
+    "x": 1.5708,
+    "y": 0,
+    "z": 0
+  },
+  "properties": {
+    "metal": {
+      "color": "#F8F8F6",
+      "metalness": 0.99,
+      "roughness": 0.04,
+      "envMapIntensity": 4.5,
+      "clearcoat": 0.95,
+      "clearcoatRoughness": 0.01,
+      "emissive": "#FDFDFD",
+      "emissiveIntensity": 0.04
+    },
+    "stones": {
+      "main_diamonds": {
+        "color": "#FFFFFF",
+        "metalness": 0.0,
+        "roughness": 0.005,
+        "envMapIntensity": 5.0,
+        "emissive": "#FFFFFF",
+        "emissiveIntensity": 0.2,
+        "ior": 2.42,
+        "transmission": 0.98,
+        "opacity": 0.99,
+        "clearcoat": 1.0,
+        "clearcoatRoughness": 0.0,
+        "refractionRatio": 0.99,
+        "sheen": 1.0,
+        "sheenRoughness": 0.0,
+        "sheenColor": "#FFFFFF",
+        "reflectivity": 1.0,
+        "dispersion": 0.04,
+        "iridescence": 0.25,
+        "iridescenceIOR": 1.3,
+        "specularIntensity": 1.0,
+        "specularColor": "#FFFFFF"
+      },
+      "micro_setting": {
+        "color": "#FFFFFF",
+        "metalness": 0.0,
+        "roughness": 0.008,
+        "envMapIntensity": 4.5,
+        "emissive": "#FFFFFF", 
+        "emissiveIntensity": 0.12,
+        "ior": 2.42,
+        "transmission": 0.92,
+        "opacity": 0.97,
+        "clearcoat": 1.0,
+        "clearcoatRoughness": 0.0,
+        "refractionRatio": 0.97,
+        "sheen": 0.95,
+        "sheenRoughness": 0.02,
+        "reflectivity": 0.98,
+        "specularIntensity": 0.9
+      }
+    },
+    "lighting": {
+      "ambientIntensity": 0.5,
+      "directionalIntensity": 0.7,
+      "shadowOpacity": 0.2
+    }
+  }
+}

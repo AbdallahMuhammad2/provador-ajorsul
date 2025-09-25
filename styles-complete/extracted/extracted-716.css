@@ -1,0 +1,10 @@
+/* Extracted CSS Block 716 */
+/* Size: 220 chars */
+
+),
+            null;
+        h.materials || (h.materials = []);
+        const _ = {
+            pbrMetallicRoughness: {}
+        };
+        o.isMeshStandardMaterial !== !0 && o.isMeshBasicMaterial !== !0 && console.warn(

@@ -1,0 +1,16 @@
+/* Extracted CSS Block 549 */
+/* Size: 471 chars */
+
+,
+                value: () => {
+                    this.disposeAllCacheMaps()
+                }
+            }]
+        },
+        this.refreshEnvMaps = this.refreshEnvMaps.bind(this),
+        this.refreshUi = this.refreshUi.bind(this)
+    }
+    refreshUi() {
+        var o, c, h;
+        (o = this._viewer) === null || o === void 0 || o.setDirty(),
+        (h = (c = this.uiConfig) === null || c === void 0 ? void 0 : c.uiRefresh) === null || h === void 0 || h.call(c, 

@@ -1,0 +1,37 @@
+/* Extracted CSS Block 520 */
+/* Size: 985 chars */
+
+, it),
+            (at = nt.attachedGeometries) === null || at === void 0 || at.forEach(ut => delete ut.userData._normalsCaptureMap)
+        }
+        ),
+        !0
+    }
+    removeNormalMap(o) {
+        o.userData._normalsCaptureMap && (o.userData._normalsCaptureMap.dispose(),
+        delete o.userData._normalsCaptureMap)
+    }
+}
+CubeNormalsCaptureHelper.AutoDisposeTargets = !0;
+class NormalCaptureMaterial extends three_module.BKk {
+    constructor() {
+        super({
+            vertexShader: cubeNormalVert,
+            fragmentShader: cubeNormalFrag,
+            side: three_module.$EB,
+            clipping: !1,
+            uniforms: {
+                radius: {
+                    value: 1
+                },
+                offsetMatrixInv: {
+                    value: new three_module.kn4().identity()
+                },
+                offsetCenter: {
+                    value: new three_module.Pq0
+                }
+            }
+        })
+    }
+}
+var diamond_frag = 

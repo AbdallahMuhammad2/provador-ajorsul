@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ring Try-On - Modular Test</title>
+    <meta name="description" content="Virtual ring try-on application with hand tracking">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+    <!-- Preload critical assets -->
+    <link rel="preload" href="./styles/main.css" as="style">
+    <link rel="preload" href="./src/main.js" as="script" crossorigin>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <!-- Main canvas container -->
+    <div id="canvasContainer">
+        <canvas id="webgi-canvas" width="800" height="600"></canvas>
+        <canvas id="mcanvas" width="800" height="600" style="display: none;"></canvas>
+    </div>
+
+    <!-- UI Container -->
+    <div id="tweakpaneUiContainer"></div>
+
+    <!-- Loading screen -->
+    <div id="assetManagerLoadingScreen">
+        <div id="assetManagerLoadingScreenContent">
+            <div class="loadingScreenLogoElement">
+                <img src="https://static.webgi.xyz/logo.svg" alt="WebGI" class="loadingScreenLogoImage">
+            </div>
+            <div class="loadingScreenLoadingElement">
+                <div class="loader"></div>
+            </div>
+            <div class="loadingScreenProcessState">Loading Ring Try-On...</div>
+            <div class="loadingScreenFilesElement">
+                <div id="loadingProgress">Initializing...</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WebGI Logo -->
+    <div id="webgi-logo"></div>
+
+    <!-- Load original WebGI bundle first for WEBGI exports -->
+    <script type="module" src="./index.js" onload="console.log('✅ index.js loaded')" onerror="console.error('❌ index.js failed to load')"></script>
+
+    <!-- Main application script -->
+    <script type="module" src="./src/main.js" onload="console.log('✅ main.js loaded')" onerror="console.error('❌ main.js failed to load')"></script>
+
+    <!-- Fallback for module errors -->
+    <script>
+        window.addEventListener('error', (e) => {
+            if (e.message.includes('import.meta')) {
+                console.log('⚠️ ES6 modules not fully supported, falling back to basic loading...');
+                // Load main.js without module syntax if needed
+            }
+        });
+    </script>
+
+    <!-- Debug script to test initialization -->
+    <script>
+        console.log('🧪 Testing modular Ring Try-On system...');
+
+        // Wait for page load
+        window.addEventListener('load', () => {
+            console.log('📄 Page loaded');
+            console.log('🔍 Checking WebGI availability:', !!window.WEBGI);
+            console.log('🔍 Checking VTO availability:', !!window.ij_vto);
+            console.log('🔍 Checking setupViewer function:', !!window.setupViewer);
+
+            // Test after a short delay to allow modules to load
+            setTimeout(() => {
+                console.log('⏰ Delayed check:');
+                console.log('  - Canvas element:', !!document.getElementById('mcanvas'));
+                console.log('  - Loading screen:', !!document.getElementById('assetManagerLoadingScreen'));
+                console.log('  - UI container:', !!document.getElementById('tweakpaneUiContainer'));
+
+                if (window.setupViewer) {
+                    console.log('✅ setupViewer function is available - modular system working!');
+                } else {
+                    console.log('❌ setupViewer function not found - checking module loading...');
+                }
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

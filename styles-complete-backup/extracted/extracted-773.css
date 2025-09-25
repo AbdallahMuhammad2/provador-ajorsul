@@ -1,0 +1,12 @@
+/* Extracted CSS Block 773 */
+/* Size: 377 chars */
+
+ || at.byteLength ? this._io.readBinary(new Uint8Array(at)) : this._io.readJSON({
+                json: at,
+                resources: {}
+            }));
+            if (pt.createExtension(index_modern_KHRDracoMeshCompression).setRequired(!0).setEncoderOptions({
+                ...this._encoderOptions,
+                ...h ?? {}
+            }),
+            _e.exportExt === 

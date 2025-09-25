@@ -1,0 +1,31 @@
+/* Extracted CSS Block 1003 */
+/* Size: 2294 chars */
+
+]]
+        }
+          , Jt = {
+            XYZE: [[new three_module.eaF(new three_module.Gu$(.25,10,8),h)]],
+            X: [[new three_module.eaF(Gt(.5, .5),h)]],
+            Y: [[new three_module.eaF(Gt(.5, .5),h), [0, 0, 0], [0, 0, -Math.PI / 2]]],
+            Z: [[new three_module.eaF(Gt(.5, .5),h), [0, 0, 0], [0, Math.PI / 2, 0]]]
+        }
+          , or = {
+            X: [[new three_module.eaF(Et,it), [.5, 0, 0], [0, 0, -Math.PI / 2]], [new three_module.eaF(It,b), [0, 0, 0], [0, 0, -Math.PI / 2]]],
+            Y: [[new three_module.eaF(Et,at), [0, .5, 0]], [new three_module.eaF(It,_e)]],
+            Z: [[new three_module.eaF(Et,ut), [0, 0, .5], [Math.PI / 2, 0, 0]], [new three_module.eaF(It,nt), [0, 0, 0], [Math.PI / 2, 0, 0]]],
+            XY: [[new three_module.eaF(new three_module.iNn(.15,.15,.01),_t), [.15, .15, 0]]],
+            YZ: [[new three_module.eaF(new three_module.iNn(.15,.15,.01),pt), [0, .15, .15], [0, Math.PI / 2, 0]]],
+            XZ: [[new three_module.eaF(new three_module.iNn(.15,.15,.01),ht), [.15, 0, .15], [-Math.PI / 2, 0, 0]]],
+            XYZ: [[new three_module.eaF(new three_module.iNn(.1,.1,.1),vt.clone())]]
+        }
+          , ir = {
+            X: [[new three_module.eaF(new three_module.Ho_(.2,0,.6,4),h), [.3, 0, 0], [0, 0, -Math.PI / 2]], [new three_module.eaF(new three_module.Ho_(.2,0,.6,4),h), [-.3, 0, 0], [0, 0, Math.PI / 2]]],
+            Y: [[new three_module.eaF(new three_module.Ho_(.2,0,.6,4),h), [0, .3, 0]], [new three_module.eaF(new three_module.Ho_(.2,0,.6,4),h), [0, -.3, 0], [0, 0, Math.PI]]],
+            Z: [[new three_module.eaF(new three_module.Ho_(.2,0,.6,4),h), [0, 0, .3], [Math.PI / 2, 0, 0]], [new three_module.eaF(new three_module.Ho_(.2,0,.6,4),h), [0, 0, -.3], [-Math.PI / 2, 0, 0]]],
+            XY: [[new three_module.eaF(new three_module.iNn(.2,.2,.01),h), [.15, .15, 0]]],
+            YZ: [[new three_module.eaF(new three_module.iNn(.2,.2,.01),h), [0, .15, .15], [0, Math.PI / 2, 0]]],
+            XZ: [[new three_module.eaF(new three_module.iNn(.2,.2,.01),h), [.15, 0, .15], [-Math.PI / 2, 0, 0]]],
+            XYZ: [[new three_module.eaF(new three_module.iNn(.2,.2,.2),h), [0, 0, 0]]]
+        }
+          , lr = {
+            X: [[new three_module.N1A(Pt,_.clone()), [-1e3, 0, 0], null, [1e6, 1, 1], 

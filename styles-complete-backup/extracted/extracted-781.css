@@ -1,0 +1,23 @@
+/* Extracted CSS Block 781 */
+/* Size: 699 chars */
+
+;
+            it && this.attachIFrame(_e, nt, parseInt(it))
+        }
+        ,
+        this._resizeObserver = new ResizeObserver( () => {
+            var o;
+            this.enabled && ((o = this._viewer) === null || o === void 0 || o.scene.setDirty({
+                sceneUpdate: !0
+            }))
+        }
+        ),
+        this.enabled = d,
+        this._refreshCanvasInDOM = this._refreshCanvasInDOM.bind(this),
+        this._refreshEnabled = this._refreshEnabled.bind(this)
+    }
+    _refreshEnabled() {}
+    _refreshCanvasInDOM() {
+        const d = this._viewer;
+        d && this._renderer && (d.canvas.remove(),
+        this.overCanvas ? this._renderer.domElement.insertAdjacentElement(

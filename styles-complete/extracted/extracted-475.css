@@ -1,0 +1,9 @@
+/* Extracted CSS Block 475 */
+/* Size: 242 chars */
+
+],
+                        onChange: () => {
+                            d.materialObject.needsUpdate = !0,
+                            this.setDirty()
+                        }
+                    }, makeSamplerUi(d.materialObject.userData, 

@@ -1,0 +1,12 @@
+/* Extracted CSS Block 770 */
+/* Size: 189 chars */
+
+
+};
+const NAME$i = KHR_LIGHTS_PUNCTUAL;
+class KHRLightsPunctual extends Extension {
+    constructor(...o) {
+        super(...o),
+        this.extensionName = NAME$i
+    }
+    createLight(o=

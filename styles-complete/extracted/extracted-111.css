@@ -1,0 +1,22 @@
+/* Extracted CSS Block 111 */
+/* Size: 916 chars */
+
+)
+                      , zt = this.canvasElement.width
+                      , nr = this.canvasElement.height
+                      , mr = wt.getImageData(0, 0, zt, nr)
+                      , Tr = mr.data;
+                    for (let zn = 0; zn < nr; zn++)
+                        for (let co = 0; co < zt; co++) {
+                            const is = No(co, 0, zt, 0, 100)
+                              , Ts = No(zn, 0, nr, 100, 0)
+                              , ks = Nu(Rt[0], is, Ts)
+                              , Fn = 4 * (zn * zt + co);
+                            Tr[Fn] = ks[0],
+                            Tr[Fn + 1] = ks[1],
+                            Tr[Fn + 2] = ks[2],
+                            Tr[Fn + 3] = 255
+                        }
+                    wt.putImageData(mr, 0, 0);
+                    const $r = No(Rt[1], 0, 100, 0, 100);
+                    this.markerElem_.style.left = 

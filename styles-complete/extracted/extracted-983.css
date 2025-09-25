@@ -1,0 +1,23 @@
+/* Extracted CSS Block 983 */
+/* Size: 439 chars */
+
+),
+            this.dragPrev = {
+                x: o.clientX,
+                y: o.clientY
+            }
+        }
+    }
+    handleDraggableMouseDown(o) {
+        this.inDragging = !0,
+        this.dragPrev = {
+            x: o.clientX,
+            y: o.clientY
+        }
+    }
+    handleDraggableMouseUp(o) {
+        this.inDragging = !1
+    }
+    handleDraggableMouseOut(o) {
+        let c = o.relatedTarget;
+        c && c.nodeName != 

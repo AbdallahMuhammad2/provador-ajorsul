@@ -1,0 +1,7 @@
+/* Extracted CSS Block 1051 */
+/* Size: 174 chars */
+
+, void 0),
+GradientSvgPlugin_decorate([uiColor(void 0, d => ({
+    onChange: () => d.setDirty()
+})), x$1(GradientSvgPlugin.prototype.setDirty)], GradientSvgPlugin.prototype, 

@@ -1,0 +1,41 @@
+/* Extracted CSS Block 865 */
+/* Size: 1406 chars */
+
+
+}
+  , _PI_2 = Math.PI / 2;
+let PointerLockControls2 = class extends three_module.Qev {
+    constructor(d, o) {
+        super(),
+        this.isLocked = !1,
+        this.enabled = !0,
+        this.minPolarAngle = 0,
+        this.maxPolarAngle = Math.PI,
+        this.pointerSpeed = 1,
+        this.autoLockOnClick = !0,
+        this._movementX = 0,
+        this._movementY = 0,
+        this._forwardDirection = new three_module.Pq0(0,0,-1),
+        this.domElement = o,
+        this.object = d,
+        this.onElementClick = this.onElementClick.bind(this),
+        this.onMouseMove = this.onMouseMove.bind(this),
+        this.onPointerlockChange = this.onPointerlockChange.bind(this),
+        this.onPointerlockError = this.onPointerlockError.bind(this),
+        this.connect()
+    }
+    onElementClick(d) {
+        this.isLocked || this.autoLockOnClick && (d.preventDefault(),
+        this.lock())
+    }
+    onMouseMove(d) {
+        this.isLocked && (this._movementX += d.movementX || d.mozMovementX || d.webkitMovementX || 0,
+        this._movementY += d.movementY || d.mozMovementY || d.webkitMovementY || 0)
+    }
+    onPointerlockChange() {
+        this.domElement.ownerDocument.pointerLockElement === this.domElement ? (this.dispatchEvent(_lockEvent),
+        this.isLocked = !0) : (this.dispatchEvent(_unlockEvent),
+        this.isLocked = !1)
+    }
+    onPointerlockError() {
+        console.error(

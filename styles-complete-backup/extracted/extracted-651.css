@@ -1,0 +1,16 @@
+/* Extracted CSS Block 651 */
+/* Size: 401 chars */
+
+].map(o => ({
+                    label: o,
+                    value: o
+                }))
+            }]]
+        },
+        this.refreshUi = this.refreshUi.bind(this),
+        this._refreshUi = this._refreshUi.bind(this)
+    }
+    async onAdded(o) {
+        var c, h;
+        await super.onAdded(o),
+        this._picking = (c = this._viewer) === null || c === void 0 ? void 0 : c.getPluginByType(

@@ -1,0 +1,21 @@
+/* Extracted CSS Block 830 */
+/* Size: 900 chars */
+
+)),
+            await X$2((ht = o.timeout) !== null && ht !== void 0 ? ht : 200)),
+            o.displayPixelRatio = 1,
+            o.tileRows && o.tileRows > 1 || o.tileColumns && o.tileColumns > 1) {
+                const It = await CanvasSnipper.GetTiledFiles(vt, d, Math.max(1, o.tileRows || 1), Math.max(1, o.tileColumns || 1), o);
+                if (Array.isArray(It))
+                    if (It.length === 1)
+                        Pt = It[0];
+                    else if (It.length === 0)
+                        Pt = void 0;
+                    else if (o.getDataUrl)
+                        Pt = It;
+                    else {
+                        const Dt = {};
+                        for (const Bt of It)
+                            Dt[Bt.name] = new Uint8Array(await Bt.arrayBuffer());
+                        const Gt = zipSync(Dt);
+                        Pt = new File([Gt],d + 

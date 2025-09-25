@@ -1,0 +1,10 @@
+{
+  "name": "Diamond White",
+  "type": "DiamondMaterial",
+  "roughness": 0.0,
+  "metallic": 0.0,
+  "ior": 2.42,
+  "transmission": 1.0,
+  "opacity": 1.0,
+  "color": [1.0, 1.0, 1.0]
+}

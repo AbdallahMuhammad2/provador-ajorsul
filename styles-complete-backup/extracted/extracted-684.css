@@ -1,0 +1,44 @@
+/* Extracted CSS Block 684 */
+/* Size: 774 chars */
+
+,
+						guid: _attributes.id
+					}
+
+					} );
+
+				}
+
+				break;
+
+			case rhino.ObjectType.InstanceReference:
+
+				geometry = extractProperties( _geometry );
+				geometry.xform = extractProperties( _geometry.xform );
+				geometry.xform.array = _geometry.xform.toFloatArray( true );
+
+				break;
+
+			case rhino.ObjectType.SubD:
+
+				// TODO: precalculate resulting vertices and faces and warn on excessive results
+				_geometry.subdivide( 3 );
+				mesh = rhino.Mesh.createFromSubDControlNet( _geometry, false );
+				if ( mesh ) {
+
+					geometry = mesh.toThreejsJSON();
+					mesh.delete();
+
+				}
+
+				break;
+
+				/*
+				case rhino.ObjectType.Annotation:
+				case rhino.ObjectType.Hatch:
+				case rhino.ObjectType.ClipPlane:
+				*/
+
+			default:
+
+				self.postMessage( { type: 

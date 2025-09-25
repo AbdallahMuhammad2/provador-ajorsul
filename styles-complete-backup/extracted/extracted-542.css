@@ -1,0 +1,20 @@
+/* Extracted CSS Block 542 */
+/* Size: 784 chars */
+
+),
+        o && (this.hideOnFilesLoad && (d.size === 0 || c.length === d.size && this.hideOnOnlyErrors) ? this.hideDelay ? this.hideWithDelay() : this.hide() : d.size > 0 && this.showOnFilesLoading && (this._viewer.scene.modelRoot.children.length > 0 && this.minimizeOnSceneObjectLoad && this._viewer.scene.environment ? this.minimize() : this.maximize(),
+        this.show()))
+    }
+    async onAdded(d) {
+        var o;
+        this.styles.use({
+            target: (o = this.container) !== null && o !== void 0 ? o : d.container
+        }),
+        this.spinners.forEach(c => {
+            var h;
+            c.styles.use({
+                target: (h = this.container) !== null && h !== void 0 ? h : d.container
+            })
+        }
+        ),
+        d.scene.addEventListener(

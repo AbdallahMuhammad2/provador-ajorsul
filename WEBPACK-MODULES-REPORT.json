@@ -1,0 +1,215 @@
+{
+  "timestamp": "2025-09-18T17:21:47.978Z",
+  "source": "index.js",
+  "totalModules": 8,
+  "categories": {
+    "css": [
+      "774",
+      "611",
+      "223",
+      "646",
+      "636",
+      "757",
+      "367",
+      "160"
+    ],
+    "webgi": [],
+    "threejs": [],
+    "mediapipe": [],
+    "ui": [],
+    "dom": [],
+    "utilities": [],
+    "core": [],
+    "unknown": []
+  },
+  "modules": {
+    "160": {
+      "id": "160",
+      "params": [
+        "d",
+        "o",
+        "c"
+      ],
+      "size": 3435,
+      "type": "css",
+      "dependencies": [
+        "364"
+      ],
+      "exports": [
+        "A"
+      ],
+      "technology": "css"
+    },
+    "223": {
+      "id": "223",
+      "params": [
+        "d",
+        "o",
+        "c"
+      ],
+      "size": 593,
+      "type": "css",
+      "dependencies": [
+        "364"
+      ],
+      "exports": [
+        "A"
+      ],
+      "technology": "css"
+    },
+    "367": {
+      "id": "367",
+      "params": [
+        "d",
+        "o",
+        "c"
+      ],
+      "size": 4331,
+      "type": "css",
+      "dependencies": [
+        "364"
+      ],
+      "exports": [
+        "A"
+      ],
+      "technology": "css"
+    },
+    "611": {
+      "id": "611",
+      "params": [
+        "d",
+        "o",
+        "c"
+      ],
+      "size": 416,
+      "type": "css",
+      "dependencies": [
+        "364"
+      ],
+      "exports": [
+        "A"
+      ],
+      "technology": "css"
+    },
+    "636": {
+      "id": "636",
+      "params": [
+        "d",
+        "o",
+        "c"
+      ],
+      "size": 718,
+      "type": "css",
+      "dependencies": [
+        "364"
+      ],
+      "exports": [
+        "A"
+      ],
+      "technology": "css"
+    },
+    "646": {
+      "id": "646",
+      "params": [
+        "d",
+        "o",
+        "c"
+      ],
+      "size": 1814,
+      "type": "css",
+      "dependencies": [
+        "364"
+      ],
+      "exports": [
+        "A"
+      ],
+      "technology": "css"
+    },
+    "757": {
+      "id": "757",
+      "params": [
+        "d",
+        "o",
+        "c"
+      ],
+      "size": 4347,
+      "type": "css",
+      "dependencies": [
+        "364"
+      ],
+      "exports": [
+        "A"
+      ],
+      "technology": "css"
+    },
+    "774": {
+      "id": "774",
+      "params": [
+        "d",
+        "o",
+        "c"
+      ],
+      "size": 1569,
+      "type": "css",
+      "dependencies": [
+        "364"
+      ],
+      "exports": [
+        "A"
+      ],
+      "technology": "css"
+    }
+  },
+  "dependencyGraph": {
+    "160": {
+      "dependencies": [
+        "364"
+      ],
+      "dependents": []
+    },
+    "223": {
+      "dependencies": [
+        "364"
+      ],
+      "dependents": []
+    },
+    "367": {
+      "dependencies": [
+        "364"
+      ],
+      "dependents": []
+    },
+    "611": {
+      "dependencies": [
+        "364"
+      ],
+      "dependents": []
+    },
+    "636": {
+      "dependencies": [
+        "364"
+      ],
+      "dependents": []
+    },
+    "646": {
+      "dependencies": [
+        "364"
+      ],
+      "dependents": []
+    },
+    "757": {
+      "dependencies": [
+        "364"
+      ],
+      "dependents": []
+    },
+    "774": {
+      "dependencies": [
+        "364"
+      ],
+      "dependents": []
+    }
+  },
+  "keyModules": {},
+  "entryPoints": []
+}

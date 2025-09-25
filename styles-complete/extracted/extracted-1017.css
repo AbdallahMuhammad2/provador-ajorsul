@@ -1,0 +1,21 @@
+/* Extracted CSS Block 1017 */
+/* Size: 541 chars */
+
+);
+        this.accessKeyId = o,
+        this.secretAccessKey = c,
+        this.sessionToken = h,
+        this.service = _,
+        this.region = b,
+        this.cache = _e || new Map,
+        this.retries = nt ?? 10,
+        this.initRetryMs = it || 50
+    }
+    async sign(o, c) {
+        if (o instanceof Request) {
+            const {method: b, url: _e, headers: nt, body: it} = o;
+            (c = Object.assign({
+                method: b,
+                url: _e,
+                headers: nt
+            }, c)).body == null && nt.has(

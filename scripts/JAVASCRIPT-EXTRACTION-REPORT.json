@@ -1,0 +1,122 @@
+{
+  "timestamp": "2025-09-18T01:06:24.482Z",
+  "totalModules": 73,
+  "totalFiles": 73,
+  "distribution": [
+    {
+      "type": "misc",
+      "count": 34,
+      "directory": "src/misc"
+    },
+    {
+      "type": "webpack-runtime",
+      "count": 6,
+      "directory": "src/webpack"
+    },
+    {
+      "type": "ring",
+      "count": 6,
+      "directory": "src/ring"
+    },
+    {
+      "type": "polyfill",
+      "count": 1,
+      "directory": "src/polyfills"
+    },
+    {
+      "type": "utils",
+      "count": 2,
+      "directory": "src/utils"
+    },
+    {
+      "type": "ui",
+      "count": 5,
+      "directory": "src/ui"
+    },
+    {
+      "type": "css",
+      "count": 2,
+      "directory": "src/styles"
+    },
+    {
+      "type": "webgl",
+      "count": 17,
+      "directory": "src/core"
+    }
+  ],
+  "files": [
+    "src/misc/webpack-module-774.js",
+    "src/misc/webpack-module-611.js",
+    "src/misc/webpack-module-223.js",
+    "src/misc/webpack-module-646.js",
+    "src/misc/webpack-module-636.js",
+    "src/misc/webpack-module-757.js",
+    "src/misc/webpack-module-367.js",
+    "src/misc/webpack-module-160.js",
+    "src/misc/webpack-module-151.js",
+    "src/misc/webpack-module-872.js",
+    "src/misc/webpack-module-49.js",
+    "src/misc/webpack-module-881.js",
+    "src/misc/webpack-module-391.js",
+    "src/misc/webpack-module-186.js",
+    "src/misc/webpack-module-379.js",
+    "src/misc/webpack-module-282.js",
+    "src/misc/webpack-module-578.js",
+    "src/misc/webpack-module-848.js",
+    "src/misc/webpack-module-149.js",
+    "src/misc/webpack-module-9.js",
+    "src/misc/webpack-module-0.js",
+    "src/misc/webpack-module-6.js",
+    "src/misc/webpack-module-74.js",
+    "src/misc/webpack-module-03.js",
+    "src/misc/webpack-module-16.js",
+    "src/misc/webpack-module-07.js",
+    "src/misc/webpack-module-46.js",
+    "src/misc/webpack-module-00.js",
+    "src/misc/webpack-module-67.js",
+    "src/misc/webpack-module-01.js",
+    "src/misc/webpack-module-85.js",
+    "src/misc/webpack-module-73.js",
+    "src/misc/webpack-module-15.js",
+    "src/misc/webpack-module-98.js",
+    "src/webpack/webpack-module-333.js",
+    "src/webpack/webpack-module-981.js",
+    "src/webpack/webpack-module-516.js",
+    "src/webpack/webpack-module-626.js",
+    "src/webpack/webpack-module-530.js",
+    "src/webpack/webpack-module-161.js",
+    "src/ring/webpack-module-364.js",
+    "src/ring/webpack-module-155.js",
+    "src/ring/webpack-module-645.js",
+    "src/ring/webpack-module-537.js",
+    "src/ring/webpack-module-795.js",
+    "src/ring/webpack-module-3986.js",
+    "src/polyfills/webpack-module-101.js",
+    "src/utils/webpack-module-986.js",
+    "src/utils/webpack-module-44.js",
+    "src/ui/webpack-module-990.js",
+    "src/ui/webpack-module-216.js",
+    "src/ui/webpack-module-957.js",
+    "src/ui/webpack-module-32.js",
+    "src/ui/webpack-module-64.js",
+    "src/styles/webpack-module-827.js",
+    "src/styles/webpack-module-589.js",
+    "src/core/webpack-module-2.js",
+    "src/core/webpack-module-8.js",
+    "src/core/webpack-module-3.js",
+    "src/core/webpack-module-4.js",
+    "src/core/webpack-module-5.js",
+    "src/core/webpack-module-1.js",
+    "src/core/webpack-module-7.js",
+    "src/core/webpack-module-20.js",
+    "src/core/webpack-module-58.js",
+    "src/core/webpack-module-30.js",
+    "src/core/webpack-module-52.js",
+    "src/core/webpack-module-31.js",
+    "src/core/webpack-module-69.js",
+    "src/core/webpack-module-90.js",
+    "src/core/webpack-module-23.js",
+    "src/core/webpack-module-17.js",
+    "src/core/webpack-module-360.js"
+  ]
+}

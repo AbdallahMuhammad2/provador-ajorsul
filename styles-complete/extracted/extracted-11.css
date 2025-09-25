@@ -1,0 +1,4 @@
+/* Extracted CSS Block 11 */
+/* Size: 610 chars */
+
+,Menlo,Courier,monospace;opacity:1;transition:all .25s}.button-bar-button{background-color:rgba(0,0,0,0);cursor:pointer;width:auto;height:auto;font-weight:500;padding:.35rem .5rem;position:relative;-webkit-user-select:none;-moz-user-select:none;user-select:none;color:var(--tp-input-foreground-color, #cccccc);transition:color .25s}.button-bar-button:hover{color:var(--tp-label-foreground-color, #eeeeee)}.button-bar-selected{color:var(--tp-label-foreground-color, #eeeeee)}.button-bar-selected-box{color:var(--tp-label-foreground-color, #eeeeee)}.button-bar>.button-bar-button:not(:last-child)::after{content:

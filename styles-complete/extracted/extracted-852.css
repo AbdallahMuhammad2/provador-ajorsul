@@ -1,0 +1,43 @@
+/* Extracted CSS Block 852 */
+/* Size: 1535 chars */
+
+);
+        for (; this._isPlaying; )
+            for (const _e of this.scenes) {
+                if (!this._isPlaying)
+                    break;
+                const nt = Object.keys(_e);
+                _ == null || _.stopAnimation(!1),
+                await (b == null ? void 0 : b.stopAllAnimations()),
+                this._viewer.scene.removeSceneModels(),
+                this._viewer.renderEnabled = !1;
+                for (const at of nt) {
+                    let ut = this.assets[at];
+                    ut || (ut = {
+                        path: at,
+                        file: new File([_e[at]],at)
+                    },
+                    this.assets[at] = ut),
+                    await ((o = this._viewer.getManager()) === null || o === void 0 ? void 0 : o.addAssetSingle(ut, this._options))
+                }
+                if (!this._isPlaying)
+                    break;
+                this._viewer.renderEnabled = !0,
+                c && (c.enabled = !1),
+                h && (h.enabled = !0,
+                await h.startTransition(1e3));
+                const it = [X$2(this.minSceneTime)];
+                _ && it.push(_.playAnimation()),
+                b && it.push(b.animateAllViews()),
+                await Promise.all(it)
+            }
+        this._isPlayingLoop = !1
+    }
+    stop() {
+        this._isPlaying = !1
+    }
+    async downloadScenes() {
+        const d = {};
+        for (const c of this.scenes)
+            for (const h of Object.keys(c)) {
+                const _ = d[h] ? h + 

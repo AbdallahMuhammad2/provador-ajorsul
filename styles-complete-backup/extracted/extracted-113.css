@@ -1,0 +1,42 @@
+/* Extracted CSS Block 113 */
+/* Size: 1616 chars */
+
+)),
+                    Rt.viewProps.bindDisabled(nr),
+                    this.element.appendChild(nr),
+                    this.buttonElement = nr,
+                    this.update_()
+                }
+                update_() {
+                    const wt = this.value.rawValue;
+                    this.swatchElem_.style.backgroundColor = xu(wt)
+                }
+                onValueChange_() {
+                    this.update_()
+                }
+            }
+            class Nl {
+                constructor(wt, Rt) {
+                    this.value = Rt.value,
+                    this.viewProps = Rt.viewProps,
+                    this.view = new Tl(wt,{
+                        value: this.value,
+                        viewProps: this.viewProps
+                    })
+                }
+            }
+            class xa {
+                constructor(wt, Rt) {
+                    this.onButtonBlur_ = this.onButtonBlur_.bind(this),
+                    this.onButtonClick_ = this.onButtonClick_.bind(this),
+                    this.onPopupChildBlur_ = this.onPopupChildBlur_.bind(this),
+                    this.onPopupChildKeydown_ = this.onPopupChildKeydown_.bind(this),
+                    this.value = Rt.value,
+                    this.viewProps = Rt.viewProps,
+                    this.foldable_ = Or.create(Rt.expanded),
+                    this.swatchC_ = new Nl(wt,{
+                        value: this.value,
+                        viewProps: this.viewProps
+                    });
+                    const zt = this.swatchC_.view.buttonElement;
+                    zt.addEventListener(

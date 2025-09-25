@@ -1,0 +1,24 @@
+/* Extracted CSS Block 460 */
+/* Size: 777 chars */
+
+, void 0);
+class FrameFadePlugin extends GenericFilterPlugin {
+    async startTransition(o) {
+        this._viewer && this._pass && !this.isDisabled() && (this._target || (this._target = this._viewer.renderer.getTempTarget({
+            sizeMultiplier: 1,
+            minFilter: three_module.k6q,
+            magFilter: three_module.k6q,
+            colorSpace: this._viewer.renderer.composerTarget.texture.colorSpace
+        })),
+        this._fadeTimeState < 500 && (this._toSaveFrame = !0),
+        this._fadeTimeState = Math.max(o, this._fadeTimeState),
+        this._fadeTime = this._fadeTimeState,
+        this.setDirty(),
+        await X$2(o))
+    }
+    stopTransition() {
+        this._fadeTimeState = 0
+    }
+    constructor() {
+        super(),
+        this.passId = 

@@ -1,0 +1,15 @@
+/* Extracted CSS Block 1067 */
+/* Size: 375 chars */
+
+in h && Ne(h) ? h = {
+        start: h.selectionStart,
+        end: h.selectionEnd
+    } : (h = (h.ownerDocument && h.ownerDocument.defaultView || window).getSelection(),
+    h = {
+        anchorNode: h.anchorNode,
+        anchorOffset: h.anchorOffset,
+        focusNode: h.focusNode,
+        focusOffset: h.focusOffset
+    }),
+    Se && Ie(Se, h) || (Se = h,
+    h = oe(Re, 

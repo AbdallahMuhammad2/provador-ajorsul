@@ -1,0 +1,22 @@
+/* Extracted CSS Block 588 */
+/* Size: 580 chars */
+
+ );
+
+		}
+
+		const basisFormat = ktx2File.isUASTC() ? BasisFormat.UASTC_4x4 : BasisFormat.ETC1S;
+		const width = ktx2File.getWidth();
+		const height = ktx2File.getHeight();
+		const layerCount = ktx2File.getLayers() || 1;
+		const levelCount = ktx2File.getLevels();
+		const faceCount = ktx2File.getFaces();
+		const hasAlpha = ktx2File.getHasAlpha();
+		const dfdFlags = ktx2File.getDFDFlags();
+
+		const { transcoderFormat, engineFormat } = getTranscoderFormat( basisFormat, width, height, hasAlpha );
+
+		if ( ! width || ! height || ! levelCount ) {
+
+			cleanup();
+			throw new Error( 

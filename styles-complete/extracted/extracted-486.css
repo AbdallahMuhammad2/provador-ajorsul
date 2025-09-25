@@ -1,0 +1,19 @@
+/* Extracted CSS Block 486 */
+/* Size: 595 chars */
+
+)], GLTFAnimationPlugin);
+class GLTFTimelineMarkersExtensionImport {
+    constructor(o, c) {
+        this.parser = o,
+        this.name = GLTFAnimationPlugin.AnimationMarkersExtension,
+        this.plugin = c
+    }
+    async afterRoot(o) {
+        var c;
+        let h = [];
+        for (const ht of this.parser.json.scenes || []) {
+            if (!ht.extensions)
+                continue;
+            const _t = ht.extensions[this.name];
+            for (const vt of (_t == null ? void 0 : _t.markers) || []) {
+                const bt = vt.camera !== void 0 ? await this.parser.getDependency(

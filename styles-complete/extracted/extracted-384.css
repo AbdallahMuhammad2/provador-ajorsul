@@ -1,0 +1,25 @@
+/* Extracted CSS Block 384 */
+/* Size: 624 chars */
+
+
+};
+class GLTFLightsExtension {
+    constructor(o) {
+        this.parser = o,
+        this.name = EXTENSIONS.KHR_LIGHTS_PUNCTUAL,
+        this.cache = {
+            refs: {},
+            uses: {}
+        }
+    }
+    _markDefs() {
+        const o = this.parser
+          , c = this.parser.json.nodes || [];
+        for (let h = 0, _ = c.length; h < _; h++) {
+            const b = c[h];
+            b.extensions && b.extensions[this.name] && b.extensions[this.name].light !== void 0 && o._addNodeRef(this.cache, b.extensions[this.name].light)
+        }
+    }
+    _loadLight(o) {
+        const c = this.parser
+          , h = 

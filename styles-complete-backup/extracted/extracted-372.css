@@ -1,0 +1,12 @@
+/* Extracted CSS Block 372 */
+/* Size: 249 chars */
+
+,
+                setValue: o => {
+                    this.userData.envMapSlotKey = o,
+                    o || delete this.userData.envMapSlotKey,
+                    this.setDirty()
+                }
+            }]
+        }, {
+            type: 

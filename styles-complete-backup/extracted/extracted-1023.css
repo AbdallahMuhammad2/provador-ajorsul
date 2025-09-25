@@ -1,0 +1,24 @@
+/* Extracted CSS Block 1023 */
+/* Size: 667 chars */
+
+,
+        this.serializeSettings = !1,
+        this.toggleConnection = () => {
+            this._connected ? this.disconnect() : this.connect()
+        }
+        ,
+        this.serializeWithViewer = !1,
+        this.fetchFunction = fetch
+    }
+    connect() {
+        this._connected && this.disconnect(),
+        this._client = new AwsClient({
+            accessKeyId: this.accessKeyId,
+            secretAccessKey: this.accessKeySecret
+        }),
+        this._connected = !0,
+        this.refreshUi()
+    }
+    refreshUi() {
+        var d, o;
+        (o = (d = this.uiConfig) === null || d === void 0 ? void 0 : d.uiRefresh) === null || o === void 0 || o.call(d, 

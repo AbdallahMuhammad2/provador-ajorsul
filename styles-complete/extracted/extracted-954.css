@@ -1,0 +1,17 @@
+/* Extracted CSS Block 954 */
+/* Size: 559 chars */
+
+);
+    const vt = at.controller_.view.containerElement
+      , bt = Ee$1(o.domChildren, []);
+    if ((bt == null ? void 0 : bt.length) !== void 0) {
+        const St = [];
+        for (let At = 0; At < vt.children.length; At++) {
+            const Et = vt.children[At];
+            !((it = Et.dataset) === null || it === void 0) && it.tpCustomDOM && St.push(Et)
+        }
+        for (const At of St)
+            vt.removeChild(At);
+        for (const At of bt)
+            At.parentElement !== vt && (vt.appendChild(At),
+            At.dataset.tpCustomDOM = 

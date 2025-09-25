@@ -1,0 +1,12 @@
+/* Extracted CSS Block 628 */
+/* Size: 251 chars */
+
+,
+                    value: () => {
+                        this.variations.forEach(async c => this.applyVariation(c, c.materials[0].uuid))
+                    }
+                }]
+            }
+            ]
+        },
+        this.addEventListener(

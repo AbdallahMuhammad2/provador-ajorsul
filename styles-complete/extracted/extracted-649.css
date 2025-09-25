@@ -1,0 +1,17 @@
+/* Extracted CSS Block 649 */
+/* Size: 376 chars */
+
+, Menlo, Courier, monospace;
+            background-color: transparent;
+            cursor: pointer;
+            padding: 0.12rem 0.35rem;
+            border-radius: 0.25rem;
+            line-height: 1rem;
+            font-weight: 500;
+          }
+
+          .customContextMenuItems:hover {
+            color: white;
+            background-color: #017AFF;
+          }
+        

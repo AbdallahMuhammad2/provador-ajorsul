@@ -1,0 +1,15 @@
+/* Extracted CSS Block 382 */
+/* Size: 568 chars */
+
+) {
+                    if ((Dt = It.match(bt)) && (Pt.gamma = parseFloat(Dt[1])),
+                    (Dt = It.match(St)) && (Pt.exposure = parseFloat(Dt[1])),
+                    (Dt = It.match(At)) && (Pt.valid |= 2,
+                    Pt.format = Dt[1]),
+                    (Dt = It.match(Et)) && (Pt.valid |= 4,
+                    Pt.height = parseInt(Dt[1], 10),
+                    Pt.width = parseInt(Dt[2], 10)),
+                    2 & Pt.valid && 4 & Pt.valid)
+                        break
+                } else
+                    Pt.comments += It + 

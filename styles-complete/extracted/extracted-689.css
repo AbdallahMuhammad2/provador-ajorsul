@@ -1,0 +1,33 @@
+/* Extracted CSS Block 689 */
+/* Size: 1271 chars */
+
+],!0),
+        this.importMaterials = !0,
+        this.forceLayerMaterials = !1,
+        this.replaceWithInstancedMesh = !1,
+        this.hideLineMesh = !1,
+        this.hidePointMesh = !0,
+        this.loadUserDataStrings = !0
+    }
+    _refresh() {
+        Rhino3dmLoader2.ImportMaterials = this.importMaterials,
+        Rhino3dmLoader2.ForceLayerMaterials = this.forceLayerMaterials,
+        Rhino3dmLoader2.ReplaceWithInstancedMesh = this.replaceWithInstancedMesh,
+        Rhino3dmLoader2.HideLineMesh = this.hideLineMesh,
+        Rhino3dmLoader2.HidePointMesh = this.hidePointMesh,
+        Rhino3dmLoader2.LoadUserDataStrings = this.loadUserDataStrings,
+        Rhino3dmLoader2.LoadUserDataWarnings = !1
+    }
+    async onAdded(d) {
+        var o, c;
+        (c = (o = d.getManager()) === null || o === void 0 ? void 0 : o.importer) === null || c === void 0 || c.Importers.push(this._importer),
+        this._refresh()
+    }
+    async onDispose(d) {}
+    async onRemove(d) {
+        var o, c;
+        !((c = (o = d.getManager()) === null || o === void 0 ? void 0 : o.importer) === null || c === void 0) && c.Importers && d.getManager().importer.Importers.splice(d.getManager().importer.Importers.indexOf(this._importer), 1)
+    }
+}
+;
+Rhino3dmLoadPlugin.PluginType = 

@@ -1,0 +1,23 @@
+/* Extracted CSS Block 310 */
+/* Size: 669 chars */
+
+)) {
+                const at = serializers.texture(it, h);
+                _[nt] = at,
+                b[nt] = it,
+                d[nt] = at ? {
+                    isTexture: !0,
+                    toJSON: () => at
+                } : null
+            }
+        let _e = d.toJSON(o || h);
+        for (const [nt,it] of Object.entries(b))
+            d[nt] = it,
+            delete b[nt];
+        if (o) {
+            for (const [nt,it] of Object.entries(_))
+                it && (_e[nt] = it);
+            o != null && o.materials && (o.materials[_e.uuid] || (o.materials[_e.uuid] = _e),
+            _e = {
+                uuid: _e.uuid,
+                resource: 

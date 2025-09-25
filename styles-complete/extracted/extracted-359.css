@@ -1,0 +1,13 @@
+/* Extracted CSS Block 359 */
+/* Size: 411 chars */
+
+, h, !0)
+        },
+        update() {
+            var h, _, b;
+            this.passObject.enabled && ((_ = (h = this.passObject).updateShaderProperties) === null || _ === void 0 || _.call(h, Ee$1(c)),
+            (b = o.update) === null || b === void 0 || b.call(this))
+        },
+        onRegister(h) {
+            var _, b, _e;
+            this.passObject.materialExtension && ((b = (_ = d.getPluginByType(

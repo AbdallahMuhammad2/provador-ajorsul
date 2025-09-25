@@ -1,0 +1,14 @@
+/* Extracted CSS Block 491 */
+/* Size: 415 chars */
+
+)
+    }
+    render(o, c, h, _, b) {
+        this.needsSwap = !1,
+        !this.renderWithCamera && this._renderer.frameCount < 2 || (this._renderer.blit(this._target.texture, c),
+        this.uniforms.tLastThis.value = c.texture,
+        super.render(o, this._target, h, _, b),
+        this.smoothEnabled && this.bilateralPass.render(o, c, h, _, b))
+    }
+}
+SSRTAOPass_decorate([serialize()], SSRTAOPass.prototype, 

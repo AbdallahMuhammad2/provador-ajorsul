@@ -1,0 +1,67 @@
+/* Extracted CSS Block 749 */
+/* Size: 2838 chars */
+
+
+                }
+                Bt[kt = ir] || (Bt[kt] = {
+                    usage: or,
+                    accessors: []
+                }),
+                Bt[ir].accessors.push(Jt)
+            }
+            const Ut = []
+              , Ht = b.buffers.length;
+            let Kt = 0;
+            for (const {usage: Jt, accessors: or} of Object.values(Bt))
+                if (Jt === BufferViewUsage.ARRAY_BUFFER && c.vertexLayout === VertexLayout.INTERLEAVED) {
+                    const ir = _t(or, Ht, Kt);
+                    Kt += ir.byteLength;
+                    for (const lr of ir.buffers)
+                        Ut.push(lr)
+                } else if (Jt === BufferViewUsage.ARRAY_BUFFER)
+                    for (const ir of or) {
+                        const lr = _t([ir], Ht, Kt);
+                        Kt += lr.byteLength;
+                        for (const ar of lr.buffers)
+                            Ut.push(ar)
+                    }
+                else if (Jt === BufferViewUsage.SPARSE) {
+                    const ir = vt(or, Ht, Kt);
+                    Kt += ir.byteLength;
+                    for (const lr of ir.buffers)
+                        Ut.push(lr)
+                } else if (Jt === BufferViewUsage.ELEMENT_ARRAY_BUFFER) {
+                    const ir = ht(or, Ht, Kt, WriterContext.BufferViewTarget.ELEMENT_ARRAY_BUFFER);
+                    Kt += ir.byteLength;
+                    for (const lr of ir.buffers)
+                        Ut.push(lr)
+                } else {
+                    const ir = ht(or, Ht, Kt);
+                    Kt += ir.byteLength;
+                    for (const lr of ir.buffers)
+                        Ut.push(lr)
+                }
+            if (nt.imageBufferViews.length && At === 0) {
+                for (let Jt = 0; Jt < nt.imageBufferViews.length; Jt++)
+                    if (b.bufferViews[b.images[Jt].bufferView].byteOffset = Kt,
+                    Kt += nt.imageBufferViews[Jt].byteLength,
+                    Ut.push(nt.imageBufferViews[Jt]),
+                    Kt % 8) {
+                        const or = 8 - Kt % 8;
+                        Kt += or,
+                        Ut.push(new Uint8Array(or))
+                    }
+            }
+            if (nt.otherBufferViews.has(St))
+                for (const Jt of nt.otherBufferViews.get(St))
+                    b.bufferViews.push({
+                        buffer: Ht,
+                        byteOffset: Kt,
+                        byteLength: Jt.byteLength
+                    }),
+                    nt.otherBufferViewsIndexMap.set(Jt, b.bufferViews.length - 1),
+                    Kt += Jt.byteLength,
+                    Ut.push(Jt);
+            if (Kt) {
+                let Jt;
+                c.format === Format.GLB ? Jt = GLB_BUFFER : (Jt = nt.bufferURIGenerator.createURI(St, 

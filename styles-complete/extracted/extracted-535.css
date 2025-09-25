@@ -1,0 +1,17 @@
+/* Extracted CSS Block 535 */
+/* Size: 396 chars */
+
+,
+        this._storage = {
+            getItem: async h => localStorage.getItem(h),
+            setItem: async (h, _) => (localStorage.setItem(h, _),
+            _)
+        },
+        this.silent = !0,
+        this.appVersion = c,
+        this.appName = o
+    }
+    _getOriginId() {
+        const o = getCurrentDomain(window);
+        if (!o || !(o != null && o[0]))
+            throw new Error(

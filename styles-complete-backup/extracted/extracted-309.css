@@ -1,0 +1,12 @@
+/* Extracted CSS Block 309 */
+/* Size: 236 chars */
+
+);
+        const h = o ?? {
+            textures: {},
+            images: {}
+        }
+          , _ = {}
+          , b = {};
+        for (const [nt,it] of Object.entries(d))
+            if (it != null && it.isTexture && !nt.startsWith(

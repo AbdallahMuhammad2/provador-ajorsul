@@ -1,0 +1,52 @@
+/* Extracted CSS Block 699 */
+/* Size: 2474 chars */
+
+);
+        const pt = new Box3B().expandByObject(ut, !0, !0)
+          , ht = new Box3B().expandByObject(at, !0, !1)
+          , _t = pt.getSize(new three_module.Pq0)
+          , vt = ht.getSize(new three_module.Pq0)
+          , bt = pt.getCenter(new three_module.Pq0)
+          , St = ht.getCenter(new three_module.Pq0)
+          , At = Math.max(_t.x / vt.x, _t.y / vt.y, _t.z / vt.z);
+        if (isFinite(At) && At !== 0) {
+            _e.modelObject.scale.multiplyScalar(At),
+            St.multiplyScalar(At),
+            _e.modelObject.position.add(bt).sub(St),
+            _e.modelObject.position.y += (vt.y * At - _t.y) / 2,
+            (c = (o = _e.modelObject).setDirty) === null || c === void 0 || c.call(o);
+            for (let Et = 1; Et < this._viewer.scene.modelRoot.children.length; Et++) {
+                const Pt = it[Et % it.length]
+                  , It = this._viewer.scene.modelRoot.children[Et];
+                Pt.updateMatrixWorld(!0),
+                It.updateMatrixWorld(!0);
+                const Dt = Pt.getWorldQuaternion(new three_module.PTz);
+                It.applyQuaternion(Dt),
+                It.updateMatrixWorld(!0);
+                const Gt = new Box3B().expandByObject(Pt, !0, !1)
+                  , Bt = new Box3B().expandByObject(It, !0, !0)
+                  , kt = Gt.getSize(new three_module.Pq0)
+                  , Ut = Bt.getSize(new three_module.Pq0)
+                  , Ht = Gt.getCenter(new three_module.Pq0)
+                  , Kt = Bt.getCenter(new three_module.Pq0)
+                  , Jt = Math.min(kt.x / Ut.x, kt.y / Ut.y, kt.z / Ut.z);
+                isFinite(Jt) && Jt !== 0 && (It.scale.multiplyScalar(Jt),
+                Kt.multiplyScalar(Jt),
+                It.position.add(Ht).sub(Kt),
+                It.position.y += (Ut.y * Jt - kt.y) / 2,
+                (_ = (h = It).setDirty) === null || _ === void 0 || _.call(h))
+            }
+            if (at.updateMatrixWorld(!0),
+            _e.modelObject.animations.length) {
+                let Et = at.matrixWorld.clone();
+                this._animationStep = () => {
+                    const Pt = at.matrixWorld.clone()
+                      , It = Et.invert().premultiply(Pt);
+                    ut.applyMatrix4(It),
+                    Et = Pt
+                }
+            } else
+                this._animationStep = () => {}
+                ;
+            if (!this.groundBelowModel) {
+                const Et = this._viewer.getPluginByType(

@@ -1,0 +1,23 @@
+/* Extracted CSS Block 27 */
+/* Size: 463 chars */
+
+;
+  display: block;
+  top: 4px;
+  left: 5px;
+  width: 5px;
+  height: 9px;
+  border: 2px solid #fff;
+  border-top: none;
+  border-left: none;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.treejs .treejs-node__halfchecked > .treejs-checkbox:before {
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+.treejs .treejs-node__halfchecked > .treejs-checkbox:after {
+  position: absolute;
+  content: 

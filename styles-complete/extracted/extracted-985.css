@@ -1,0 +1,29 @@
+/* Extracted CSS Block 985 */
+/* Size: 760 chars */
+
+,
+    zIndex: null
+};
+class Input {
+    constructor(o) {
+        this.options = JSON.parse(JSON.stringify(input_defaultOptions));
+        for (let b in o)
+            o[b] != null && (this.options[b] = o[b]);
+        let c = this.options
+          , h = JSON.parse(JSON.stringify(defaultWwiseOptions));
+        for (let b in h)
+            c.hasOwnProperty(b) && (h[b] = c[b]);
+        let _ = [];
+        c.showCancel && _.push({
+            key: 27,
+            text: c.cancelText,
+            normal: !0,
+            onClick: this.handleCancel.bind(this)
+        }),
+        _.push({
+            key: 13,
+            text: c.okText,
+            onClick: this.handleOk.bind(this)
+        }),
+        h.buttons = _,
+        this.input = utility.createElement(

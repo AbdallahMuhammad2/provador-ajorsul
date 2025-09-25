@@ -1,0 +1,11 @@
+/* Extracted CSS Block 431 */
+/* Size: 173 chars */
+
+, ViewerApp.VERSION)
+    }
+    setDirty(o, c) {
+        this._needsReset = !0,
+        o = o ?? this,
+        this.dispatchEvent({
+            ...c ?? {},
+            type: 

@@ -1,0 +1,22 @@
+/* Extracted CSS Block 470 */
+/* Size: 552 chars */
+
+, new three_module.eHs(b,1,1)),
+        this
+    }
+}
+class SelectionWidget extends three_module.YJl {
+    _updater() {
+        const o = this._object;
+        if (o) {
+            const c = new Box3B().expandByObject(o, !1);
+            c.getCenter(this.position);
+            const h = c.getBoundingSphere(new three_module.iyt).radius;
+            this.scale.setScalar(h * this.boundingScaleMultiplier),
+            this.setVisible(!0)
+        } else
+            this.setVisible(!1)
+    }
+    constructor() {
+        super(),
+        this.assetType = 

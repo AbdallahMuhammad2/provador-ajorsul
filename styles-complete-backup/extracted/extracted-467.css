@@ -1,0 +1,33 @@
+/* Extracted CSS Block 467 */
+/* Size: 563 chars */
+
+,
+        this.fromWireframeGeometry(new three_module.XJ7(o))
+    }
+}
+three_module.fCn.line = {
+    worldUnits: {
+        value: 1
+    },
+    linewidth: {
+        value: 1
+    },
+    resolution: {
+        value: new three_module.I9Y(1,1)
+    },
+    dashOffset: {
+        value: 0
+    },
+    dashScale: {
+        value: 1
+    },
+    dashSize: {
+        value: 1
+    },
+    gapSize: {
+        value: 1
+    }
+},
+three_module.zkh.line = {
+    uniforms: three_module.LlO.merge([three_module.fCn.common, three_module.fCn.fog, three_module.fCn.line]),
+    vertexShader: 

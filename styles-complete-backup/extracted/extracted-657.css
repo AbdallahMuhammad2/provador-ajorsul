@@ -1,0 +1,43 @@
+/* Extracted CSS Block 657 */
+/* Size: 1098 chars */
+
+,
+            toneMapped: !1,
+            depthWrite: !1,
+            depthTest: !1,
+            premultipliedAlpha: !1,
+            opacity: 1,
+            transparent: !1,
+            blending: three_module.XIg
+        }),
+        this._shadowBlurMat = new ShaderMaterial2({
+            uniforms: {
+                colorTexture: {
+                    value: null
+                },
+                step: {
+                    value: .1
+                },
+                size: {
+                    value: new three_module.I9Y(.5,.5)
+                },
+                direction: {
+                    value: new three_module.I9Y(.5,.5)
+                }
+            },
+            vertexShader: defaultVertex,
+            fragmentShader: seperableShadowBlur
+        })
+    }
+    dispose() {
+        this._shadowMat.dispose(),
+        this._target = void 0,
+        this.reset()
+    }
+    cleanupMaterial() {
+        this._updateMaterial(!0)
+    }
+    _groundMapModeChanged() {
+        this._attachedMesh && (this.cleanupMaterial(),
+        this._updateMaterial(),
+        this.groundMapMode === 

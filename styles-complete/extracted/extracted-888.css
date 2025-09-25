@@ -1,0 +1,20 @@
+/* Extracted CSS Block 888 */
+/* Size: 444 chars */
+
+)], UChartOptions);
+let UPackOptions = class {
+    constructor() {
+        this.bilinear = !0,
+        this.blockAlign = !1,
+        this.bruteForce = !1,
+        this.createImage = !1,
+        this.maxChartSize = 0,
+        this.padding = 0,
+        this.resolution = 0,
+        this.rotateCharts = !0,
+        this.rotateChartsToAxis = !0,
+        this.texelsPerUnit = 0
+    }
+}
+;
+XAtlasPlugin_decorate([serialize()], UPackOptions.prototype, 

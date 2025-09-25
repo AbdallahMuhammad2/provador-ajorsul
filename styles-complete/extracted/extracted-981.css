@@ -1,0 +1,13 @@
+/* Extracted CSS Block 981 */
+/* Size: 297 chars */
+
+, o => {
+            o.preventDefault()
+        }
+        )),
+        utility.appendToBody(this.dom)
+    }
+    removeDoms() {
+        utility.removeElement(this.dom),
+        !this.options.keepOverlay && this.overlay && (utility.removeElement(this.overlay),
+        document.body.classList.remove(

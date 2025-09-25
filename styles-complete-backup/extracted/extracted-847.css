@@ -1,0 +1,8 @@
+/* Extracted CSS Block 847 */
+/* Size: 150 chars */
+
+
+            @font-face {
+                font-family: ${o};
+                src: url(${c}) format(${fontFormatExtensionMap[_e] || _e});
+            }

@@ -1,0 +1,21 @@
+/* Extracted CSS Block 946 */
+/* Size: 894 chars */
+
+);
+        if ((o || c) && this.bodyOverlapKeeper.getDiff(additions, removals),
+        o) {
+            for (let b = 0, _e = additions.length; b < _e; b += 2)
+                beginContactEvent.bodyA = this.getBodyById(additions[b]),
+                beginContactEvent.bodyB = this.getBodyById(additions[b + 1]),
+                this.dispatchEvent(beginContactEvent);
+            beginContactEvent.bodyA = beginContactEvent.bodyB = null
+        }
+        if (c) {
+            for (let b = 0, _e = removals.length; b < _e; b += 2)
+                endContactEvent.bodyA = this.getBodyById(removals[b]),
+                endContactEvent.bodyB = this.getBodyById(removals[b + 1]),
+                this.dispatchEvent(endContactEvent);
+            endContactEvent.bodyA = endContactEvent.bodyB = null
+        }
+        additions.length = removals.length = 0;
+        const h = this.hasAnyEventListener(

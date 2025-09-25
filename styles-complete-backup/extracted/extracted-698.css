@@ -1,0 +1,12 @@
+/* Extracted CSS Block 698 */
+/* Size: 250 chars */
+
+)
+          , at = [];
+        for (let pt = 0; pt < 10; pt++) {
+            const ht = getRandom(0, 500)
+              , _t = getRandom(0, 500)
+              , vt = getRandom(0, 500);
+            at.push(ht, _t, vt)
+        }
+        o.setAttribute(

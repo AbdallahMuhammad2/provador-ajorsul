@@ -1,0 +1,23 @@
+/* Extracted CSS Block 121 */
+/* Size: 653 chars */
+
+),
+                    Rt && (wt.scrollTop = wt.scrollHeight)
+                }
+                onValueUpdate_() {
+                    this.update_()
+                }
+            }
+            class l_ {
+                constructor(wt, Rt) {
+                    this.value = Rt.value,
+                    this.viewProps = Rt.viewProps,
+                    this.view = new bp(wt,{
+                        formatter: Rt.formatter,
+                        lineCount: Rt.lineCount,
+                        value: this.value,
+                        viewProps: this.viewProps
+                    })
+                }
+            }
+            const lv = Et(

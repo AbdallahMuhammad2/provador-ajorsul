@@ -1,0 +1,10 @@
+/* Extracted CSS Block 479 */
+/* Size: 303 chars */
+
+, this._wheel),
+        this._pointerDragHelper.element = void 0,
+        super.onRemove(d)
+    }
+    _onPropertyChange(d=!0) {
+        this._animationDuration = Math.max(...this.animations.map( ({duration: o}) => o)) * (this.loopAnimations ? this.loopRepetitions : 1),
+        this._animationState === 

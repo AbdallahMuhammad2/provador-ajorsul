@@ -1,0 +1,9 @@
+/* Extracted CSS Block 428 */
+/* Size: 180 chars */
+
+, vt => {
+            this.setDirty(this.scene, vt),
+            vt.geometryChanged !== !1 && this.renderer.resetShadows()
+        }
+        ),
+        this.scene.addEventListener(

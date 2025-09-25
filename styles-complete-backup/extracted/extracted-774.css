@@ -1,0 +1,21 @@
+/* Extracted CSS Block 774 */
+/* Size: 446 chars */
+
+
+        }),
+        b.loader.preload(!0, !0)
+    }
+    )
+}
+class GLTFDracoExportPlugin extends AViewerPlugin {
+    constructor() {
+        super(...arguments),
+        this.enabled = !0,
+        this.dependencies = [AssetManagerPlugin, AssetExporterPlugin]
+    }
+    async onAdded(o) {
+        await super.onAdded(o);
+        const c = o.getManager().importer
+          , h = o.getManager().exporter;
+        if (!c)
+            throw new Error(

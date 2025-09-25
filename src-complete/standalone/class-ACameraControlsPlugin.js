@@ -1,0 +1,30 @@
+/* Standalone Class: ACameraControlsPlugin */
+
+class ACameraControlsPlugin extends AViewerPlugin {
+    constructor() {
+        super(...arguments),
+        this.enabled = !0,
+        this.toJSON = void 0,
+        this._cameraChanged = o => {
+            var c, h, _, b;
+            (h = (c = o.lastCamera) === null || c === void 0 ? void 0 : c.removeControlsCtor) === null || h === void 0 || h.call(c, this.controlsKey),
+            (b = (_ = o.camera) === null || _ === void 0 ? void 0 : _.setControlsCtor) === null || b === void 0 || b.call(_, this.controlsKey, this._controlsCtor)
+        }
+    }
+    async onAdded(o) {
+        await super.onAdded(o),
+        this._cameraChanged({
+            camera: o.scene.activeCamera
+        }),
+        o.scene.addEventListener("activeCameraChange", this._cameraChanged)
+    }
+    async onRemove(o) {
+        return this._cameraChanged({
+            lastCamera: o.scene.activeCamera
+        }),
+        o.scene.removeEventListener("activeCameraChange", this._cameraChanged),
+        super.onRemove(o)
+    }
+}
+
+export default ACameraControlsPlugin;

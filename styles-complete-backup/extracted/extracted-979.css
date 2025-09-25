@@ -1,0 +1,10 @@
+/* Extracted CSS Block 979 */
+/* Size: 324 chars */
+
+ ? this.content = utility.createDomTree({
+            dom: utility.createDiv(h, this.options.content)
+        }) : this.content = utility.createDomTree({
+            dom: utility.createDiv(h),
+            children: [this.options.content]
+        }),
+        this.options.removeBackground && (this.content.style.background = 

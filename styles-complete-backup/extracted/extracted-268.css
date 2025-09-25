@@ -1,0 +1,17 @@
+/* Extracted CSS Block 268 */
+/* Size: 503 chars */
+
+, new mr(Ct,3)),
+                this.add(new gs(ft,this.material)),
+                this.update()
+            }
+            dispose() {
+                this.children[0].geometry.dispose(),
+                this.children[0].material.dispose()
+            }
+            update() {
+                const tt = this.children[0];
+                if (this.color !== void 0)
+                    this.material.color.set(this.color);
+                else {
+                    const lt = tt.geometry.getAttribute(

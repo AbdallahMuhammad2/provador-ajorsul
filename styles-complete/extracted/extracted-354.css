@@ -1,0 +1,14 @@
+/* Extracted CSS Block 354 */
+/* Size: 529 chars */
+
+),
+        this.materialExtensions = MaterialExtender.RegisterExtensions(this, (h = o == null ? void 0 : o.customMaterialExtensions) !== null && h !== void 0 ? h : [])
+    }
+    registerMaterialExtensions(o) {
+        this.materialExtensions = [...this.materialExtensions, ...MaterialExtender.RegisterExtensions(this, o)]
+    }
+    unregisterMaterialExtensions(o) {}
+    onBeforeCompile(o, c) {
+        MaterialExtender.ApplyMaterialExtensions(this, o, this.materialExtensions, c),
+        this.dispatchEvent({
+            type: 

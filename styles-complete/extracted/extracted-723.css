@@ -1,0 +1,21 @@
+/* Extracted CSS Block 723 */
+/* Size: 478 chars */
+
+),
+        b[this.name] || (_.extensions = _.extensions || {},
+        _.extensions[this.name] = {
+            lights: []
+        },
+        b[this.name] = !0);
+        const nt = _.extensions[this.name].lights;
+        nt.push(_e),
+        c.extensions = c.extensions || {},
+        c.extensions[this.name] = {
+            light: nt.length - 1
+        }
+    }
+}
+class GLTFExporter_GLTFMaterialsUnlitExtension {
+    constructor(o) {
+        this.writer = o,
+        this.name = 

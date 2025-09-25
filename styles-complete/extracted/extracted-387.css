@@ -1,0 +1,23 @@
+/* Extracted CSS Block 387 */
+/* Size: 790 chars */
+
+);
+        const _ = this.header.length - BINARY_EXTENSION_HEADER_LENGTH
+          , b = new DataView(o,BINARY_EXTENSION_HEADER_LENGTH);
+        let _e = 0;
+        for (; _e < _; ) {
+            const nt = b.getUint32(_e, !0);
+            _e += 4;
+            const it = b.getUint32(_e, !0);
+            if (_e += 4,
+            it === BINARY_EXTENSION_CHUNK_TYPES.JSON) {
+                const at = new Uint8Array(o,BINARY_EXTENSION_HEADER_LENGTH + _e,nt);
+                this.content = h.decode(at)
+            } else if (it === BINARY_EXTENSION_CHUNK_TYPES.BIN) {
+                const at = BINARY_EXTENSION_HEADER_LENGTH + _e;
+                this.body = o.slice(at, at + nt)
+            }
+            _e += nt
+        }
+        if (this.content === null)
+            throw new Error(

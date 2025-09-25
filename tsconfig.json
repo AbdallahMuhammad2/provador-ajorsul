@@ -1,0 +1,59 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noFallthroughCasesInSwitch": true,
+
+    /* Path mapping */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+
+    /* Experimental decorators for WebGI */
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    /* For WebGL and 3D libraries */
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.d.ts",
+    "index.html"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "src/tryon-ring-legacy/**/*",
+    "src/tryon:ring/**/*",
+    "src/archived/**/*",
+    "src/core/**/*",
+    "src/detection/**/*",
+    "src/license/**/*",
+    "src/shared/**/*",
+    "src/ui/**/*",
+    "src/utils/**/*",
+    "src/webcam/**/*",
+    "src/RealVirtualTryon.ts",
+    "src/UnifiedRingTryon.ts"
+  ]
+}

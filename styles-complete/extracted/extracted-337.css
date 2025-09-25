@@ -1,0 +1,15 @@
+/* Extracted CSS Block 337 */
+/* Size: 306 chars */
+
+,
+        this._isActiveCamera = !1,
+        this._cameraObjectUpdate = _e => {
+            this.setDirty(_e)
+        }
+        ,
+        this._interactionsDisabledBy = new Set,
+        this.autoLookAtTarget = !1,
+        this.near = .01,
+        this.far = 50,
+        this._options = {
+            type: 

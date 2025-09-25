@@ -1,0 +1,15 @@
+/* Extracted CSS Block 592 */
+/* Size: 557 chars */
+
+)) === null || _e === void 0 ? void 0 : _e.extensions) === null || nt === void 0 || nt.push(glTFTextureBasisUExtensionExport)
+    }
+    async onDispose(o) {
+        this._importer = void 0
+    }
+    async onRemove(o) {
+        var c, h;
+        this._importer && (!((h = (c = o.getManager()) === null || c === void 0 ? void 0 : c.importer) === null || h === void 0) && h.Importers) && o.getManager().importer.Importers.splice(o.getManager().importer.Importers.indexOf(this._importer), 1),
+        this._importer = void 0
+    }
+}
+KTX2LoadPlugin.PluginType = 

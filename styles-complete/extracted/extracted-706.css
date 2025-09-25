@@ -1,0 +1,8 @@
+/* Extracted CSS Block 706 */
+/* Size: 172 chars */
+
+ ? ((c = this.canvas) === null || c === void 0 || c.remove(),
+        this.viewer._lastState = {
+            ...this._state
+        },
+        this.viewer._lastState.src = 

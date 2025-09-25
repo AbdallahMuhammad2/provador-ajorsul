@@ -1,0 +1,20 @@
+/* Extracted CSS Block 1133 */
+/* Size: 452 chars */
+
+
+        })
+    })
+}
+const RingOption = d => {
+    const o = useSpring(useMotionValue(1), {
+        duration: .1,
+        mass: .1
+    })
+      , {loadRing: c, viewer: h, clickImage: _, setImage: b} = useUi()
+      , [_e,nt] = reactExports.useState(!1)
+      , it = reactExports.useCallback( () => {
+        if (d.active) {
+            h.renderEnabled = !1;
+            const pt = _();
+            b(pt);
+            const ht = document.getElementById(

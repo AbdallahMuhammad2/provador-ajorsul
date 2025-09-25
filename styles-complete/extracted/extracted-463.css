@@ -1,0 +1,14 @@
+/* Extracted CSS Block 463 */
+/* Size: 188 chars */
+
+ || Object.assign(h, c),
+            !1))
+        }
+        ))
+    }
+    clear() {
+        this.selected = void 0
+    }
+    constructor(o) {
+        this.presets = [],
+        this.name = 

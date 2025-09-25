@@ -1,0 +1,53 @@
+/* Extracted CSS Block 240 */
+/* Size: 2137 chars */
+
+,
+                this.parameters = {
+                    radius: tt,
+                    widthSegments: lt,
+                    heightSegments: mt,
+                    phiStart: ft,
+                    phiLength: xt,
+                    thetaStart: Ct,
+                    thetaLength: Mt
+                },
+                lt = Math.max(3, Math.floor(lt)),
+                mt = Math.max(2, Math.floor(mt));
+                const Lt = Math.min(Ct + Mt, Math.PI);
+                let Nt = 0;
+                const jt = []
+                  , Wt = new Er
+                  , Qt = new Er
+                  , qt = []
+                  , Xt = []
+                  , Zt = []
+                  , Yt = [];
+                for (let sr = 0; sr <= mt; sr++) {
+                    const er = []
+                      , rr = sr / mt;
+                    let xr = 0;
+                    sr === 0 && Ct === 0 ? xr = .5 / lt : sr === mt && Lt === Math.PI && (xr = -.5 / lt);
+                    for (let br = 0; br <= lt; br++) {
+                        const yr = br / lt;
+                        Wt.x = -tt * Math.cos(ft + yr * xt) * Math.sin(Ct + rr * Mt),
+                        Wt.y = tt * Math.cos(Ct + rr * Mt),
+                        Wt.z = tt * Math.sin(ft + yr * xt) * Math.sin(Ct + rr * Mt),
+                        Xt.push(Wt.x, Wt.y, Wt.z),
+                        Qt.copy(Wt).normalize(),
+                        Zt.push(Qt.x, Qt.y, Qt.z),
+                        Yt.push(yr + xr, 1 - rr),
+                        er.push(Nt++)
+                    }
+                    jt.push(er)
+                }
+                for (let sr = 0; sr < mt; sr++)
+                    for (let er = 0; er < lt; er++) {
+                        const rr = jt[sr][er + 1]
+                          , xr = jt[sr][er]
+                          , br = jt[sr + 1][er]
+                          , yr = jt[sr + 1][er + 1];
+                        (sr !== 0 || Ct > 0) && qt.push(rr, xr, yr),
+                        (sr !== mt - 1 || Lt < Math.PI) && qt.push(xr, br, yr)
+                    }
+                this.setIndex(qt),
+                this.setAttribute(

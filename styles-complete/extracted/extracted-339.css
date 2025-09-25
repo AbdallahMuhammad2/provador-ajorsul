@@ -1,0 +1,13 @@
+/* Extracted CSS Block 339 */
+/* Size: 397 chars */
+
+,
+        this.uuid = three_module.cj9.generateUUID(),
+        this.setDirty = this.setDirty.bind(this),
+        this.targetUpdated = this.targetUpdated.bind(this),
+        this._refreshCameraOptions = this._refreshCameraOptions.bind(this),
+        this._container = h ?? document.body;
+        const _ = {
+            ...c
+        };
+        this._camera = this._setCameraObject(o ?? (_.type === 

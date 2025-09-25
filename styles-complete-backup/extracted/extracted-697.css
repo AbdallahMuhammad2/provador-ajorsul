@@ -1,0 +1,13 @@
+/* Extracted CSS Block 697 */
+/* Size: 176 chars */
+
+, this._preFrame),
+        this.particles.removeFromParent(),
+        super.onRemove(d)
+    }
+    reset() {
+        this._needsReset = !0
+    }
+}
+;
+SnowFallPlugin.PluginType = 

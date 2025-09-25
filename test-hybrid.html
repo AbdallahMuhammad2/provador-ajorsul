@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ring Try-On - Hybrid Test</title>
+    <meta name="description" content="Virtual ring try-on application with hand tracking">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/main.css">
+
+    <style>
+        body {
+            margin: 0;
+            background: #000;
+            font-family: Arial, sans-serif;
+        }
+
+        #canvasContainer {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #webgi-canvas {
+            width: 100%;
+            height: 100%;
+            max-width: 800px;
+            max-height: 600px;
+        }
+
+        #assetManagerLoadingScreen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            transition: opacity 0.5s ease;
+        }
+
+        #assetManagerLoadingScreenContent {
+            text-align: center;
+            color: white;
+        }
+
+        .loadingScreenLogoImage {
+            width: 100px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .loader {
+            border: 3px solid #333;
+            border-top: 3px solid #fff;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .loadingScreenProcessState {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main canvas container -->
+    <div id="canvasContainer">
+        <canvas id="webgi-canvas" width="800" height="600"></canvas>
+    </div>
+
+    <!-- UI Container -->
+    <div id="tweakpaneUiContainer"></div>
+
+    <!-- Loading screen -->
+    <div id="assetManagerLoadingScreen">
+        <div id="assetManagerLoadingScreenContent">
+            <div class="loadingScreenLogoElement">
+                <img src="https://static.webgi.xyz/logo.svg" alt="WebGI" class="loadingScreenLogoImage">
+            </div>
+            <div class="loadingScreenLoadingElement">
+                <div class="loader"></div>
+            </div>
+            <div class="loadingScreenProcessState">Loading Ring Try-On...</div>
+            <div id="loadingProgress">Initializing...</div>
+        </div>
+    </div>
+
+    <!-- Load WebGI bundle without our conflicting setup -->
+    <script>
+        // Prevent index.js from auto-loading VTO
+        window.preventAutoVTO = true;
+    </script>
+    <script type="module" src="./index.js"></script>
+
+    <!-- Load our modular components after WebGI is ready -->
+    <script type="module">
+        console.log('🧪 Hybrid Ring Try-On Test Started');
+
+        // Import our modular utilities
+        import { Logger } from './src/utils/Logger.js';
+        import { UIManager } from './src/ui/UIManager.js';
+
+        async function waitForWebGI() {
+            return new Promise((resolve) => {
+                let attempts = 0;
+                const check = () => {
+                    attempts++;
+                    if (window.WEBGI || window.ViewerApp) {
+                        Logger.info('✅ WebGI detected after', attempts, 'attempts');
+                        resolve();
+                    } else if (attempts < 100) {
+                        setTimeout(check, 200);
+                    } else {
+                        Logger.error('❌ WebGI timeout after', attempts, 'attempts');
+                        resolve();
+                    }
+                };
+                check();
+            });
+        }
+
+        async function setupHybridSystem() {
+            try {
+                Logger.info('🚀 Setting up Hybrid Ring Try-On System...');
+
+                // Wait for WebGI
+                await waitForWebGI();
+
+                // Initialize our UI Manager
+                const ui = new UIManager(null);
+                await ui.init();
+
+                ui.updateLoadingProgress('WebGI ready, waiting for VTO...');
+
+                // Wait for VTO
+                let vtoAttempts = 0;
+                while (!window.ij_vto && vtoAttempts < 50) {
+                    await new Promise(resolve => setTimeout(resolve, 200));
+                    vtoAttempts++;
+                    if (vtoAttempts % 10 === 0) {
+                        ui.updateLoadingProgress(`Waiting for VTO... (${vtoAttempts}/50)`);
+                    }
+                }
+
+                if (window.ij_vto) {
+                    ui.updateLoadingProgress('VTO ready! System initialized.');
+                    Logger.info('✅ Hybrid system ready!');
+
+                    // Hide loading screen
+                    setTimeout(() => {
+                        ui.hideLoadingScreen();
+                    }, 1000);
+                } else {
+                    ui.updateLoadingProgress('VTO timeout - manual load required');
+                    Logger.warn('⚠️ VTO not loaded, may need manual initialization');
+                }
+
+            } catch (error) {
+                Logger.error('❌ Hybrid setup failed:', error);
+            }
+        }
+
+        // Start setup when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', setupHybridSystem);
+        } else {
+            setupHybridSystem();
+        }
+
+        // Monitor system status
+        setInterval(() => {
+            console.log('📊 System Status:', {
+                WEBGI: !!window.WEBGI,
+                ViewerApp: !!window.ViewerApp,
+                ij_vto: !!window.ij_vto,
+                setupViewer: !!window.setupViewer
+            });
+        }, 5000);
+    </script>
+</body>
+</html>

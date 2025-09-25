@@ -1,0 +1,14 @@
+/* Extracted CSS Block 973 */
+/* Size: 320 chars */
+
+,
+            value: () => {
+                var o;
+                (o = this._viewer) === null || o === void 0 || o.scene.disposeSceneModels()
+            }
+        },
+        this._sceneUpdate = this._sceneUpdate.bind(this)
+    }
+    async onAdded(o) {
+        await super.onAdded(o),
+        o.scene.addEventListener(

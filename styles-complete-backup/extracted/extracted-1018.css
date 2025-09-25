@@ -1,0 +1,10 @@
+/* Extracted CSS Block 1018 */
+/* Size: 323 chars */
+
+)
+    }
+}
+class AwsV4Signer {
+    constructor({method: o, url: c, headers: h, body: _, accessKeyId: b, secretAccessKey: _e, sessionToken: nt, service: it, region: at, cache: ut, datetime: pt, signQuery: ht, appendSessionToken: _t, allHeaders: vt, singleEncode: bt}) {
+        if (c == null)
+            throw new TypeError(

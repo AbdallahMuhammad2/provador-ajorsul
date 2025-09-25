@@ -1,0 +1,8 @@
+/* Extracted CSS Block 557 */
+/* Size: 272 chars */
+
+, c => {
+            this.seekOnScroll || this._animating ? this._viewer.scene.activeCamera.setInteractions(!1, CameraViewPlugin.PluginType) : this._viewer.scene.activeCamera.setInteractions(!0, CameraViewPlugin.PluginType)
+        }
+        ),
+        o.addEventListener(

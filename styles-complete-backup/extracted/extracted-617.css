@@ -1,0 +1,12 @@
+/* Extracted CSS Block 617 */
+/* Size: 439 chars */
+
+);
+            _e !== void 0 && c.push(_e)
+        }
+        if (o.R !== void 0 && Object.keys(o.R.curves).length > 0) {
+            const _e = this.generateRotationTrack(o.modelName, o.R.curves, _, o.preRotation, o.postRotation, o.eulerOrder);
+            _e !== void 0 && c.push(_e)
+        }
+        if (o.S !== void 0 && Object.keys(o.S.curves).length > 0) {
+            const _e = this.generateVectorTrack(o.modelName, o.S.curves, b, 

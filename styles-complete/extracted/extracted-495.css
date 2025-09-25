@@ -1,0 +1,25 @@
+/* Extracted CSS Block 495 */
+/* Size: 1700 chars */
+
+#if defined(SSR_ENABLED) && SSR_ENABLED > 0
+vec3 screenPos=viewToScreen(geometryPosition);vec4 ssrColor=vec4(0,0,0,0);float alphaModifier=1.-clamp(material.roughness*.3,0.,1.);alphaModifier*=ssrIntensity;
+#if defined(SSR_MASK_FRONT_RAYS) && SSR_MASK_FRONT_RAYS > 0
+alphaModifier*=clamp(-4.*dot(geometryViewDir,normal)+(4.+ssrMaskFrontFactor),0.,1.);
+#endif
+#ifdef USE_TRANSMISSION
+alphaModifier*=1.-transmission;
+#endif
+float vignette=1.;if(true){float fadeStrength=0.1;float dist=max(0.,min(min(1.-screenPos.x,1.-screenPos.y),min(screenPos.x,screenPos.y)));float fade=dist*dist/(fadeStrength+0.001);fade=clamp(fade,0.,1.);fade=pow(fade,0.3);vignette=fade;}alphaModifier*=vignette;vec3 specularColor=EnvironmentBRDF(geometryNormal,geometryViewDir,material.specularColor.rgb,material.specularF90,material.roughness);if(length(specularColor.rgb)*alphaModifier>0.01&&roughnessFactor<0.9){
+#if defined(SSR_INLINE) && SSR_INLINE > 0
+ssrColor=calculateSSR(8.,vec3(screenPos.xy,geometryPosition.z),geometryNormal,1.,material.roughness);
+#else
+ssrColor=tSSRMapTexelToLinear(texture2D(tSSRMap,screenPos.xy));
+#endif 
+}ssrColor.rgb*=ssrBoost;ssrColor.a*=alphaModifier;ssrColor.a=min(ssrColor.a,1.);
+#if defined(SSR_NON_PHYSICAL) && SSR_NON_PHYSICAL > 0
+diffuseColor.a=max(ssrColor.a,diffuseColor.a*diffuseColor.a);reflectedLight.indirectSpecular=mix(reflectedLight.indirectSpecular,saturate(diffuseColor.rgb*ssrColor.rgb),1.);reflectedLight.indirectDiffuse=diffuseColor.rgb*(1.-ssrColor.a);reflectedLight.directDiffuse=vec3(0.);reflectedLight.directSpecular=vec3(0.);
+#else
+reflectedLight.indirectSpecular=mix(reflectedLight.indirectSpecular,saturate(specularColor.rgb*ssrColor.rgb),ssrColor.a);
+#endif
+#endif
+

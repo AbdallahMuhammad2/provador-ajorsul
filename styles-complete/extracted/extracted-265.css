@@ -1,0 +1,16 @@
+/* Extracted CSS Block 265 */
+/* Size: 616 chars */
+
+);
+                Py.copy(this.root.matrixWorld).invert();
+                for (let xt = 0, Ct = 0; xt < lt.length; xt++) {
+                    const Mt = lt[xt];
+                    Mt.parent && Mt.parent.isBone && (d0.multiplyMatrices(Py, Mt.matrixWorld),
+                    np.setFromMatrixPosition(d0),
+                    ft.setXYZ(Ct, np.x, np.y, np.z),
+                    d0.multiplyMatrices(Py, Mt.parent.matrixWorld),
+                    np.setFromMatrixPosition(d0),
+                    ft.setXYZ(Ct + 1, np.x, np.y, np.z),
+                    Ct += 2)
+                }
+                mt.getAttribute(

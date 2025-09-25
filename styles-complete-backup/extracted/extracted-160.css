@@ -1,0 +1,43 @@
+/* Extracted CSS Block 160 */
+/* Size: 1488 chars */
+
+,
+                this.parameters = {
+                    width: tt,
+                    height: lt,
+                    widthSegments: mt,
+                    heightSegments: ft
+                };
+                const xt = tt / 2
+                  , Ct = lt / 2
+                  , Mt = Math.floor(mt)
+                  , Lt = Math.floor(ft)
+                  , Nt = Mt + 1
+                  , jt = Lt + 1
+                  , Wt = tt / Mt
+                  , Qt = lt / Lt
+                  , qt = []
+                  , Xt = []
+                  , Zt = []
+                  , Yt = [];
+                for (let sr = 0; sr < jt; sr++) {
+                    const er = sr * Qt - Ct;
+                    for (let rr = 0; rr < Nt; rr++) {
+                        const xr = rr * Wt - xt;
+                        Xt.push(xr, -er, 0),
+                        Zt.push(0, 0, 1),
+                        Yt.push(rr / Mt),
+                        Yt.push(1 - sr / Lt)
+                    }
+                }
+                for (let sr = 0; sr < Lt; sr++)
+                    for (let er = 0; er < Mt; er++) {
+                        const rr = er + Nt * sr
+                          , xr = er + Nt * (sr + 1)
+                          , br = er + 1 + Nt * (sr + 1)
+                          , yr = er + 1 + Nt * sr;
+                        qt.push(rr, xr, yr),
+                        qt.push(xr, br, yr)
+                    }
+                this.setIndex(qt),
+                this.setAttribute(

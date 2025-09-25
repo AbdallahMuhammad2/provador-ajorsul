@@ -1,0 +1,16 @@
+/* Extracted CSS Block 692 */
+/* Size: 581 chars */
+
+],!0)),
+        (h = (c = o.getManager()) === null || c === void 0 ? void 0 : c.importer) === null || h === void 0 || h.Importers.push(this._importer)
+    }
+    async onDispose(o) {
+        this._importer = void 0
+    }
+    async onRemove(o) {
+        var c, h;
+        this._importer && (!((h = (c = o.getManager()) === null || c === void 0 ? void 0 : c.importer) === null || h === void 0) && h.Importers) && o.getManager().importer.Importers.splice(o.getManager().importer.Importers.indexOf(this._importer), 1),
+        this._importer = void 0
+    }
+}
+STLLoadPlugin.PluginType = 

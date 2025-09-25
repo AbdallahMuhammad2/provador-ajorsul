@@ -1,0 +1,13 @@
+/* Extracted CSS Block 459 */
+/* Size: 463 chars */
+
+
+                uniform vec4 weight;
+                uniform vec4 weight2;
+                varying vec2 vUv;
+                void main() {
+                    vec4 texel = clamp(weight * tDiffuseTexelToLinear ( texture2D( tDiffuse, vUv ) ) + weight2 * tDiffuse2TexelToLinear ( texture2D( tDiffuse2, vUv ) ), vec4(0), vec4(MAX_INTENSITY));
+                    gl_FragColor = texel;
+                    #include <colorspace_fragment>
+                }
+            

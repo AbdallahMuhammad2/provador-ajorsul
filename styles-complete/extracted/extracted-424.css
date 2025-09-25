@@ -1,0 +1,21 @@
+/* Extracted CSS Block 424 */
+/* Size: 904 chars */
+
+,
+            files: o
+        };
+        if (this.importerParams.autoImport) {
+            const pt = {
+                allowedExtensions: this.allowedExtensions,
+                ...this.importerParams
+            };
+            if (ut.imported = await ((_ = at.importer) === null || _ === void 0 ? void 0 : _.importFiles(o, pt)),
+            this.importerParams.autoAdd) {
+                const ht = (nt = [...(_e = (b = ut.imported) === null || b === void 0 ? void 0 : b.values()) !== null && _e !== void 0 ? _e : []].flat(2).filter(_t => !!_t)) !== null && nt !== void 0 ? nt : [];
+                if (ut.assets = at.addProcessedAssets(ht, {
+                    ...this.importerParams
+                }),
+                !pt._rootSceneImported)
+                    for (const _t of ut.assets)
+                        _t.modelObject && _t.modelObject.dispatchEvent({
+                            type: 

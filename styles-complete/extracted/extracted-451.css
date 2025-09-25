@@ -1,0 +1,18 @@
+/* Extracted CSS Block 451 */
+/* Size: 490 chars */
+
+),
+        this.parameters = {
+            intensity: .25,
+            occlusionWorldRadius: 1,
+            bias: .001,
+            falloff: 1.3,
+            useSmallScaleAO: !1,
+            intensitySmallAO: .2,
+            autoRadius: !1,
+            projScale: 1
+        },
+        this._smoothEnabled = !0,
+        this.materialExtension = {
+            shaderExtender: (_, b, _e) => {
+                _.defines.SSAO_ENABLED && (_.fragmentShader = shaderReplaceString(_.fragmentShader, 

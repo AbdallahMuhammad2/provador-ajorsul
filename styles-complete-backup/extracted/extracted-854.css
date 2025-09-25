@@ -1,0 +1,13 @@
+/* Extracted CSS Block 854 */
+/* Size: 206 chars */
+
+
+        }),
+        this._selectedObjectChanged()))
+    }
+    refreshCSG() {
+        this._sceneUpdate()
+    }
+    async downloadObject() {
+        const o = await this.exportObject();
+        o && N$2(o, 

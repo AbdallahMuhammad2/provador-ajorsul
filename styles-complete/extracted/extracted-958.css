@@ -1,0 +1,25 @@
+/* Extracted CSS Block 958 */
+/* Size: 1126 chars */
+
+, Ht, kt, Jt),
+                            Jt || (kt = cloneVar(kt),
+                            Ht = cloneVar(Ht),
+                            (Gt = c.undoManager) === null || Gt === void 0 || Gt.record({
+                                undo: () => {
+                                    var or;
+                                    copyVal(At.tar, At.key, Ht),
+                                    Et({
+                                        ...It,
+                                        value: Ht
+                                    }),
+                                    (or = o.uiRefresh) === null || or === void 0 || or.call(o, void 0, !1)
+                                }
+                                ,
+                                redo: () => {
+                                    var or;
+                                    copyVal(At.tar, At.key, kt),
+                                    Et(It),
+                                    (or = o.uiRefresh) === null || or === void 0 || or.call(o, void 0, !1)
+                                }
+                            }),
+                            copyVal(At, 

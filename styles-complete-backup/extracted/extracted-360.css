@@ -1,0 +1,26 @@
+/* Extracted CSS Block 360 */
+/* Size: 812 chars */
+
+) ? three_module.ix0 : three_module.OUM,
+            format: three_module.GWd,
+            minFilter: three_module.k6q,
+            magFilter: three_module.k6q,
+            depthBuffer: !1
+        })),
+        this._transparentTarget
+    }
+    _releaseTransparentTarget() {
+        this._transparentTarget && this._viewer.renderer.releaseTempTarget(this._transparentTarget),
+        this._transparentTarget = void 0
+    }
+    constructor(o, c=!0) {
+        super(),
+        this.blurTransmissionTarget = !0,
+        this.preserveTransparentTarget = !1,
+        this._viewer = o,
+        this._doTransmissionFix = c,
+        this.clear = !0,
+        this.clearColor = new three_module.Q1f(0,0,0),
+        this.clearAlpha = 0,
+        this.clearDepth = !1,
+        this._blendPass = new GenericBlendTexturePass({},

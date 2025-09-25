@@ -1,0 +1,15 @@
+/* Extracted CSS Block 416 */
+/* Size: 739 chars */
+
+) {
+                        const ut = await ((b = this._importer) === null || b === void 0 ? void 0 : b.importPath(at.url));
+                        (ut == null ? void 0 : ut.length) > 0 && (nt.extras[at.uuid] = ut[0])
+                    } else if (at.url.data) {
+                        const ut = new File([se$1(at.url.type, at.url.data)],at.url.path)
+                          , pt = await ((_e = this._importer) === null || _e === void 0 ? void 0 : _e.importAsset({
+                            path: ut.name,
+                            file: ut
+                        }));
+                        (pt == null ? void 0 : pt.length) > 0 && (nt.extras[at.uuid] = pt[0])
+                    } else
+                        console.warn(

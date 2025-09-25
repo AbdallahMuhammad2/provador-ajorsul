@@ -1,0 +1,10 @@
+/* Extracted CSS Block 775 */
+/* Size: 321 chars */
+
+,this.extensionName);
+                o.materials[_e].setExtension(this.extensionName, at);
+                const ut = {
+                    ...b.extensions[this.extensionName]
+                };
+                for (const [pt,ht] of Object.entries(ut))
+                    if (typeof (ht == null ? void 0 : ht.index) == 

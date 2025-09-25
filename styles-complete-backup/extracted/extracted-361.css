@@ -1,0 +1,13 @@
+/* Extracted CSS Block 361 */
+/* Size: 400 chars */
+
+);
+        const at = this._viewer.useGBufferDepth;
+        let ut;
+        if (at) {
+            const ht = (_e = this._viewer.getPlugin(GBufferPlugin)) === null || _e === void 0 ? void 0 : _e.getTarget();
+            if (ht) {
+                const _t = o.properties.get(ht);
+                ut = _t.__webglDepthRenderbuffer || _t.__webglDepthbuffer
+            } else
+                console.warn(

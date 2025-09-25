@@ -1,0 +1,23 @@
+/* Extracted CSS Block 98 */
+/* Size: 769 chars */
+
+))
+                }
+                onPointerMove_(wt) {
+                    const Rt = this.computeDraggingValue_(wt.data);
+                    Rt !== null && (this.value.setRawValue(Rt, {
+                        forceEmit: !1,
+                        last: !1
+                    }),
+                    this.dragging_.rawValue = this.value.rawValue - this.originRawValue_)
+                }
+                onPointerUp_(wt) {
+                    const Rt = this.computeDraggingValue_(wt.data);
+                    Rt !== null && (this.value.setRawValue(Rt, {
+                        forceEmit: !0,
+                        last: !0
+                    }),
+                    this.dragging_.rawValue = null)
+                }
+            }
+            const Wm = Et(

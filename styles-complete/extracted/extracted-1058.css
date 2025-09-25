@@ -1,0 +1,12 @@
+/* Extracted CSS Block 1058 */
+/* Size: 339 chars */
+
+
+}))
+  , w0 = class w0 extends __webpackgi_exports__AViewerPlugin {
+    constructor() {
+        super(...arguments),
+        this.enabled = !0,
+        this.materials = [],
+        this.presets = {},
+        this.getMaterialPresetByName = o => !this.presets || this.presets.length == 0 ? null : this.presets[o.type].find(c => c.path.split(

@@ -1,0 +1,25 @@
+/* Extracted CSS Block 346 */
+/* Size: 908 chars */
+
+,
+            object: o,
+            options: c
+        }),
+        this.deleteImportedViewerConfigOnLoad && (o.__importedViewerConfig || !((h = o.modelObject) === null || h === void 0) && h.__importedViewerConfig) && X$2(2e3).then( () => {
+            delete o.__importedViewerConfig,
+            o.modelObject && delete o.modelObject.__importedViewerConfig
+        }
+        ),
+        o
+    }
+    _addObject3D(o, {autoScale: c=!0, autoScaleRadius: h=2, addToRoot: _=!1}={}) {
+        const b = o;
+        b ? (c && !b.userData.autoScaled && autoScaleObject3D(b, b.userData.autoScaleRadius || h),
+        b.traverse(_e => {
+            _e.isMesh && !_e.userData.__keepShadowDef && (_e.castShadow = !0,
+            _e.receiveShadow = !0,
+            _e.userData.__keepShadowDef = !0)
+        }
+        ),
+        _ ? this.modelObject.add(b) : this.modelRoot.add(b),
+        this.setDirty()) : console.error(

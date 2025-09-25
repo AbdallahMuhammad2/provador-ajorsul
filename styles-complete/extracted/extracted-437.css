@@ -1,0 +1,21 @@
+/* Extracted CSS Block 437 */
+/* Size: 893 chars */
+
+) || this.addPluginSync(AssetManagerPlugin)
+    }
+    resetCamera({rootObject: o, centerOffset: c=new three_module.Pq0(1,1,1), targetOffset: h=new three_module.Pq0(0,0,0), ..._}={}) {
+        if (this.scene.activeCamera) {
+            this.scene.matrixWorldNeedsUpdate = !0,
+            this.scene.updateMatrixWorld(!0);
+            const b = o ? new Box3B().expandByObject(o, !0, !0) : this.scene.getBounds(!0)
+              , _e = b.getCenter(new three_module.Pq0)
+              , nt = .5 * b.getSize(new three_module.Pq0).length();
+            _e.add(h.clone().multiplyScalar(nt)),
+            this.scene.activeCamera.position = new three_module.Pq0(_e.x + c.x * nt,_e.y + c.y * nt,_e.z + c.z * nt),
+            this.scene.activeCamera.target = _e,
+            this.setDirty()
+        }
+    }
+    async fitToView(o, c=1.5, h, _) {
+        var b, _e;
+        const nt = this.getPluginByType(

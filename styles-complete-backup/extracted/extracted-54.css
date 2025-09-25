@@ -1,0 +1,13 @@
+/* Extracted CSS Block 54 */
+/* Size: 329 chars */
+
+, {
+                        index: wt.index,
+                        item: wt.item,
+                        root: this,
+                        target: wt.target
+                    })
+                }
+                onSubListRemove_(wt) {
+                    this.cache_.delete(wt.item),
+                    this.emitter.emit(

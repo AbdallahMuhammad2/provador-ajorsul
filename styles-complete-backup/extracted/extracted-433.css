@@ -1,0 +1,15 @@
+/* Extracted CSS Block 433 */
+/* Size: 554 chars */
+
+,
+                                target: this
+                            });
+                            try {
+                                this.scene.renderCamera = this.scene.activeCamera,
+                                this._renderer.render(this._renderer.defaultRenderToScreen)
+                            } catch (ut) {
+                                this.console.error(ut),
+                                this.enabled = !1
+                            }
+                            this.dispatchEvent({
+                                type: 

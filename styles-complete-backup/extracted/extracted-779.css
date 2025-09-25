@@ -1,0 +1,4 @@
+/* Extracted CSS Block 779 */
+/* Size: 102 chars */
+
+translate( ${-St.view.offsetX * (h / St.view.width)}px, ${-St.view.offsetY * (_ / St.view.height)}px )

@@ -1,0 +1,16 @@
+/* Extracted CSS Block 754 */
+/* Size: 559 chars */
+
+ || pt.getSparse())
+                continue;
+            const ht = o.getAccessorUsage(pt)
+              , _t = o.accessorUsageGroupedByParent.has(ht) ? ut(pt) : null
+              , vt = getMeshoptMode(pt, ht)
+              , bt = _.method === EncoderMethod$1.FILTER ? getMeshoptFilter(pt, this.document) : {
+                filter: MeshoptFilter.NONE
+            }
+              , St = prepareAccessor(pt, h, vt, bt)
+              , {array: At, byteStride: Et} = St
+              , Pt = pt.getBuffer();
+            if (!Pt)
+                throw new Error(

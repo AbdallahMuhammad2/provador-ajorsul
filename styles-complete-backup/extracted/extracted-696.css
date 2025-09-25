@@ -1,0 +1,30 @@
+/* Extracted CSS Block 696 */
+/* Size: 860 chars */
+
+, new three_module.qtW(o,3));
+        const c = new three_module.BH$({
+            size: .75,
+            color: 16777215,
+            vertexColors: !1,
+            map: getTexture(),
+            transparent: !0,
+            fog: !0,
+            depthWrite: !1
+        });
+        c.userData.renderToDepth = !1;
+        const h = [];
+        for (let b = 0; b < particleNum; b++) {
+            const _e = .005 * (6 * Math.random() - 3)
+              , nt = -.002 * (10 * Math.random() + 3)
+              , it = .005 * (6 * Math.random() - 3)
+              , at = new three_module.Pq0(_e,nt,it);
+            h.push(at)
+        }
+        const _ = new three_module.ONl(d,c);
+        _.userData.bboxVisible = !1,
+        _.geometry.velocities = h,
+        this.particles = _
+    }
+    async onAdded(d) {
+        await super.onAdded(d),
+        d.addEventListener(

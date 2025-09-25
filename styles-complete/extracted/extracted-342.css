@@ -1,0 +1,21 @@
+/* Extracted CSS Block 342 */
+/* Size: 764 chars */
+
+,
+        this._controls = void 0
+    }
+    refreshCameraControls(o=!0) {
+        var c, h;
+        if (this._options.controlsEnabled) {
+            const _ = this._options.controlsMode;
+            this._controls ? this._controlsMode === _ && this._camera.modelObject === this._controls.object || (this._disposeCameraControls(),
+            this._initCameraControls()) : this._initCameraControls(),
+            this._controlsMode = _
+        }
+        if (this._controls) {
+            const _ = this.interactionsEnabled;
+            this._controls.enabled = _,
+            _ && this._camera.modelObject.up.copy(three_module.B69.DEFAULT_UP)
+        }
+        o && this.setDirty(),
+        (h = (c = this.uiConfig).uiRefresh) === null || h === void 0 || h.call(c, 

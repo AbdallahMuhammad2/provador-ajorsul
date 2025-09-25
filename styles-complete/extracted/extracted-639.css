@@ -1,0 +1,20 @@
+/* Extracted CSS Block 639 */
+/* Size: 464 chars */
+
+
+    })
+      , nt = detectOverflow(o, {
+        altBoundary: !0
+    })
+      , it = getSideOffsets(_e, h)
+      , at = getSideOffsets(nt, _, b)
+      , ut = isAnySideFullyClipped(it)
+      , pt = isAnySideFullyClipped(at);
+    o.modifiersData[c] = {
+        referenceClippingOffsets: it,
+        popperEscapeOffsets: at,
+        isReferenceHidden: ut,
+        hasPopperEscaped: pt
+    },
+    o.attributes.popper = Object.assign({}, o.attributes.popper, {
+        

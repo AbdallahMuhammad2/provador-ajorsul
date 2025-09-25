@@ -1,0 +1,14 @@
+/* TWEAKPANE CSS */
+/* Blocks: 1 */
+
+/* === Block 7 === */
+:root {
+    --tp-blade-unit-size: 26px;
+    --tp-font-family: Inter, "Roboto Mono", "Source Code Pro", Menlo, Courier, monospace; 
+    --tp-font-size: 14px;
+    --tp-font-size-sm: 13px;
+    --tp-font-size-lg: 16px;
+    --tp-border-radius: 4px;
+    --tp-base-shadow-color: rgba(0, 0, 0, .25);
+    --tp-container-background-color: #2c2540;
+    --tp-container-background-color-active: #413762;   

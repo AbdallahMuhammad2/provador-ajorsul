@@ -1,0 +1,14 @@
+/* Extracted CSS Block 777 */
+/* Size: 196 chars */
+
+,
+            process: (o, c) => o
+        }
+    }
+    async onAdded(o) {}
+    async onDispose(o) {}
+    async onRemove(o) {
+        this._pmrem = void 0
+    }
+}
+PMREMGeneratorPlugin.PluginType = 

@@ -1,0 +1,11 @@
+/* Extracted CSS Block 904 */
+/* Size: 327 chars */
+
+,
+                                value: () => {
+                                    c.items.splice(_, 1),
+                                    c.itemFiles.splice(_, 1),
+                                    this.refreshUi()
+                                }
+                            }, {
+                                type: 

@@ -1,0 +1,24 @@
+/* Extracted CSS Block 455 */
+/* Size: 473 chars */
+
+);
+const dofBlurMaterialPoisson = patchShaderEncodingSupport({
+    uniforms: {
+        colorTexture: {
+            value: null
+        },
+        colorTextureSize: {
+            value: new three_module.I9Y
+        },
+        direction: {
+            value: new three_module.I9Y
+        },
+        frameCount: {
+            value: 0
+        },
+        blurRadius: {
+            value: 16
+        }
+    },
+    vertexShader: defaultVertex,
+    fragmentShader: randomHelpers + 

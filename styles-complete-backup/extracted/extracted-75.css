@@ -1,0 +1,16 @@
+/* Extracted CSS Block 75 */
+/* Size: 426 chars */
+
+, {
+                        sender: this
+                    })
+                }
+            }
+            class Eo {
+                constructor(wt, Rt) {
+                    this.onItemClick_ = this.onItemClick_.bind(this),
+                    this.ic_ = new Ys(wt,{
+                        props: Rt.itemProps,
+                        viewProps: Rr.create()
+                    }),
+                    this.ic_.emitter.on(

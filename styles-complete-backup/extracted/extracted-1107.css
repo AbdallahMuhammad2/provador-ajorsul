@@ -1,0 +1,16 @@
+/* Extracted CSS Block 1107 */
+/* Size: 525 chars */
+
+}) => d.max - d.min - parseFloat(o) - parseFloat(c),
+    top: (d, {top: o}) => parseFloat(o),
+    left: (d, {left: o}) => parseFloat(o),
+    bottom: ({y: d}, {top: o}) => parseFloat(o) + (d.max - d.min),
+    right: ({x: d}, {left: o}) => parseFloat(o) + (d.max - d.min),
+    x: getTranslateFromMatrix(4, 13),
+    y: getTranslateFromMatrix(5, 14)
+};
+positionalValues.translateX = positionalValues.x;
+positionalValues.translateY = positionalValues.y;
+const testValueType = d => o => o.test(d)
+  , auto = {
+    test: d => d === 

@@ -1,0 +1,12 @@
+/* Extracted CSS Block 1145 */
+/* Size: 335 chars */
+
+,
+                isActive: o === 2,
+                onClick: () => c(2)
+            }), jsxRuntimeExports.jsx(SettingsButton, {
+                onClick: nt,
+                img: jsxRuntimeExports.jsx(FlipCameraIcon, {})
+            })]
+        }), jsxRuntimeExports.jsx(AnimatePresence, {
+            children: jsxRuntimeExports.jsxs(

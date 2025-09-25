@@ -1,0 +1,11 @@
+/* Extracted CSS Block 600 */
+/* Size: 215 chars */
+
+, c={}) {
+        this.baseUrl = o,
+        this.options = c,
+        this.materialsInfo = {},
+        this.materials = {},
+        this.materialsArray = [],
+        this.nameLookup = {},
+        this.crossOrigin = 

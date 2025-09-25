@@ -1,0 +1,19 @@
+/* Extracted CSS Block 955 */
+/* Size: 632 chars */
+
+ && ((vt = c.undoManager) === null || vt === void 0 || vt.record({
+                    undo: () => {
+                        var St;
+                        bt.call(ht ?? o, ...ut),
+                        (St = o.uiRefresh) === null || St === void 0 || St.call(o, void 0, !1)
+                    }
+                    ,
+                    redo: () => {
+                        var St;
+                        pt.call(ht ?? o, ...ut),
+                        (St = o.uiRefresh) === null || St === void 0 || St.call(o, void 0, !1)
+                    }
+                }))
+            }
+            ;
+            c.addEventListener(

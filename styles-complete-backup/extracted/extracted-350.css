@@ -1,0 +1,13 @@
+/* Extracted CSS Block 350 */
+/* Size: 338 chars */
+
+, {
+            prepend: !0
+        })),
+        h.extraUniforms && (c.uniforms = Object.assign(c.uniforms, h.extraUniforms)),
+        h.extraDefines && updateMaterialDefines(h.extraDefines, o),
+        h.shaderExtender && h.shaderExtender(c, o, _),
+        o.lastShader = c
+    }
+    static CacheKeyForExtensions(o, c) {
+        let h = 

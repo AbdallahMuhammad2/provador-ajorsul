@@ -1,0 +1,13 @@
+/* Extracted CSS Block 690 */
+/* Size: 269 chars */
+
+)], Rhino3dmLoadPlugin);
+class STLLoader extends three_module.aHM {
+    constructor(o) {
+        super(o)
+    }
+    load(o, c, h, _) {
+        const b = this
+          , _e = new three_module.Y9S(this.manager);
+        _e.setPath(this.path),
+        _e.setResponseType(

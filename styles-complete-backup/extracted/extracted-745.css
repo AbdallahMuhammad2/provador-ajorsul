@@ -1,0 +1,15 @@
+/* Extracted CSS Block 745 */
+/* Size: 514 chars */
+
+
+}
+const {BufferViewUsage} = WriterContext
+  , {UNSIGNED_INT, UNSIGNED_SHORT, UNSIGNED_BYTE} = index_modern_Accessor.ComponentType
+  , SUPPORTED_PREWRITE_TYPES = new Set([index_modern_PropertyType.ACCESSOR, index_modern_PropertyType.BUFFER, index_modern_PropertyType.MATERIAL, index_modern_PropertyType.MESH]);
+class index_modern_GLTFWriter {
+    static write(o, c) {
+        const h = o.getGraph()
+          , _ = o.getRoot()
+          , b = {
+            asset: index_modern_extends({
+                generator: 

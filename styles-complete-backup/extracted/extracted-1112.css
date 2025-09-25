@@ -1,0 +1,14 @@
+/* Extracted CSS Block 1112 */
+/* Size: 256 chars */
+
+;
+        const {onComplete: o} = this.options;
+        o && o()
+    }
+    cancel() {
+        this.cancelTime !== null && this.tick(this.cancelTime),
+        this.teardown(),
+        this.updateFinishedPromise()
+    }
+    teardown() {
+        this.state = 

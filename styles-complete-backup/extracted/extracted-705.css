@@ -1,0 +1,17 @@
+/* Extracted CSS Block 705 */
+/* Size: 628 chars */
+
+) || this.viewer.renderer.displayCanvasScaling.toString())),
+        await Promise.all([this.refreshModelSource(), this.refreshEnvironment()])
+    }
+    async _initialize(o) {
+        o != null && o._lastState && (this._state.src = o._lastState.src || this._state.src,
+        this._state.environment = o._lastState.environment || this._state.environment,
+        delete o._lastState),
+        o != null && o.__models && (this._models = {
+            ...this._models,
+            ...o.__models
+        },
+        delete o.__models),
+        this.canvas = (o == null ? void 0 : o.canvas) || j(),
+        this.canvas.setAttribute(

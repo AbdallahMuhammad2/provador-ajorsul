@@ -1,0 +1,16 @@
+/* Extracted CSS Block 120 */
+/* Size: 527 chars */
+
+, this.onValueUpdate_),
+                    this.value = Rt.value,
+                    this.update_()
+                }
+                update_() {
+                    const wt = this.textareaElem_
+                      , Rt = wt.scrollTop === wt.scrollHeight - wt.clientHeight
+                      , zt = [];
+                    this.value.rawValue.forEach(nr => {
+                        nr !== void 0 && zt.push(this.formatter_(nr))
+                    }
+                    ),
+                    wt.textContent = zt.join(

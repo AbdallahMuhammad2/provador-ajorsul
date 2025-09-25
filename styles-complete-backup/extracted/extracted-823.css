@@ -1,0 +1,18 @@
+/* Extracted CSS Block 823 */
+/* Size: 366 chars */
+
+, void 0);
+class CanvasSnipper {
+    static async GetClonedCanvas(o, {rect: c={
+        x: 0,
+        y: 0,
+        width: o.width,
+        height: o.height,
+        assumeClientRect: !1,
+        normalized: !1
+    }, displayPixelRatio: h=1, scale: _=1}) {
+        var b, _e, nt;
+        c = {
+            ...c
+        };
+        const it = document.createElementNS(

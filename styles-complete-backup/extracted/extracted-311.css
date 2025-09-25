@@ -1,0 +1,11 @@
+/* Extracted CSS Block 311 */
+/* Size: 325 chars */
+
+ && (d = (_ = h[d.resource]) === null || _ === void 0 ? void 0 : _[d.uuid],
+    it = !0),
+    !nt && d && !it)
+        if (d.serializableClassId) {
+            const ut = serializableClasses.get(d.serializableClassId);
+            ut && (nt = ut.DataInConstructor ? new ut(d) : new ut)
+        } else
+            typeof d != 

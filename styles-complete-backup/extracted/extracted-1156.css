@@ -1,0 +1,15 @@
+/* Extracted CSS Block 1156 */
+/* Size: 365 chars */
+
+)
+                } else
+                    b.modelObject.dispose(),
+                    (vt = b.dispose) == null || vt.call(b)
+        }
+        ,
+        this.flipCamera = () => {
+            var c;
+            (c = this._ringTryonPlugin) == null || c.flipCamera()
+        }
+        ,
+        this.clickImage = () => this._viewer ? this._viewer.canvas.toDataURL(

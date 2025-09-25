@@ -1,0 +1,92 @@
+{
+  "timestamp": "2025-09-18T17:23:54.978Z",
+  "source": "index.js",
+  "totalSize": 5622184,
+  "totalLines": 141974,
+  "sections": {
+    "modulePreloader": {
+      "start": 0,
+      "end": 1091,
+      "description": "Module preloader and polyfills"
+    },
+    "cssModules": {
+      "start": 1091,
+      "end": 1809054,
+      "description": "CSS webpack modules"
+    },
+    "webpackRuntime": {
+      "start": 1809054,
+      "end": 554056,
+      "description": "Webpack runtime and loader"
+    },
+    "coreModules": {
+      "start": 554056,
+      "end": 1815206,
+      "description": "Core application modules"
+    },
+    "webgiSystem": {
+      "start": 1815206,
+      "end": 5621656,
+      "description": "WebGI system and exports"
+    },
+    "appBootstrap": {
+      "start": 5621656,
+      "end": 5622184,
+      "description": "Application bootstrap and initialization"
+    }
+  },
+  "coreModulesAnalyzed": 3,
+  "keyModules": {
+    "149": {
+      "id": "149",
+      "params": "d, o, c",
+      "size": 13849,
+      "hasWebGI": false,
+      "hasThreeJS": true,
+      "hasMediaPipe": false,
+      "hasDOM": false,
+      "dependencies": []
+    },
+    "848": {
+      "id": "848",
+      "params": "d, o, c",
+      "size": 1237753,
+      "hasWebGI": false,
+      "hasThreeJS": true,
+      "hasMediaPipe": false,
+      "hasDOM": true,
+      "dependencies": []
+    },
+    "957": {
+      "id": "957",
+      "params": "__unused_webpack_module, __webpackgi_exports__, __webpackgi_require__",
+      "size": 3251,
+      "hasWebGI": false,
+      "hasThreeJS": true,
+      "hasMediaPipe": false,
+      "hasDOM": false,
+      "dependencies": [
+        "149",
+        "848"
+      ]
+    }
+  },
+  "technologyBreakdown": {
+    "webgi": 0,
+    "threejs": 3,
+    "mediapipe": 0,
+    "dom": 1
+  },
+  "extractionPlan": {
+    "webgi": [],
+    "threejs": [
+      "149",
+      "848",
+      "957"
+    ],
+    "mediapipe": [],
+    "ui": [
+      "848"
+    ]
+  }
+}

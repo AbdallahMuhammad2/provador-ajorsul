@@ -1,0 +1,22 @@
+/* Extracted CSS Block 666 */
+/* Size: 629 chars */
+
+);
+            jr.version = ur.getUint8(4);
+            const Qr = ur.getUint8(5);
+            jr.spec = {
+                singleTile: !!(2 & Qr),
+                longName: !!(4 & Qr),
+                deepFormat: !!(8 & Qr),
+                multiPart: !!(16 & Qr)
+            },
+            Ir.value = 8;
+            let Or = !0;
+            for (; Or; ) {
+                const qr = dr(pr, Ir);
+                if (qr == 0)
+                    Or = !1;
+                else {
+                    const gn = dr(pr, Ir)
+                      , Mn = hn(ur, pr, Ir, gn, Ar(ur, Ir));
+                    Mn === void 0 ? console.warn(

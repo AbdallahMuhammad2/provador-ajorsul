@@ -1,0 +1,33 @@
+/* Extracted CSS Block 279 */
+/* Size: 1148 chars */
+
+, new Fn([1, 1, 0, -1, 1, 0, -1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0],3)),
+                Ct.computeBoundingSphere(),
+                this.add(new gs(Ct,new nu({
+                    color: ft,
+                    opacity: .2,
+                    transparent: !0,
+                    depthWrite: !1,
+                    toneMapped: !1
+                })))
+            }
+            updateMatrixWorld(tt) {
+                this.position.set(0, 0, 0),
+                this.scale.set(.5 * this.size, .5 * this.size, 1),
+                this.lookAt(this.plane.normal),
+                this.translateZ(-this.plane.constant),
+                super.updateMatrixWorld(tt)
+            }
+            dispose() {
+                this.geometry.dispose(),
+                this.material.dispose(),
+                this.children[0].geometry.dispose(),
+                this.children[0].material.dispose()
+            }
+        }
+        const iw = new Er;
+        let f0, My;
+        class _E extends Mo {
+            constructor(tt=new Er(0,0,1), lt=new Er(0,0,0), mt=1, ft=16776960, xt=.2 * mt, Ct=.2 * xt) {
+                super(),
+                this.type = 

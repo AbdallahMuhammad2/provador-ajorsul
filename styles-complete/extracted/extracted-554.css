@@ -1,0 +1,26 @@
+/* Extracted CSS Block 554 */
+/* Size: 666 chars */
+
+,
+            this.currentTime += o.deltaTime,
+            this.currentTime > this.animationDuration + this.animationPauseDuration && (this.currentTime = 0)
+        }
+        ,
+        this._disabledBy = new Set,
+        this.disable = o => {
+            this._disabledBy.size,
+            this._disabledBy.add(o)
+        }
+        ,
+        this.enable = o => {
+            this._disabledBy.size,
+            this._disabledBy.delete(o)
+        }
+        ,
+        this.isDisabled = () => this._disabledBy.size > 0 || !this.enabled,
+        this.enabled = d
+    }
+    async onAdded(d) {
+        await super.onAdded(d);
+        {
+            Object.hasOwn(d.plugins, 

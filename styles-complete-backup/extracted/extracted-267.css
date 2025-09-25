@@ -1,0 +1,13 @@
+/* Extracted CSS Block 267 */
+/* Size: 362 chars */
+
+;
+                const ft = new R_(lt);
+                ft.rotateY(.5 * Math.PI),
+                this.material = new nu({
+                    wireframe: !0,
+                    fog: !1,
+                    toneMapped: !1
+                }),
+                this.color === void 0 && (this.material.vertexColors = !0);
+                const xt = ft.getAttribute(

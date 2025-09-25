@@ -1,0 +1,28 @@
+/* Extracted CSS Block 347 */
+/* Size: 786 chars */
+
+)
+    }
+    removeSceneModels() {
+        this.modelRoot.clear(),
+        this.modelRoot.children = [],
+        this.setDirty({
+            sceneUpdate: !0
+        })
+    }
+    disposeSceneModels() {
+        [...this.modelRoot.children].forEach(o => {
+            var c, h;
+            ((c = o.dispose) !== null && c !== void 0 ? c : (h = o.modelObject) === null || h === void 0 ? void 0 : h.removeFromParent)()
+        }
+        ),
+        this.setDirty({
+            sceneUpdate: !0
+        })
+    }
+    _onEnvironmentChange() {
+        var o;
+        ((o = this.environment) === null || o === void 0 ? void 0 : o.mapping) === three_module.UTZ && (this.environment.mapping = three_module.wfO,
+        this.environment.needsUpdate = !0),
+        this.dispatchEvent({
+            type: 

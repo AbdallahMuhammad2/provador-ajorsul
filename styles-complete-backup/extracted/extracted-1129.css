@@ -1,0 +1,25 @@
+/* Extracted CSS Block 1129 */
+/* Size: 851 chars */
+
+ ? !0 : prefersReducedMotion.current,
+        this.parent && this.parent.children.add(this),
+        this.update(this.props, this.presenceContext)
+    }
+    unmount() {
+        var o;
+        visualElementStore.delete(this.current),
+        this.projection && this.projection.unmount(),
+        cancelFrame(this.notifyUpdate),
+        cancelFrame(this.render),
+        this.valueSubscriptions.forEach(c => c()),
+        this.removeFromVariantTree && this.removeFromVariantTree(),
+        this.parent && this.parent.children.delete(this);
+        for (const c in this.events)
+            this.events[c].clear();
+        for (const c in this.features)
+            (o = this.features[c]) === null || o === void 0 || o.unmount();
+        this.current = null
+    }
+    bindToMotionValue(o, c) {
+        const h = transformProps.has(o)
+          , _ = c.on(

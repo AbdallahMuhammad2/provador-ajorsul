@@ -1,0 +1,9 @@
+/* Extracted CSS Block 722 */
+/* Size: 239 chars */
+
+,
+        o.distance > 0 && (_e.range = o.distance),
+        _e.spot = {},
+        _e.spot.innerConeAngle = (1 - o.penumbra) * o.angle,
+        _e.spot.outerConeAngle = o.angle),
+        o.decay !== void 0 && o.decay !== 2 && console.warn(

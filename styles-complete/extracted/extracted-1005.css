@@ -1,0 +1,11 @@
+/* Extracted CSS Block 1005 */
+/* Size: 196 chars */
+
+, () => {
+            var c;
+            (c = this.object) === null || c === void 0 || c.setDirty({
+                fadeFrame: !1
+            })
+        }
+        ),
+        this.addEventListener(

@@ -1,0 +1,21 @@
+/* Extracted CSS Block 472 */
+/* Size: 741 chars */
+
+, c => {
+            var h, _;
+            this.dispatchEvent(c);
+            const b = ((h = this._picker) === null || h === void 0 ? void 0 : h.selectedObject) || void 0;
+            if (this._pickUi) {
+                const nt = b == null ? void 0 : b.uiConfig
+                  , it = this.uiConfig;
+                it.children = [...this._uiConfigChildren],
+                nt && it.children.push(nt),
+                (_ = it.uiRefresh) === null || _ === void 0 || _.call(it)
+            }
+            const _e = this._widget;
+            _e && this._enableWidget && (b ? _e.attach(b) : _e.detach()),
+            o.setDirty(),
+            this.autoFocus && this.focusObject(b)
+        }
+        ),
+        this._picker.addEventListener(

@@ -1,0 +1,11 @@
+/* Extracted CSS Block 902 */
+/* Size: 347 chars */
+
+,
+                                placeholder: this.utils.pathToIcon(c.items[_]),
+                                getValue: () => c.icons[_],
+                                setValue: b => {
+                                    c.icons[_] = b
+                                }
+                            }, {
+                                type: 

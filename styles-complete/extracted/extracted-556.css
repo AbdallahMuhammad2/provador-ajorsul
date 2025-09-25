@@ -1,0 +1,13 @@
+/* Extracted CSS Block 556 */
+/* Size: 284 chars */
+
+ + viewId++
+    }
+    _nameChanged() {
+        var d, o;
+        this.uiConfig && (this.uiConfig.label = this.name,
+        (o = (d = this.uiConfig).uiRefresh) === null || o === void 0 || o.call(d))
+    }
+}
+;
+CameraViewPlugin_decorate([serialize(), uiVector()], CameraView.prototype, 

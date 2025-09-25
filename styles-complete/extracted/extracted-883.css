@@ -1,0 +1,9 @@
+/* Extracted CSS Block 883 */
+/* Size: 254 chars */
+
+;
+            for (let at of o) {
+                let {uuid: ut, index: pt, attributes: ht} = at;
+                const _t = at.userData.worldScale || 1;
+                b.push(ut),
+                pt && ht.position && ht.position.itemSize === 3 ? (_e = 

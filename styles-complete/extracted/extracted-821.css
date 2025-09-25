@@ -1,0 +1,7 @@
+/* Extracted CSS Block 821 */
+/* Size: 148 chars */
+
+ ? new CanvasMediaRecorder(this._viewer.canvas,{
+            frameRate: this.videoFrameRate,
+            mimeType: this.mimeType
+        }) : o === 

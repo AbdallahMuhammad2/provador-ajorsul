@@ -1,0 +1,17 @@
+/* Extracted CSS Block 547 */
+/* Size: 406 chars */
+
+, _.material),
+                    h.push(_.material))
+                }
+                ),
+                h.forEach(_ => {
+                    const b = _.userData.gltfExtensions[DiamondPlugin.DIAMOND_GLTF_EXTENSION];
+                    b && this._convertToDiamondMaterial(_, b)
+                }
+                ),
+                o
+            }
+        },
+        this.uiConfig = {
+            type: 

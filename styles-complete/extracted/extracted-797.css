@@ -1,0 +1,15 @@
+/* Extracted CSS Block 797 */
+/* Size: 375 chars */
+
+);
+                    this._hitTestSource = await ((h = (c = this._xrSession).requestHitTestSource) === null || h === void 0 ? void 0 : h.call(c, {
+                        space: _,
+                        offsetRay: o
+                    }))
+                }
+            }
+            )()
+        }
+        ,
+        this._xrRenderingEnd = () => {
+            console.log(

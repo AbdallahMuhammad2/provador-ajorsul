@@ -1,0 +1,153 @@
+/* Extracted CSS Block 776 */
+/* Size: 6252 chars */
+
+ ? _ : stringToChannel(_)])) : {}
+        }
+    }
+    ,
+    c.EXTENSION_NAME = d,
+    c
+}
+class BumpMapMaterialExtension extends GenericExtension {
+    constructor() {
+        super(...arguments),
+        this.extensionName = BumpMapMaterialExtension.EXTENSION_NAME,
+        this.textureChannels = {
+            bumpTexture: index_modern_TextureChannel.R
+        }
+    }
+}
+BumpMapMaterialExtension.EXTENSION_NAME = GLTFMaterialsBumpMapExtensionName;
+class LightMapMaterialExtension extends GenericExtension {
+    constructor() {
+        super(...arguments),
+        this.extensionName = LightMapMaterialExtension.EXTENSION_NAME,
+        this.textureChannels = {
+            lightMapTexture: index_modern_TextureChannel.R | index_modern_TextureChannel.G | index_modern_TextureChannel.B
+        }
+    }
+}
+LightMapMaterialExtension.EXTENSION_NAME = GLTFMaterialsLightMapExtensionName;
+class AlphaMapMaterialExtension extends GenericExtension {
+    constructor() {
+        super(...arguments),
+        this.extensionName = AlphaMapMaterialExtension.EXTENSION_NAME,
+        this.textureChannels = {
+            alphaTexture: index_modern_TextureChannel.G
+        }
+    }
+}
+AlphaMapMaterialExtension.EXTENSION_NAME = GLTFMaterialsAlphaMapExtensionName;
+class DisplacementMapMaterialExtension extends GenericExtension {
+    constructor() {
+        super(...arguments),
+        this.extensionName = DisplacementMapMaterialExtension.EXTENSION_NAME,
+        this.textureChannels = {
+            displacementTexture: index_modern_TextureChannel.R
+        }
+    }
+}
+DisplacementMapMaterialExtension.EXTENSION_NAME = GLTFMaterialsDisplacementMapExtensionName;
+class DiamondMaterialExtension extends GenericExtension {
+    constructor() {
+        super(...arguments),
+        this.extensionName = DiamondMaterialExtension.EXTENSION_NAME
+    }
+}
+DiamondMaterialExtension.EXTENSION_NAME = DiamondPlugin.DIAMOND_GLTF_EXTENSION;
+class AnimationMarkersExtension extends GenericExtension {
+    constructor() {
+        super(...arguments),
+        this.extensionName = AnimationMarkersExtension.EXTENSION_NAME
+    }
+}
+AnimationMarkersExtension.EXTENSION_NAME = GLTFAnimationPlugin.AnimationMarkersExtension;
+class AnisotropyMaterialExtension extends GenericExtension {
+    constructor() {
+        super(...arguments),
+        this.extensionName = AnisotropyMaterialExtension.EXTENSION_NAME,
+        this.textureChannels = {
+            anisotropyDirection: index_modern_TextureChannel.R | index_modern_TextureChannel.G | index_modern_TextureChannel.B
+        }
+    }
+}
+AnisotropyMaterialExtension.EXTENSION_NAME = AnisotropyPlugin.ANISOTROPY_GLTF_EXTENSION;
+class CustomBumpMapMaterialExtension extends GenericExtension {
+    constructor() {
+        super(...arguments),
+        this.extensionName = CustomBumpMapMaterialExtension.EXTENSION_NAME,
+        this.textureChannels = {
+            customBumpMap: index_modern_TextureChannel.R | index_modern_TextureChannel.G | index_modern_TextureChannel.B
+        }
+    }
+}
+CustomBumpMapMaterialExtension.EXTENSION_NAME = CustomBumpMapPlugin.CUSTOM_BUMP_MAP_GLTF_EXTENSION;
+class LightExtrasExtension extends GenericExtension {
+    constructor() {
+        super(...arguments),
+        this.extensionName = LightExtrasExtension.EXTENSION_NAME
+    }
+}
+LightExtrasExtension.EXTENSION_NAME = webgiLightExtrasExtension;
+class Object3DExtrasExtension extends GenericExtension {
+    constructor() {
+        super(...arguments),
+        this.extensionName = Object3DExtrasExtension.EXTENSION_NAME
+    }
+}
+Object3DExtrasExtension.EXTENSION_NAME = webgiObject3DExtrasExtension;
+class MaterialExtrasExtension extends GenericExtension {
+    constructor() {
+        super(...arguments),
+        this.extensionName = MaterialExtrasExtension.EXTENSION_NAME
+    }
+}
+MaterialExtrasExtension.EXTENSION_NAME = webgiMaterialExtrasExtension;
+class ClearcoatTintMaterialExtension extends GenericExtension {
+    constructor() {
+        super(...arguments),
+        this.extensionName = ClearcoatTintMaterialExtension.EXTENSION_NAME
+    }
+}
+ClearcoatTintMaterialExtension.EXTENSION_NAME = ClearcoatTintPlugin.CLEARCOAT_TINT_GLTF_EXTENSION;
+class ThinFilmLayerMaterialExtension extends GenericExtension {
+    constructor() {
+        super(...arguments),
+        this.extensionName = ThinFilmLayerMaterialExtension.EXTENSION_NAME
+    }
+}
+ThinFilmLayerMaterialExtension.EXTENSION_NAME = ThinFilmLayerPlugin.THIN_FILM_LAYER_GLTF_EXTENSION;
+class TriplanarMappingMaterialExtension extends GenericExtension {
+    constructor() {
+        super(...arguments),
+        this.extensionName = TriplanarMappingMaterialExtension.EXTENSION_NAME
+    }
+}
+TriplanarMappingMaterialExtension.EXTENSION_NAME = TriplanarUVMappingPlugin.TRIPLANAR_GLTF_EXTENSION;
+class LayeredMaterialExtension extends GenericExtension {
+    constructor() {
+        super(...arguments),
+        this.extensionName = LayeredMaterialExtension.EXTENSION_NAME
+    }
+}
+LayeredMaterialExtension.EXTENSION_NAME = LayeredMaterialPlugin.LAYERED_MATERIAL_GLTF_EXTENSION;
+class SSBevelMaterialExtension extends GenericExtension {
+    constructor() {
+        super(...arguments),
+        this.extensionName = SSBevelMaterialExtension.EXTENSION_NAME
+    }
+}
+SSBevelMaterialExtension.EXTENSION_NAME = SSBevelPlugin.SSBEVEL_GLTF_EXTENSION;
+class NoiseBumpMaterialExtension extends GenericExtension {
+    constructor() {
+        super(...arguments),
+        this.extensionName = NoiseBumpMaterialExtension.EXTENSION_NAME
+    }
+}
+NoiseBumpMaterialExtension.EXTENSION_NAME = NoiseBumpMaterialPlugin.NOISE_BUMP_MATERIAL_GLTF_EXTENSION;
+const ALL_WEBGI_EXTENSIONS = [WebGIViewerExtension, DiamondMaterialExtension, BumpMapMaterialExtension, LightMapMaterialExtension, AlphaMapMaterialExtension, AnimationMarkersExtension, AnisotropyMaterialExtension, CustomBumpMapMaterialExtension, LightExtrasExtension, Object3DExtrasExtension, MaterialExtrasExtension, ClearcoatTintMaterialExtension, ThinFilmLayerMaterialExtension, SSBevelMaterialExtension, TriplanarMappingMaterialExtension, NoiseBumpMaterialExtension, DisplacementMapMaterialExtension, LayeredMaterialExtension];
+class PMREMGeneratorPlugin extends I$2 {
+    constructor() {
+        super(...arguments),
+        this.processor = {
+            forAssetType: 

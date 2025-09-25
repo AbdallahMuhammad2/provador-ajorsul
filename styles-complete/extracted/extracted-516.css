@@ -1,0 +1,25 @@
+/* Extracted CSS Block 516 */
+/* Size: 414 chars */
+
+,
+SSContactShadows._uniforms = {
+    tNormalDepth: {
+        value: null
+    },
+    frameCount: {
+        value: 0
+    },
+    projection: {
+        value: new three_module.kn4
+    },
+    cameraPositionWorld: {
+        value: new three_module.Pq0
+    },
+    cameraNearFar: {
+        value: new three_module.I9Y(.1,1e3)
+    },
+    sceneBoundingRadius: {
+        value: 0
+    }
+},
+SSContactShadows_decorate([uiToggle(

@@ -1,0 +1,23 @@
+/* Extracted CSS Block 454 */
+/* Size: 411 chars */
+
+ + combineDepthOfField
+};
+patchShaderEncodingSupport({
+    uniforms: {
+        cocTexture: {
+            value: null
+        },
+        colorTexture: {
+            value: null
+        },
+        colorTextureSize: {
+            value: new three_module.I9Y
+        },
+        direction: {
+            value: new three_module.I9Y
+        }
+    },
+    vertexShader: defaultVertex,
+    fragmentShader: boxBlurDoF
+}, 

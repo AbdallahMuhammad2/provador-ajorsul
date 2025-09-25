@@ -1,0 +1,14 @@
+/* Extracted CSS Block 68 */
+/* Size: 450 chars */
+
+,
+                            viewProps: Rt.viewProps
+                        })
+                    })),
+                    this.onRackAdd_ = this.onRackAdd_.bind(this),
+                    this.onRackRemove_ = this.onRackRemove_.bind(this);
+                    const zt = new ao({
+                        blade: Rt.root ? void 0 : Rt.blade,
+                        viewProps: Rt.viewProps
+                    });
+                    zt.emitter.on(

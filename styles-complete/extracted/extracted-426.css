@@ -1,0 +1,26 @@
+/* Extracted CSS Block 426 */
+/* Size: 1033 chars */
+
+, this._setActiveCameraView),
+        this.scene.modelRoot.modelObject.scale.setScalar((it = _e.modelRootScale) !== null && it !== void 0 ? it : 1),
+        this._renderer = new BaseRenderer({
+            canvas: this._canvas,
+            animationLoop: this._animationLoop,
+            targetOptions: {
+                samples: o ? 4 : 0,
+                colorSpace: c ? RGBM16ColorSpace_ : three_module.jf0,
+                type: c ? three_module.OUM : three_module.ix0,
+                depthBuffer: !h,
+                generateMipmaps: !!o,
+                minFilter: o ? three_module.NZq : three_module.k6q
+            },
+            maxHDRIntensity: b || (c ? 16 : 80)
+        }),
+        this._isAntialiased = o && this._renderer.isWebGL2;
+        let pt = !0;
+        this._renderer.rendererObject.userData || (pt = !1,
+        this._renderer.rendererObject.userData = {}),
+        this._renderer.rendererObject.userData.renderTransmissionPass = !pt;
+        const ht = this;
+        this.renderFilter = {
+            passId: 

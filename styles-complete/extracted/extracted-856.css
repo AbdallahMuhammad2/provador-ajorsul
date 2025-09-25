@@ -1,0 +1,16 @@
+/* Extracted CSS Block 856 */
+/* Size: 406 chars */
+
+);
+        if ((c = Object.assign({
+            strategy: CENTER,
+            maxDepth: 40,
+            maxLeafTris: 10,
+            verbose: !0,
+            useSharedArrayBuffer: !1,
+            setBoundingBox: !0,
+            onProgress: null,
+            indirect: !1,
+            [SKIP_GENERATION]: !1
+        }, c)).useSharedArrayBuffer && !isSharedArrayBufferSupported())
+            throw new Error(

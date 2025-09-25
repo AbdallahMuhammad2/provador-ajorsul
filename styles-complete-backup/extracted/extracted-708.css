@@ -1,0 +1,13 @@
+/* Extracted CSS Block 708 */
+/* Size: 285 chars */
+
+);
+        let o = 1
+          , c = 1;
+        d.forEach( (_, b) => {
+            var _e;
+            o += (_e = _.progress) !== null && _e !== void 0 ? _e : 99,
+            c += 100
+        }
+        ),
+        this._contentDiv.innerHTML = this.showText ? (100 * o / c).toFixed(0) + 

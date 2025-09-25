@@ -1,0 +1,22 @@
+/* Extracted CSS Block 40 */
+/* Size: 724 chars */
+
+, .5 * kt.width, .5 * kt.height),
+                            new Promise(Ht => {
+                                kt.toBlob(Kt => {
+                                    const Jt = new Image;
+                                    Jt.src = URL.createObjectURL(Kt),
+                                    Jt.isPlaceholder = !0,
+                                    Jt.onload = () => {
+                                        Ht(Jt)
+                                    }
+                                }
+                                )
+                            }
+                            )
+                        }()),
+                        Et
+                    })
+                }
+            }
+            const It = [

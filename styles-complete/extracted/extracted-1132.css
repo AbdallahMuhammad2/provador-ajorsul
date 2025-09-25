@@ -1,0 +1,15 @@
+/* Extracted CSS Block 1132 */
+/* Size: 434 chars */
+
+ && (isNumericalString(_) || isZeroValueString(_)) ? _ = parseFloat(_) : !findValueType(_) && complex.test(c) && (_ = getAnimatableNone(o, c)),
+        this.setBaseTarget(o, isMotionValue(_) ? _.get() : _)),
+        isMotionValue(_) ? _.get() : _
+    }
+    setBaseTarget(o, c) {
+        this.baseTarget[o] = c
+    }
+    getBaseTarget(o) {
+        var c;
+        const {initial: h} = this.props;
+        let _;
+        if (typeof h == 

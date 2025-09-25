@@ -1,0 +1,13 @@
+/* Extracted CSS Block 371 */
+/* Size: 361 chars */
+
+,
+                getValue: () => this.userData.separateEnvMapIntensity === !0,
+                setValue: o => {
+                    this.userData.separateEnvMapIntensity = o,
+                    o || delete this.userData.separateEnvMapIntensity
+                }
+                ,
+                onChange: this.setDirty
+            }, {
+                type: 

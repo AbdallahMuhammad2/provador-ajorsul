@@ -1,0 +1,22 @@
+/* Extracted CSS Block 658 */
+/* Size: 760 chars */
+
+ ? 0 : .01,
+        this._attachedMesh.material.needsUpdate = !0))
+    }
+    _applySmoothFilter(o, c) {
+        this._shadowBlurMat.uniforms.colorTexture.value = o.texture,
+        this._shadowBlurMat.uniforms.direction.value.set(1, 0),
+        this._shadowBlurMat.uniforms.size.value.set(o.width, o.height),
+        this._viewer.renderer.blit(void 0, c, {
+            material: this._shadowBlurMat
+        }),
+        this._shadowBlurMat.uniforms.colorTexture.value = c.texture,
+        this._shadowBlurMat.uniforms.direction.value.set(0, 1),
+        this._shadowBlurMat.uniforms.size.value.set(c.width, c.height),
+        this._viewer.renderer.blit(void 0, o, {
+            material: this._shadowBlurMat
+        })
+    }
+}
+ShadowMapBaker_decorate([serialize(

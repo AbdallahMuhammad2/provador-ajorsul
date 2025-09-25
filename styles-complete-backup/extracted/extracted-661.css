@@ -1,0 +1,33 @@
+/* Extracted CSS Block 661 */
+/* Size: 1289 chars */
+
+, this._preRender),
+        this._manager = void 0,
+        super.onRemove(o)
+    }
+    _removeMaterial() {
+        this._material && (this._material.userData.renderToDepth = this._material.userData.__renderToDepth,
+        this._material.userData.__renderToDepth = void 0,
+        this._material = void 0)
+    }
+    _onSceneUpdate(o) {
+        (o == null ? void 0 : o.geometryChanged) !== !1 && (o == null ? void 0 : o.updateGround) !== !1 && this.refreshTransform()
+    }
+    refreshTransform() {
+        this.enableRefreshTransform && (this._transformNeedRefresh = !0)
+    }
+    _refreshOptions2() {
+        this.refreshOptions()
+    }
+    refreshOptions() {
+        this._viewer && (this._refreshMaterial(),
+        this.refreshTransform(),
+        this._refreshCameraLimits())
+    }
+    _refreshCameraLimits() {
+        var o;
+        const c = (o = this._viewer) === null || o === void 0 ? void 0 : o.scene.activeCamera.controls;
+        c && (c.maxPolarAngle !== void 0 ? this.limitCameraAboveGround ? (this._cameraLimitsSet || (this._cameraLastMaxPolarAngle = c.maxPolarAngle),
+        c.maxPolarAngle = Math.PI / 2,
+        this._cameraLimitsSet = !0) : this._cameraLimitsSet && (c.maxPolarAngle = this._cameraLastMaxPolarAngle,
+        this._cameraLimitsSet = !1) : console.warn(

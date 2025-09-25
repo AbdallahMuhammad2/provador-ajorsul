@@ -1,0 +1,20 @@
+/* Extracted CSS Block 378 */
+/* Size: 612 chars */
+
+
+}
+  , typeTemplateNameMap = {
+    [MeshStandardMaterial2.TYPE]: standardMaterialTemplate.name,
+    MeshStandardMaterial: standardMaterialTemplate.name,
+    MeshPhysicalMaterial: standardMaterialTemplate.name,
+    [MeshBasicMaterial2.TYPE]: basicMaterialTemplate.name,
+    MeshBasicMaterial: basicMaterialTemplate.name
+};
+class AMaterialManager extends I$2 {
+    constructor() {
+        super(),
+        this._templates = [standardMaterialTemplate, basicMaterialTemplate],
+        this._materials = [],
+        this._disposeMaterial = o => {
+            const c = o.target;
+            if (!c || c.assetType !== 

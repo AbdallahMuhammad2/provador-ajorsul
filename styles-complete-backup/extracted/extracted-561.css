@@ -1,0 +1,42 @@
+/* Extracted CSS Block 561 */
+/* Size: 1305 chars */
+
+)
+                }
+            }, _t)),
+            ht.push(animateAsync({
+                from: it.target.clone(),
+                to: o.target.clone(),
+                duration: c * o.duration,
+                ease: ut,
+                driver: pt,
+                onUpdate: Et => {
+                    it.target = Et,
+                    it.targetUpdated()
+                }
+                ,
+                onComplete: () => {
+                    it.target = o.target,
+                    it.targetUpdated()
+                }
+            }, _t));
+            const St = it.cameraObject.quaternion.clone()
+              , At = new three_module.PTz;
+            ht.push(animateAsync({
+                from: 0,
+                to: 1,
+                duration: c * o.duration,
+                ease: ut,
+                driver: pt,
+                onUpdate: Et => {
+                    At.copy(St).slerp(o.quaternion, Et),
+                    it.cameraObject.quaternion.copy(At),
+                    it.cameraObject.updateProjectionMatrix()
+                }
+                ,
+                onComplete: () => {
+                    it.cameraObject.quaternion.copy(o.quaternion),
+                    it.cameraObject.updateProjectionMatrix()
+                }
+            }, _t))
+        } else if (bt === 

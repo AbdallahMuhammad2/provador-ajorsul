@@ -1,0 +1,8 @@
+/* Extracted CSS Block 429 */
+/* Size: 121 chars */
+
+, () => {
+            this.scene.activeCamera.refreshAspect()
+        }
+        ),
+        this.scene.setBackgroundColor(

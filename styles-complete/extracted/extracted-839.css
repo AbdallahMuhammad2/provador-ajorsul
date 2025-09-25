@@ -1,0 +1,10 @@
+/* Extracted CSS Block 839 */
+/* Size: 244 chars */
+
+
+            }
+            ,
+            onObjectRender: (o, {materialObject: c}, h) => {
+                if (this.enabled)
+                    for (const [_,b] of Object.entries(this._defines)) {
+                        const _e = typeof b == 

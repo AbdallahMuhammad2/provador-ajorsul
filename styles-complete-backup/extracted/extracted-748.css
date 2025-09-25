@@ -1,0 +1,21 @@
+/* Extracted CSS Block 748 */
+/* Size: 769 chars */
+
+);
+        b.buffers = [],
+        _.listBuffers().forEach( (St, At) => {
+            const Et = nt.createPropertyDef(St)
+              , Pt = nt.accessorUsageGroupedByParent
+              , It = St.listParents().filter(Jt => Jt instanceof index_modern_Accessor)
+              , Dt = new Set(It.map(Jt => nt.accessorParents.get(Jt)))
+              , Gt = new Map(Array.from(Dt).map( (Jt, or) => [Jt, or]))
+              , Bt = {};
+            for (const Jt of It) {
+                var kt;
+                if (nt.accessorIndexMap.has(Jt))
+                    continue;
+                const or = nt.getAccessorUsage(Jt);
+                let ir = or;
+                if (Pt.has(or)) {
+                    const lr = nt.accessorParents.get(Jt);
+                    ir += 

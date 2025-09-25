@@ -1,0 +1,12 @@
+/* Extracted CSS Block 375 */
+/* Size: 303 chars */
+
+,
+        this.materialObject = this,
+        this.isMeshBasicMaterial2 = !0,
+        this.extraUniformsToUpload = {},
+        !this.defines && (this.defines = {}),
+        this.fog = !1,
+        this.setDirty = this.setDirty.bind(this),
+        this.userData.setDirty = h => {
+            console.warn(

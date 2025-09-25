@@ -1,0 +1,24 @@
+/* Extracted CSS Block 920 */
+/* Size: 803 chars */
+
+, this._addSceneObject),
+        super.onRemove(o)
+    }
+    addTransform(o) {
+        o.userData[TransformAnimationPlugin.PluginType].transforms.push({
+            position: o.position.clone(),
+            quaternion: o.quaternion.clone(),
+            scale: o.scale.clone()
+        })
+    }
+    setTransform(o, c) {
+        var h, _, b, _e;
+        o.position.copy(c.position),
+        o.quaternion.copy(c.quaternion),
+        o.scale.copy(c.scale),
+        (_ = (h = o.userData).setDirty) === null || _ === void 0 || _.call(h),
+        (_e = (b = o.uiConfig) === null || b === void 0 ? void 0 : b.uiRefresh) === null || _e === void 0 || _e.call(b)
+    }
+    animateTransform(o, c, h=2e3) {
+        var _, b;
+        const _e = (_ = this._viewer) === null || _ === void 0 ? void 0 : _.getPluginByType(

@@ -1,0 +1,7 @@
+/* Extracted CSS Block 579 */
+/* Size: 91 chars */
+
+
+            uniform sampler2D tSSBevelMap;
+            ${simpleCameraHelpers}
+            

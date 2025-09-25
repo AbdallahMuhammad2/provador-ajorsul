@@ -1,0 +1,9 @@
+/* Extracted CSS Block 1144 */
+/* Size: 220 chars */
+
+,
+                isActive: o === 1,
+                onClick: () => c(1)
+            }), jsxRuntimeExports.jsx(SettingsButton, {
+                img: jsxRuntimeExports.jsx(FingerSelectionIcon, {}),
+                text: 

@@ -1,0 +1,9 @@
+/* Extracted CSS Block 876 */
+/* Size: 177 chars */
+
+, () => {
+            var b;
+            (b = this._viewer) === null || b === void 0 || b.container.removeChild(o)
+        }
+        );
+        const _ = document.createElement(

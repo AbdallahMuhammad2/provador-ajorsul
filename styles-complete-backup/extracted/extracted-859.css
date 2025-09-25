@@ -1,0 +1,21 @@
+/* Extracted CSS Block 859 */
+/* Size: 663 chars */
+
+;
+            for (let It = 0, Dt = at.length; It < Dt; It++) {
+                const Gt = it[at[It]];
+                let Bt;
+                switch (Gt.itemSize) {
+                case 1:
+                    Bt = hashNumber(Gt.getX(Et));
+                    break;
+                case 2:
+                    Bt = hashVertex2(_vec2.fromBufferAttribute(Gt, Et));
+                    break;
+                case 3:
+                    Bt = hashVertex3(HalfEdgeMap_vec3.fromBufferAttribute(Gt, Et));
+                    break;
+                case 4:
+                    Bt = hashVertex4(_vec4.fromBufferAttribute(Gt, Et))
+                }
+                Pt !== 

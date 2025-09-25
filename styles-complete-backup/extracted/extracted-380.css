@@ -1,0 +1,16 @@
+/* Extracted CSS Block 380 */
+/* Size: 526 chars */
+
+:
+            c && xe$1(c, ut, Array.from(Object.keys(basicMaterialPropList))),
+            ht = (_e = ut.userData) === null || _e === void 0 ? void 0 : _e.uuid,
+            ht && delete ut.userData.uuid,
+            at = new MeshBasicMaterial2({
+                customMaterialExtensions: ut.customMaterialExtensions
+            }).fromJSON(ut, void 0, !0),
+            ht && (at.uuid = ht,
+            ut.userData.uuid = ht),
+            at.userData.uuid = at.uuid,
+            at.setDirty();
+            break;
+        case 

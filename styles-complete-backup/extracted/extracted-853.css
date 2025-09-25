@@ -1,0 +1,20 @@
+/* Extracted CSS Block 853 */
+/* Size: 556 chars */
+
+)
+    }
+    async onAdded(d) {
+        var o, c;
+        await super.onAdded(d);
+        const h = this;
+        (c = (o = d.getManager()) === null || o === void 0 ? void 0 : o.importer) === null || c === void 0 || c.Importers.push(new Importer(class extends ZipLoader {
+            load(_, b, _e, nt) {
+                super.load(_, it => {
+                    h.loadScenes([...it.values()]),
+                    b == null || b(null),
+                    X$2(100).then(h.play)
+                }
+                , _e, nt)
+            }
+        }
+        ,[

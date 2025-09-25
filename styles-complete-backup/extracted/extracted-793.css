@@ -1,0 +1,9 @@
+/* Extracted CSS Block 793 */
+/* Size: 464 chars */
+
+, () => {
+            !this._animationCallBack && this._extension && (c != null && c.getSelectedObject() ? this._extension.enableDynamicSelection ? (this._extension.transparency = 1,
+            this._animationCallBack = this._startTransparencyAnimation(1, this._extension.highlightTransparency, 400)) : this._extension.transparency = this._extension.highlightTransparency : this._extension.transparency = 1)
+        }
+        ),
+        document.addEventListener(

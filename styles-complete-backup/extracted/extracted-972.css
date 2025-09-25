@@ -1,0 +1,11 @@
+/* Extracted CSS Block 972 */
+/* Size: 305 chars */
+
+,
+                hidden: () => !this._viewer || this._viewer.useRgbm,
+                value: () => {
+                    this._viewer && (this._viewer.scene.background = null,
+                    this._viewer.scene.backgroundColor = null)
+                }
+            }, () => ({
+                label: 

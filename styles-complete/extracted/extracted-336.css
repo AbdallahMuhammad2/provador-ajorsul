@@ -1,0 +1,18 @@
+/* Extracted CSS Block 336 */
+/* Size: 546 chars */
+
+)
+    }
+    setInteractions(o, c) {
+        const h = this._interactionsDisabledBy.size;
+        o ? this._interactionsDisabledBy.delete(c) : this._interactionsDisabledBy.add(c),
+        h !== this._interactionsDisabledBy.size && this.refreshCameraControls(!0)
+    }
+    _nearFarChanged() {
+        this._camera && (this._camera.modelObject.near = this.near,
+        this._camera.modelObject.far = this.far,
+        this._camera.modelObject.updateProjectionMatrix())
+    }
+    constructor(o, c, h) {
+        super(),
+        this._controlsMode = 

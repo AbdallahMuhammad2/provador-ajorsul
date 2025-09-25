@@ -1,0 +1,12 @@
+/* Extracted CSS Block 351 */
+/* Size: 390 chars */
+
+, _ => {
+            var b, _e;
+            if (o.materialExtensions)
+                for (const nt of o.materialExtensions)
+                    (b = nt.onAddToMesh) === null || b === void 0 || b.call(nt, (_e = _.mesh) !== null && _e !== void 0 ? _e : _.object, o)
+        }
+        )),
+        o.__ext_removeFromMeshListen || (o.__ext_removeFromMeshListen = !0,
+        o.addEventListener(

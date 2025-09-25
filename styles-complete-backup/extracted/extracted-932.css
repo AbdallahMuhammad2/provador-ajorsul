@@ -1,0 +1,23 @@
+/* Extracted CSS Block 932 */
+/* Size: 1098 chars */
+
+) && _t.rem.push(St)
+                }
+                );
+                const vt = [];
+                for (const St of _t.left) {
+                    const At = ((b = St.parent) === null || b === void 0 ? void 0 : b.children) || [];
+                    vt.push(...At)
+                }
+                for (const St of _t.right) {
+                    const At = ((_e = St.parent) === null || _e === void 0 ? void 0 : _e.children) || [];
+                    vt.push(...At)
+                }
+                for (const St of vt)
+                    _t.left.includes(St) || _t.right.includes(St) || _t.rem.includes(St) || _t.rem.push(St);
+                for (const St of _t.rem)
+                    new Box3B().expandByObject(St, !1, !0).getCenter(new three_module.Pq0).x <= 0 ? _t.left.push(St) : _t.right.push(St);
+                for (const St of [..._t.left, ..._t.right])
+                    St.userData.__initX = St.position.x,
+                    St.userData.__initRotX = St.rotation.x;
+                const bt = (nt = this._viewer) === null || nt === void 0 ? void 0 : nt.getPluginByType(

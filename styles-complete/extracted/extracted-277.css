@@ -1,0 +1,23 @@
+/* Extracted CSS Block 277 */
+/* Size: 654 chars */
+
+,
+                this.geometry.computeBoundingSphere()
+            }
+            updateMatrixWorld(tt) {
+                const lt = this.box;
+                lt.isEmpty() || (lt.getCenter(this.position),
+                lt.getSize(this.scale),
+                this.scale.multiplyScalar(.5),
+                super.updateMatrixWorld(tt))
+            }
+            dispose() {
+                this.geometry.dispose(),
+                this.material.dispose()
+            }
+        }
+        class gE extends ep {
+            constructor(tt, lt=1, mt=16776960) {
+                const ft = mt
+                  , xt = new bo;
+                xt.setAttribute(

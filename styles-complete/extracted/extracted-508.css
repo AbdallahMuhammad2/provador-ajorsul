@@ -1,0 +1,11 @@
+/* Extracted CSS Block 508 */
+/* Size: 288 chars */
+
+) {
+            const _ = {
+                index: d.processTexture(o.userData._anisotropyDirectionMap)
+            };
+            d.applyTextureTransform(_, o.userData._anisotropyDirectionMap),
+            h.anisotropyDirection = _
+        } else
+            h.anisotropyDirectionMode = 

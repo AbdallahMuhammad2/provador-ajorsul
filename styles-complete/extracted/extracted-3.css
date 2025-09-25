@@ -1,0 +1,4 @@
+/* Extracted CSS Block 3 */
+/* Size: 553 chars */
+
+#assetManagerLoadingScreen{z-index:300;position:absolute;bottom:0;right:0;min-width:100%;min-height:100%;color:#333;font-size:1rem;gap:1rem;display:flex;align-content:center;justify-content:center;align-items:center;flex-direction:column;opacity:1;transition:opacity .5s ease-in-out,min-width .5s,min-height .5s,bottom .5s,right .5s;overflow:hidden;background:rgba(0,0,0,0);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);background-blend-mode:luminosity;--b-opacity: 0.8;--b-background: #ffffff}#assetManagerLoadingScreen::before{content:

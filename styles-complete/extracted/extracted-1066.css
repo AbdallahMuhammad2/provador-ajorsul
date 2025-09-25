@@ -1,0 +1,33 @@
+/* Extracted CSS Block 1066 */
+/* Size: 1261 chars */
+
+in c)
+                c.selectionStart = o,
+                c.selectionEnd = Math.min(d, c.value.length);
+            else if (d = (o = c.ownerDocument || document) && o.defaultView || window,
+            d.getSelection) {
+                d = d.getSelection();
+                var _ = c.textContent.length
+                  , b = Math.min(h.start, _);
+                h = h.end === void 0 ? b : Math.min(h.end, _),
+                !d.extend && b > h && (_ = h,
+                h = b,
+                b = _),
+                _ = Ke(c, b);
+                var _e = Ke(c, h);
+                _ && _e && (d.rangeCount !== 1 || d.anchorNode !== _.node || d.anchorOffset !== _.offset || d.focusNode !== _e.node || d.focusOffset !== _e.offset) && (o = o.createRange(),
+                o.setStart(_.node, _.offset),
+                d.removeAllRanges(),
+                b > h ? (d.addRange(o),
+                d.extend(_e.node, _e.offset)) : (o.setEnd(_e.node, _e.offset),
+                d.addRange(o)))
+            }
+        }
+        for (o = [],
+        d = c; d = d.parentNode; )
+            d.nodeType === 1 && o.push({
+                element: d,
+                left: d.scrollLeft,
+                top: d.scrollTop
+            });
+        for (typeof c.focus == 

@@ -1,0 +1,21 @@
+/* Extracted CSS Block 595 */
+/* Size: 622 chars */
+
+, nt=!1) {
+        var it;
+        this._generators.has(_e) || this._generators.set(_e, []),
+        (it = this._generators.get(_e)) === null || it === void 0 || it.push({
+            key: o,
+            fn: c,
+            rect: h ? [...h] : void 0,
+            frag: b || _ || nt ? new three_module.BKk({
+                vertexShader: CopyShader.vertexShader,
+                uniforms: {
+                    tDiffuse: {
+                        value: null
+                    },
+                    opacity: {
+                        value: 1
+                    }
+                },
+                fragmentShader: b ?? 

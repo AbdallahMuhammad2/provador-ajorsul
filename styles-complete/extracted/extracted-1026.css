@@ -1,0 +1,6 @@
+/* Extracted CSS Block 1026 */
+/* Size: 74 chars */
+
+, d => ({
+    disabled: () => !d.enabled
+}))], AWSClientPlugin.prototype, 

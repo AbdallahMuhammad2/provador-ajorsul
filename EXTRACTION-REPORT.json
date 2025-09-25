@@ -1,0 +1,181 @@
+{
+  "timestamp": "2025-09-17T23:17:28.684Z",
+  "statistics": {
+    "originalSize": "5.37MB",
+    "cssBlocksExtracted": 5,
+    "jsModulesExtracted": 69,
+    "filesCreated": 85
+  },
+  "structure": {
+    "css": [
+      {
+        "category": "button-bar",
+        "blocks": 1,
+        "file": "styles/components/button-bar.css"
+      },
+      {
+        "category": "modal-system",
+        "blocks": 1,
+        "file": "styles/components/modal-system.css"
+      },
+      {
+        "category": "tweakpane",
+        "blocks": 2,
+        "file": "styles/ui/tweakpane.css"
+      },
+      {
+        "category": "animations",
+        "blocks": 1,
+        "file": "styles/components/animations.css"
+      },
+      {
+        "category": "controls",
+        "blocks": 3,
+        "file": "styles/ui/controls.css"
+      },
+      {
+        "category": "general",
+        "blocks": 1,
+        "file": "styles/components/general.css"
+      }
+    ],
+    "javascript": [
+      {
+        "type": "webgl",
+        "modules": 11,
+        "directory": "src/core"
+      },
+      {
+        "type": "ring",
+        "modules": 5,
+        "directory": "src/ring"
+      },
+      {
+        "type": "ui",
+        "modules": 3,
+        "directory": "src/ui"
+      },
+      {
+        "type": "camera",
+        "modules": 1,
+        "directory": "src/camera"
+      },
+      {
+        "type": "utils",
+        "modules": 1,
+        "directory": "src/utils"
+      },
+      {
+        "type": "loader",
+        "modules": 2,
+        "directory": "src/loaders"
+      },
+      {
+        "type": "polyfill",
+        "modules": 1,
+        "directory": "src/polyfills"
+      },
+      {
+        "type": "unknown",
+        "modules": 45,
+        "directory": "src/misc"
+      }
+    ],
+    "templates": [
+      "loading-screen",
+      "control-panel",
+      "modal-system",
+      "canvas-container"
+    ]
+  },
+  "files": {
+    "html": [
+      "index-complete.html"
+    ],
+    "css": [
+      "styles/components/button-bar.css",
+      "styles/components/modal-system.css",
+      "styles/components/animations.css",
+      "styles/ui/tweakpane.css",
+      "styles/ui/controls.css",
+      "styles/components/general.css"
+    ],
+    "javascript": [
+      "src/core/webgl-module-8.js",
+      "src/core/webgl-module-3.js",
+      "src/core/webgl-module-4.js",
+      "src/core/webgl-module-5.js",
+      "src/core/webgl-module-1.js",
+      "src/core/webgl-module-20.js",
+      "src/core/webgl-module-58.js",
+      "src/core/webgl-module-52.js",
+      "src/core/webgl-module-69.js",
+      "src/core/webgl-module-90.js",
+      "src/core/webgl-module-23.js",
+      "src/ring/ring-module-364.js",
+      "src/ring/ring-module-155.js",
+      "src/ring/ring-module-645.js",
+      "src/ring/ring-module-537.js",
+      "src/ring/ring-module-795.js",
+      "src/ui/ui-module-990.js",
+      "src/ui/ui-module-216.js",
+      "src/ui/ui-module-957.js",
+      "src/camera/camera-module-7.js",
+      "src/utils/utils-module-986.js",
+      "src/loaders/loader-module-44.js",
+      "src/loaders/loader-module-16.js",
+      "src/polyfills/polyfill-module-101.js",
+      "src/misc/unknown-module-774.js",
+      "src/misc/unknown-module-611.js",
+      "src/misc/unknown-module-223.js",
+      "src/misc/unknown-module-646.js",
+      "src/misc/unknown-module-636.js",
+      "src/misc/unknown-module-757.js",
+      "src/misc/unknown-module-367.js",
+      "src/misc/unknown-module-160.js",
+      "src/misc/unknown-module-333.js",
+      "src/misc/unknown-module-151.js",
+      "src/misc/unknown-module-981.js",
+      "src/misc/unknown-module-872.js",
+      "src/misc/unknown-module-49.js",
+      "src/misc/unknown-module-881.js",
+      "src/misc/unknown-module-516.js",
+      "src/misc/unknown-module-391.js",
+      "src/misc/unknown-module-186.js",
+      "src/misc/unknown-module-626.js",
+      "src/misc/unknown-module-827.js",
+      "src/misc/unknown-module-530.js",
+      "src/misc/unknown-module-379.js",
+      "src/misc/unknown-module-589.js",
+      "src/misc/unknown-module-282.js",
+      "src/misc/unknown-module-578.js",
+      "src/misc/unknown-module-161.js",
+      "src/misc/unknown-module-848.js",
+      "src/misc/unknown-module-2.js",
+      "src/misc/unknown-module-149.js",
+      "src/misc/unknown-module-9.js",
+      "src/misc/unknown-module-0.js",
+      "src/misc/unknown-module-6.js",
+      "src/misc/unknown-module-74.js",
+      "src/misc/unknown-module-30.js",
+      "src/misc/unknown-module-03.js",
+      "src/misc/unknown-module-31.js",
+      "src/misc/unknown-module-07.js",
+      "src/misc/unknown-module-46.js",
+      "src/misc/unknown-module-00.js",
+      "src/misc/unknown-module-67.js",
+      "src/misc/unknown-module-17.js",
+      "src/misc/unknown-module-01.js",
+      "src/misc/unknown-module-85.js",
+      "src/misc/unknown-module-73.js",
+      "src/misc/unknown-module-15.js",
+      "src/misc/unknown-module-98.js"
+    ],
+    "templates": [
+      "templates/loading-screen.html",
+      "templates/control-panel.html",
+      "templates/modal-system.html",
+      "templates/canvas-container.html"
+    ]
+  }
+}

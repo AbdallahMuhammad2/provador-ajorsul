@@ -1,0 +1,46 @@
+/* Extracted CSS Block 241 */
+/* Size: 1796 chars */
+
+,
+                this.parameters = {
+                    radius: tt,
+                    tube: lt,
+                    radialSegments: mt,
+                    tubularSegments: ft,
+                    arc: xt
+                },
+                mt = Math.floor(mt),
+                ft = Math.floor(ft);
+                const Ct = []
+                  , Mt = []
+                  , Lt = []
+                  , Nt = []
+                  , jt = new Er
+                  , Wt = new Er
+                  , Qt = new Er;
+                for (let qt = 0; qt <= mt; qt++)
+                    for (let Xt = 0; Xt <= ft; Xt++) {
+                        const Zt = Xt / ft * xt
+                          , Yt = qt / mt * Math.PI * 2;
+                        Wt.x = (tt + lt * Math.cos(Yt)) * Math.cos(Zt),
+                        Wt.y = (tt + lt * Math.cos(Yt)) * Math.sin(Zt),
+                        Wt.z = lt * Math.sin(Yt),
+                        Mt.push(Wt.x, Wt.y, Wt.z),
+                        jt.x = tt * Math.cos(Zt),
+                        jt.y = tt * Math.sin(Zt),
+                        Qt.subVectors(Wt, jt).normalize(),
+                        Lt.push(Qt.x, Qt.y, Qt.z),
+                        Nt.push(Xt / ft),
+                        Nt.push(qt / mt)
+                    }
+                for (let qt = 1; qt <= mt; qt++)
+                    for (let Xt = 1; Xt <= ft; Xt++) {
+                        const Zt = (ft + 1) * qt + Xt - 1
+                          , Yt = (ft + 1) * (qt - 1) + Xt - 1
+                          , sr = (ft + 1) * (qt - 1) + Xt
+                          , er = (ft + 1) * qt + Xt;
+                        Ct.push(Zt, Yt, er),
+                        Ct.push(Yt, sr, er)
+                    }
+                this.setIndex(Ct),
+                this.setAttribute(

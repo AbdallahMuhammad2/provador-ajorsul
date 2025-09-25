@@ -1,0 +1,16 @@
+/* Extracted CSS Block 982 */
+/* Size: 447 chars */
+
+, this.draggableMouseUpHandler)))
+    }
+    handleDraggableMouseMove(o) {
+        if (this.inDragging) {
+            let c = {
+                x: o.clientX - this.dragPrev.x,
+                y: o.clientY - this.dragPrev.y
+            }
+              , h = window.getComputedStyle(this.wrapper)
+              , _ = this.options.draggable
+              , b = parseFloat(h.left)
+              , _e = parseFloat(h.top);
+            if (h.left.indexOf(

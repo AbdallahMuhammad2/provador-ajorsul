@@ -1,0 +1,12 @@
+/* Extracted CSS Block 345 */
+/* Size: 200 chars */
+
+:
+            b = o.modelObject.isCamera,
+            b && (c = {
+                ...c,
+                autoScale: !1
+            }),
+            this._addModel(o, c);
+            break;
+        case 

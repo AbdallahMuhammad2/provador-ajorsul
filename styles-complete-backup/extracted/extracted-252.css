@@ -1,0 +1,12 @@
+/* Extracted CSS Block 252 */
+/* Size: 486 chars */
+
+:
+                    Ct = new Cs(tt.fov,tt.aspect,tt.near,tt.far),
+                    tt.focus !== void 0 && (Ct.focus = tt.focus),
+                    tt.zoom !== void 0 && (Ct.zoom = tt.zoom),
+                    tt.filmGauge !== void 0 && (Ct.filmGauge = tt.filmGauge),
+                    tt.filmOffset !== void 0 && (Ct.filmOffset = tt.filmOffset),
+                    tt.view !== void 0 && (Ct.view = Object.assign({}, tt.view));
+                    break;
+                case 

@@ -1,0 +1,21 @@
+/* Extracted CSS Block 552 */
+/* Size: 826 chars */
+
+, this.refreshUi),
+        super.onRemove(o)
+    }
+    unprepareDiamondMesh(o) {
+        var c;
+        o.userData && (delete o.userData._diamondCacheKey,
+        delete o.userData._diamondNormalMapRes,
+        delete o.userData._diamondNormalMapPrecision,
+        o.geometry && (this._removeOffsets(o.geometry),
+        (c = this._normalCapture) === null || c === void 0 || c.removeNormalMap(o.geometry)))
+    }
+    prepareDiamondMesh(o, {cacheKey: c, normalMapRes: h, normalMapPrecision: _}) {
+        var b, _e, nt;
+        this.use(),
+        o.userData._diamondCacheKey = c ?? o.userData._diamondCacheKey,
+        o.userData._diamondNormalMapRes = h ?? o.userData._diamondNormalMapRes,
+        o.userData._diamondNormalMapPrecision = _ ?? o.userData._diamondNormalMapPrecision,
+        c = c && c.length > 0 ? c.includes(

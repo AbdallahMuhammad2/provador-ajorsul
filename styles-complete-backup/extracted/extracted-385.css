@@ -1,0 +1,16 @@
+/* Extracted CSS Block 385 */
+/* Size: 614 chars */
+
+:
+            nt = new GLTFLoader.ObjectConstructors.SpotLight(it),
+            nt.distance = at,
+            _e.spot = _e.spot || {},
+            _e.spot.innerConeAngle = _e.spot.innerConeAngle !== void 0 ? _e.spot.innerConeAngle : 0,
+            _e.spot.outerConeAngle = _e.spot.outerConeAngle !== void 0 ? _e.spot.outerConeAngle : Math.PI / 4,
+            nt.angle = _e.spot.outerConeAngle,
+            nt.penumbra = 1 - _e.spot.innerConeAngle / _e.spot.outerConeAngle,
+            nt.target.position.set(0, 0, -1),
+            nt.add(nt.target);
+            break;
+        default:
+            throw new Error(

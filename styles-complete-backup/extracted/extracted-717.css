@@ -1,0 +1,57 @@
+/* Extracted CSS Block 717 */
+/* Size: 2356 chars */
+
+);
+        const b = o.color.toArray().concat([o.opacity]);
+        if (equalArray(b, [1, 1, 1, 1]) || (_.pbrMetallicRoughness.baseColorFactor = b),
+        o.isMeshStandardMaterial ? (_.pbrMetallicRoughness.metallicFactor = o.metalness,
+        _.pbrMetallicRoughness.roughnessFactor = o.roughness) : (_.pbrMetallicRoughness.metallicFactor = .5,
+        _.pbrMetallicRoughness.roughnessFactor = .5),
+        this.checkEmptyMap(o.metalnessMap) || this.checkEmptyMap(o.roughnessMap)) {
+            const nt = this.buildMetalRoughTexture(o.metalnessMap, o.roughnessMap)
+              , it = {
+                index: this.processTexture(nt),
+                channel: nt.channel
+            };
+            this.applyTextureTransform(it, nt),
+            _.pbrMetallicRoughness.metallicRoughnessTexture = it
+        }
+        if (this.checkEmptyMap(o.map)) {
+            const nt = {
+                index: this.processTexture(o.map),
+                texCoord: o.map.channel
+            };
+            this.applyTextureTransform(nt, o.map),
+            _.pbrMetallicRoughness.baseColorTexture = nt
+        }
+        if (o.emissive) {
+            const nt = o.emissive;
+            if (Math.max(nt.r, nt.g, nt.b) > 0 && (_.emissiveFactor = o.emissive.toArray()),
+            this.checkEmptyMap(o.emissiveMap)) {
+                const it = {
+                    index: this.processTexture(o.emissiveMap),
+                    texCoord: o.emissiveMap.channel
+                };
+                this.applyTextureTransform(it, o.emissiveMap),
+                _.emissiveTexture = it
+            }
+        }
+        if (this.checkEmptyMap(o.normalMap)) {
+            const nt = {
+                index: this.processTexture(o.normalMap),
+                texCoord: o.normalMap.channel
+            };
+            o.normalScale && o.normalScale.x !== 1 && (nt.scale = o.normalScale.x),
+            this.applyTextureTransform(nt, o.normalMap),
+            _.normalTexture = nt
+        }
+        if (this.checkEmptyMap(o.aoMap)) {
+            const nt = {
+                index: this.processTexture(o.aoMap),
+                texCoord: o.aoMap.channel
+            };
+            o.aoMapIntensity !== 1 && (nt.strength = o.aoMapIntensity),
+            this.applyTextureTransform(nt, o.aoMap),
+            _.occlusionTexture = nt
+        }
+        o.transparent ? _.alphaMode = 

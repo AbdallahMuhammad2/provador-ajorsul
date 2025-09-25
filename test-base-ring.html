@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Ring Test - Ring 6</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: #222;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        #info {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background: rgba(0,0,0,0.8);
+            padding: 15px;
+            border-radius: 5px;
+            z-index: 1000;
+        }
+
+        #canvasContainer {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #webgi-canvas {
+            width: 100%;
+            height: 100%;
+            max-width: 800px;
+            max-height: 600px;
+        }
+
+        .ring-selector {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            background: rgba(0,0,0,0.8);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .ring-btn {
+            width: 50px;
+            height: 50px;
+            border: 2px solid #666;
+            background: #333;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .ring-btn:hover {
+            background: #555;
+        }
+
+        .ring-btn.active {
+            border-color: #4CAF50;
+            background: #4CAF50;
+        }
+
+        #ring-6 {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-color: #764ba2;
+        }
+    </style>
+</head>
+<body>
+    <div id="info">
+        <h3>Base Ring Test (Anel 6)</h3>
+        <p>📍 Arquivo: rings/6.glb (base.glb - 10MB)</p>
+        <p>⚙️ Scale: <span id="scale">0.05</span></p>
+        <p>🎯 Position: <span id="position">0, 0, 0</span></p>
+        <p>🔄 Rotation: <span id="rotation">90°, 0°, 0°</span></p>
+        <div id="status">Carregando...</div>
+    </div>
+
+    <div id="canvasContainer">
+        <canvas id="webgi-canvas" width="800" height="600"></canvas>
+    </div>
+
+    <div class="ring-selector">
+        <button class="ring-btn" onclick="selectRing(1)">1</button>
+        <button class="ring-btn" onclick="selectRing(2)">2</button>
+        <button class="ring-btn" onclick="selectRing(3)">3</button>
+        <button class="ring-btn" onclick="selectRing(4)">4</button>
+        <button class="ring-btn" onclick="selectRing(5)">5</button>
+        <button class="ring-btn active" id="ring-6" onclick="selectRing(6)">6<br><small>BASE</small></button>
+        <button class="ring-btn" onclick="selectRing(7)">7</button>
+    </div>
+
+    <!-- Load WebGI system -->
+    <script type="module" src="./index.js"></script>
+
+    <script>
+        let currentRing = 6;
+
+        function updateStatus(msg) {
+            document.getElementById('status').innerHTML = msg;
+        }
+
+        function selectRing(num) {
+            currentRing = num;
+
+            // Update button states
+            document.querySelectorAll('.ring-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            if (document.getElementById(`ring-${num}`)) {
+                document.getElementById(`ring-${num}`).classList.add('active');
+            } else {
+                event.target.classList.add('active');
+            }
+
+            updateStatus(`🔄 Carregando anel ${num}...`);
+
+            // Log ring selection
+            console.log(`🎯 Selecionado: Anel ${num}`);
+
+            if (num === 6) {
+                console.log('📦 Carregando base.glb (10MB)');
+                updateStatus('📦 Carregando base.glb (Anel 6 - 10MB)...');
+            }
+
+            // Trigger ring change in VTO system if available
+            if (window.ij_vto && window.ij_vto.RingTryonPlugin) {
+                console.log('🔧 VTO System disponível, mudando anel...');
+                // VTO system will handle the ring change
+            }
+        }
+
+        // Monitor system loading
+        let checkCount = 0;
+        const monitor = setInterval(() => {
+            checkCount++;
+
+            const status = {
+                webgi: !!window.WEBGI,
+                vto: !!window.ij_vto,
+                viewer: !!window.setupViewer
+            };
+
+            console.log(`📊 Check ${checkCount}:`, status);
+
+            if (status.webgi && status.vto && status.viewer) {
+                updateStatus('✅ Sistema pronto! Anel 6 (base.glb) carregado');
+
+                // Load ring 6 configuration
+                fetch('rings/6.json')
+                    .then(r => r.json())
+                    .then(config => {
+                        console.log('📄 Configuração do Anel 6:', config);
+                        document.getElementById('scale').textContent = config.modelScaleFactor;
+                        document.getElementById('position').textContent =
+                            `${config.modelPosition.x}, ${config.modelPosition.y}, ${config.modelPosition.z}`;
+                        document.getElementById('rotation').textContent =
+                            `${Math.round(config.modelRotation.x * 57.3)}°, ${config.modelRotation.y}°, ${config.modelRotation.z}°`;
+                    })
+                    .catch(err => console.error('❌ Erro ao carregar config:', err));
+
+                clearInterval(monitor);
+            }
+
+            if (checkCount >= 30) {
+                updateStatus('⚠️ Timeout - Sistema parcialmente carregado');
+                clearInterval(monitor);
+            }
+        }, 1000);
+
+        // Error monitoring
+        window.addEventListener('error', (e) => {
+            console.error('❌ Erro:', e.message);
+            if (e.message.includes('6.glb')) {
+                updateStatus('❌ Erro ao carregar 6.glb (base.glb)');
+            }
+        });
+
+        console.log('🚀 Base Ring Test iniciado - Foco no Anel 6 (base.glb)');
+    </script>
+</body>
+</html>

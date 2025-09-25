@@ -1,0 +1,22 @@
+/* Extracted CSS Block 836 */
+/* Size: 960 chars */
+
+).map(ut => parseInt(ut)).filter(ut => isFinite(ut)), this.axis)
+                  , at = it == null ? void 0 : it.userData.rotationCount;
+                if (at && at !== nt) {
+                    const ut = [];
+                    it == null || it.traverseAncestors(pt => {
+                        ut.push(pt)
+                    }
+                    );
+                    for (const pt of ut)
+                        if (pt.userData.autoScaled) {
+                            autoScaleObject3D(pt),
+                            (c = this._viewer) === null || c === void 0 || c.resetCamera({
+                                rootObject: pt,
+                                centerOffset: new three_module.Pq0(4,4,4)
+                            });
+                            break
+                        }
+                }
+                _e.parent && !_e.userData.__disposed || (_ = (h = this._viewer) === null || h === void 0 ? void 0 : h.getPluginByType(

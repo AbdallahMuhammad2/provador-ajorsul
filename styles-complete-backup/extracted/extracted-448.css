@@ -1,0 +1,25 @@
+/* Extracted CSS Block 448 */
+/* Size: 608 chars */
+
+) {
+        super({
+            vertexShader: CopyShader.vertexShader,
+            fragmentShader: c + ssaoBilateral,
+            uniforms: {
+                bilDirection: {
+                    value: new three_module.I9Y(1,0)
+                },
+                tNormalDepth: {
+                    value: null
+                },
+                tDiffuse: {
+                    value: o.texture
+                },
+                tDiffuseSize: {
+                    value: new three_module.I9Y
+                }
+            },
+            defines: {
+                B_SRC_ACCESSOR: h
+            }
+        }, 

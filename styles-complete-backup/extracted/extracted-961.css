@@ -1,0 +1,56 @@
+/* Extracted CSS Block 961 */
+/* Size: 1801 chars */
+
+
+            })
+        }
+        , 32))
+    }
+    refreshQueue(o) {
+        const c = this._refreshQueue[o]
+          , h = []
+          , _ = g()
+          , b = _ - this._lastModeTime[o];
+        c.forEach(_e => {
+            _e[2] > .001 ? (_e[2] -= b,
+            h.push(_e)) : this._refreshUiObject(_e[0], _e[1], _e[2])
+        }
+        ),
+        this._refreshQueue[o] = h,
+        this._lastModeTime[o] = _
+    }
+    addToRefreshQueue(o, c) {
+        var h;
+        const _ = (h = c[0]) === null || h === void 0 ? void 0 : h.uiConfig
+          , b = _ == null ? void 0 : _.uuid
+          , _e = this._refreshQueue[o]
+          , nt = _e.find(it => it[3] === b);
+        nt ? nt[2] = Math.max(nt[2], c[2]) : _e.push([...c, b]),
+        this._refreshQueue[o] = _e
+    }
+    dispose() {
+        var o;
+        (o = this._pane) === null || o === void 0 || o.dispose(),
+        this._pane = void 0
+    }
+    appendUiObject(o, c) {
+        o && this._appendUiObject(o, c)
+    }
+    appendChild(o) {
+        this.appendUiObject({
+            uiConfig: o
+        })
+    }
+    _appendUiObject(o, c) {
+        var h, _, b, _e;
+        const {uiConfig: nt} = o ?? {};
+        if (nt && (!this._limitedOptions || nt.limitedUi) && (c = c ?? this._pane,
+        nt.type)) {
+            nt.uuid || (nt.uuid = esm_browser_v4()),
+            nt.uiRef && nt.uiRefType !== nt.type && this.removeUiConfig(nt);
+            const it = (_ = (h = this._typeGenerators)[nt.type]) === null || _ === void 0 ? void 0 : _.call(h, c, nt, this);
+            it && (it.hidden = (b = Ee$1(nt.hidden)) !== null && b !== void 0 && b,
+            it.disabled = (_e = Ee$1(nt.disabled)) !== null && _e !== void 0 && _e),
+            nt.uiRef = it,
+            nt.uiRefType = it ? nt.type : void 0,
+            nt.uiRefresh = (at=

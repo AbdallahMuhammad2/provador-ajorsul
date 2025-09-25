@@ -1,0 +1,14 @@
+/* Extracted CSS Block 58 */
+/* Size: 479 chars */
+
+, {
+                            event: new b(zt,Rt.value.rawValue,void 0,wt.options.last)
+                        })
+                    }
+                }
+                onRackMonitorUpdate_(wt) {
+                    if (!(wt.bladeController instanceof bn))
+                        throw _t.shouldNeverHappen();
+                    const Rt = En(this.apiSet_, wt.bladeController)
+                      , zt = wt.bladeController.binding;
+                    this.emitter_.emit(

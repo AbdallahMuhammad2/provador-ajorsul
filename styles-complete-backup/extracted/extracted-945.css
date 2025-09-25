@@ -1,0 +1,20 @@
+/* Extracted CSS Block 945 */
+/* Size: 486 chars */
+
+),
+        this.defaultContactMaterial = new ContactMaterial(this.defaultMaterial,this.defaultMaterial,{
+            friction: .3,
+            restitution: 0
+        }),
+        this.doProfiling = !1,
+        this.profile = {
+            solve: 0,
+            makeContactConstraints: 0,
+            broadphase: 0,
+            integrate: 0,
+            narrowphase: 0
+        },
+        this.accumulator = 0,
+        this.subsystems = [],
+        this.addBodyEvent = {
+            type: 

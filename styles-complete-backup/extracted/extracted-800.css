@@ -1,0 +1,22 @@
+/* Extracted CSS Block 800 */
+/* Size: 869 chars */
+
+);
+        h != null && h.mesh && (h.mesh.modelObject.position.subVectors(o.position, this._preXRState.groundOffset),
+        h.mesh.modelObject.scale.setScalar(this._preXRState.groundScale),
+        h.mesh.modelObject.rotation.z = this._preXRState.groundRotation,
+        h.renderToDepth = this._preXRState.groundRenderToDepth,
+        h.shadowBaker.enabled = this._preXRState.groundShadowBaker,
+        h.refreshTransform()),
+        this._viewer.scene.setEnvironment(this._preXRState.environment),
+        this._preXRState.environment = void 0,
+        this._viewer.renderFilter.passObject.preserveTransparentTarget = this._preXRState.preserveTransparentTarget
+    }
+    _cancelHitSources() {
+        this._hitTestSource && (this._hitTestSource.cancel(),
+        this._hitTestSource = void 0),
+        this._touchInputHelper.cancel()
+    }
+}
+;
+ARPlugin.PluginType = 

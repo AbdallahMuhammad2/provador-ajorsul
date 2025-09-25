@@ -1,0 +1,11 @@
+/* Extracted CSS Block 903 */
+/* Size: 350 chars */
+
+,
+                                placeholder: this.utils.pathToTitle(c.items[_]),
+                                getValue: () => c.titles[_],
+                                setValue: b => {
+                                    c.titles[_] = b
+                                }
+                            }, {
+                                type: 

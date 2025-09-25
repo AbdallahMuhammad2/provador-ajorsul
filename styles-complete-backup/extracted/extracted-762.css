@@ -1,0 +1,18 @@
+/* Extracted CSS Block 762 */
+/* Size: 495 chars */
+
+);
+            if (b.has(it)) {
+                b.set(it, b.get(it));
+                continue
+            }
+            const at = nt.getIndices()
+              , ut = o.jsonDoc.json.accessors;
+            let pt;
+            try {
+                pt = encodeGeometry(nt, dist_index_modern_extends({}, this._encoderOptions, {
+                    quantizationVolume: _e
+                }))
+            } catch (vt) {
+                if (vt instanceof EncodingError) {
+                    h.warn(

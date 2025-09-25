@@ -1,0 +1,21 @@
+/* Extracted CSS Block 840 */
+/* Size: 675 chars */
+
+
+                  , Dt = It ? h : _
+                  , Gt = It ? _ : h;
+                for (let Bt = 1; Bt <= Dt; Bt++)
+                    for (let kt = 1; kt <= Gt; kt++) {
+                        const [Ut,Ht] = It ? [kt, Bt] : [Bt, kt]
+                          , Kt = (h + 1) * (Ut - 1) + (Ht - 1)
+                          , Jt = (h + 1) * Ut + (Ht - 1)
+                          , or = (h + 1) * Ut + Ht
+                          , ir = (h + 1) * (Ut - 1) + Ht;
+                        St.push(Kt, Jt, ir),
+                        St.push(Jt, or, ir)
+                    }
+            }()
+        }
+        )(),
+        this.setIndex(St),
+        this.setAttribute(

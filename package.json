@@ -1,0 +1,41 @@
+{
+  "name": "ring-virtual-tryon",
+  "version": "1.0.0",
+  "description": "Virtual Ring Try-On System - Autonomous jewelry AR experience",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "serve": "vite preview --port 3000 --host",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "virtual-try-on",
+    "ring-tryon",
+    "ar",
+    "webgl",
+    "jewelry",
+    "e-commerce",
+    "autonomous",
+    "3d-rendering"
+  ],
+  "author": "Ring VTO Team",
+  "license": "MIT",
+  "dependencies": {
+    "@mediapipe/hands": "^0.4.1675469240",
+    "@mediapipe/camera_utils": "^0.3.1675466862",
+    "three": "^0.158.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.0",
+    "@types/three": "^0.180.0",
+    "typescript": "^5.2.0",
+    "vite": "^4.4.9"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

@@ -1,0 +1,28 @@
+/* Extracted CSS Block 266 */
+/* Size: 837 chars */
+
+,
+                this.matrix = this.light.matrixWorld,
+                this.matrixAutoUpdate = !1,
+                this.update()
+            }
+            dispose() {
+                this.geometry.dispose(),
+                this.material.dispose()
+            }
+            update() {
+                this.light.updateWorldMatrix(!0, !1),
+                this.color !== void 0 ? this.material.color.set(this.color) : this.material.color.copy(this.light.color)
+            }
+        }
+        const lE = new Er
+          , ew = new Gn
+          , tw = new Gn;
+        class cE extends Mo {
+            constructor(tt, lt, mt) {
+                super(),
+                this.light = tt,
+                this.matrix = tt.matrixWorld,
+                this.matrixAutoUpdate = !1,
+                this.color = mt,
+                this.type = 

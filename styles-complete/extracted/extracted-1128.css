@@ -1,0 +1,45 @@
+/* Extracted CSS Block 1128 */
+/* Size: 1816 chars */
+
+, this.latestValues),
+        this.render = () => {
+            this.current && (this.triggerBuild(),
+            this.renderInstance(this.current, this.renderState, this.props.style, this.projection))
+        }
+        ,
+        this.scheduleRender = () => frame.render(this.render, !1, !0);
+        const {latestValues: it, renderState: at} = _e;
+        this.latestValues = it,
+        this.baseTarget = {
+            ...it
+        },
+        this.initialValues = c.initial ? {
+            ...it
+        } : {},
+        this.renderState = at,
+        this.parent = o,
+        this.props = c,
+        this.presenceContext = h,
+        this.depth = o ? o.depth + 1 : 0,
+        this.reducedMotionConfig = _,
+        this.options = nt,
+        this.blockInitialAnimation = !!b,
+        this.isControllingVariants = isControllingVariants(c),
+        this.isVariantNode = isVariantNode(c),
+        this.isVariantNode && (this.variantChildren = new Set),
+        this.manuallyAnimateOnMount = !!(o && o.current);
+        const {willChange: ut, ...pt} = this.scrapeMotionValuesFromProps(c, {}, this);
+        for (const ht in pt) {
+            const _t = pt[ht];
+            it[ht] !== void 0 && isMotionValue(_t) && (_t.set(it[ht], !1),
+            isWillChangeMotionValue(ut) && ut.add(ht))
+        }
+    }
+    mount(o) {
+        this.current = o,
+        visualElementStore.set(o, this),
+        this.projection && !this.projection.instance && this.projection.mount(o),
+        this.parent && this.isVariantNode && !this.isControllingVariants && (this.removeFromVariantTree = this.parent.addVariantChild(this)),
+        this.values.forEach( (c, h) => this.bindToMotionValue(h, c)),
+        hasReducedMotionListener.current || initPrefersReducedMotion(),
+        this.shouldReduceMotion = this.reducedMotionConfig === 

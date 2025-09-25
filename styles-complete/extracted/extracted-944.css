@@ -1,0 +1,28 @@
+/* Extracted CSS Block 944 */
+/* Size: 503 chars */
+
+];
+        for (let nt = 0; nt < _e.length; nt++) {
+            const it = _e[nt];
+            h[it] = o[it] - b,
+            _[it] = o[it] + b
+        }
+    }
+}
+new Vec3;
+new Vec3;
+new Vec3;
+new Vec3;
+new Vec3;
+new Vec3;
+new Vec3;
+new Vec3;
+new Vec3;
+class Cylinder extends ConvexPolyhedron {
+    constructor(o, c, h, _) {
+        if (o === void 0 && (o = 1),
+        c === void 0 && (c = 1),
+        h === void 0 && (h = 1),
+        _ === void 0 && (_ = 8),
+        o < 0)
+            throw new Error(

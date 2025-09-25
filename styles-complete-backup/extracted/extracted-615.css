@@ -1,0 +1,22 @@
+/* Extracted CSS Block 615 */
+/* Size: 530 chars */
+
+in fbxTree.GlobalSettings) {
+            const o = fbxTree.GlobalSettings.AmbientColor.value
+              , c = o[0]
+              , h = o[1]
+              , _ = o[2];
+            if (c !== 0 || h !== 0 || _ !== 0) {
+                const b = new three_module.Q1f(c,h,_).convertSRGBToLinear();
+                sceneGraph.add(new three_module.$p8(b,1))
+            }
+        }
+    }
+}
+class GeometryParser {
+    constructor() {
+        this.negativeMaterialIndices = !1
+    }
+    parse(o) {
+        const c = new Map;
+        if (

@@ -1,0 +1,9 @@
+/* Extracted CSS Block 818 */
+/* Size: 204 chars */
+
+,
+                children: Object.keys(EasingFunctions).map(o => ({
+                    label: o
+                })),
+                disabled: () => this.isRecording(),
+                property: [this, 

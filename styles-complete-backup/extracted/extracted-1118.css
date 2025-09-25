@@ -1,0 +1,16 @@
+/* Extracted CSS Block 1118 */
+/* Size: 459 chars */
+
+ && (_[3 + _e] /= at),
+        b(_)
+    }
+};
+class MeasureLayoutWithContext extends reactExports.Component {
+    componentDidMount() {
+        const {visualElement: o, layoutGroup: c, switchLayoutGroup: h, layoutId: _} = this.props
+          , {projection: b} = o;
+        addScaleCorrector(defaultScaleCorrectors),
+        b && (c.group && c.group.add(b),
+        h && h.register && _ && h.register(b),
+        b.root.didUpdate(),
+        b.addEventListener(

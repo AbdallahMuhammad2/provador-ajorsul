@@ -1,0 +1,8 @@
+/* Extracted CSS Block 438 */
+/* Size: 297 chars */
+
+);
+        nt ? await (nt == null ? void 0 : nt.animateToFitObject(o, c, h, _, {
+            min: ((_e = (b = this.scene.activeCamera.getControls()) === null || b === void 0 ? void 0 : b.minDistance) !== null && _e !== void 0 ? _e : .5) + .5,
+            max: 1e3
+        })) : this.console.error(

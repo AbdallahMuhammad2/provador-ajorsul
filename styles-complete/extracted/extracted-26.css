@@ -1,0 +1,21 @@
+/* Extracted CSS Block 26 */
+/* Size: 436 chars */
+
+;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+}
+.treejs .treejs-checkbox:hover:before {
+  -webkit-box-shadow: 0 0 2px 1px #1890ff;
+          box-shadow: 0 0 2px 1px #1890ff;
+}
+.treejs .treejs-node__checked > .treejs-checkbox:before {
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+.treejs .treejs-node__checked > .treejs-checkbox:after {
+  position: absolute;
+  content: 

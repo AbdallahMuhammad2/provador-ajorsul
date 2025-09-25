@@ -1,0 +1,14 @@
+/* Extracted CSS Block 1117 */
+/* Size: 396 chars */
+
+, it => {
+            const {drag: at, dragListener: ut=!0} = this.getProps();
+            at && ut && this.start(it)
+        }
+        )
+          , h = () => {
+            const {dragConstraints: it} = this.getProps();
+            isRefObject(it) && (this.constraints = this.resolveRefConstraints())
+        }
+          , {projection: _} = this.visualElement
+          , b = _.addEventListener(

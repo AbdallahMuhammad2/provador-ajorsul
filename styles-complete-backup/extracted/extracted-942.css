@@ -1,0 +1,27 @@
+/* Extracted CSS Block 942 */
+/* Size: 714 chars */
+
+
+};
+const tmpVec = new Vec3
+  , tmpQuat = new Quaternion
+  , updateAABB_shapeAABB = new AABB
+  , uiw_m1 = new Mat3
+  , uiw_m2 = new Mat3;
+new Mat3;
+const Body_applyForce_rotForce = new Vec3
+  , Body_applyLocalForce_worldForce = new Vec3
+  , Body_applyLocalForce_relativePointWorld = new Vec3
+  , Body_applyImpulse_velo = new Vec3
+  , Body_applyImpulse_rotVelo = new Vec3
+  , Body_applyLocalImpulse_worldImpulse = new Vec3
+  , Body_applyLocalImpulse_relativePoint = new Vec3
+  , Body_updateMassProperties_halfExtents = new Vec3;
+class Broadphase {
+    constructor() {
+        this.world = null,
+        this.useBoundingBoxes = !1,
+        this.dirty = !0
+    }
+    collisionPairs(o, c, h) {
+        throw new Error(

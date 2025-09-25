@@ -1,0 +1,128 @@
+/* Extracted CSS Block 676 */
+/* Size: 2760 chars */
+
+ } );
+
+		}
+
+		// Handle materials
+
+		const textureTypes = [
+			// rhino.TextureType.Bitmap,
+			rhino.TextureType.Diffuse,
+			rhino.TextureType.Bump,
+			rhino.TextureType.Transparency,
+			rhino.TextureType.Opacity,
+			rhino.TextureType.Emap
+		];
+
+		const pbrTextureTypes = [
+			rhino.TextureType.PBR_BaseColor,
+			rhino.TextureType.PBR_Subsurface,
+			rhino.TextureType.PBR_SubsurfaceScattering,
+			rhino.TextureType.PBR_SubsurfaceScatteringRadius,
+			rhino.TextureType.PBR_Metallic,
+			rhino.TextureType.PBR_Specular,
+			rhino.TextureType.PBR_SpecularTint,
+			rhino.TextureType.PBR_Roughness,
+			rhino.TextureType.PBR_Anisotropic,
+			rhino.TextureType.PBR_Anisotropic_Rotation,
+			rhino.TextureType.PBR_Sheen,
+			rhino.TextureType.PBR_SheenTint,
+			rhino.TextureType.PBR_Clearcoat,
+			rhino.TextureType.PBR_ClearcoatBump,
+			rhino.TextureType.PBR_ClearcoatRoughness,
+			rhino.TextureType.PBR_OpacityIor,
+			rhino.TextureType.PBR_OpacityRoughness,
+			rhino.TextureType.PBR_Emission,
+			rhino.TextureType.PBR_AmbientOcclusion,
+			rhino.TextureType.PBR_Displacement
+		];
+
+		for ( let i = 0; i < doc.materials().count; i ++ ) {
+
+			const _material = doc.materials().get( i );
+
+			let material = extractProperties( _material );
+
+			const textures = [];
+
+			textures.push( ...extractTextures( _material, textureTypes, doc ) );
+
+			material.pbrSupported = _material.physicallyBased().supported;
+
+			if ( material.pbrSupported ) {
+
+				textures.push( ...extractTextures( _material, pbrTextureTypes, doc ) );
+				material.pbr = extractProperties( _material.physicallyBased() );
+
+			}
+
+			material.textures = textures;
+
+			materials.push( material );
+
+			_material.delete();
+
+		}
+
+		// Handle layers
+
+		for ( let i = 0; i < doc.layers().count; i ++ ) {
+
+			const _layer = doc.layers().get( i );
+			const layer = extractProperties( _layer );
+
+			layers.push( layer );
+
+			_layer.delete();
+
+		}
+
+		// Handle views
+
+		for ( let i = 0; i < doc.views().count; i ++ ) {
+
+			const _view = doc.views().get( i );
+			const view = extractProperties( _view );
+
+			views.push( view );
+
+			_view.delete();
+
+		}
+
+		// Handle named views
+
+		for ( let i = 0; i < doc.namedViews().count; i ++ ) {
+
+			const _namedView = doc.namedViews().get( i );
+			const namedView = extractProperties( _namedView );
+
+			namedViews.push( namedView );
+
+			_namedView.delete();
+
+		}
+
+		// Handle groups
+
+		for ( let i = 0; i < doc.groups().count; i ++ ) {
+
+			const _group = doc.groups().get( i );
+			const group = extractProperties( _group );
+
+			groups.push( group );
+
+			_group.delete();
+
+		}
+
+		// Handle settings
+
+		const settings = extractProperties( doc.settings() );
+
+		//TODO: Handle other document stuff like dimstyles, instance definitions, bitmaps etc.
+
+		// Handle dimstyles
+		// console.log( \

@@ -1,0 +1,32 @@
+/* Extracted CSS Block 213 */
+/* Size: 1423 chars */
+
+, Xt.size)
+                    } else {
+                        const Qt = Wt === void 0 ? 0 : Wt.length;
+                        let qt = mt[Nt.id];
+                        if (qt === void 0 || qt.length !== Qt) {
+                            qt = [];
+                            for (let er = 0; er < Qt; er++)
+                                qt[er] = [er, 0];
+                            mt[Nt.id] = qt
+                        }
+                        for (let er = 0; er < Qt; er++) {
+                            const rr = qt[er];
+                            rr[0] = er,
+                            rr[1] = Wt[er]
+                        }
+                        qt.sort(Nw);
+                        for (let er = 0; er < 8; er++)
+                            er < Qt && qt[er][1] ? (Mt[er][0] = qt[er][0],
+                            Mt[er][1] = qt[er][1]) : (Mt[er][0] = Number.MAX_SAFE_INTEGER,
+                            Mt[er][1] = 0);
+                        Mt.sort(Ow);
+                        const Xt = Nt.morphAttributes.position
+                          , Zt = Nt.morphAttributes.normal;
+                        let Yt = 0;
+                        for (let er = 0; er < 8; er++) {
+                            const rr = Mt[er]
+                              , xr = rr[0]
+                              , br = rr[1];
+                            xr !== Number.MAX_SAFE_INTEGER && br ? (Xt && Nt.getAttribute(

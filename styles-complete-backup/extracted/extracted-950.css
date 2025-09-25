@@ -1,0 +1,23 @@
+/* Extracted CSS Block 950 */
+/* Size: 527 chars */
+
+, () => {
+            h.position.set(...d.getWorldPosition(_).toArray()),
+            h.quaternion.set(...d.getWorldQuaternion(b).toArray()),
+            h.angularVelocity.set(0, 0, 0),
+            h.velocity.set(0, 0, 0)
+        }
+        ),
+        this._world.addBody(h),
+        this._bodyMeshMap.set(h, d),
+        d._physicsBody = h,
+        d.setDirty({
+            sceneUpdate: !0,
+            updateGround: !1,
+            frameFade: !1,
+            refreshUi: !0
+        })
+    }
+}
+;
+CannonPhysicsPlugin.PluginType = 

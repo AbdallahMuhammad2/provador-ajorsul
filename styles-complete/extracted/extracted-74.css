@@ -1,0 +1,19 @@
+/* Extracted CSS Block 74 */
+/* Size: 617 chars */
+
+), nr),
+                    this.buttonElement.appendChild(nr),
+                    this.titleElement = nr
+                }
+            }
+            class Ys {
+                constructor(wt, Rt) {
+                    this.emitter = new St,
+                    this.onClick_ = this.onClick_.bind(this),
+                    this.props = Rt.props,
+                    this.viewProps = Rt.viewProps,
+                    this.view = new Vn(wt,{
+                        props: Rt.props,
+                        viewProps: Rt.viewProps
+                    }),
+                    this.view.buttonElement.addEventListener(

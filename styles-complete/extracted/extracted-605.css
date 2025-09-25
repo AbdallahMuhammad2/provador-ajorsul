@@ -1,0 +1,19 @@
+/* Extracted CSS Block 605 */
+/* Size: 782 chars */
+
+ + _[0].slice(1).trim()).slice(1);
+                    c.startObject(ut)
+                } else if (_material_use_pattern.test(it))
+                    c.object.startMaterial(it.substring(7).trim(), c.materialLibraries);
+                else if (_material_library_pattern.test(it)) {
+                    c.materialLibraries.push(it.substring(7).trim());
+                    const ut = it.substring(7).trim()
+                      , pt = this.manager.getHandler(ut);
+                    if (pt) {
+                        const ht = await pt.loadAsync(ut).catch(_t => {
+                            console.warn(_t)
+                        }
+                        );
+                        ht && this.setMaterials(ht)
+                    } else
+                        console.warn(

@@ -1,0 +1,14 @@
+/* Extracted CSS Block 999 */
+/* Size: 581 chars */
+
+) !== -1) {
+                    let nt = this.pointEnd.length() / this.pointStart.length();
+                    this.pointEnd.dot(this.pointStart) < 0 && (nt *= -1),
+                    _tempVector2.set(nt, nt, nt)
+                } else
+                    _tempVector.copy(this.pointStart),
+                    _tempVector2.copy(this.pointEnd),
+                    _tempVector.applyQuaternion(this._worldQuaternionInv),
+                    _tempVector2.applyQuaternion(this._worldQuaternionInv),
+                    _tempVector2.divide(_tempVector),
+                    c.search(

@@ -1,0 +1,24 @@
+/* Extracted CSS Block 100 */
+/* Size: 786 chars */
+
+, this.onValueChange_),
+                    this.value = Rt.value,
+                    this.update_()
+                }
+                update_() {
+                    this.inputElement.checked = this.value.rawValue
+                }
+                onValueChange_() {
+                    this.update_()
+                }
+            }
+            class $_ {
+                constructor(wt, Rt) {
+                    this.onInputChange_ = this.onInputChange_.bind(this),
+                    this.value = Rt.value,
+                    this.viewProps = Rt.viewProps,
+                    this.view = new q_(wt,{
+                        value: this.value,
+                        viewProps: this.viewProps
+                    }),
+                    this.view.inputElement.addEventListener(

@@ -1,0 +1,27 @@
+/* Extracted CSS Block 1004 */
+/* Size: 1080 chars */
+
+ ? (b.position.copy(this.worldPositionStart),
+            b.quaternion.copy(this.worldQuaternionStart),
+            _tempVector.set(1e-10, 1e-10, 1e-10).add(this.worldPositionStart).sub(this.worldPosition).multiplyScalar(-1),
+            _tempVector.applyQuaternion(this.worldQuaternionStart.clone().invert()),
+            b.scale.copy(_tempVector),
+            b.visible = this.dragging) : (b.quaternion.copy(c),
+            this.dragging ? b.position.copy(this.worldPositionStart) : b.position.copy(this.worldPosition),
+            this.axis && (b.visible = this.axis.search(b.name) !== -1)))
+        }
+        super.updateMatrixWorld(o)
+    }
+}
+class TransformControlsPlane extends three_module.eaF {
+    constructor() {
+        super(new three_module.bdM(1e5,1e5,2,2), new TransformControls.ObjectConstructors.MeshBasicMaterial({
+            visible: !1,
+            wireframe: !0,
+            side: three_module.$EB,
+            transparent: !0,
+            opacity: .1,
+            toneMapped: !1
+        })),
+        this.isTransformControlsPlane = !0,
+        this.type = 

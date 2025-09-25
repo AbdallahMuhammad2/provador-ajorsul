@@ -1,0 +1,16 @@
+/* Extracted CSS Block 81 */
+/* Size: 445 chars */
+
+, {
+                        sender: this
+                    })
+                }
+            }
+            class Bm {
+                constructor(wt) {
+                    this.onValueChange_ = this.onValueChange_.bind(this),
+                    this.reader = wt.reader,
+                    this.writer = wt.writer,
+                    this.emitter = new St,
+                    this.value = wt.value,
+                    this.value.emitter.on(

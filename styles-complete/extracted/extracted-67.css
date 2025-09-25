@@ -1,0 +1,17 @@
+/* Extracted CSS Block 67 */
+/* Size: 480 chars */
+
+, {
+                        bladeController: wt.bladeController,
+                        sender: this
+                    })
+                }
+                onBladePositionsChange_() {
+                    this.updatePositions_()
+                }
+            }
+            class zo extends fr {
+                constructor(wt, Rt) {
+                    super(Object.assign(Object.assign({}, Rt), {
+                        view: new vo(wt,{
+                            viewName: 

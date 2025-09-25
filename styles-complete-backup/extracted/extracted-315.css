@@ -1,0 +1,18 @@
+/* Extracted CSS Block 315 */
+/* Size: 518 chars */
+
+ ? _.clear(this._renderer, !0, b, _e) : (this._renderer.setRenderTarget((nt = _) !== null && nt !== void 0 ? nt : null),
+        this._renderer.clear(!0, b, _e)),
+        this._renderer.setRenderTarget(ut, pt, ht),
+        this._renderer.setClearColor(it, at)
+    }
+    renderModel(d, o) {
+        this._renderer.render(d.modelObject, o.cameraObject)
+    }
+    renderScene(d) {
+        const o = d.activeCamera;
+        o && this.renderModel(d, o)
+    }
+    _updated() {
+        this.dispatchEvent({
+            type: 

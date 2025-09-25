@@ -1,0 +1,21 @@
+/* Extracted CSS Block 514 */
+/* Size: 896 chars */
+
+)
+            }
+            ,
+            onObjectRender: (o, c, h) => {
+                var _, b;
+                const _e = c.materialObject;
+                let nt = !this.enabled || h.userData.screenSpaceRendering === !1 || !((_ = _e.userData) === null || _ === void 0) && _.sscsDisabled || !((b = _e.userData) === null || b === void 0) && b.pluginsDisabled ? 0 : 1;
+                _e.defines.SSCS_ENABLED !== nt && (_e.defines.SSCS_ENABLED = nt,
+                _e.needsUpdate = !0),
+                nt = this._defines.SSCS_STEP_COUNT,
+                _e.defines.SSCS_STEP_COUNT !== nt && (_e.defines.SSCS_STEP_COUNT = nt,
+                _e.needsUpdate = !0),
+                nt = +this._defines.SSCS_DEBUG,
+                _e.defines.SSCS_DEBUG !== nt && (_e.defines.SSCS_DEBUG = nt,
+                _e.needsUpdate = !0)
+            }
+            ,
+            parsFragmentSnippet: () => 

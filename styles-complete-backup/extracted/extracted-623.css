@@ -1,0 +1,12 @@
+/* Extracted CSS Block 623 */
+/* Size: 252 chars */
+
+ && (h.name = nt),
+        h
+    }
+    parseSubNode(o, c, h) {
+        if (h.singleProperty === !0) {
+            const _ = h.propertyList[0];
+            Array.isArray(_) ? (c[h.name] = h,
+            h.a = _) : c[h.name] = _
+        } else if (o === 

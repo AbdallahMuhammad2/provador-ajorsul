@@ -1,0 +1,28 @@
+/* Extracted CSS Block 952 */
+/* Size: 980 chars */
+
+, this._preFrame),
+        this.planeMesh = this._planeMesh,
+        this._planeMesh.geometry.dispose(),
+        this._planeMesh.removeFromParent(),
+        super.onRemove(d)
+    }
+    _makeRoughGround(d, o=1, c=1) {
+        const h = Date.now()
+          , _ = 30 * o
+          , b = .01 * c
+          , _e = d.attributes.position
+          , nt = _e.count;
+        for (let it = 0; it < nt; it++) {
+            const at = _e.getX(it)
+              , ut = _e.getY(it)
+              , pt = _e.getZ(it)
+              , ht = 5 * this._noise.noise3d(at * _ * .1 + 3e-4 * h, ut * _ * .1 + 3e-4 * h, pt * _ * .1 + 3e-4 * h) * b + 4 * this._noise.noise3d(at * _ * .2 + 12e-5 * h, ut * _ * .2 + 15e-5 * h, pt * _ * .2 + 15e-5 * h) * b + 4 * this._noise.noise3d(at * _ * .09 + 15e-5 * h, ut * _ * .12 + 9e-5 * h, pt * _ * .15 + 15e-5 * h) * b;
+            _e.setZ(it, ht / 3)
+        }
+        _e.needsUpdate = !0,
+        d.computeVertexNormals()
+    }
+}
+;
+WaveGroundPlugin.PluginType = 

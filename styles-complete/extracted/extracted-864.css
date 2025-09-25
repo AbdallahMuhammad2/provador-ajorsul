@@ -1,0 +1,11 @@
+/* Extracted CSS Block 864 */
+/* Size: 190 chars */
+
+, this.onKeyUp)
+    }
+    onContextMenu(d) {
+        this.enableKeys && d.preventDefault()
+    }
+}
+;
+FirstPersonControls2_decorate([serialize(), uiToggle()], FirstPersonControls2.prototype, 

@@ -1,0 +1,10 @@
+/* Extracted CSS Block 900 */
+/* Size: 217 chars */
+
+;
+class VariationConfiguratorEditorUiPlugin extends VariationConfiguratorGridUiPlugin {
+    constructor() {
+        super(...arguments),
+        this._uiExpandedState = {},
+        this.uiConfig = {
+            type: 

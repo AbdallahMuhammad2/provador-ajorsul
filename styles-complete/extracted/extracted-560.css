@@ -1,0 +1,13 @@
+/* Extracted CSS Block 560 */
+/* Size: 331 chars */
+
+)
+        }
+        const at = (_e = this._viewer) === null || _e === void 0 ? void 0 : _e.getPlugin(InteractionPromptPlugin);
+        at && at.animationRunning && await at.stopAnimation({
+            reset: !0
+        }),
+        this._currentView = o,
+        this._animating = !0,
+        this.dispatchEvent({
+            type: 

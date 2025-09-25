@@ -1,0 +1,21 @@
+/* Extracted CSS Block 1035 */
+/* Size: 379 chars */
+
+,
+            stiffness: _t,
+            damping: bt,
+            restDelta: At
+        }, ar))
+    }
+    if (Bt(h))
+        Ht({
+            from: h,
+            velocity: b,
+            to: kt(h)
+        });
+    else {
+        var Kt = at * b + h;
+        Et !== void 0 && (Kt = Et(Kt));
+        var Jt, or, ir = kt(Kt), lr = ir === _e ? -1 : 1;
+        Ut({
+            type: 

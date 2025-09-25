@@ -1,0 +1,23 @@
+/* Extracted CSS Block 878 */
+/* Size: 650 chars */
+
+));
+                    c.value += ut,
+                    c.value = this._format(c.value)
+                }
+            }
+            it < 2 ? this.parent.innerHTML = nt : setInnerHTMLWithScripts(this.parent, c.value)
+        }
+        ),
+        o.appendChild(h),
+        o.appendChild(c),
+        o.appendChild(_),
+        c.value = this._format(this.parent.innerHTML),
+        (d = this._viewer) === null || d === void 0 || d.container.appendChild(o)
+    }
+    _onEnabledChanged() {
+        super._onEnabledChanged(),
+        this._togglePreview()
+    }
+    _togglePreview() {
+        this.wrapper && (this.wrapper.style.zIndex = this.canvasUp ? 

@@ -1,0 +1,10 @@
+/* Extracted CSS Block 328 */
+/* Size: 209 chars */
+
+,
+            hidden: () => !d.userData.__appliedMeshes || d.userData.__appliedMeshes.size < 2,
+            value: () => {
+                autoGPUInstanceMeshes(d)
+            }
+        }, {
+            type: 

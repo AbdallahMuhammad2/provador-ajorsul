@@ -1,0 +1,25 @@
+/* Extracted CSS Block 423 */
+/* Size: 554 chars */
+
+, {
+            message: o
+        })
+    }
+}
+class DropzonePlugin extends I$2 {
+    constructor(o) {
+        super(),
+        this._domElement = o,
+        this._allowedExtensions = void 0,
+        this.importerParams = {
+            autoScale: !0,
+            autoScaleRadius: 2,
+            pseudoCenter: !1,
+            autoCenter: !0,
+            autoImport: !0,
+            autoAdd: !0,
+            centerOffset: new three_module.Pq0(.5,.5,3)
+        },
+        this.dependencies = [AssetManagerPlugin],
+        this.uiConfig = {
+            type: 

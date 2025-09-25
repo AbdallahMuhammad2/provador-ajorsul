@@ -1,0 +1,4 @@
+/* Extracted CSS Block 450 */
+/* Size: 100 chars */
+
+varying vec2 vUv;void main(){vUv=uv;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}

@@ -1,0 +1,7 @@
+/* Extracted CSS Block 1044 */
+/* Size: 150 chars */
+
+, void 0),
+AnimationObjectPlugin_decorate([serialize(), uiToggle(void 0, d => ({
+    hidden: () => d.from === void 0
+}))], AnimationObject.prototype, 

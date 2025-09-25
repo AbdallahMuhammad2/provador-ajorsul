@@ -1,0 +1,18 @@
+/* Extracted CSS Block 401 */
+/* Size: 438 chars */
+
+),
+        super.load(o, b => {
+            const _e = unzipSync(new Uint8Array(b))
+              , nt = new Map(Object.entries(_e).map( ([it,at]) => [it, new File([at],it)]));
+            c == null || c(nt)
+        }
+        , h, _)
+    }
+}
+class SVGTextureLoader extends three_module.aHM {
+    constructor(o) {
+        super(o)
+    }
+    load(o, c, h, _) {
+        const b = SVGTextureLoader.USE_CANVAS_TEXTURE ? document.createElement(

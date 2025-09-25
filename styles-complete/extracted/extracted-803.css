@@ -1,0 +1,15 @@
+/* Extracted CSS Block 803 */
+/* Size: 344 chars */
+
+,
+        this._console = console,
+        this._currentRecording = [],
+        this._frameCount = 0,
+        this._ondataavailable = h => {
+            h.data && h.data.size > 0 && this._currentRecording.push(h.data)
+        }
+        ,
+        this._canvas = o,
+        c == null || c.mimeType,
+        this.options = {
+            mimeType: 

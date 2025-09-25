@@ -1,0 +1,50 @@
+/* Extracted CSS Block 314 */
+/* Size: 1810 chars */
+
+
+        }),
+        this._updated(),
+        this.reset())
+    }
+    blit(d, o, {viewport: c, material: h, shader: _, pass: b, clear: _e=!0}={}) {
+        const nt = this._composer.copyPass
+          , {renderToScreen: it, material: at, uniforms: ut, clear: pt} = nt;
+        h && (nt.material = h);
+        const ht = this._renderer.getViewport(new three_module.IUQ)
+          , _t = this._renderer.autoClear
+          , vt = this._renderer.getRenderTarget();
+        c && this._renderer.setViewport(new three_module.IUQ().fromArray(c)),
+        this._renderer.autoClear = !1,
+        nt.uniforms = nt.material.uniforms,
+        nt.renderToScreen = !1,
+        nt.clear = _e,
+        setThreeRendererMode(this._renderer, {
+            sceneRender: !0,
+            opaqueRender: !0,
+            shadowMapRender: !1,
+            backgroundRender: !1,
+            transparentRender: !0,
+            transmissionRender: !1
+        }, () => {
+            nt.render(this._renderer, o ?? null, {
+                texture: d
+            }, 0, !1)
+        }
+        ),
+        nt.renderToScreen = it,
+        nt.clear = pt,
+        nt.material = at,
+        nt.uniforms = ut,
+        this._renderer.autoClear = _t,
+        c && this._renderer.setViewport(ht),
+        this._renderer.setRenderTarget(vt)
+    }
+    clearColor({r: d, g: o, b: c, a: h, target: _, depth: b=!0, stencil: _e=!0}) {
+        var nt;
+        const it = this._renderer.getClearColor(new three_module.Q1f)
+          , at = this._renderer.getClearAlpha();
+        this._renderer.setClearColor(new three_module.Q1f(d ?? it.r,o ?? it.g,c ?? it.b), h ?? at);
+        const ut = this._renderer.getRenderTarget()
+          , pt = this._renderer.getActiveCubeFace()
+          , ht = this._renderer.getActiveMipmapLevel();
+        _ && typeof _.clear == 

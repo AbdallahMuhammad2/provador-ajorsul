@@ -1,0 +1,11 @@
+/* Extracted CSS Block 539 */
+/* Size: 300 chars */
+
+ ? this.processState.set(bt.obj.name, {
+                state: bt.state,
+                progress: bt.progress ? 100 * bt.progress : void 0
+            }) : this.processState.delete(bt.obj.name),
+            this._updateMainDiv(this.processState)
+        }
+        ),
+        (pt = o.getPluginByType(

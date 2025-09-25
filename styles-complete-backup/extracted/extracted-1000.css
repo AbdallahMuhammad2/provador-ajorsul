@@ -1,0 +1,20 @@
+/* Extracted CSS Block 1000 */
+/* Size: 843 chars */
+
+ ? (_.quaternion.copy(this._quaternionStart),
+                _.quaternion.multiply(_tempQuaternion.setFromAxisAngle(this.rotationAxis, this.rotationAngle)).normalize()) : (this.rotationAxis.applyQuaternion(this._parentQuaternionInv),
+                _.quaternion.copy(_tempQuaternion.setFromAxisAngle(this.rotationAxis, this.rotationAngle)),
+                _.quaternion.multiply(this._quaternionStart).normalize())
+            }
+            this.dispatchEvent(TransformControls_changeEvent),
+            this.dispatchEvent(_objectChangeEvent)
+        }
+    }
+    pointerUp(o) {
+        o.button === 0 && (this.dragging && this.axis !== null && (_mouseUpEvent.mode = this.mode,
+        this.dispatchEvent(_mouseUpEvent)),
+        this.dragging = !1,
+        this.axis = null)
+    }
+    dispose() {
+        this.domElement.removeEventListener(

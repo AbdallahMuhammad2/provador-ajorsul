@@ -1,0 +1,21 @@
+/* Extracted CSS Block 273 */
+/* Size: 496 chars */
+
+
+            }
+            dispose() {
+                this.geometry.dispose(),
+                this.material.dispose()
+            }
+        }
+        const rw = new Er
+          , p0 = new Er
+          , nw = new Er;
+        class pE extends Mo {
+            constructor(tt, lt, mt) {
+                super(),
+                this.light = tt,
+                this.matrix = tt.matrixWorld,
+                this.matrixAutoUpdate = !1,
+                this.color = mt,
+                this.type = 

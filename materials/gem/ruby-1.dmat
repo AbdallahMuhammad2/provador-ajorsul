@@ -1,0 +1,10 @@
+{
+  "name": "Ruby Red",
+  "type": "DiamondMaterial",
+  "roughness": 0.0,
+  "metallic": 0.0,
+  "ior": 1.76,
+  "transmission": 0.8,
+  "opacity": 1.0,
+  "color": [0.8, 0.1, 0.1]
+}

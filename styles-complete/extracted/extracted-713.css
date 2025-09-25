@@ -1,0 +1,26 @@
+/* Extracted CSS Block 713 */
+/* Size: 532 chars */
+
+ && (c = .8),
+    d.convertToBlob({
+        type: o,
+        quality: c
+    })
+}
+class GLTFWriter {
+    constructor() {
+        this.plugins = [],
+        this.options = {},
+        this.pending = [],
+        this.buffers = [],
+        this.byteOffset = 0,
+        this.buffers = [],
+        this.nodeMap = new Map,
+        this.skins = [],
+        this.extensionsUsed = {},
+        this.extensionsRequired = {},
+        this.uids = new Map,
+        this.uid = 0,
+        this.json = {
+            asset: {
+                version: 

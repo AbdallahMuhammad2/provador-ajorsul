@@ -1,0 +1,21 @@
+/* Extracted CSS Block 808 */
+/* Size: 557 chars */
+
+))
+    }
+    setOptions(o) {
+        this._setOptions(o)
+    }
+    constructor(o, c) {
+        super(o, c),
+        this._resumeSyncTime = 0,
+        this._onstop = h => {
+            var _;
+            if (this._recorder && this._currentRecording.length > 0) {
+                const b = new Blob(this._currentRecording,{
+                    type: this.options.mimeType
+                });
+                (_ = this._recordingCallback) === null || _ === void 0 || _.call(this, b)
+            }
+            this._recorder = void 0,
+            this.setState(

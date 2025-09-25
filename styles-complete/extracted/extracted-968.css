@@ -1,0 +1,16 @@
+/* Extracted CSS Block 968 */
+/* Size: 401 chars */
+
+, Pt)
+                    }
+                    )
+                }
+                CustomContextMenu.Remove()
+            }
+            ,
+            cancel: () => {
+                CustomContextMenu.Remove()
+            }
+        }, 2, _t.height + 8);
+        (pt = ht.parentElement) === null || pt === void 0 || pt.appendChild(St),
+        _t.y > .7 * document.body.clientHeight && (St.style.top = 

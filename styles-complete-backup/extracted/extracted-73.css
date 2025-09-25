@@ -1,0 +1,18 @@
+/* Extracted CSS Block 73 */
+/* Size: 444 chars */
+
+)),
+                    this.element.appendChild(zt)
+                }
+            }
+            class ys extends fr {
+                constructor(wt, Rt) {
+                    super(Object.assign(Object.assign({}, Rt), {
+                        view: new Ps(wt,{
+                            viewProps: Rt.viewProps
+                        })
+                    }))
+                }
+            }
+            const as = {
+                id: 

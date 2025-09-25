@@ -1,0 +1,13 @@
+/* Extracted CSS Block 341 */
+/* Size: 391 chars */
+
+)
+    }
+    removeControlsCtor(o) {
+        this._controlsCtors.delete(o)
+    }
+    _initCameraControls() {
+        var o, c, h;
+        const _ = this._options.controlsMode;
+        this._controls = (c = (o = this._controlsCtors.get(_)) === null || o === void 0 ? void 0 : o(this._camera.modelObject, this._container)) !== null && c !== void 0 ? c : void 0,
+        this._controls || _ === 

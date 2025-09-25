@@ -1,0 +1,36 @@
+/* Extracted CSS Block 436 */
+/* Size: 922 chars */
+
+,
+            target: this,
+            plugin: h
+        }),
+        this.setDirty(h),
+        h
+    }
+    async addPlugins(o) {
+        for (const c of o)
+            await this.addPlugin(c)
+    }
+    async addPluginsSync(o) {
+        for (const c of o)
+            this.addPluginSync(c)
+    }
+    async removePlugin(o, c=!0) {
+        const h = getPluginType(o);
+        this.plugins[h] && (await o.onRemove(this),
+        delete this.plugins[h],
+        c && o.onDispose && await o.onDispose(this),
+        this.setDirty(o))
+    }
+    removePluginSync(o, c=!0) {
+        const h = getPluginType(o);
+        this.plugins[h] && (o.onRemove(this),
+        delete this.plugins[h],
+        c && o.onDispose && o.onDispose(this),
+        this.setDirty(o))
+    }
+    createCamera(o) {
+        var c;
+        const h = (c = o.userData.iCamera) !== null && c !== void 0 ? c : new CameraController(o,{
+            controlsMode: 

@@ -1,0 +1,9 @@
+/* Extracted CSS Block 1143 */
+/* Size: 215 chars */
+
+,
+                isActive: o === 0,
+                onClick: () => c(0)
+            }), jsxRuntimeExports.jsx(SettingsButton, {
+                img: jsxRuntimeExports.jsx(CameraZoomIcon, {}),
+                text: 

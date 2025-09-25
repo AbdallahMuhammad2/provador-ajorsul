@@ -1,0 +1,11 @@
+/* Extracted CSS Block 970 */
+/* Size: 164 chars */
+
+, this._postFrame)
+    }
+    async onDispose(o) {
+        this.dispose()
+    }
+    async onRemove(o) {
+        this._viewer = void 0,
+        o.removeEventListener(

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ring Try-On - Browser Test</title>
+    <meta name="description" content="Virtual ring try-on application with hand tracking">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/main.css">
+
+    <style>
+        /* Inline basic styles for testing */
+        body {
+            margin: 0;
+            background: #000;
+            font-family: Arial, sans-serif;
+        }
+
+        #canvasContainer {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+
+        #mcanvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        #assetManagerLoadingScreen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            transition: opacity 0.5s ease;
+        }
+
+        #assetManagerLoadingScreenContent {
+            text-align: center;
+            color: white;
+        }
+
+        .loadingScreenLogoImage {
+            width: 100px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .loader {
+            border: 3px solid #333;
+            border-top: 3px solid #fff;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        #loadingProgress {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .loadingScreenProcessState {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main canvas container -->
+    <div id="canvasContainer">
+        <canvas id="mcanvas" width="800" height="600"></canvas>
+    </div>
+
+    <!-- Loading screen -->
+    <div id="assetManagerLoadingScreen">
+        <div id="assetManagerLoadingScreenContent">
+            <div class="loadingScreenLogoElement">
+                <img src="https://static.webgi.xyz/logo.svg" alt="WebGI" class="loadingScreenLogoImage">
+            </div>
+            <div class="loadingScreenLoadingElement">
+                <div class="loader"></div>
+            </div>
+            <div class="loadingScreenProcessState">Loading Ring Try-On...</div>
+            <div class="loadingScreenFilesElement">
+                <div id="loadingProgress">Initializing...</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load original WebGI bundle first -->
+    <script src="./index.js"></script>
+
+    <!-- Load browser-compatible main script -->
+    <script src="./src/main-browser.js"></script>
+
+    <!-- Debug monitoring -->
+    <script>
+        console.log('🧪 Browser Test Started');
+
+        // Monitor for WebGI
+        let webgiCheckCount = 0;
+        const webgiCheck = setInterval(() => {
+            webgiCheckCount++;
+            console.log(`🔍 WebGI Check ${webgiCheckCount}:`, {
+                WEBGI: !!window.WEBGI,
+                webpackgi_exports: !!window.__webpackgi_exports__,
+                setupViewer: !!window.setupViewer,
+                ij_vto: !!window.ij_vto
+            });
+
+            if (webgiCheckCount >= 20) {
+                clearInterval(webgiCheck);
+                console.log('⏰ WebGI monitoring timeout');
+            }
+
+            if (window.setupViewer) {
+                console.log('✅ setupViewer detected - test successful!');
+                clearInterval(webgiCheck);
+            }
+        }, 1000);
+
+        // Window load monitoring
+        window.addEventListener('load', () => {
+            console.log('📄 Page fully loaded');
+            setTimeout(() => {
+                console.log('🔍 Final status check:', {
+                    canvas: !!document.getElementById('mcanvas'),
+                    loadingScreen: !!document.getElementById('assetManagerLoadingScreen'),
+                    webgi: !!window.WEBGI,
+                    setupViewer: !!window.setupViewer
+                });
+            }, 2000);
+        });
+    </script>
+</body>
+</html>

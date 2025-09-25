@@ -1,0 +1,11 @@
+/* Extracted CSS Block 80 */
+/* Size: 307 chars */
+
+,
+                accept(Vt) {
+                    const wt = hr
+                      , Rt = gr(Vt, {
+                        pages: wt.required.array(wt.required.object({
+                            title: wt.required.string
+                        })),
+                        view: wt.required.constant(

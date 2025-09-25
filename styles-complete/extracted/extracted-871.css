@@ -1,0 +1,16 @@
+/* Extracted CSS Block 871 */
+/* Size: 384 chars */
+
+, () => {
+            this.helperIdentities.forEach(h => {
+                var _;
+                h.update() && ((_ = this._viewer) === null || _ === void 0 || _.setDirty())
+            }
+            )
+        }
+        )
+    }
+    createHelper(o, c) {
+        var h;
+        if (this.helperIdentities.has(o))
+            (h = this._viewer) === null || h === void 0 || h.console.warn(

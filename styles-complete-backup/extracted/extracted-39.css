@@ -1,0 +1,22 @@
+/* Extracted CSS Block 39 */
+/* Size: 793 chars */
+
+))
+                }
+            }
+            let Et = null;
+            class Pt {
+                constructor(kt, Ut) {
+                    this.value = Ut.value,
+                    this.viewProps = Ut.viewProps,
+                    this.view = new At(kt,{
+                        viewProps: this.viewProps,
+                        extensions: Ut.extensions,
+                        imageFit: Ut.imageFit,
+                        clickCallback: Ut.clickCallback
+                    }),
+                    this.onFile = this.onFile.bind(this),
+                    this.onDrop = this.onDrop.bind(this),
+                    this.onDragOver = this.onDragOver.bind(this),
+                    this.onDragLeave = this.onDragLeave.bind(this),
+                    this.view.input.addEventListener(

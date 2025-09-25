@@ -1,0 +1,18 @@
+/* Extracted CSS Block 413 */
+/* Size: 672 chars */
+
+);
+        const h = await this.importConfigResources(o.resources || {}, c);
+        this.applyViewerConfig(o, h)
+    }
+    applyViewerConfig(o, c) {
+        var h;
+        if (this._viewer && this._importer)
+            if ((c = c || o.resources).__isLoadedResources) {
+                this._viewer.fromJSON(o, c);
+                for (const _ of Object.values(c.materials))
+                    _.__useCount ? delete _.__useCount : (h = this._materials) === null || h === void 0 || h.unregisterMaterial(_);
+                for (const _ of Object.values(c.textures))
+                    _.__useCount && delete _.__useCount
+            } else
+                console.error(

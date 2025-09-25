@@ -1,0 +1,57 @@
+/* Extracted CSS Block 673 */
+/* Size: 2642 chars */
+
+:
+                    ht = ut.materialIndex >= 0 ? ut.materialIndex : null
+                }
+                if (ht >= 0) {
+                    const bt = nt[ht];
+                    pt = this._createMaterial(bt, o.renderEnvironment)
+                } else
+                    pt = this._createMaterial();
+                pt = this._compareMaterials(pt);
+                const _t = this._createObject(at, pt);
+                if (_t === void 0)
+                    continue;
+                const vt = o.layers[ut.layerIndex];
+                _t.visible = !vt || vt.visible,
+                ut.isInstanceDefinitionObject ? h.push(_t) : c.add(_t)
+            }
+        }
+        for (let it = 0; it < _.length; it++) {
+            const at = _[it];
+            _e = [];
+            for (let ut = 0; ut < at.attributes.objectIds.length; ut++) {
+                const pt = at.attributes.objectIds[ut];
+                for (let ht = 0; ht < h.length; ht++)
+                    pt === h[ht].userData.attributes.id && _e.push(h[ht])
+            }
+            for (let ut = 0; ut < b.length; ut++) {
+                const pt = b[ut];
+                if (pt.geometry.parentIdefId === at.attributes.id) {
+                    const ht = pt.geometry.xform.array
+                      , _t = new three_module.kn4;
+                    if (_t.set(...ht),
+                    _e.length === 1) {
+                        const vt = _e[0].clone(!0);
+                        if (vt.name = pt.attributes.name || vt.name,
+                        vt.applyMatrix4(_t),
+                        pt.attributes.materialIndex >= 0 && pt.attributes.materialIndex !== _e[0].userData.attributes.materialIndex) {
+                            const bt = nt[pt.attributes.materialIndex]
+                              , St = this._createMaterial(bt);
+                            vt.material = this._compareMaterials(St)
+                        }
+                        if (vt.userData.defAttributes = vt.userData.attributes,
+                        vt.userData.defObjectType = vt.userData.objectType,
+                        vt.userData.attributes = {
+                            ...vt.userData.attributes,
+                            ...pt.attributes
+                        },
+                        vt.userData.objectType = pt.objectType,
+                        pt.attributes.layerIndex !== void 0) {
+                            const bt = o.layers[pt.attributes.layerIndex];
+                            vt.visible = bt ? bt.visible : vt.visible
+                        }
+                        c.add(vt)
+                    } else {
+                        console.warn(

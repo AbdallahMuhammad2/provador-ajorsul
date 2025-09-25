@@ -1,0 +1,12 @@
+/* Extracted CSS Block 926 */
+/* Size: 279 chars */
+
+, h),
+                h = b.href
+            }
+            let _ = !1;
+            try {
+                window && window.navigator && navigator.clipboard && (await navigator.clipboard.writeText(h),
+                _ = !0)
+            } catch (b) {
+                console.error(

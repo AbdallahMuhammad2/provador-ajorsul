@@ -1,0 +1,12 @@
+/* Extracted CSS Block 949 */
+/* Size: 235 chars */
+
+, pt => {
+            this._bodyMeshMap.forEach( (ht, _t) => {
+                _t.velocity.set(0, 0, 0),
+                _t.angularVelocity.set(0, 0, 0)
+            }
+            )
+        }
+        ),
+        d.scene.addEventListener(

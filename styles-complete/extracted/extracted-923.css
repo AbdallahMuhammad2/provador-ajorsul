@@ -1,0 +1,15 @@
+/* Extracted CSS Block 923 */
+/* Size: 284 chars */
+
+ + o,
+                value: async () => {
+                    (await this.generateObject(o)).name = o
+                }
+            }))]
+        }
+    }
+    async generateObject(o) {
+        var c, h;
+        const _ = this.generators[o];
+        if (!_)
+            throw new Error(

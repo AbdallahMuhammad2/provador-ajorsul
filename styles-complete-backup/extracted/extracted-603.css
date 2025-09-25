@@ -1,0 +1,12 @@
+/* Extracted CSS Block 603 */
+/* Size: 356 chars */
+
+) {
+                const vt = this.normals.length;
+                pt = this.parseNormalIndex(nt, vt),
+                ht = this.parseNormalIndex(it, vt),
+                _t = this.parseNormalIndex(at, vt),
+                this.addNormal(pt, ht, _t)
+            } else
+                this.addFaceNormal(pt, ht, _t);
+            if (_ !== void 0 && _ !== 

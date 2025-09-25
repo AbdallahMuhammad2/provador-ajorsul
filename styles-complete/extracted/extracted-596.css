@@ -1,0 +1,31 @@
+/* Extracted CSS Block 596 */
+/* Size: 902 chars */
+
+, this._postRender),
+        this._viewer = void 0,
+        Promise.resolve(void 0)
+    }
+    _showDebug(o) {
+        var c;
+        const h = this._viewer
+          , _ = h == null ? void 0 : h.renderer;
+        _ && h && ((c = this._generators.get(o)) === null || c === void 0 || c.forEach( ({key: b, fn: _e, rect: nt, frag: it}) => {
+            const at = _e(h);
+            if (at) {
+                if (at.image && nt) {
+                    const ut = at.image.width / at.image.height;
+                    nt[2] < 1 && nt[3] < 1 && (nt[2] = 200),
+                    nt[2] < 1 && (nt[2] = nt[3] * ut),
+                    nt[3] < 1 && (nt[3] = nt[2] / ut)
+                }
+                _.blit(at, void 0, {
+                    viewport: nt,
+                    clear: !1,
+                    material: it
+                })
+            }
+        }
+        ))
+    }
+}
+DebugPlugin.PluginType = 

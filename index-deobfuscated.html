@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ring Tryon - Deobfuscated Version</title>
+    
+    <!-- CSS Extraído -->
+    <link rel="stylesheet" href="./styles/main.css">
+    
+    <!-- Meta tags para performance -->
+    <meta name="description" content="Ring Virtual Try-On System">
+    <meta name="theme-color" content="#28223C">
+</head>
+<body>
+    <!-- Canvas Container -->
+    <div id="canvasContainer">
+        <canvas id="mcanvas"></canvas>
+    </div>
+    
+    <!-- UI Container -->
+    <div id="tweakpaneUiContainer"></div>
+    
+    <!-- Loading Screen -->
+    <div id="assetManagerLoadingScreen">
+        <div id="assetManagerLoadingScreenContent">
+            <div class="loadingScreenLogoElement">
+                <div class="loadingScreenLogoImage">
+                    <img src="./icons/logo.webp" alt="Logo">
+                </div>
+            </div>
+            <div class="loadingScreenLoadingElement">
+                <div class="loader"></div>
+            </div>
+            <div class="loadingScreenFilesElement">
+                <div class="processState">Carregando...</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Loading Bar -->
+    <div id="assetManagerLoadingBar">
+        <div id="assetManagerLoadingBarContent"></div>
+    </div>
+    
+    <!-- Utility Buttons -->
+    <div class="util-buttons-container">
+        <button id="fsToggle" class="round-button util-button">⛶</button>
+    </div>
+    
+    <!-- WebGI Logo -->
+    <div id="webgi-logo"></div>
+    
+    <!-- Main JavaScript Module -->
+    <script type="module" src="./src/index.js"></script>
+    
+    <!-- Fallback para navegadores sem ES modules -->
+    <script nomodule>
+        alert('Este navegador não suporta ES modules. Use um navegador mais recente.');
+    </script>
+</body>
+</html>

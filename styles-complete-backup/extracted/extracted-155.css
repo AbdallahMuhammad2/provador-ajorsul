@@ -1,0 +1,35 @@
+/* Extracted CSS Block 155 */
+/* Size: 1740 chars */
+
+, this),
+                    void this.boundingSphere.set(new Er, 1 / 0);
+                if (tt) {
+                    const mt = this.boundingSphere.center;
+                    if (Us.setFromBufferAttribute(tt),
+                    lt)
+                        for (let xt = 0, Ct = lt.length; xt < Ct; xt++) {
+                            const Mt = lt[xt];
+                            Ap.setFromBufferAttribute(Mt),
+                            this.morphTargetsRelative ? (fs.addVectors(Us.min, Ap.min),
+                            Us.expandByPoint(fs),
+                            fs.addVectors(Us.max, Ap.max),
+                            Us.expandByPoint(fs)) : (Us.expandByPoint(Ap.min),
+                            Us.expandByPoint(Ap.max))
+                        }
+                    Us.getCenter(mt);
+                    let ft = 0;
+                    for (let xt = 0, Ct = tt.count; xt < Ct; xt++)
+                        fs.fromBufferAttribute(tt, xt),
+                        ft = Math.max(ft, mt.distanceToSquared(fs));
+                    if (lt)
+                        for (let xt = 0, Ct = lt.length; xt < Ct; xt++) {
+                            const Mt = lt[xt]
+                              , Lt = this.morphTargetsRelative;
+                            for (let Nt = 0, jt = Mt.count; Nt < jt; Nt++)
+                                fs.fromBufferAttribute(Mt, Nt),
+                                Lt && (Gl.fromBufferAttribute(tt, Nt),
+                                fs.add(Gl)),
+                                ft = Math.max(ft, mt.distanceToSquared(fs))
+                        }
+                    this.boundingSphere.radius = Math.sqrt(ft),
+                    isNaN(this.boundingSphere.radius) && console.error(

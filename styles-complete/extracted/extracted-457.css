@@ -1,0 +1,19 @@
+/* Extracted CSS Block 457 */
+/* Size: 596 chars */
+
+]
+            }]
+        },
+        this.material.extensions.derivatives = !0,
+        this.computeCocMaterial = patchShaderEncodingSupport({
+            uniforms: {
+                colorTexture: {
+                    value: null
+                },
+                tNormalDepth: this.uniforms.tNormalDepth,
+                cameraNearFar: this.uniforms.cameraNearFar,
+                nearFarBlurScale: this.uniforms.nearFarBlurScale,
+                focalDepthRange: this.uniforms.focalDepthRange
+            },
+            vertexShader: defaultVertex,
+            fragmentShader: unpackGbuffer + 

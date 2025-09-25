@@ -1,0 +1,11 @@
+/* Extracted CSS Block 1101 */
+/* Size: 274 chars */
+
+, h);
+            this.removeAccessibleListeners = pipe(c, _)
+        }
+    }
+    startPress(o, c) {
+        this.isPressing = !0;
+        const {onTapStart: h, whileTap: _} = this.node.getProps();
+        _ && this.node.animationState && this.node.animationState.setActive(

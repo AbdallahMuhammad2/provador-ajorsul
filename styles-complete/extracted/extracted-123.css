@@ -1,0 +1,34 @@
+/* Extracted CSS Block 123 */
+/* Size: 1348 chars */
+
+)))
+                }
+                onValueUpdate_() {
+                    this.update_()
+                }
+                onCursorChange_() {
+                    this.update_()
+                }
+            }
+            class Mo {
+                constructor(wt, Rt) {
+                    if (this.onGraphMouseMove_ = this.onGraphMouseMove_.bind(this),
+                    this.onGraphMouseLeave_ = this.onGraphMouseLeave_.bind(this),
+                    this.onGraphPointerDown_ = this.onGraphPointerDown_.bind(this),
+                    this.onGraphPointerMove_ = this.onGraphPointerMove_.bind(this),
+                    this.onGraphPointerUp_ = this.onGraphPointerUp_.bind(this),
+                    this.props_ = Rt.props,
+                    this.value = Rt.value,
+                    this.viewProps = Rt.viewProps,
+                    this.cursor_ = or(-1),
+                    this.view = new B0(wt,{
+                        cursor: this.cursor_,
+                        formatter: Rt.formatter,
+                        lineCount: Rt.lineCount,
+                        props: this.props_,
+                        value: this.value,
+                        viewProps: this.viewProps
+                    }),
+                    rn(wt)) {
+                        const zt = new ps(this.view.element);
+                        zt.emitter.on(

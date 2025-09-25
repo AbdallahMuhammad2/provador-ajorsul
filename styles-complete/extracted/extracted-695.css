@@ -1,0 +1,14 @@
+/* Extracted CSS Block 695 */
+/* Size: 257 chars */
+
+,
+        document.head.appendChild(c),
+        this._script = c
+    }
+    async onDispose(o) {}
+    async onRemove(o) {
+        this._script && (document.head.removeChild(this._script),
+        this._script = void 0)
+    }
+}
+GLTFMeshOptPlugin.PluginType = 

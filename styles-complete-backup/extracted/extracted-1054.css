@@ -1,0 +1,17 @@
+/* Extracted CSS Block 1054 */
+/* Size: 471 chars */
+
+ && (at.object.rotation[this.axis] = it);
+                (c = this._viewer) === null || c === void 0 || c.renderer.resetShadows(),
+                (h = this._viewer) === null || h === void 0 || h.setDirty()
+            }
+        }
+        ,
+        this._addSceneObject = async d => {
+            const o = d.object;
+            o && o.modelObject && this.refresh()
+        }
+    }
+    async onAdded(d) {
+        await super.onAdded(d),
+        d.scene.addEventListener(

@@ -1,0 +1,17 @@
+/* Extracted CSS Block 1055 */
+/* Size: 542 chars */
+
+, this._preFrame)
+    }
+    refresh() {
+        var d;
+        this.hands = [],
+        (d = this.viewer) === null || d === void 0 || d.scene.modelRoot.traverse(o => {
+            let c = !1;
+            o.traverseAncestors(h => {
+                c || this.hands.find(_ => _.object === h) && (c = !0)
+            }
+            ),
+            c || (o.name.match(this.regex ? new RegExp(this.hour) : this.hour) && (o.userData.initRotation || (o.userData.initRotation = o.rotation.toArray()),
+            this.hands.push({
+                type: 

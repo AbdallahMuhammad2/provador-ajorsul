@@ -1,0 +1,13 @@
+/* Extracted CSS Block 922 */
+/* Size: 302 chars */
+
+),
+            h;
+        const _ = {
+            ...this.defaultParams,
+            ...h.userData.generationParams,
+            ...c
+        }
+          , {indices: b, vertices: _e, normals: nt, uvs: it, groups: at} = this._generateData(_);
+        if (updateIndices(h, b),
+        updateAttribute(h, 

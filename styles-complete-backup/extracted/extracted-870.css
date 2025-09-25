@@ -1,0 +1,22 @@
+/* Extracted CSS Block 870 */
+/* Size: 497 chars */
+
+,
+        this._initializing = new Promise(c => {
+            window.addEventListener(o, () => c(), {
+                once: !0
+            }),
+            this.rootNode.appendChild(d),
+            this._script = d
+        }
+        ),
+        await this._initializing
+    }
+    dispose() {
+        this._script && (this._script.remove(),
+        delete window.MeshoptSimplifier),
+        this._script = void 0
+    }
+    _simplify(d, o) {
+        if (!this.initialized)
+            throw new Error(

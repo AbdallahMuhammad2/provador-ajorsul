@@ -1,0 +1,19 @@
+/* Extracted CSS Block 45 */
+/* Size: 479 chars */
+
+))
+                }
+                bindDisabled(wt) {
+                    It(this.globalDisabled_, Rt => {
+                        wt.disabled = Rt
+                    }
+                    )
+                }
+                bindTabIndex(wt) {
+                    It(this.globalDisabled_, Rt => {
+                        wt.tabIndex = Rt ? -1 : 0
+                    }
+                    )
+                }
+                handleDispose(wt) {
+                    this.value(

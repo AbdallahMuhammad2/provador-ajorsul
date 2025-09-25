@@ -1,0 +1,18 @@
+/* Extracted CSS Block 636 */
+/* Size: 315 chars */
+
+ ? {
+        mainAxis: Ut,
+        altAxis: Ut
+    } : Object.assign({
+        mainAxis: 0,
+        altAxis: 0
+    }, Ut)
+      , Kt = o.modifiersData.offset ? o.modifiersData.offset[o.placement] : null
+      , Jt = {
+        x: 0,
+        y: 0
+    };
+    if (Gt) {
+        if (b) {
+            var or, ir = It === 

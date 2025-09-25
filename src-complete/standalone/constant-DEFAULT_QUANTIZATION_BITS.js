@@ -1,0 +1,18 @@
+/* Standalone Constant: DEFAULT_QUANTIZATION_BITS */
+
+const DEFAULT_QUANTIZATION_BITS = {
+    [AttributeEnum.POSITION]: 14,
+    [AttributeEnum.NORMAL]: 10,
+    [AttributeEnum.COLOR]: 8,
+    [AttributeEnum.TEX_COORD]: 12,
+    [AttributeEnum.GENERIC]: 12
+}
+  , DEFAULT_ENCODER_OPTIONS = {
+    decodeSpeed: 5,
+    encodeSpeed: 5,
+    method: index_modern_EncoderMethod.EDGEBREAKER,
+    quantizationBits: DEFAULT_QUANTIZATION_BITS,
+    quantizationVolume: "mesh"
+};
+
+export default DEFAULT_QUANTIZATION_BITS;

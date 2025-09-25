@@ -1,0 +1,50 @@
+/* Extracted CSS Block 414 */
+/* Size: 1957 chars */
+
+),
+                ut.url.data = new TextEncoder().encode(ut.url.data).buffer)
+            }
+            )
+        }
+        ),
+        c = c ?? new ObjectLoader2(this._importer.loadingManager),
+        nt.animations = o.animations ? c.parseAnimations(o.animations) : {},
+        h && h.animations && (nt.animations = {
+            ...nt.animations,
+            ...h.animations
+        }),
+        nt.shapes = o.shapes ? c.parseShapes(o.shapes) : {},
+        h && h.shapes && (nt.shapes = {
+            ...nt.shapes,
+            ...h.shapes
+        }),
+        nt.geometries = o.geometries ? c.parseGeometries(o.geometries, nt.shapes) : {},
+        h && h.geometries && (nt.geometries = {
+            ...nt.geometries,
+            ...h.geometries
+        }),
+        nt.images = o.images ? await c.parseImagesAsync(Object.values(o.images)) : {},
+        h && h.images && (nt.images = {
+            ...nt.images,
+            ...h.images
+        }),
+        await ObjectLoader2.LoadRootPathTextures(o.textures, nt.images, this._importer),
+        nt.textures = o.textures ? c.parseTextures2(Object.values(o.textures), nt.images, () => {
+            Object.values(nt.textures).forEach(at => {
+                var ut;
+                at.isTexture && (!((ut = at.image) === null || ut === void 0) && ut.complete) && (at.needsUpdate = !0)
+            }
+            )
+        }
+        ) : {};
+        for (const at of Object.entries(nt.textures))
+            at[1] = (_ = await this._importer.processImported(at[1], {})) === null || _ === void 0 ? void 0 : _[0],
+            at[1] ? nt.textures[at[0]] = at[1] : delete nt.textures[at[0]];
+        h && h.textures && (nt.textures = {
+            ...nt.textures,
+            ...h.textures
+        });
+        const it = o.materials ? Object.values(o.materials) : [];
+        for (const at of it)
+            Object.entries(at).forEach( ([ut,pt]) => {
+                pt && pt.resource && pt.uuid && pt.resource === 

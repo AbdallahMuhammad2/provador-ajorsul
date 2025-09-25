@@ -1,0 +1,17 @@
+/* Extracted CSS Block 841 */
+/* Size: 498 chars */
+
+ ? It : It == null ? void 0 : It.message))
+        }
+        St[0].color.set(16777215);
+        for (let It = St.length; It < At.groups.length; It++) {
+            const Dt = St[0].clone();
+            St.push(Dt),
+            Dt.color.set(16777215 * Math.random())
+        }
+        const Et = new three_module.eaF(At,St);
+        Et.userData._extrudeSource = d.uuid,
+        Et.userData.isExtrudedTube = !0,
+        d.visible = !1,
+        d.userData.bboxVisible = !1,
+        Et.name = d.name + 

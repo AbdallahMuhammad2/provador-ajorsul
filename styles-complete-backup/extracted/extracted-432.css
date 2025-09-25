@@ -1,0 +1,11 @@
+/* Extracted CSS Block 432 */
+/* Size: 216 chars */
+
+
+        })
+    }
+    _animationLoop({time: o, deltaTime: c, xrFrame: h}) {
+        var _, b;
+        if (this.enabled && this.renderEnabled)
+            if (this._isRenderingFrame)
+                this.console.warn(

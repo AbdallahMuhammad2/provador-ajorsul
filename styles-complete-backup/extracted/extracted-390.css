@@ -1,0 +1,10 @@
+/* Extracted CSS Block 390 */
+/* Size: 345 chars */
+
+, b.normalTexture)),
+        nt.normalScale = new three_module.I9Y(1,1),
+        b.normalTexture.scale !== void 0)) {
+            const ut = b.normalTexture.scale;
+            nt.normalScale.set(ut, ut)
+        }
+        if (b.occlusionTexture !== void 0 && _e !== GLTFLoader.ObjectConstructors.MeshBasicMaterial && (it.push(c.assignTexture(nt, 

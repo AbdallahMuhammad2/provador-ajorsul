@@ -1,0 +1,14 @@
+/* Extracted CSS Block 880 */
+/* Size: 220 chars */
+
+, this.addView)
+    }
+    deserialize(d) {
+        this._cameraViews.forEach(o => {
+            this._createSection(o.name)
+        }
+        )
+    }
+    _addWrapper() {
+        var d;
+        this.wrapper.style.width = 

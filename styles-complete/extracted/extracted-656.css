@@ -1,0 +1,39 @@
+/* Extracted CSS Block 656 */
+/* Size: 1235 chars */
+
+ + this.alphaVignetteAxis,
+            onObjectRender: (h, _) => {
+                _.materialObject.userData.gMapMode !== this.groundMapMode && (_.materialObject.userData.gMapMode = this.groundMapMode,
+                _.materialObject.needsUpdate = !0)
+            }
+            ,
+            isCompatible: h => h.isMeshStandardMaterial2
+        },
+        this._viewer = o;
+        const c = new RandomizedDirectionalLight(16777215,10,{
+            near: 1.5,
+            far: 20,
+            bias: 0,
+            frustumSize: 4,
+            width: 1024,
+            height: 1024,
+            enabled: !0,
+            radius: 10,
+            normalBias: 0
+        },{
+            direction: new three_module.Pq0(.2,1,.2).normalize(),
+            spread: .9,
+            focus: 1,
+            distanceScale: 20,
+            minDistanceScale: new three_module.Pq0(10,10,10),
+            normalDirection: new three_module.Pq0(0,1,0)
+        });
+        c.shadow.camera.updateProjectionMatrix(),
+        c.layers.disableAll(),
+        c.layers.set(this._lightLayer),
+        this._light = c,
+        o.scene.addLight(this._light, {
+            addToRoot: !0
+        }),
+        this._shadowMat = new FSShadowMaterial({
+            color: 

@@ -1,0 +1,8 @@
+/* Extracted CSS Block 1126 */
+/* Size: 165 chars */
+
+)) {
+        const {layoutBox: h, measuredBox: _} = d.layout
+          , {animationType: b} = d.options
+          , _e = c.source !== d.layout.source;
+        b === 

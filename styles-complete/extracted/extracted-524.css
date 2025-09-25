@@ -1,0 +1,45 @@
+/* Extracted CSS Block 524 */
+/* Size: 1421 chars */
+
+,
+        this.__envMap = [],
+        this.isDiamondMaterial = !0,
+        this.color = new three_module.Q1f(1,1,1),
+        this.envMapIntensity = 1,
+        this.envMapRotationOffset = 0,
+        this.envMapRotationOffsetX = 0,
+        this.envMapRotationOffsetY = 0,
+        this.envMapRotationOffsetZ = 0,
+        this.dispersion = .012,
+        this.absorptionFactor = 1,
+        this.refractiveIndex = 2.4,
+        this.squashFactor = .98,
+        this.geometryFactor = .5,
+        this.gammaFactor = 1,
+        this.boostFactors = new three_module.Pq0(.892,.892,.98595025),
+        this.transmission = 0,
+        this.reflectivity = .5,
+        this.rayBounces = 5,
+        this.diamondOrientedEnvMap = 0,
+        this.normalsCaptureMap = null,
+        this.extraUniformsToUpload = {
+            inverseModelMatrix: {
+                value: new three_module.kn4().identity()
+            },
+            radius: {
+                value: 1
+            },
+            centerOffset: {
+                value: new three_module.Pq0(0,0,0)
+            },
+            modelOffsetMatrix: {
+                value: new three_module.kn4().identity()
+            },
+            modelOffsetMatrixInv: {
+                value: new three_module.kn4().identity()
+            }
+        },
+        this.envMapIndex = 0,
+        this.setDirty = this.setDirty.bind(this),
+        this.userData.setDirty = h => {
+            console.warn(

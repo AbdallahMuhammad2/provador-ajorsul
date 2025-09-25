@@ -1,0 +1,4 @@
+/* Extracted CSS Block 940 */
+/* Size: 84 chars */
+
+.vertices[${this.faces[o][_]}] = Vec3(${this.vertices[this.faces[o][_]].toString()})

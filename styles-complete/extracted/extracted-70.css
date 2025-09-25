@@ -1,0 +1,24 @@
+/* Extracted CSS Block 70 */
+/* Size: 868 chars */
+
+)),
+                    this.element.appendChild(vn),
+                    this.containerElement = vn
+                }
+            }
+            class Yo extends Bo {
+                constructor(wt, Rt) {
+                    var zt;
+                    const nr = Or.create((zt = Rt.expanded) === null || zt === void 0 || zt)
+                      , mr = new zo(wt,{
+                        blade: Rt.blade,
+                        root: Rt.root,
+                        viewProps: Rt.viewProps
+                    });
+                    super(Object.assign(Object.assign({}, Rt), {
+                        rackController: mr,
+                        view: new $o(wt,{
+                            containerElement: mr.view.element,
+                            foldable: nr,
+                            props: Rt.props,
+                            viewName: Rt.root ? 

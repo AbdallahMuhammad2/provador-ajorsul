@@ -1,0 +1,18 @@
+/* Extracted CSS Block 802 */
+/* Size: 726 chars */
+
+);
+        h != null && h.mesh && (h.mesh.modelObject.position.subVectors(o.position, this._preXRState.groundOffset),
+        h.mesh.modelObject.scale.setScalar(this._preXRState.groundScale),
+        h.mesh.modelObject.rotation.z = this._preXRState.groundRotation,
+        h.renderToDepth = this._preXRState.groundRenderToDepth,
+        h.shadowBaker.enabled = this._preXRState.groundShadowBaker,
+        h.refreshTransform()),
+        this._viewer.scene.environment = this._preXRState.environment,
+        this._preXRState.environment = void 0,
+        this._viewer.renderFilter.passObject.preserveTransparentTarget = this._preXRState.preserveTransparentTarget
+    }
+    _cancelHitSources() {}
+}
+;
+VRPluginBasic.PluginType = 

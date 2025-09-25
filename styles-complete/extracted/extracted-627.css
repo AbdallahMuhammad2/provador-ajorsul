@@ -1,0 +1,11 @@
+/* Extracted CSS Block 627 */
+/* Size: 356 chars */
+
+))].map(c => ({
+                        label: c,
+                        value: c
+                    }))
+                }, ...((o = this.getSelectedVariation()) === null || o === void 0 ? void 0 : o.materials.map(c => c.uiConfig ? Object.assign(c.uiConfig, {
+                    expanded: !1
+                }) : {})) || [], {
+                    type: 

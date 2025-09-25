@@ -1,0 +1,6 @@
+/* Extracted CSS Block 851 */
+/* Size: 79 chars */
+
+, d => ({
+    hidden: () => !d.getSelected()
+}))], SimpleTextPlugin.prototype, 

@@ -1,0 +1,10 @@
+/* Extracted CSS Block 966 */
+/* Size: 352 chars */
+
+;
+                    else {
+                        const Ht = new EXRExporter2().parse(d.renderer.rendererObject, Ut, {
+                            textureIndex: Array.isArray(It.__target.texture) ? It.__target.texture.indexOf(It) : void 0
+                        })
+                          , Kt = new Blob([Ht],{
+                            type: 

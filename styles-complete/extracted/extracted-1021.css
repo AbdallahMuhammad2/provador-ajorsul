@@ -1,0 +1,9 @@
+/* Extracted CSS Block 1021 */
+/* Size: 170 chars */
+
+))
+            } catch {
+                this.encodedPath = this.url.pathname
+            }
+        else
+            this.encodedPath = this.url.pathname.replace(/\/+/g, 

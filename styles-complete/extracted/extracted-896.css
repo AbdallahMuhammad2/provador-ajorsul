@@ -1,0 +1,13 @@
+/* Extracted CSS Block 896 */
+/* Size: 479 chars */
+
+)
+                  , pt = {};
+                let ht = !1;
+                for (let bt = 0; bt < _e.items.length; bt++) {
+                    const St = _e.items[bt]
+                      , At = _e.itemFiles[bt]
+                      , Et = _e.iconFiles[bt]
+                      , Pt = _e.icons[bt];
+                    At ? (pt[at + St] = new Uint8Array(await At.arrayBuffer()),
+                    Et && !Pt && ((o = this._viewer) === null || o === void 0 || o.console.error(

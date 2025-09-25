@@ -1,0 +1,62 @@
+/* Extracted CSS Block 569 */
+/* Size: 2417 chars */
+
+)], SSVelocityPass);
+class SSVelocityMaterial extends three_module.BKk {
+    constructor() {
+        super({
+            vertexShader: ssVelocityVert,
+            fragmentShader: ssVelocityFrag,
+            uniforms: {
+                cameraNearFar: {
+                    value: new three_module.I9Y(.1,1e3)
+                },
+                alphaMap: {
+                    value: null
+                },
+                alphaTest: {
+                    value: null
+                },
+                alphaMapTransform: {
+                    value: new three_module.dwI
+                },
+                currentProjectionViewMatrix: {
+                    value: new three_module.kn4
+                },
+                lastProjectionViewMatrix: {
+                    value: new three_module.kn4
+                }
+            }
+        }),
+        this.extraUniformsToUpload = {
+            modelMatrixPrevious: {
+                value: new three_module.kn4().identity()
+            }
+        },
+        this._previousWorldMatrices = {}
+    }
+    onBeforeRender(o, c, h, _, b) {
+        var _e, nt;
+        const it = this._previousWorldMatrices[b.uuid];
+        this.extraUniformsToUpload.modelMatrixPrevious.value.copy(it ?? b.matrixWorld),
+        it ? it.copy(b.matrixWorld) : this._previousWorldMatrices[b.uuid] = b.matrixWorld.clone();
+        let at = b.material;
+        Array.isArray(at) && (at = at[0]),
+        this.uniforms.alphaMap.value = (_e = at == null ? void 0 : at.alphaMap) !== null && _e !== void 0 ? _e : null,
+        this.uniforms.alphaTest.value = !at || !at.alphaTest || at.alphaTest < 1e-7 ? .001 : at.alphaTest;
+        let ut = this.uniforms.alphaMap.value ? 1 : void 0;
+        ut !== this.defines.USE_ALPHAMAP && (ut === void 0 ? delete this.defines.USE_ALPHAMAP : this.defines.USE_ALPHAMAP = ut,
+        this.needsUpdate = !0),
+        ut = at.userData.ALPHA_I_RGBA_PACKING ? 1 : void 0,
+        ut !== this.defines.ALPHA_I_RGBA_PACKING && (ut === void 0 ? delete this.defines.ALPHA_I_RGBA_PACKING : this.defines.ALPHA_I_RGBA_PACKING = ut,
+        this.needsUpdate = !0),
+        this.side = (nt = at.side) !== null && nt !== void 0 ? nt : three_module.$EB
+    }
+}
+class VelocityBufferPlugin extends GenericFilterPlugin {
+    passCtor(o) {
+        const c = o.renderer.createTarget({
+            depthBuffer: !0,
+            type: three_module.OUM
+        });
+        c.texture.name = 

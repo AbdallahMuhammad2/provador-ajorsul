@@ -1,0 +1,48 @@
+/* Extracted CSS Block 239 */
+/* Size: 1716 chars */
+
+,
+                this.parameters = {
+                    innerRadius: tt,
+                    outerRadius: lt,
+                    thetaSegments: mt,
+                    phiSegments: ft,
+                    thetaStart: xt,
+                    thetaLength: Ct
+                },
+                mt = Math.max(3, mt);
+                const Mt = []
+                  , Lt = []
+                  , Nt = []
+                  , jt = [];
+                let Wt = tt;
+                const Qt = (lt - tt) / (ft = Math.max(1, ft))
+                  , qt = new Er
+                  , Xt = new mn;
+                for (let Zt = 0; Zt <= ft; Zt++) {
+                    for (let Yt = 0; Yt <= mt; Yt++) {
+                        const sr = xt + Yt / mt * Ct;
+                        qt.x = Wt * Math.cos(sr),
+                        qt.y = Wt * Math.sin(sr),
+                        Lt.push(qt.x, qt.y, qt.z),
+                        Nt.push(0, 0, 1),
+                        Xt.x = (qt.x / lt + 1) / 2,
+                        Xt.y = (qt.y / lt + 1) / 2,
+                        jt.push(Xt.x, Xt.y)
+                    }
+                    Wt += Qt
+                }
+                for (let Zt = 0; Zt < ft; Zt++) {
+                    const Yt = Zt * (mt + 1);
+                    for (let sr = 0; sr < mt; sr++) {
+                        const er = sr + Yt
+                          , rr = er
+                          , xr = er + mt + 1
+                          , br = er + mt + 2
+                          , yr = er + 1;
+                        Mt.push(rr, xr, yr),
+                        Mt.push(xr, br, yr)
+                    }
+                }
+                this.setIndex(Mt),
+                this.setAttribute(

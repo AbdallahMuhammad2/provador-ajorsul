@@ -1,0 +1,14 @@
+/* Extracted CSS Block 482 */
+/* Size: 316 chars */
+
+ ? (this.animations.forEach( ({mixer: o, actions: c, clips: h}) => {
+            o.stopAllAction(),
+            o.setTime(0)
+        }
+        ),
+        this._animationTime = 0,
+        (d = this._viewer) === null || d === void 0 || d.setDirty()) : this.stopAnimation(!0)
+    }
+}
+;
+GLTFAnimationPlugin.PluginType = 

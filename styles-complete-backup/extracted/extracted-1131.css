@@ -1,0 +1,13 @@
+/* Extracted CSS Block 1131 */
+/* Size: 550 chars */
+
+) && !this.projection && _e) {
+            this.projection = new _e(this.latestValues,getClosestProjectingNode(this.parent));
+            const {layoutId: it, layout: at, drag: ut, dragConstraints: pt, layoutScroll: ht, layoutRoot: _t} = c;
+            this.projection.setOptions({
+                layoutId: it,
+                layout: at,
+                alwaysMeasureLayout: !!ut || pt && isRefObject(pt),
+                visualElement: this,
+                scheduleRender: () => this.scheduleRender(),
+                animationType: typeof at == 

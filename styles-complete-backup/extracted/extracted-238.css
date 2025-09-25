@@ -1,0 +1,4 @@
+/* Extracted CSS Block 238 */
+/* Size: 74 chars */
+
+${Math.round(sr.x * ft)},${Math.round(sr.y * ft)},${Math.round(sr.z * ft)}

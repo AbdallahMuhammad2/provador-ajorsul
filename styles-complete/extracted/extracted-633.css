@@ -1,0 +1,14 @@
+/* Extracted CSS Block 633 */
+/* Size: 470 chars */
+
+
+    };
+    o.modifiersData.popperOffsets != null && (o.styles.popper = Object.assign({}, o.styles.popper, mapToStyles(Object.assign({}, at, {
+        offsets: o.modifiersData.popperOffsets,
+        position: o.options.strategy,
+        adaptive: _e,
+        roundOffsets: it
+    })))),
+    o.modifiersData.arrow != null && (o.styles.arrow = Object.assign({}, o.styles.arrow, mapToStyles(Object.assign({}, at, {
+        offsets: o.modifiersData.arrow,
+        position: 

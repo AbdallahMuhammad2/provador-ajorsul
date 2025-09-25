@@ -1,0 +1,59 @@
+/* Extracted CSS Block 1121 */
+/* Size: 2510 chars */
+
+, vt)),
+            projectionFrameData.recalculatedProjection++
+        }
+        hide() {
+            this.isVisible = !1
+        }
+        show() {
+            this.isVisible = !0
+        }
+        scheduleRender(_e=!0) {
+            if (this.options.scheduleRender && this.options.scheduleRender(),
+            _e) {
+                const nt = this.getStack();
+                nt && nt.scheduleRender()
+            }
+            this.resumingFrom && !this.resumingFrom.instance && (this.resumingFrom = void 0)
+        }
+        setAnimationOrigin(_e, nt=!1) {
+            const it = this.snapshot
+              , at = it ? it.latestValues : {}
+              , ut = {
+                ...this.latestValues
+            }
+              , pt = createDelta();
+            (!this.relativeParent || !this.relativeParent.options.layoutRoot) && (this.relativeTarget = this.relativeTargetOrigin = void 0),
+            this.attemptToResolveRelativeTarget = !nt;
+            const ht = createBox()
+              , _t = it ? it.source : void 0
+              , vt = this.layout ? this.layout.source : void 0
+              , bt = _t !== vt
+              , St = this.getStack()
+              , At = !St || St.members.length <= 1
+              , Et = !!(bt && !At && this.options.crossfade === !0 && !this.path.some(hasOpacityCrossfade));
+            this.animationProgress = 0;
+            let Pt;
+            this.mixTargetDelta = It => {
+                const Dt = It / 1e3;
+                mixAxisDelta(pt.x, _e.x, Dt),
+                mixAxisDelta(pt.y, _e.y, Dt),
+                this.setTargetDelta(pt),
+                this.relativeTarget && this.relativeTargetOrigin && this.layout && this.relativeParent && this.relativeParent.layout && (calcRelativePosition(ht, this.layout.layoutBox, this.relativeParent.layout.layoutBox),
+                mixBox(this.relativeTarget, this.relativeTargetOrigin, ht, Dt),
+                Pt && boxEquals(this.relativeTarget, Pt) && (this.isProjectionDirty = !1),
+                Pt || (Pt = createBox()),
+                copyBoxInto(Pt, this.relativeTarget)),
+                bt && (this.animationValues = ut,
+                mixValues(ut, at, this.latestValues, Dt, Et, At)),
+                this.root.scheduleUpdateProjection(),
+                this.scheduleRender(),
+                this.animationProgress = Dt
+            }
+            ,
+            this.mixTargetDelta(this.options.layoutRoot ? 1e3 : 0)
+        }
+        startAnimation(_e) {
+            this.notifyListeners(

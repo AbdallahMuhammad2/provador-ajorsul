@@ -1,0 +1,22 @@
+/* Extracted CSS Block 332 */
+/* Size: 854 chars */
+
+),
+        (_t = d.setGeometry) === null || _t === void 0 || _t.call(d, pt, ...ht)
+    }
+    ,
+    d.userData.__keepShadowDef || (d.castShadow = !0,
+    d.receiveShadow = !0,
+    d.userData.__keepShadowDef = !0),
+    _.push( () => {
+        var pt, ht, _t, vt;
+        const bt = ((pt = _e.setMaterial) === null || pt === void 0 ? void 0 : pt.call(_e, void 0)) || []
+          , St = (ht = _e.setGeometry) === null || ht === void 0 ? void 0 : ht.call(_e, void 0);
+        for (const At of bt)
+            At && At.userData && At.userData.disposeOnIdle !== !1 && At.dispose();
+        St && St.userData && St.userData.disposeOnIdle !== !1 && St.dispose(),
+        (_t = _e.setMaterial) === null || _t === void 0 || _t.call(_e, bt),
+        (vt = _e.setGeometry) === null || vt === void 0 || vt.call(_e, St)
+    }
+    )),
+    d.uiConfig || d.assetType !== 

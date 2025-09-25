@@ -1,0 +1,39 @@
+/* Extracted CSS Block 686 */
+/* Size: 593 chars */
+
+,
+					guid: _attributes.id
+				}
+
+				} );
+
+				break;
+
+		}
+
+		if ( geometry ) {
+
+			attributes = extractProperties( _attributes );
+			attributes.geometry = extractProperties( _geometry );
+
+			if ( _attributes.groupCount > 0 ) {
+
+				attributes.groupIds = _attributes.getGroupList();
+
+			}
+
+			if ( _attributes.userStringCount > 0 ) {
+
+				attributes.userStrings = _attributes.getUserStrings();
+
+			}
+
+			if ( _geometry.userStringCount > 0 ) {
+
+				attributes.geometry.userStrings = _geometry.getUserStrings();
+
+			}
+
+			if ( _attributes.decals().count > 0 ) {
+
+				self.postMessage( { type: 

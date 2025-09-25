@@ -1,0 +1,19 @@
+/* Extracted CSS Block 792 */
+/* Size: 492 chars */
+
+, () => {
+            this._extension.extraUniforms.dpr.value = o.renderer.displayCanvasScaling
+        }
+        );
+        const h = new three_module.BKk({
+            uniforms: {
+                cameraNearFar: {
+                    value: new three_module.I9Y(.1,100)
+                }
+            },
+            vertexShader: outlineDepthVert,
+            fragmentShader: outlineDepthFrag,
+            side: three_module.$EB
+        })
+          , _ = makeFilter(o, {
+            passId: 

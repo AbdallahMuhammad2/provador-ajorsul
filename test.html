@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ring Try-On - Sistema Simples</title>
+  <style>
+    :root {
+      --primary-color: #d4af37;
+      --secondary-color: #c0c0c0;
+      --accent-color: #e5e4e2;
+      --dark-bg: #0a0a0a;
+      --light-text: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: var(--dark-bg);
+      color: var(--light-text);
+      overflow: hidden;
+      height: 100vh;
+    }
+
+    #webgi-canvas-container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    }
+
+    #webgi-canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, transparent 100%);
+      padding: 20px 40px;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .status-bar {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    .status-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .status-active { color: #4ade80; }
+    .status-inactive { color: #ef4444; }
+
+    .controls-panel {
+      position: fixed;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(20px);
+      border-radius: 12px;
+      padding: 20px;
+      z-index: 100;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      min-width: 250px;
+    }
+
+    .controls-section {
+      margin-bottom: 24px;
+    }
+
+    .controls-title {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 12px;
+    }
+
+    .material-buttons {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 8px;
+    }
+
+    .material-btn {
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 12px;
+      font-weight: 500;
+    }
+
+    .material-btn.gold {
+      background: linear-gradient(135deg, #d4af37, #f4e4bc);
+      color: #2a2a2a;
+    }
+
+    .material-btn.silver {
+      background: linear-gradient(135deg, #c0c0c0, #e8e8e8);
+      color: #2a2a2a;
+    }
+
+    .material-btn.platinum {
+      background: linear-gradient(135deg, #e5e4e2, #fafafa);
+      color: #2a2a2a;
+    }
+
+    .action-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .action-btn {
+      padding: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 14px;
+    }
+
+    .action-btn:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transform: translateY(-2px);
+    }
+
+    .action-btn.primary {
+      background: var(--primary-color);
+      color: var(--dark-bg);
+      border: none;
+    }
+
+    .action-btn.danger {
+      background: #ef4444;
+      border: none;
+    }
+
+    .help-footer {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(20px);
+      border-radius: 12px;
+      padding: 16px 20px;
+      z-index: 100;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .shortcut-key {
+      display: inline-block;
+      padding: 2px 6px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 4px;
+      margin: 0 4px;
+      font-family: monospace;
+    }
+
+    #loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--dark-bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2000;
+      transition: opacity 0.3s;
+    }
+
+    .loading-content {
+      text-align: center;
+    }
+
+    .loading-spinner {
+      width: 60px;
+      height: 60px;
+      border: 3px solid rgba(255, 255, 255, 0.1);
+      border-top-color: var(--primary-color);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 20px;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .loading-text {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.8);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loading-content">
+      <div class="loading-spinner"></div>
+      <div class="loading-text">Carregando Sistema...</div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-content">
+      <div class="logo">Ring Try-On Simples</div>
+      <div class="status-bar">
+        <div class="status-item">
+          <span id="fps-counter">0 FPS</span>
+        </div>
+        <div class="status-item">
+          <span id="hand-status" class="status-inactive">Sistema</span>
+        </div>
+        <div class="status-item">
+          <span id="ring-count">0 Anéis</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Canvas Container -->
+  <div id="webgi-canvas-container">
+    <canvas id="webgi-canvas"></canvas>
+  </div>
+
+  <!-- Controls Panel -->
+  <div class="controls-panel">
+    <!-- Materiais -->
+    <div class="controls-section">
+      <div class="controls-title">Materiais</div>
+      <div class="material-buttons">
+        <button class="material-btn gold" onclick="addGoldRing()">Ouro</button>
+        <button class="material-btn silver" onclick="addSilverRing()">Prata</button>
+        <button class="material-btn platinum" onclick="addPlatinumRing()">Platina</button>
+      </div>
+    </div>
+
+    <!-- Ações -->
+    <div class="controls-section">
+      <div class="controls-title">Ações</div>
+      <div class="action-buttons">
+        <button class="action-btn primary" onclick="takeScreenshot()">📸 Capturar</button>
+        <button class="action-btn danger" onclick="removeAllRings()">🗑️ Limpar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Help Footer -->
+  <div class="help-footer">
+    <strong>Atalhos:</strong>
+    <span class="shortcut-key">G</span> Ouro |
+    <span class="shortcut-key">S</span> Prata |
+    <span class="shortcut-key">P</span> Platina |
+    <span class="shortcut-key">Espaço</span> Screenshot |
+    <span class="shortcut-key">R</span> Remover
+  </div>
+
+  <!-- Scripts -->
+  <script type="module" src="./src/simple_entry.ts"></script>
+</body>
+
+</html>

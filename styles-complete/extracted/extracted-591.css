@@ -1,0 +1,20 @@
+/* Extracted CSS Block 591 */
+/* Size: 768 chars */
+
+);
+            ut = c.decode(at.levelData, at.uncompressedByteLength)
+        }
+        pt = TYPE_MAP[o] === three_module.RQf ? new Float32Array(ut.buffer,ut.byteOffset,ut.byteLength / Float32Array.BYTES_PER_ELEMENT) : TYPE_MAP[o] === three_module.ix0 ? new Uint16Array(ut.buffer,ut.byteOffset,ut.byteLength / Uint16Array.BYTES_PER_ELEMENT) : ut,
+        h.push({
+            data: pt,
+            width: _e,
+            height: nt,
+            depth: it
+        })
+    }
+    let _;
+    if (UNCOMPRESSED_FORMATS.has(FORMAT_MAP[o]))
+        _ = d.pixelDepth === 0 ? new three_module.GYF(h[0].data,d.pixelWidth,d.pixelHeight) : new three_module.dYF(h[0].data,d.pixelWidth,d.pixelHeight,d.pixelDepth);
+    else {
+        if (d.pixelDepth > 0)
+            throw new Error(

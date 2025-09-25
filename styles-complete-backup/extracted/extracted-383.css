@@ -1,0 +1,35 @@
+/* Extracted CSS Block 383 */
+/* Size: 1421 chars */
+
+,
+            crossOrigin: this.crossOrigin,
+            requestHeader: this.requestHeader,
+            manager: this.manager,
+            ktx2Loader: this.ktx2Loader,
+            meshoptDecoder: this.meshoptDecoder
+        });
+        ut.fileLoader.setRequestHeader(this.requestHeader);
+        for (let pt = 0; pt < this.pluginCallbacks.length; pt++) {
+            const ht = this.pluginCallbacks[pt](ut);
+            it[ht.name] = ht,
+            nt[ht.name] = !0
+        }
+        if (_e.extensionsUsed)
+            for (let pt = 0; pt < _e.extensionsUsed.length; ++pt) {
+                const ht = _e.extensionsUsed[pt]
+                  , _t = _e.extensionsRequired || [];
+                switch (ht) {
+                case EXTENSIONS.KHR_MATERIALS_UNLIT:
+                    nt[ht] = new GLTFMaterialsUnlitExtension;
+                    break;
+                case EXTENSIONS.KHR_DRACO_MESH_COMPRESSION:
+                    nt[ht] = new GLTFDracoMeshCompressionExtension(_e,this.dracoLoader);
+                    break;
+                case EXTENSIONS.KHR_TEXTURE_TRANSFORM:
+                    nt[ht] = new GLTFTextureTransformExtension;
+                    break;
+                case EXTENSIONS.KHR_MESH_QUANTIZATION:
+                    nt[ht] = new GLTFMeshQuantizationExtension;
+                    break;
+                default:
+                    _t.indexOf(ht) >= 0 && it[ht] === void 0 && console.warn(

@@ -1,0 +1,9 @@
+/* Extracted CSS Block 578 */
+/* Size: 237 chars */
+
+)) === null || _e === void 0 ? void 0 : _e.extensions) === null || nt === void 0 || nt.splice(at, 1)),
+        this.variants = {},
+        super.onRemove(o)
+    }
+    _variantChanged() {
+        this.applyVariant(this.selectedVariant || 

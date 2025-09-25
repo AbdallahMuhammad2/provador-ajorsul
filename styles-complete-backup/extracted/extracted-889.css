@@ -1,0 +1,17 @@
+/* Extracted CSS Block 889 */
+/* Size: 455 chars */
+
+)
+        }
+        ,
+        d && this.loadLibrary()
+    }
+    async loadLibrary() {
+        if (this._unwrapper)
+            for (; !this._loaded; )
+                await X$2(100);
+        else
+            this._unwrapper = new build_k({
+                BufferAttribute: three_module.THS
+            },this.packOptions,this.chartOptions,this.useNormals),
+            await this._unwrapper.loadLibrary(this._unwrapProgress, XAtlasPlugin_1.LIBRARY_PATH + 

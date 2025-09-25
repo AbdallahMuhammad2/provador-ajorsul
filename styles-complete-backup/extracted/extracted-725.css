@@ -1,0 +1,10 @@
+/* Extracted CSS Block 725 */
+/* Size: 319 chars */
+
+, _e, o),
+            _e;
+        const it = h.images ? h.images[nt.source] : null;
+        if (it && (it.extras || (it.extras = {}),
+        o.source && (it.extras.uuid = o.source.uuid),
+        it.extras.t_uuid = o.uuid),
+        o.userData.rootPath && !this.options.embedUrlImages && (o.userData.rootPath.startsWith(

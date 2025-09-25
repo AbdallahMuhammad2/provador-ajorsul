@@ -1,0 +1,13 @@
+/* Extracted CSS Block 898 */
+/* Size: 292 chars */
+
+;
+class VariationConfiguratorGridUiPlugin extends VariationConfiguratorPlugin {
+    constructor() {
+        super(),
+        this._uiNeedRefresh = !1,
+        this._refreshUi = this._refreshUi.bind(this)
+    }
+    async onAdded(o) {
+        await super.onAdded(o),
+        o.addEventListener(

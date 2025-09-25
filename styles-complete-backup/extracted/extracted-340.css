@@ -1,0 +1,11 @@
+/* Extracted CSS Block 340 */
+/* Size: 483 chars */
+
+ && this._refreshCameraOptions(o)
+    }
+    refreshTarget(o=4) {
+        var c;
+        !((c = this._controls) === null || c === void 0) && c.enabled && this._controls.target ? this._target.copy(this._controls.target) : this.cameraObject.getWorldDirection(this._target).multiplyScalar(o).add(this.cameraObject.getWorldPosition(new three_module.Pq0))
+    }
+    setControlsCtor(o, c, h=!1) {
+        h || !this._controlsCtors.has(o) ? this._controlsCtors.set(o, c) : console.error(o + 

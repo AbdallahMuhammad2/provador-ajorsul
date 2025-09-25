@@ -1,0 +1,14 @@
+/* Extracted CSS Block 1039 */
+/* Size: 282 chars */
+
+) && this.removeFromParent()
+    }
+    removeFromParent() {
+        this.parent && this.parent.remove(this)
+    }
+    addAnimation() {
+        this.add(new AnimationObject_1(this.target))
+    }
+}
+;
+AnimationObjectPlugin_decorate([serialize(), uiInput()], AnimationObject.prototype, 

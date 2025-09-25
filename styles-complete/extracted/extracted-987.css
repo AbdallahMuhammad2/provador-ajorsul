@@ -1,0 +1,9 @@
+/* Extracted CSS Block 987 */
+/* Size: 155 chars */
+
+,
+        ui_windowise.use({
+            target: o.container
+        }),
+        o.alert = async c => {
+            const h = c == null ? void 0 : c.split(

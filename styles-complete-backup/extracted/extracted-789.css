@@ -1,0 +1,23 @@
+/* Extracted CSS Block 789 */
+/* Size: 727 chars */
+
+),
+        this.extraUniforms && (this.extraUniforms.outlineIntensity.value = this.outlineIntensity,
+        this.extraUniforms.outlineColor.value.copy(this.outlineColor),
+        this.extraUniforms.outlineThickness.value = this._outlineThickness,
+        this.extraUniforms.enableHighlight.value = this.enableHighlight,
+        this.extraUniforms.highlightTransparency.value = this.transparency)
+    }
+    setDirty() {
+        var d;
+        (d = this.__setDirty) === null || d === void 0 || d.call(this),
+        this._setDirty()
+    }
+    _enable() {
+        var d;
+        (d = this._pickingPlugin) === null || d === void 0 || d.enableWidget(!this.enabled),
+        this._setDirty()
+    }
+}
+;
+OutlineExtension.PluginType = 

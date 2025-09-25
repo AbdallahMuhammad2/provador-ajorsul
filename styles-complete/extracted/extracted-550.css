@@ -1,0 +1,10 @@
+/* Extracted CSS Block 550 */
+/* Size: 207 chars */
+
+, !0)
+    }
+    async onAdded(o) {
+        var c, h, _, b, _e, nt, it;
+        this._normalCapture = new CubeNormalsCaptureHelper(o.renderer),
+        this.offsetCache = {},
+        o.scene.addEventListener(

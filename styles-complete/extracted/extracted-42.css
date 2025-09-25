@@ -1,0 +1,18 @@
+/* Extracted CSS Block 42 */
+/* Size: 577 chars */
+
+), nr),
+                    this.buttonElement.appendChild(nr)
+                }
+            }
+            class Ht {
+                constructor(wt, Rt) {
+                    this.emitter = new St,
+                    this.onClick_ = this.onClick_.bind(this),
+                    this.props = Rt.props,
+                    this.viewProps = Rt.viewProps,
+                    this.view = new Ut(wt,{
+                        props: this.props,
+                        viewProps: this.viewProps
+                    }),
+                    this.view.buttonElement.addEventListener(

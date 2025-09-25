@@ -1,0 +1,11 @@
+/* Extracted CSS Block 991 */
+/* Size: 209 chars */
+
+,
+        toggle: !0,
+        onclick: async () => {
+            var At;
+            (At = d.getPlugin(GLTFAnimationPlugin)) === null || At === void 0 || At.playPauseAnimation()
+        }
+    }, {
+        id: 

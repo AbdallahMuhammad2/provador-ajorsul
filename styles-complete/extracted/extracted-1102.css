@@ -1,0 +1,7 @@
+/* Extracted CSS Block 1102 */
+/* Size: 143 chars */
+
+, this.startPointerPress, {
+            passive: !(o.onTapStart || o.onPointerStart)
+        })
+          , h = addDomEvent(this.node.current, 

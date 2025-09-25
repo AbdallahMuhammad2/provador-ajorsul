@@ -1,0 +1,15 @@
+/* Extracted CSS Block 232 */
+/* Size: 404 chars */
+
+,
+                this.curves = [],
+                this.autoClose = !1
+            }
+            add(tt) {
+                this.curves.push(tt)
+            }
+            closePath() {
+                const tt = this.curves[0].getPoint(0)
+                  , lt = this.curves[this.curves.length - 1].getPoint(1);
+                if (!tt.equals(lt)) {
+                    const mt = tt.isVector2 === !0 ? 

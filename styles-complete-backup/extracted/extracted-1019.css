@@ -1,0 +1,12 @@
+/* Extracted CSS Block 1019 */
+/* Size: 310 chars */
+
+),
+        this.url = new URL(c),
+        this.headers = new Headers(h || {}),
+        this.body = _,
+        this.accessKeyId = b,
+        this.secretAccessKey = _e,
+        this.sessionToken = nt,
+        it && at || ([St,At] = guessServiceRegion(this.url, this.headers)),
+        this.service = it || St || 

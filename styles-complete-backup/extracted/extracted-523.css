@@ -1,0 +1,55 @@
+/* Extracted CSS Block 523 */
+/* Size: 1451 chars */
+
+,
+            renderer: o,
+            scene: c,
+            camera: h,
+            geometry: _,
+            object: b
+        })
+    }
+    constructor(o) {
+        var c;
+        super({
+            side: three_module.$EB,
+            defines: {
+                DIA_ORIENT_ENVMAP: 0,
+                RAY_BOUNCES: 5,
+                ENV_MAP_TYPE: 0,
+                PI: 3.1428
+            },
+            vertexShader: diamond_vert,
+            fragmentShader: diamond_frag,
+            uniforms: {
+                envMap: {
+                    value: (o == null ? void 0 : o.envMap) || null
+                },
+                envMapRotation: {
+                    value: 0
+                },
+                envMapRotationQuat: {
+                    value: new three_module.PTz
+                },
+                transmission: {
+                    value: 0
+                },
+                transmissionSamplerMap: {
+                    value: null
+                },
+                transmissionSamplerSize: {
+                    value: new three_module.I9Y
+                },
+                normalOffset: {
+                    value: 0
+                },
+                distanceOffset: {
+                    value: 0
+                },
+                colorCorrection: {
+                    value: new three_module.Pq0(1,1,1)
+                }
+            }
+        }),
+        this.typeSlug = DiamondMaterial.TypeSlug,
+        this.assetType = 

@@ -1,0 +1,41 @@
+/* Extracted CSS Block 269 */
+/* Size: 1456 chars */
+
+);
+                    ew.copy(this.light.color),
+                    tw.copy(this.light.groundColor);
+                    for (let mt = 0, ft = lt.count; mt < ft; mt++) {
+                        const xt = mt < ft / 2 ? ew : tw;
+                        lt.setXYZ(mt, xt.r, xt.g, xt.b)
+                    }
+                    lt.needsUpdate = !0
+                }
+                this.light.updateWorldMatrix(!0, !1),
+                tt.lookAt(lE.setFromMatrixPosition(this.light.matrixWorld).negate())
+            }
+        }
+        class uE extends iu {
+            constructor(tt=10, lt=10, mt=4473924, ft=8947848) {
+                mt = new Gn(mt),
+                ft = new Gn(ft);
+                const xt = lt / 2
+                  , Ct = tt / lt
+                  , Mt = tt / 2
+                  , Lt = []
+                  , Nt = [];
+                for (let Wt = 0, Qt = 0, qt = -Mt; Wt <= lt; Wt++,
+                qt += Ct) {
+                    Lt.push(-Mt, 0, qt, Mt, 0, qt),
+                    Lt.push(qt, 0, -Mt, qt, 0, Mt);
+                    const Xt = Wt === xt ? mt : ft;
+                    Xt.toArray(Nt, Qt),
+                    Qt += 3,
+                    Xt.toArray(Nt, Qt),
+                    Qt += 3,
+                    Xt.toArray(Nt, Qt),
+                    Qt += 3,
+                    Xt.toArray(Nt, Qt),
+                    Qt += 3
+                }
+                const jt = new bo;
+                jt.setAttribute(

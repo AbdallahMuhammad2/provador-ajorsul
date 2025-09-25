@@ -1,0 +1,11 @@
+/* Extracted CSS Block 125 */
+/* Size: 291 chars */
+
+in Vt ? Vt.plugins : []).forEach(wt => {
+                        this.pool_.register(wt),
+                        this.embedPluginStyle_(wt)
+                    }
+                    )
+                }
+                embedPluginStyle_(Vt) {
+                    Vt.css && Dl(this.document, 

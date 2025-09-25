@@ -1,0 +1,13 @@
+/* Extracted CSS Block 348 */
+/* Size: 210 chars */
+
+,
+            environment: this.environment
+        }),
+        this._onSceneUpdate({
+            geometryChanged: !1
+        })
+    }
+    _onBackgroundChange() {
+        this.dispatchEvent({
+            type: 

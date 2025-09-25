@@ -1,0 +1,19 @@
+/* Extracted CSS Block 415 */
+/* Size: 682 chars */
+
+ && (at[ut] = pt.uuid)
+            }
+            );
+        if (nt.materials = c.parseMaterials2(it, nt.textures, this._materials),
+        h && h.materials && (nt.materials = {
+            ...nt.materials,
+            ...h.materials
+        }),
+        o.object && (nt.object = c.parseObject(o.object, nt.geometries, nt.materials, nt.textures, nt.animations),
+        o.skeletons && (nt.skeletons = c.parseSkeletons(o.skeletons, nt.object),
+        c.bindSkeletons(nt.object, nt.skeletons))),
+        o.extras) {
+            nt.extras = o.extras;
+            for (const at of Object.values(o.extras))
+                if (at.uuid && at.url)
+                    if (typeof at.url == 

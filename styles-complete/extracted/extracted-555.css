@@ -1,0 +1,17 @@
+/* Extracted CSS Block 555 */
+/* Size: 401 chars */
+
+,
+        this.focusView = () => {}
+        ,
+        this.deleteView = () => {}
+        ,
+        this.updateView = () => {}
+        ,
+        this.uiConfig = generateUiFolder(this.name, this),
+        d && (this.position = d),
+        o && (this.target = o),
+        c && (this.up = c),
+        h && (this.quaternion = h),
+        _ !== void 0 && _ !== 0 && (this.duration = _),
+        this.name = 

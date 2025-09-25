@@ -1,0 +1,15 @@
+/* Extracted CSS Block 335 */
+/* Size: 402 chars */
+
+ && b[_e] === void 0 && delete b[_e]),
+        Object.assign(this._options, b),
+        this._refreshCameraOptions(!1),
+        this.refreshCameraControls(!1),
+        c && this.setDirty({
+            optionsUpdate: !0
+        })
+    }
+    _refreshCameraOptions(o=!0) {
+        let c = this._camera.modelObject;
+        if (this._options.type !== c.type) {
+            const _ = this._options.type === 

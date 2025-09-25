@@ -1,0 +1,12 @@
+/* Extracted CSS Block 1096 */
+/* Size: 361 chars */
+
+ ? requestAnimationFrame : noop, !0)
+  , svgMotionConfig = {
+    useVisualState: makeUseVisualState({
+        scrapeMotionValuesFromProps,
+        createRenderState: createSvgRenderState,
+        onMount: (d, o, {renderState: c, latestValues: h}) => {
+            frame.read( () => {
+                try {
+                    c.dimensions = typeof o.getBBox == 

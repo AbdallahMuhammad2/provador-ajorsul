@@ -1,0 +1,15 @@
+/* Extracted CSS Block 843 */
+/* Size: 521 chars */
+
+)) === null || h === void 0 ? void 0 : h.postFrameConvergedRecordingDelta();
+            if (_e && _e > 0 && (b = _e),
+            _e !== 0 && (b *= 1e3,
+            !(b <= .001) && (this._updaters.forEach(nt => {
+                let it = b;
+                nt.time + it < 0 && (it = -nt.time),
+                nt.time += it,
+                Math.abs(it) > .001 && nt.u(it)
+            }
+            ),
+            !this._fadeDisabled && this.disableFrameFade))) {
+                const nt = this._viewer.getPluginByType(

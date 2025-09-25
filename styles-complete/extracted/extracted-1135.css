@@ -1,0 +1,17 @@
+/* Extracted CSS Block 1135 */
+/* Size: 451 chars */
+
+,
+                children: [jsxRuntimeExports.jsx(motion.div, {
+                    initial: {
+                        opacity: 0,
+                        y: 20
+                    },
+                    animate: {
+                        opacity: 1,
+                        y: 0
+                    },
+                    transition: {
+                        delay: .1 * 0
+                    },
+                    children: jsxRuntimeExports.jsx(

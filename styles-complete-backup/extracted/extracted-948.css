@@ -1,0 +1,18 @@
+/* Extracted CSS Block 948 */
+/* Size: 298 chars */
+
+
+}
+  , World_step_collideEvent = {
+    type: Body.COLLIDE_EVENT_NAME,
+    body: null,
+    contact: null
+}
+  , World_step_oldContacts = []
+  , World_step_frictionEquationPool = []
+  , World_step_p1 = []
+  , World_step_p2 = []
+  , additions = []
+  , removals = []
+  , beginContactEvent = {
+    type: 

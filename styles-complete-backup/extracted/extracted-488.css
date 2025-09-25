@@ -1,0 +1,68 @@
+/* Extracted CSS Block 488 */
+/* Size: 1751 chars */
+
+,
+            uniforms: {
+                tLastThis: {
+                    value: null
+                },
+                tDiffuse: {
+                    value: null
+                },
+                tNormalDepth: {
+                    value: null
+                },
+                tLastFrame: {
+                    value: null
+                },
+                opacity: {
+                    value: 1
+                },
+                intensity: {
+                    value: 2.14
+                },
+                rayCount: {
+                    value: .1
+                },
+                objectRadius: {
+                    value: 1
+                },
+                autoRadius: {
+                    value: !_
+                },
+                power: {
+                    value: 1.1
+                },
+                bias: {
+                    value: .015
+                },
+                falloff: {
+                    value: .7
+                },
+                tolerance: {
+                    value: 1.5
+                },
+                frameCount: {
+                    value: 0
+                },
+                frameCount2: {
+                    value: 0
+                },
+                projection: {
+                    value: new three_module.kn4
+                },
+                screenSize: {
+                    value: new three_module.I9Y
+                },
+                cameraPositionWorld: {
+                    value: new three_module.Pq0
+                },
+                cameraNearFar: {
+                    value: new three_module.I9Y(.1,1e3)
+                }
+            },
+            defines: {
+                PERSPECTIVE_CAMERA: 1,
+                SSGI_ENABLED: _ ? 1 : 0
+            }
+        }, 

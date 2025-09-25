@@ -1,0 +1,8 @@
+/* Extracted CSS Block 743 */
+/* Size: 229 chars */
+
+))),
+        this.setName(o.getName()),
+        this.setExtras(index_modern_extends({}, o.getExtras())),
+        this.setDefaultScene(o.getDefaultScene() ? c(o.getDefaultScene()) : null);
+        for (const h of o.listRefMapKeys(

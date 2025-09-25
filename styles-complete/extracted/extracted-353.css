@@ -1,0 +1,10 @@
+/* Extracted CSS Block 353 */
+/* Size: 221 chars */
+
+,
+        this.materialObject = this,
+        this.materialExtensions = [],
+        this.isRawShaderMaterial = !1,
+        this.extraUniformsToUpload = {},
+        c && (this.isRawShaderMaterial = !0,
+        this.type = 

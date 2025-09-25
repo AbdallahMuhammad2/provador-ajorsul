@@ -1,0 +1,12 @@
+/* Extracted CSS Block 819 */
+/* Size: 373 chars */
+
+),
+        this._recorder = this._getRecorder(h),
+        this._recorder && (this._recorder.setOptions({
+            frameRate: this.videoFrameRate,
+            mimeType: this.mimeType,
+            stepMode: this.convergeMode,
+            internalMimeType: this.internalMimeType
+        }),
+        (c = (o = this.uiConfig).uiRefresh) === null || c === void 0 || c.call(o, 

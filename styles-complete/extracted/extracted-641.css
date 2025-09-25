@@ -1,0 +1,14 @@
+/* Extracted CSS Block 641 */
+/* Size: 210 chars */
+
+
+  , isIE11 = !!isBrowser$1 && !!window.msCrypto
+  , pluginProps = {
+    animateFill: !1,
+    followCursor: !1,
+    inlinePositioning: !1,
+    sticky: !1
+}
+  , renderProps = {
+    allowHTML: !1,
+    animation: 

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ring Tryon - Ultra Complete Extraction</title>
+    <link rel="stylesheet" href="./styles-complete/main.css">
+</head>
+<body>
+    <div id="canvasContainer">
+        <canvas id="mcanvas"></canvas>
+    </div>
+    <div id="tweakpaneUiContainer"></div>
+    <div id="assetManagerLoadingScreen">
+        <div id="assetManagerLoadingScreenContent">
+            <div class="loadingScreenLogoElement">
+                <div class="loadingScreenLogoImage">
+                    <img src="./icons/logo.webp" alt="Logo">
+                </div>
+            </div>
+            <div class="loadingScreenLoadingElement">
+                <div class="loader"></div>
+            </div>
+            <div class="loadingScreenFilesElement">
+                <div class="processState">Carregando sistema completo...</div>
+            </div>
+        </div>
+    </div>
+    <div id="assetManagerLoadingBar">
+        <div id="assetManagerLoadingBarContent"></div>
+    </div>
+    <div class="util-buttons-container">
+        <button id="fsToggle" class="round-button util-button">⛶</button>
+    </div>
+    <div id="webgi-logo"></div>
+    
+    <script type="module">
+        // Carregar sistema completo
+        import CompleteRegistry from './src-complete/index.js';
+        
+        console.log('🚀 Ring Tryon - Sistema Completo Carregado');
+        console.log('📊 Módulos disponíveis:', Object.keys(CompleteRegistry.modules).length);
+        console.log('🔧 Funções disponíveis:', Object.keys(CompleteRegistry.functions).length);
+        console.log('📦 Classes disponíveis:', Object.keys(CompleteRegistry.classes).length);
+        
+        window.RingTryonComplete = CompleteRegistry;
+    </script>
+</body>
+</html>

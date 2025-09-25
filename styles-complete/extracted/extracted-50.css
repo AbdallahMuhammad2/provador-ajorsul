@@ -1,0 +1,11 @@
+/* Extracted CSS Block 50 */
+/* Size: 267 chars */
+
+
+                }
+                bindExpandedClass(wt, Rt) {
+                    const zt = () => {
+                        this.styleExpanded ? wt.classList.add(Rt) : wt.classList.remove(Rt)
+                    }
+                    ;
+                    Dt(this, 

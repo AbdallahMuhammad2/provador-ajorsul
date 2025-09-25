@@ -1,0 +1,11 @@
+/* Extracted CSS Block 258 */
+/* Size: 377 chars */
+
+);
+                if (ft !== void 0 && ft !== -1) {
+                    const xt = mt.nodeName.substring(ft + 1);
+                    WS.indexOf(xt) !== -1 && (mt.nodeName = mt.nodeName.substring(0, ft),
+                    mt.objectName = xt)
+                }
+                if (mt.propertyName === null || mt.propertyName.length === 0)
+                    throw new Error(

@@ -1,0 +1,17 @@
+/* Extracted CSS Block 55 */
+/* Size: 493 chars */
+
+, {
+                        index: wt.index,
+                        item: wt.item,
+                        root: this,
+                        target: wt.target
+                    })
+                }
+            }
+            class wn extends h {
+                constructor(wt) {
+                    super(wt),
+                    this.onBindingChange_ = this.onBindingChange_.bind(this),
+                    this.emitter_ = new St,
+                    this.controller_.binding.emitter.on(

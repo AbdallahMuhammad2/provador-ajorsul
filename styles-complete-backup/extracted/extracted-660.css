@@ -1,0 +1,18 @@
+/* Extracted CSS Block 660 */
+/* Size: 633 chars */
+
+),
+        this._manager = o.getPlugin(AssetManagerPlugin);
+        const _ = this._createMesh();
+        _.userData.physicsMass = 0,
+        _.userData.isGroundMesh = !0,
+        this._iMesh = await ((c = this._manager) === null || c === void 0 ? void 0 : c.addImportedSingle(_, {
+            pseudoCenter: !1,
+            autoScale: !1,
+            addToRoot: !0
+        })),
+        this._mesh = (h = this._iMesh) === null || h === void 0 ? void 0 : h.modelObject,
+        this._mesh && (this._mesh.userData.userSelectable = !1,
+        this._mesh.castShadow = !0,
+        this._mesh.receiveShadow = !0,
+        this._mesh.name = 

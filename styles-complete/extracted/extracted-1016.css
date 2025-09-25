@@ -1,0 +1,8 @@
+/* Extracted CSS Block 1016 */
+/* Size: 214 chars */
+
+]);
+class AwsClient {
+    constructor({accessKeyId: o, secretAccessKey: c, sessionToken: h, service: _, region: b, cache: _e, retries: nt, initRetryMs: it}) {
+        if (o == null)
+            throw new TypeError(

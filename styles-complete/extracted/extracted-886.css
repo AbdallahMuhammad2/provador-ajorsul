@@ -1,0 +1,18 @@
+/* Extracted CSS Block 886 */
+/* Size: 292 chars */
+
+, b),
+            h(_e.data))
+        }),
+        d.start && d.start(),
+        d.postMessage(Object.assign({
+            id: _
+        }, o), c)
+    }
+    )
+}
+class build_T extends build_s {
+    init(o, c, h, _) {
+        if (!this.api) {
+            if (!_)
+                throw new Error(

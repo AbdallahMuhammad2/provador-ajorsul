@@ -1,0 +1,18 @@
+/* Extracted CSS Block 616 */
+/* Size: 353 chars */
+
+ && (b = o.UVIndex.a),
+        {
+            dataSize: 2,
+            buffer: _,
+            indices: b,
+            mappingType: c,
+            referenceType: h
+        }
+    }
+    parseVertexColors(o) {
+        const c = o.MappingInformationType
+          , h = o.ReferenceInformationType
+          , _ = o.Colors.a;
+        let b = [];
+        h === 

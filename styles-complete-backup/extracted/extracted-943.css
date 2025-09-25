@@ -1,0 +1,57 @@
+/* Extracted CSS Block 943 */
+/* Size: 888 chars */
+
+ && (c = o,
+        o = {}),
+        this.name = c,
+        this.id = cannon_es_Material.idCounter++,
+        this.friction = o.friction !== void 0 ? o.friction : -1,
+        this.restitution = o.restitution !== void 0 ? o.restitution : -1
+    }
+}
+cannon_es_Material.idCounter = 0;
+new Vec3;
+new Vec3;
+new Vec3;
+new Vec3;
+new Vec3;
+new Vec3;
+new Vec3;
+new Vec3;
+new Vec3;
+new Vec3;
+new Vec3;
+new Vec3;
+new Vec3;
+new Vec3,
+new Vec3,
+new Vec3;
+new Vec3;
+new Vec3;
+new Vec3;
+new Ray,
+new Vec3;
+new Vec3;
+new Vec3;
+new Vec3(1,0,0),
+new Vec3(0,1,0),
+new Vec3(0,0,1);
+new Vec3;
+new Vec3;
+new Vec3;
+new Vec3;
+new Vec3;
+new Vec3;
+new Vec3;
+new Vec3;
+new Vec3;
+new Vec3;
+new Vec3;
+class Sphere extends Shape {
+    constructor(o) {
+        if (super({
+            type: Shape.types.SPHERE
+        }),
+        this.radius = o !== void 0 ? o : 1,
+        this.radius < 0)
+            throw new Error(

@@ -1,0 +1,16 @@
+/* Extracted CSS Block 225 */
+/* Size: 679 chars */
+
+) {
+                    if (Nt && tt.hand) {
+                        Ct = !0;
+                        for (const Zt of tt.hand.values()) {
+                            const Yt = lt.getJointPose(Zt, mt)
+                              , sr = this._getHandJoint(Nt, Zt);
+                            Yt !== null && (sr.matrix.fromArray(Yt.transform.matrix),
+                            sr.matrix.decompose(sr.position, sr.rotation, sr.scale),
+                            sr.matrixWorldNeedsUpdate = !0,
+                            sr.jointRadius = Yt.radius),
+                            sr.visible = Yt !== null
+                        }
+                        const jt = Nt.joints[

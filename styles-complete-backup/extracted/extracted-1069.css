@@ -1,0 +1,42 @@
+/* Extracted CSS Block 1069 */
+/* Size: 1546 chars */
+
+,vt,c,ut),
+                    bt.target = Pt,
+                    bt.relatedTarget = St,
+                    It = bt),
+                    St = It,
+                    _t && vt)
+                        t: {
+                            for (bt = _t,
+                            At = vt,
+                            Et = 0,
+                            Pt = bt; Pt; Pt = vf(Pt))
+                                Et++;
+                            for (Pt = 0,
+                            It = At; It; It = vf(It))
+                                Pt++;
+                            for (; 0 < Et - Pt; )
+                                bt = vf(bt),
+                                Et--;
+                            for (; 0 < Pt - Et; )
+                                At = vf(At),
+                                Pt--;
+                            for (; Et--; ) {
+                                if (bt === At || At !== null && bt === At.alternate)
+                                    break t;
+                                bt = vf(bt),
+                                At = vf(At)
+                            }
+                            bt = null
+                        }
+                    else
+                        bt = null;
+                    _t !== null && wf(pt, ht, _t, bt, !1),
+                    vt !== null && St !== null && wf(pt, St, vt, bt, !0)
+                }
+            }
+            e: {
+                if (ht = at ? ue(at) : window,
+                _t = ht.nodeName && ht.nodeName.toLowerCase(),
+                _t === 

@@ -1,0 +1,28 @@
+/* Extracted CSS Block 1064 */
+/* Size: 628 chars */
+
+ && Reflect.construct) {
+                try {
+                    Reflect.construct(o, [])
+                } catch (at) {
+                    var h = at
+                }
+                Reflect.construct(d, [], o)
+            } else {
+                try {
+                    o.call()
+                } catch (at) {
+                    h = at
+                }
+                d.call(o.prototype)
+            }
+        else {
+            try {
+                throw Error()
+            } catch (at) {
+                h = at
+            }
+            d()
+        }
+    } catch (at) {
+        if (at && h && typeof at.stack == 

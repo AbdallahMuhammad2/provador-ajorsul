@@ -1,0 +1,22 @@
+/* Extracted CSS Block 787 */
+/* Size: 548 chars */
+
+),
+        it.transmissionRenderTarget = h,
+        setThreeRendererMode(o, {
+            shadowMapRender: !1,
+            backgroundRender: !1,
+            opaqueRender: !0,
+            transparentRender: !0,
+            transmissionRender: !0,
+            mainRenderPass: !1
+        }, () => super.render(o, h, this.target, _, b)),
+        it.transmissionRenderTarget = void 0,
+        _e.forEach(at => at.traverse(ut => {
+            ut.layers.disable(6)
+        }
+        )),
+        this.camera.layers.mask = nt
+    }
+}
+var outlineDepthVert = 

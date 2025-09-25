@@ -1,0 +1,17 @@
+/* Extracted CSS Block 746 */
+/* Size: 723 chars */
+
+
+            }, _.getAsset()),
+            extras: index_modern_extends({}, _.getExtras())
+        }
+          , _e = {
+            json: b,
+            resources: {}
+        }
+          , nt = new WriterContext(o,_e,c)
+          , it = c.logger || Logger.DEFAULT_INSTANCE
+          , at = new Set(c.extensions.map(St => St.EXTENSION_NAME))
+          , ut = o.getRoot().listExtensionsUsed().filter(St => at.has(St.extensionName)).sort( (St, At) => St.extensionName > At.extensionName ? 1 : -1)
+          , pt = o.getRoot().listExtensionsRequired().filter(St => at.has(St.extensionName)).sort( (St, At) => St.extensionName > At.extensionName ? 1 : -1);
+        ut.length < o.getRoot().listExtensionsUsed().length && it.warn(

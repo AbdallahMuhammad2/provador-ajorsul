@@ -1,0 +1,13 @@
+/* Extracted CSS Block 1124 */
+/* Size: 437 chars */
+
+,
+                this.hasProjected = !1),
+                bt
+            }
+            const ht = pt.animationValues || pt.latestValues;
+            this.applyTransformsToTarget(),
+            at.transform = buildProjectionTransform(this.projectionDeltaWithTransform, this.treeScale, ht),
+            ut && (at.transform = ut(ht, at.transform));
+            const {x: _t, y: vt} = this.projectionDelta;
+            at.transformOrigin = 

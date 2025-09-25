@@ -1,0 +1,41 @@
+/* MODAL CSS */
+/* Blocks: 1 */
+
+/* === Block 5 === */
+#assetManagerPopup {
+    z-index: 300;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    color: #fff;
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px);
+    background-blend-mode: luminosity;
+    background-color: rgba(40, 34, 60, .6666666667);
+    padding: 1.5rem;
+    font-size: 1rem;
+    width: -moz-max-content;
+    width: max-content;
+    max-width: 80vw;
+    max-height: 80vh;
+    overflow-y: scroll;
+    border-radius: .5rem;
+    height: -moz-max-content;
+    height: max-content
+}
+
+#assetManagerPopupClose {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: .5rem;
+    cursor: pointer
+}
+
+#assetManagerPopupContent {
+    padding-top: .5rem
+}
+
+.processState {
+    font-weight: bold
+}

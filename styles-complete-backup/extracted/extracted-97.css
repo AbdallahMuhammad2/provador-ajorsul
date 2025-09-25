@@ -1,0 +1,35 @@
+/* Extracted CSS Block 97 */
+/* Size: 1515 chars */
+
+);
+                    this.inputElement.value = wt(this.value.rawValue)
+                }
+                onChange_() {
+                    this.refresh()
+                }
+            }
+            class pp {
+                constructor(wt, Rt) {
+                    var zt;
+                    this.originRawValue_ = 0,
+                    this.onInputChange_ = this.onInputChange_.bind(this),
+                    this.onInputKeyDown_ = this.onInputKeyDown_.bind(this),
+                    this.onInputKeyUp_ = this.onInputKeyUp_.bind(this),
+                    this.onPointerDown_ = this.onPointerDown_.bind(this),
+                    this.onPointerMove_ = this.onPointerMove_.bind(this),
+                    this.onPointerUp_ = this.onPointerUp_.bind(this),
+                    this.baseStep_ = Rt.baseStep,
+                    this.parser_ = Rt.parser,
+                    this.props = Rt.props,
+                    this.sliderProps_ = (zt = Rt.sliderProps) !== null && zt !== void 0 ? zt : null,
+                    this.value = Rt.value,
+                    this.viewProps = Rt.viewProps,
+                    this.dragging_ = or(null),
+                    this.view = new Yp(wt,{
+                        arrayPosition: Rt.arrayPosition,
+                        dragging: this.dragging_,
+                        props: this.props,
+                        value: this.value,
+                        viewProps: this.viewProps
+                    }),
+                    this.view.inputElement.addEventListener(

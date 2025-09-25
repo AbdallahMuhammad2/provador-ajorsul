@@ -1,0 +1,20 @@
+/* Extracted CSS Block 458 */
+/* Size: 594 chars */
+
+),
+        this.expandCocMaterial = patchShaderEncodingSupport({
+            uniforms: {
+                colorTexture: {
+                    value: null
+                },
+                colorTextureSize: {
+                    value: new three_module.I9Y
+                },
+                direction: {
+                    value: new three_module.I9Y
+                },
+                tNormalDepth: this.uniforms.tNormalDepth,
+                nearFarBlurScale: this.uniforms.nearFarBlurScale
+            },
+            vertexShader: defaultVertex,
+            fragmentShader: unpackGbuffer + 

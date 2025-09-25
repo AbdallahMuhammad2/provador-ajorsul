@@ -1,0 +1,11 @@
+/* Extracted CSS Block 992 */
+/* Size: 217 chars */
+
+,
+        toggle: !0,
+        onclick: async () => {
+            const At = d.scene.activeCamera.controls;
+            At && At.autoRotate !== void 0 && (At.autoRotate = !At.autoRotate)
+        }
+    }, {
+        id: 

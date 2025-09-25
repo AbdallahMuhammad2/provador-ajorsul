@@ -1,0 +1,11 @@
+/* Extracted CSS Block 974 */
+/* Size: 352 chars */
+
+ || b.includes(_e) || this.uiConfig.children.splice(this.uiConfig.children.indexOf(_e), 1)
+            }
+            ),
+            b.forEach(_e => {
+                this.uiConfig.children.includes(_e) || this.uiConfig.children.push(_e)
+            }
+            ),
+            (_ = (h = this.uiConfig).uiRefresh) === null || _ === void 0 || _.call(h, 

@@ -1,0 +1,20 @@
+/* Extracted CSS Block 519 */
+/* Size: 521 chars */
+
+, h),
+            o.userData._normalsCaptureMap = at,
+            !1
+        }
+        const nt = this._renderer.createTargetCustom({
+            width: h,
+            height: h
+        }, {
+            minFilter: three_module.hxR,
+            magFilter: three_module.hxR,
+            generateMipmaps: !1,
+            type: this._getPrecisionType(_)
+        }, three_module.o6l);
+        if (nt.attachedGeometries = [],
+        nt.autoDispose = CubeNormalsCaptureHelper.AutoDisposeTargets,
+        !nt)
+            throw 

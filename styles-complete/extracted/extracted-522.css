@@ -1,0 +1,27 @@
+/* Extracted CSS Block 522 */
+/* Size: 944 chars */
+
+, o.count / 3),
+        computeOffsetMatrix(d);
+    const h = new three_module.Pq0(0,0,0)
+      , _ = new three_module.Pq0(0,0,0)
+      , b = new three_module.Pq0(0,0,0)
+      , _e = d.index
+      , nt = [];
+    if (_e)
+        for (let At = Math.max(0, d.drawRange.start), Et = Math.min(_e.count, d.drawRange.start + d.drawRange.count) - 1; At < Et; At += 3) {
+            const Pt = _e.getX(At)
+              , It = _e.getX(At + 1)
+              , Dt = _e.getX(At + 2);
+            h.set(o.getX(Pt), o.getY(Pt), o.getZ(Pt)),
+            _.set(o.getX(It), o.getY(It), o.getZ(It)),
+            b.set(o.getX(Dt), o.getY(Dt), o.getZ(Dt)),
+            nt.push(h.toArray(), _.toArray(), b.toArray())
+        }
+    else
+        for (let At = 0; At < o.count; At++)
+            h.set(o.getX(At), o.getY(At), o.getZ(At)),
+            nt.push(h.toArray());
+    const it = computeCenterAndCOM(o.array, nt);
+    if (it.volume < 0) {
+        console.warn(

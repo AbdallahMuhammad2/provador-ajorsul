@@ -1,0 +1,11 @@
+/* Extracted CSS Block 915 */
+/* Size: 311 chars */
+
+,
+                value: async () => {
+                    var o, c;
+                    try {
+                        const {folder: h, config: _} = await this._exportConfiguratorState()
+                          , b = JSON.stringify(_, null, 4);
+                        if (h) {
+                            h[

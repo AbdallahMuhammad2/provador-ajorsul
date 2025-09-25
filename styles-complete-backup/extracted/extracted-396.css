@@ -1,0 +1,13 @@
+/* Extracted CSS Block 396 */
+/* Size: 385 chars */
+
+],
+                onChange: () => {
+                    var o, c;
+                    (o = this.shadow.map) === null || o === void 0 || o.dispose(),
+                    (c = this.shadow.mapPass) === null || c === void 0 || c.dispose(),
+                    this.shadow.map = null,
+                    this.shadow.mapPass = null
+                }
+            }, {
+                type: 

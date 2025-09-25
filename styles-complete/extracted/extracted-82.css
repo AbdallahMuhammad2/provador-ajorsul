@@ -1,0 +1,17 @@
+/* Extracted CSS Block 82 */
+/* Size: 507 chars */
+
+, this.onValueChange_),
+                    this.target = wt.target,
+                    this.read()
+                }
+                read() {
+                    const wt = this.target.read();
+                    wt !== void 0 && (this.value.rawValue = this.reader(wt))
+                }
+                write_(wt) {
+                    this.writer(this.target, wt)
+                }
+                onValueChange_(wt) {
+                    this.write_(wt.rawValue),
+                    this.emitter.emit(

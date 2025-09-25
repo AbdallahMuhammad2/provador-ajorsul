@@ -1,0 +1,4 @@
+/* Extracted CSS Block 939 */
+/* Size: 177 chars */
+
+.faceNormals[${o}] = Vec3(${c.toString()}) looks like it points into the shape? The vertices follow. Make sure they are ordered CCW around the normal, using the right hand rule.

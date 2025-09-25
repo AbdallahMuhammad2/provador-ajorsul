@@ -1,0 +1,17 @@
+/* Extracted CSS Block 594 */
+/* Size: 382 chars */
+
+
+        });
+        _.source = d.processImageBlob(b, o),
+        c.extensions[KHR_TEXTURE_BASISU] = _,
+        d.extensionsUsed[KHR_TEXTURE_BASISU] = !0
+    }
+});
+class DebugPlugin extends I$2 {
+    constructor() {
+        super(...arguments),
+        this.dirty = !1,
+        this.counters = {},
+        this._generators = new Map,
+        this._preRender = () => this._showDebug(

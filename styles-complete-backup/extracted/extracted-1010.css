@@ -1,0 +1,17 @@
+/* Extracted CSS Block 1010 */
+/* Size: 474 chars */
+
+ && ((nt = this._recorder) === null || nt === void 0 || nt.pause())
+            }
+              , _e = Math.min(this._resumeSyncTime - g(), 0) + 1e3 / this._options.frameRate;
+            _e > 0 ? X$2(_e).then(b) : b()
+        }
+        ,
+        this._onpause = _ => {}
+        ,
+        this._ondataavailable = _ => {
+            _.data && _.data.size > 0 && this._currentRecording.push(_.data)
+        }
+        ,
+        this._onerror = _ => {
+            this._state = 

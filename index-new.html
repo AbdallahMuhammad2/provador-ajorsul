@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./public/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ring Try-On Virtual System</title>
+  
+  <!-- WebGI Engine - We'll need to include this properly -->
+  <!-- For now, we'll create a fallback that doesn't depend on external CDNs -->
+  
+  <!-- Main Application Styles -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      overflow: hidden;
+      background: #000;
+    }
+    
+    #root {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+    }
+    
+    /* Loading Animation */
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    /* Button Hover Effects */
+    button:hover {
+      transform: scale(1.05);
+      transition: transform 0.2s ease;
+    }
+    
+    button:active {
+      transform: scale(0.95);
+    }
+    
+    /* Error Messages */
+    .error-message {
+      background: #ff4444;
+      color: white;
+      padding: 15px;
+      border-radius: 5px;
+      margin: 10px;
+      text-align: center;
+    }
+    
+    /* Success Messages */
+    .success-message {
+      background: #44ff44;
+      color: black;
+      padding: 15px;
+      border-radius: 5px;
+      margin: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root">
+    <!-- The application will create UI elements here -->
+    <div id="fallback-message" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; text-align: center; display: none;">
+      <h2>Ring Try-On System</h2>
+      <p>Initializing virtual try-on experience...</p>
+      <div style="width: 50px; height: 50px; border: 3px solid #f3f3f3; border-top: 3px solid #3498db; border-radius: 50%; animation: spin 1s linear infinite; margin: 20px auto;"></div>
+    </div>
+  </div>
+
+  <!-- Fallback for WebGI if not available -->
+  <script>
+    // Simple fallback implementation
+    if (typeof ViewerApp === 'undefined') {
+      console.warn('WebGI ViewerApp not available, creating fallback...');
+      
+      // Create a basic fallback ViewerApp
+      window.ViewerApp = class ViewerApp {
+        constructor(options) {
+          this.canvas = options.canvas || document.createElement('canvas');
+          this.scene = {
+            environment: { map: null },
+            mainLight: { intensity: 2.5, shadow: { camera: { far: 100 } } },
+            modelRoot: {
+              add: () => console.log('Model added'),
+              clear: () => console.log('Scene cleared'),
+              remove: () => console.log('Model removed')
+            }
+          };
+          this.renderEnabled = true;
+          console.log('Fallback ViewerApp created');
+        }
+        
+        async addPlugin(plugin) {
+          console.log('Plugin added:', plugin);
+          return {};
+        }
+        
+        async load(path) {
+          console.log('Loading asset:', path);
+          return {
+            modelObject: {
+              scale: { setScalar: () => {} },
+              position: { set: () => {} },
+              rotation: { set: () => {} },
+              userData: {},
+              dispose: () => {}
+            },
+            dispose: () => {}
+          };
+        }
+        
+        dispose() {
+          console.log('Viewer disposed');
+        }
+      };
+      
+      // Create basic plugin classes
+      const basicPlugin = class { constructor() {} };
+      
+      window.CameraViewPlugin = basicPlugin;
+      window.CanvasSnipperPlugin = basicPlugin;
+      window.MaterialConfiguratorPlugin = basicPlugin;
+      window.ProgressivePlugin = basicPlugin;
+      window.TonemapPlugin = basicPlugin;
+      window.SSRPlugin = basicPlugin;
+      window.SSAOPlugin = basicPlugin;
+      window.BloomPlugin = basicPlugin;
+      window.FrameFadePlugin = basicPlugin;
+      window.GLTFAnimationPlugin = basicPlugin;
+      window.GroundPlugin = basicPlugin;
+      
+      // Show fallback message
+      document.getElementById('fallback-message').style.display = 'block';
+      
+      setTimeout(() => {
+        document.getElementById('fallback-message').style.display = 'none';
+      }, 3000);
+    }
+  </script>
+
+  <!-- Main Application Script -->
+  <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+/* Extracted CSS Block 358 */
+/* Size: 857 chars */
+
+),
+        this.needsUpdate = !0),
+        It = Pt.userData.ALPHA_I_RGBA_PACKING ? 1 : void 0,
+        It !== this.defines.ALPHA_I_RGBA_PACKING && (It === void 0 ? delete this.defines.ALPHA_I_RGBA_PACKING : this.defines.ALPHA_I_RGBA_PACKING = It,
+        this.needsUpdate = !0),
+        It = (At = Pt.userData.forcedLinearDepth) !== null && At !== void 0 ? At : void 0,
+        It !== this.defines.FORCED_LINEAR_DEPTH && (It === void 0 ? delete this.defines.FORCED_LINEAR_DEPTH : this.defines.FORCED_LINEAR_DEPTH = It,
+        this.needsUpdate = !0),
+        this.side = (Et = Pt.side) !== null && Et !== void 0 ? Et : three_module.$EB
+    }
+    addGBufferUpdater(o) {
+        this._updaters.push(o)
+    }
+    removeGBufferUpdater(o) {
+        const c = this._updaters.indexOf(o);
+        c !== -1 && this._updaters.splice(c, 1)
+    }
+}
+var unpackGbuffer = 

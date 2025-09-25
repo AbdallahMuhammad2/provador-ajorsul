@@ -1,0 +1,14 @@
+/* Extracted CSS Block 709 */
+/* Size: 189 chars */
+
+
+    }
+    async onAdded(d) {
+        styles_loadingBar.use({
+            target: d.container
+        }),
+        await super.onAdded(d)
+    }
+}
+;
+AssetManagerLoadingBarPlugin.PluginType = 

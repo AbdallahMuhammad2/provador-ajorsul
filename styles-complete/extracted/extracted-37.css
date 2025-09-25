@@ -1,0 +1,9 @@
+/* Extracted CSS Block 37 */
+/* Size: 243 chars */
+
+,
+                    this.image_.onclick = Ht => {
+                        Ut.clickCallback ? Ut.clickCallback(Ht, this.input) : this.input.click()
+                    }
+                    ,
+                    this.element.classList.add(bt(

@@ -1,0 +1,35 @@
+/* Extracted CSS Block 778 */
+/* Size: 1419 chars */
+
+,
+                Pt === !0) {
+                    let It;
+                    bt.onBeforeRender(c, St, At),
+                    bt.isCSS3DSprite ? (_matrix.copy(At.matrixWorldInverse),
+                    _matrix.transpose(),
+                    bt.rotation2D !== 0 && _matrix.multiply(_matrix2.makeRotationZ(bt.rotation2D)),
+                    bt.matrixWorld.decompose(_position, _quaternion, _scale),
+                    _matrix.setPosition(_position),
+                    _matrix.scale(_scale),
+                    _matrix.elements[3] = 0,
+                    _matrix.elements[7] = 0,
+                    _matrix.elements[11] = 0,
+                    _matrix.elements[15] = 1,
+                    It = _t(_matrix)) : It = _t(bt.matrixWorld);
+                    const Dt = bt.element
+                      , Gt = nt.objects.get(bt);
+                    if (Gt === void 0 || Gt.style !== It) {
+                        Dt.style.transform = It;
+                        const Bt = {
+                            style: It
+                        };
+                        nt.objects.set(bt, Bt)
+                    }
+                    Dt.parentNode !== ut && ut.appendChild(Dt),
+                    bt.onAfterRender(c, St, At)
+                }
+            }
+            for (let Pt = 0, It = bt.children.length; Pt < It; Pt++)
+                vt(bt.children[Pt], St, At)
+        }
+        ut.style.transformStyle = 

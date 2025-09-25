@@ -1,0 +1,8 @@
+/* Extracted CSS Block 895 */
+/* Size: 259 chars */
+
+)) {
+            const _ = await ((h = (c = this._viewer) === null || c === void 0 ? void 0 : c.getManager().importer) === null || h === void 0 ? void 0 : h.importSinglePath(o, {
+                processImported: !1
+            }))
+              , b = o.split(

@@ -1,0 +1,12 @@
+/* Extracted CSS Block 419 */
+/* Size: 286 chars */
+
+);
+        const h = [].slice.call((c = this._inputEl.files) !== null && c !== void 0 ? c : new FileList)
+          , _ = new Map;
+        h.forEach(b => {
+            b.filePath = b.webkitRelativePath || b.name,
+            _.set(b.filePath, b)
+        }
+        ),
+        this._emit(

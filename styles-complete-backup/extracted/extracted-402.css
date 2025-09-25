@@ -1,0 +1,25 @@
+/* Extracted CSS Block 402 */
+/* Size: 873 chars */
+
+],!0)],
+        this._loaderCache = [],
+        this._fileDatabase = new Map,
+        this._cachedAssets = [],
+        c || (this._logger = () => {}
+        ),
+        this._viewer = o,
+        this._onLoad = this._onLoad.bind(this),
+        this._onProgress = this._onProgress.bind(this),
+        this._onError = this._onError.bind(this),
+        this._onStart = this._onStart.bind(this),
+        this._urlModifier = this._urlModifier.bind(this),
+        this._loadingManager = new three_module.KPJ(this._onLoad,this._onProgress,this._onError),
+        this._loadingManager.onStart = this._onStart,
+        this._loadingManager.setURLModifier(this._urlModifier),
+        this.Importers.push(addRGBELoader(o)),
+        this.Importers.push(addGLTFLoader(o)),
+        this.Importers.push(addDracoLoader())
+    }
+    _onLoad() {
+        this.dispatchEvent({
+            type: 

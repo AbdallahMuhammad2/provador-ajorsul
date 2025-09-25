@@ -1,0 +1,15 @@
+/* Extracted CSS Block 829 */
+/* Size: 774 chars */
+
+
+    }
+    async _getFile(d, o={}) {
+        var c, h, _, b, _e, nt, it, at, ut, pt, ht, _t;
+        const vt = (c = this._viewer) === null || c === void 0 ? void 0 : c.canvas;
+        if (vt) {
+            (h = this.viewer) === null || h === void 0 || h.scene.activeCamera.setInteractions(!1, CanvasSnipperPlugin_1.PluginType);
+            const bt = this._viewer.renderer.displayCanvasScaling;
+            o.displayPixelRatio !== void 0 && o.displayPixelRatio !== bt && (this._viewer.renderer.displayCanvasScaling = o.displayPixelRatio);
+            const St = (_ = this._viewer) === null || _ === void 0 ? void 0 : _.getPlugin(ProgressivePlugin);
+            let At = (b = o.waitForProgressive) !== null && b !== void 0 ? b : !!St;
+            At && !St && (console.warn(

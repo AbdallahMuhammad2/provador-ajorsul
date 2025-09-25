@@ -1,0 +1,14 @@
+/* Extracted CSS Block 884 */
+/* Size: 361 chars */
+
+);
+        const {id: b, type: _e, path: nt} = Object.assign({
+            path: []
+        }, _.data)
+          , it = (_.data.argumentList || []).map(build_L);
+        let at;
+        try {
+            const ut = nt.slice(0, -1).reduce( (ht, _t) => ht[_t], d)
+              , pt = nt.reduce( (ht, _t) => ht[_t], d);
+            switch (_e) {
+            case 

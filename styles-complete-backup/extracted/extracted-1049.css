@@ -1,0 +1,11 @@
+/* Extracted CSS Block 1049 */
+/* Size: 158 chars */
+
+, () => {
+            this.enabled && this._needsUpdate && this.autoRefresh && this.refreshSvg()
+        }
+        )
+    }
+}
+;
+GradientSvgPlugin.PluginType = 

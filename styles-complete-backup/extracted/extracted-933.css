@@ -1,0 +1,29 @@
+/* Extracted CSS Block 933 */
+/* Size: 1307 chars */
+
+);
+                if (_t.left.length > 0 && _t.right.length > 0) {
+                    const St = Et => Pt => {
+                        var It, Dt, Gt;
+                        for (const Bt of _t[Et])
+                            Bt.position.x = Pt + Bt.userData.__initX;
+                        (Dt = (It = this._viewer) === null || It === void 0 ? void 0 : It.scene) === null || Dt === void 0 || Dt.setDirty({
+                            sceneUpdate: !1,
+                            frameFade: !1
+                        }),
+                        o && ((Gt = bt == null ? void 0 : bt.shadowBaker) === null || Gt === void 0 || Gt.reset())
+                    }
+                      , At = Et => Pt => {
+                        var It, Dt;
+                        for (const Gt of _t[Et])
+                            Gt.rotation.x = Pt + Gt.userData.__initRotX;
+                        (Dt = (It = this._viewer) === null || It === void 0 ? void 0 : It.scene) === null || Dt === void 0 || Dt.setDirty({
+                            sceneUpdate: !1,
+                            frameFade: !1
+                        })
+                    }
+                    ;
+                    h.push(ut.animate({
+                        from: 0,
+                        to: -.75,
+                        onUpdate: St(

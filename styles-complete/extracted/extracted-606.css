@@ -1,0 +1,53 @@
+/* Extracted CSS Block 606 */
+/* Size: 2368 chars */
+
+ + _t;
+                    let Dt = c.materials[It];
+                    if (this.materials !== null)
+                        if (Dt = await this.materials.create(Pt.name),
+                        !pt || !Dt || Dt instanceof three_module.mrM) {
+                            if (ht && Dt && !(Dt instanceof three_module.BH$)) {
+                                const Gt = new three_module.BH$({
+                                    size: 10,
+                                    sizeAttenuation: !1
+                                });
+                                three_module.imn.prototype.copy.call(Gt, Dt),
+                                Gt.color.copy(Dt.color),
+                                Gt.map = Dt.map,
+                                Dt = Gt
+                            }
+                        } else {
+                            const Gt = new three_module.mrM;
+                            three_module.imn.prototype.copy.call(Gt, Dt),
+                            Gt.color.copy(Dt.color),
+                            Dt = Gt
+                        }
+                    Dt === void 0 && (Dt = pt ? new three_module.mrM : ht ? new three_module.BH$({
+                        size: 1,
+                        sizeAttenuation: !1
+                    }) : new three_module.tXL,
+                    Dt.name = Pt.name,
+                    Dt.flatShading = !Pt.smooth,
+                    Dt.vertexColors = _t,
+                    c.materials[It] = Dt),
+                    bt.push(Dt)
+                }
+                let St;
+                if (bt.length > 1) {
+                    for (let At = 0, Et = ut.length; At < Et; At++) {
+                        const Pt = ut[At];
+                        vt.addGroup(Pt.groupStart, Pt.groupCount, At)
+                    }
+                    St = pt ? new three_module.DXC(vt,bt) : ht ? new three_module.ONl(vt,bt) : new three_module.eaF(vt,bt)
+                } else
+                    St = pt ? new three_module.DXC(vt,bt[0]) : ht ? new three_module.ONl(vt,bt[0]) : new three_module.eaF(vt,bt[0]);
+                St.name = it.name,
+                b.add(St)
+            }
+        else if (c.vertices.length > 0) {
+            const _e = new three_module.BH$({
+                size: 1,
+                sizeAttenuation: !1
+            })
+              , nt = new three_module.LoY;
+            nt.setAttribute(

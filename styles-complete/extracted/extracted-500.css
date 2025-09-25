@@ -1,0 +1,13 @@
+/* Extracted CSS Block 500 */
+/* Size: 250 chars */
+
+;
+            this._renderer.blit(this._target.texture, o, {}),
+            this.uniforms.tLastThis.value = o.texture,
+            super.render(d, this._target, c, h, _),
+            this.needsSwap = !1
+        }
+    }
+}
+;
+SSRPass_decorate([uiSlider(

@@ -1,0 +1,13 @@
+/* Extracted CSS Block 650 */
+/* Size: 284 chars */
+
+, o => {
+            this.Element && !this.Element.contains(o.target) && o.button === 0 && this.Remove()
+        }
+        )
+    }
+    static Create(o, c, h) {
+        this._inited || this._initialize(),
+        this.Element && this.Remove();
+        const _ = ee$1({
+            id: 

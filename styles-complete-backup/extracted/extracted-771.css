@@ -1,0 +1,24 @@
+/* Extracted CSS Block 771 */
+/* Size: 605 chars */
+
+) {
+                const _ = o.imageIndexMap.get(h);
+                c.json.textures.forEach(b => {
+                    b.source === _ && (b.extensions = b.extensions || {},
+                    b.extensions[NAME$2] = {
+                        source: b.source
+                    },
+                    delete b.source)
+                }
+                )
+            }
+        }
+        ),
+        this
+    }
+}
+KHRTextureBasisu.EXTENSION_NAME = NAME$2;
+class Transform extends index_modern_ExtensionProperty {
+    init() {
+        this.extensionName = KHR_TEXTURE_TRANSFORM,
+        this.propertyType = 

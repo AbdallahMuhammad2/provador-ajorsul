@@ -1,0 +1,23 @@
+/* Extracted CSS Block 844 */
+/* Size: 587 chars */
+
+);
+                nt && (nt.disable(PopmotionPlugin.PluginType),
+                this._fadeDisabled = !0)
+            }
+        }
+        ,
+        this.defaultDriver = c => ({
+            start: () => this._updaters.push({
+                u: c,
+                time: 0
+            }),
+            stop: () => this._updaters.splice(this._updaters.findIndex(h => h.u === c), 1)
+        }),
+        this.animations = {},
+        this.enabled = o,
+        this._postFrame = this._postFrame.bind(this)
+    }
+    async onAdded(o) {
+        await super.onAdded(o),
+        o.addEventListener(

@@ -1,0 +1,11 @@
+/* Extracted CSS Block 587 */
+/* Size: 189 chars */
+
+:
+				transcoderPending.then( () => {
+
+					try {
+
+						const { faces, buffers, width, height, hasAlpha, format, dfdFlags } = transcode( message.buffer );
+
+						self.postMessage( { type: 

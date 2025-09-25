@@ -1,0 +1,20 @@
+/* Extracted CSS Block 154 */
+/* Size: 1067 chars */
+
+, this),
+                    void this.boundingBox.set(new Er(-1 / 0,-1 / 0,-1 / 0), new Er(1 / 0,1 / 0,1 / 0));
+                if (tt !== void 0) {
+                    if (this.boundingBox.setFromBufferAttribute(tt),
+                    lt)
+                        for (let mt = 0, ft = lt.length; mt < ft; mt++) {
+                            const xt = lt[mt];
+                            Us.setFromBufferAttribute(xt),
+                            this.morphTargetsRelative ? (fs.addVectors(this.boundingBox.min, Us.min),
+                            this.boundingBox.expandByPoint(fs),
+                            fs.addVectors(this.boundingBox.max, Us.max),
+                            this.boundingBox.expandByPoint(fs)) : (this.boundingBox.expandByPoint(Us.min),
+                            this.boundingBox.expandByPoint(Us.max))
+                        }
+                } else
+                    this.boundingBox.makeEmpty();
+                (isNaN(this.boundingBox.min.x) || isNaN(this.boundingBox.min.y) || isNaN(this.boundingBox.min.z)) && console.error(

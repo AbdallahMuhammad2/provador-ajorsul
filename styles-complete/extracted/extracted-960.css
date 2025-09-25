@@ -1,0 +1,53 @@
+/* Extracted CSS Block 960 */
+/* Size: 1688 chars */
+
+ && d[o] ? d[o].copy(c) : d[o] = cloneVar(c)
+}
+class TweakpaneWrapper extends I$2 {
+    constructor(o=!1, c=!1, h=!1, _=!0, b=document.body) {
+        super(),
+        this._refreshQueue = {
+            preRender: [],
+            postRender: [],
+            preFrame: [],
+            postFrame: []
+        },
+        this._lastModeTime = {
+            preRender: 0,
+            postRender: 0,
+            preFrame: 0,
+            postFrame: 0
+        },
+        this._typeGenerators = {
+            panel: tpFolderGenerator,
+            folder: tpFolderGenerator,
+            input: tpInputGenerator,
+            number: tpInputGenerator,
+            slider: tpSliderInputGenerator,
+            dropdown: tpDropdownInputGenerator,
+            checkbox: tpInputGenerator,
+            color: tpColorInputGenerator,
+            vec: tpVecInputGenerator,
+            vec2: tpVecInputGenerator,
+            vec3: tpVecInputGenerator,
+            vec4: tpVecInputGenerator,
+            button: tpButtonInputGenerator,
+            monitor: (nt, it, at, ut) => (it.isMonitor = !0,
+            tpInputGenerator(nt, it, at, ut)),
+            dummy: (nt, it, at, ut) => tpInputGenerator(nt, it, at, ut)
+        },
+        this.undoManager = new Q$2({
+            bindHotKeys: !0,
+            limit: 100,
+            debug: !1
+        }),
+        this.alert = this.alert.bind(this),
+        this.confirm = this.confirm.bind(this),
+        this.prompt = this.prompt.bind(this),
+        this._expand = o,
+        this._limitedOptions = h;
+        const _e = this._createUiContainer();
+        b.appendChild(_e),
+        this._container = b,
+        this._pane = new tweakpane.Pane({
+            title: 

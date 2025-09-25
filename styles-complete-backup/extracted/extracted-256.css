@@ -1,0 +1,129 @@
+/* Extracted CSS Block 256 */
+/* Size: 5095 chars */
+
+:
+                    ft = this._select,
+                    xt = this._select,
+                    Ct = this._setAdditiveIdentityOther,
+                    this.buffer = new Array(5 * mt);
+                    break;
+                default:
+                    ft = this._lerp,
+                    xt = this._lerpAdditive,
+                    Ct = this._setAdditiveIdentityNumeric,
+                    this.buffer = new Float64Array(5 * mt)
+                }
+                this._mixBufferRegion = ft,
+                this._mixBufferRegionAdditive = xt,
+                this._setIdentity = Ct,
+                this._origIndex = 3,
+                this._addIndex = 4,
+                this.cumulativeWeight = 0,
+                this.cumulativeWeightAdditive = 0,
+                this.useCount = 0,
+                this.referenceCount = 0
+            }
+            accumulate(tt, lt) {
+                const mt = this.buffer
+                  , ft = this.valueSize
+                  , xt = tt * ft + ft;
+                let Ct = this.cumulativeWeight;
+                if (Ct === 0) {
+                    for (let Mt = 0; Mt !== ft; ++Mt)
+                        mt[xt + Mt] = mt[Mt];
+                    Ct = lt
+                } else {
+                    Ct += lt;
+                    const Mt = lt / Ct;
+                    this._mixBufferRegion(mt, xt, 0, Mt, ft)
+                }
+                this.cumulativeWeight = Ct
+            }
+            accumulateAdditive(tt) {
+                const lt = this.buffer
+                  , mt = this.valueSize
+                  , ft = mt * this._addIndex;
+                this.cumulativeWeightAdditive === 0 && this._setIdentity(),
+                this._mixBufferRegionAdditive(lt, ft, 0, tt, mt),
+                this.cumulativeWeightAdditive += tt
+            }
+            apply(tt) {
+                const lt = this.valueSize
+                  , mt = this.buffer
+                  , ft = tt * lt + lt
+                  , xt = this.cumulativeWeight
+                  , Ct = this.cumulativeWeightAdditive
+                  , Mt = this.binding;
+                if (this.cumulativeWeight = 0,
+                this.cumulativeWeightAdditive = 0,
+                xt < 1) {
+                    const Lt = lt * this._origIndex;
+                    this._mixBufferRegion(mt, ft, Lt, 1 - xt, lt)
+                }
+                Ct > 0 && this._mixBufferRegionAdditive(mt, ft, this._addIndex * lt, 1, lt);
+                for (let Lt = lt, Nt = lt + lt; Lt !== Nt; ++Lt)
+                    if (mt[Lt] !== mt[Lt + lt]) {
+                        Mt.setValue(mt, ft);
+                        break
+                    }
+            }
+            saveOriginalState() {
+                const tt = this.binding
+                  , lt = this.buffer
+                  , mt = this.valueSize
+                  , ft = mt * this._origIndex;
+                tt.getValue(lt, ft);
+                for (let xt = mt, Ct = ft; xt !== Ct; ++xt)
+                    lt[xt] = lt[ft + xt % mt];
+                this._setIdentity(),
+                this.cumulativeWeight = 0,
+                this.cumulativeWeightAdditive = 0
+            }
+            restoreOriginalState() {
+                const tt = 3 * this.valueSize;
+                this.binding.setValue(this.buffer, tt)
+            }
+            _setAdditiveIdentityNumeric() {
+                const tt = this._addIndex * this.valueSize
+                  , lt = tt + this.valueSize;
+                for (let mt = tt; mt < lt; mt++)
+                    this.buffer[mt] = 0
+            }
+            _setAdditiveIdentityQuaternion() {
+                this._setAdditiveIdentityNumeric(),
+                this.buffer[this._addIndex * this.valueSize + 3] = 1
+            }
+            _setAdditiveIdentityOther() {
+                const tt = this._origIndex * this.valueSize
+                  , lt = this._addIndex * this.valueSize;
+                for (let mt = 0; mt < this.valueSize; mt++)
+                    this.buffer[lt + mt] = this.buffer[tt + mt]
+            }
+            _select(tt, lt, mt, ft, xt) {
+                if (ft >= .5)
+                    for (let Ct = 0; Ct !== xt; ++Ct)
+                        tt[lt + Ct] = tt[mt + Ct]
+            }
+            _slerp(tt, lt, mt, ft) {
+                Is.slerpFlat(tt, lt, tt, lt, tt, mt, ft)
+            }
+            _slerpAdditive(tt, lt, mt, ft, xt) {
+                const Ct = this._workIndex * xt;
+                Is.multiplyQuaternionsFlat(tt, Ct, tt, lt, tt, mt),
+                Is.slerpFlat(tt, lt, tt, lt, tt, Ct, ft)
+            }
+            _lerp(tt, lt, mt, ft, xt) {
+                const Ct = 1 - ft;
+                for (let Mt = 0; Mt !== xt; ++Mt) {
+                    const Lt = lt + Mt;
+                    tt[Lt] = tt[Lt] * Ct + tt[mt + Mt] * ft
+                }
+            }
+            _lerpAdditive(tt, lt, mt, ft, xt) {
+                for (let Ct = 0; Ct !== xt; ++Ct) {
+                    const Mt = lt + Ct;
+                    tt[Mt] = tt[Mt] + tt[mt + Ct] * ft
+                }
+            }
+        }
+        const Sy = 

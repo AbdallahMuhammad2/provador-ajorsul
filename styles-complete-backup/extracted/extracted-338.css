@@ -1,0 +1,12 @@
+/* Extracted CSS Block 338 */
+/* Size: 195 chars */
+
+ : _e,
+                value: _e
+            })),
+            onChange: () => {
+                this.refreshCameraOptions()
+            }
+        })],
+        this.uiConfig = {
+            type: 

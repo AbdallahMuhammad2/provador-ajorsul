@@ -1,0 +1,19 @@
+/* Extracted CSS Block 544 */
+/* Size: 620 chars */
+
+
+  , console1 = {
+    error: d => setTimeout( () => console.error(new Error(d)), 612)
+};
+class BaseIJewel3DKeyPlugin extends AViewerPlugin {
+    setKey(o) {
+        this._checking || this._checkPromise || (this._checking = Date.now(),
+        this._checkPromise = this._check(o),
+        this._checkPromise.then( () => this._checkPromise = void 0))
+    }
+    async _check(o) {
+        await new LicenseVerification(APP_NAME,APP_VERSION).verify(o) || (console1.error(this._errMessage),
+        this._logoContainer = this._createContainerLogo())
+    }
+    _createContainerLogo() {
+        const o = document.createElement(

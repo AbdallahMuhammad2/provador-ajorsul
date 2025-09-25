@@ -1,0 +1,11 @@
+/* Extracted CSS Block 597 */
+/* Size: 167 chars */
+
+;
+class MTLLoader2 extends three_module.aHM {
+    constructor(o) {
+        super(o)
+    }
+    load(o, c, h, _) {
+        const b = this
+          , _e = this.path === 

@@ -1,0 +1,10 @@
+/* Extracted CSS Block 925 */
+/* Size: 195 chars */
+
+);
+        const _ = (o = await h.text()) === null || o === void 0 ? void 0 : o.trim();
+        console.log(_);
+        try {
+            new URL(_)
+        } catch {
+            throw new Error(

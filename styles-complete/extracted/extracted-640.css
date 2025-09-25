@@ -1,0 +1,11 @@
+/* Extracted CSS Block 640 */
+/* Size: 309 chars */
+
+],
+    fn: hide
+}
+  , defaultModifiers = [eventListeners, modifiers_popperOffsets, modifiers_computeStyles, modifiers_applyStyles, modifiers_offset, modifiers_flip, modifiers_preventOverflow, modifiers_arrow, modifiers_hide]
+  , popper_createPopper = popperGenerator({
+    defaultModifiers
+})
+  , BOX_CLASS = 

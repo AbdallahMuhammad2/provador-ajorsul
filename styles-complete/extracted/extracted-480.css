@@ -1,0 +1,13 @@
+/* Extracted CSS Block 480 */
+/* Size: 293 chars */
+
+ && (this.stopAnimation(!1),
+        h = !0);
+        let _ = 0;
+        const b = !o;
+        o || (o = [],
+        this.animations.forEach( ({mixer: nt, actions: it, clips: at}) => {
+            o.push(...it)
+        }
+        )),
+        h ? this.resetAnimation() : this.animationState !== 

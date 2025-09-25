@@ -1,0 +1,8 @@
+/* Extracted CSS Block 515 */
+/* Size: 143 chars */
+
+,
+            extraUniforms: {
+                ...SSContactShadows_1._uniforms
+            },
+            computeCacheKey: o => this.enabled ? 

@@ -1,0 +1,84 @@
+/* Extracted CSS Block 233 */
+/* Size: 3178 chars */
+
+,
+                this.parameters = {
+                    points: tt,
+                    segments: lt,
+                    phiStart: mt,
+                    phiLength: ft
+                },
+                lt = Math.floor(lt),
+                ft = qo(ft, 0, 2 * Math.PI);
+                const xt = []
+                  , Ct = []
+                  , Mt = []
+                  , Lt = []
+                  , Nt = []
+                  , jt = 1 / lt
+                  , Wt = new Er
+                  , Qt = new mn
+                  , qt = new Er
+                  , Xt = new Er
+                  , Zt = new Er;
+                let Yt = 0
+                  , sr = 0;
+                for (let er = 0; er <= tt.length - 1; er++)
+                    switch (er) {
+                    case 0:
+                        Yt = tt[er + 1].x - tt[er].x,
+                        sr = tt[er + 1].y - tt[er].y,
+                        qt.x = 1 * sr,
+                        qt.y = -Yt,
+                        qt.z = 0 * sr,
+                        Zt.copy(qt),
+                        qt.normalize(),
+                        Lt.push(qt.x, qt.y, qt.z);
+                        break;
+                    case tt.length - 1:
+                        Lt.push(Zt.x, Zt.y, Zt.z);
+                        break;
+                    default:
+                        Yt = tt[er + 1].x - tt[er].x,
+                        sr = tt[er + 1].y - tt[er].y,
+                        qt.x = 1 * sr,
+                        qt.y = -Yt,
+                        qt.z = 0 * sr,
+                        Xt.copy(qt),
+                        qt.x += Zt.x,
+                        qt.y += Zt.y,
+                        qt.z += Zt.z,
+                        qt.normalize(),
+                        Lt.push(qt.x, qt.y, qt.z),
+                        Zt.copy(Xt)
+                    }
+                for (let er = 0; er <= lt; er++) {
+                    const rr = mt + er * jt * ft
+                      , xr = Math.sin(rr)
+                      , br = Math.cos(rr);
+                    for (let yr = 0; yr <= tt.length - 1; yr++) {
+                        Wt.x = tt[yr].x * xr,
+                        Wt.y = tt[yr].y,
+                        Wt.z = tt[yr].x * br,
+                        Ct.push(Wt.x, Wt.y, Wt.z),
+                        Qt.x = er / lt,
+                        Qt.y = yr / (tt.length - 1),
+                        Mt.push(Qt.x, Qt.y);
+                        const Pr = Lt[3 * yr + 0] * xr
+                          , zr = Lt[3 * yr + 1]
+                          , Nr = Lt[3 * yr + 0] * br;
+                        Nt.push(Pr, zr, Nr)
+                    }
+                }
+                for (let er = 0; er < lt; er++)
+                    for (let rr = 0; rr < tt.length - 1; rr++) {
+                        const xr = rr + er * tt.length
+                          , br = xr
+                          , yr = xr + tt.length
+                          , Pr = xr + tt.length + 1
+                          , zr = xr + 1;
+                        xt.push(br, yr, zr),
+                        xt.push(Pr, zr, yr)
+                    }
+                this.setIndex(xt),
+                this.setAttribute(

@@ -1,0 +1,23 @@
+/* Extracted CSS Block 386 */
+/* Size: 640 chars */
+
+
+  , BINARY_EXTENSION_HEADER_LENGTH = 12
+  , BINARY_EXTENSION_CHUNK_TYPES = {
+    JSON: 1313821514,
+    BIN: 5130562
+};
+class GLTFBinaryExtension {
+    constructor(o) {
+        this.name = EXTENSIONS.KHR_BINARY_GLTF,
+        this.content = null,
+        this.body = null;
+        const c = new DataView(o,0,BINARY_EXTENSION_HEADER_LENGTH)
+          , h = new TextDecoder;
+        if (this.header = {
+            magic: h.decode(new Uint8Array(o.slice(0, 4))),
+            version: c.getUint32(4, !0),
+            length: c.getUint32(8, !0)
+        },
+        this.header.magic !== BINARY_EXTENSION_HEADER_MAGIC)
+            throw new Error(

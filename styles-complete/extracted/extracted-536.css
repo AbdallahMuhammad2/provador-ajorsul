@@ -1,0 +1,15 @@
+/* Extracted CSS Block 536 */
+/* Size: 271 chars */
+
+)),
+        {
+            token: b,
+            publicKey: it
+        }
+    }
+    async verify(o, c) {
+        var h;
+        try {
+            let _, b = (c = c ?? await this.init()).token;
+            b && !await jwt.verify(b, c.publicKey, {
+                algorithm: 

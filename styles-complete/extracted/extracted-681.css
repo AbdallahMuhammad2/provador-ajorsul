@@ -1,0 +1,32 @@
+/* Extracted CSS Block 681 */
+/* Size: 515 chars */
+
+;
+				position.array = [];
+
+				for ( let j = 0; j < pts.length; j ++ ) {
+
+					position.array.push( pts[ j ][ 0 ] );
+					position.array.push( pts[ j ][ 1 ] );
+					position.array.push( pts[ j ][ 2 ] );
+
+				}
+
+				attributes.position = position;
+				data.attributes = attributes;
+
+				geometry = { data };
+
+				break;
+
+			case rhino.ObjectType.Point:
+
+				const pt = _geometry.location;
+
+				position = {};
+				const color = {};
+				attributes = {};
+				data = {};
+
+				position.itemSize = 3;
+				position.type = 

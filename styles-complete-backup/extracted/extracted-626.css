@@ -1,0 +1,16 @@
+/* Extracted CSS Block 626 */
+/* Size: 624 chars */
+
+],!0)
+    }
+    async onAdded(o) {
+        var c, h;
+        (h = (c = o.getManager()) === null || c === void 0 ? void 0 : c.importer) === null || h === void 0 || h.Importers.push(this._importer)
+    }
+    async onDispose(o) {}
+    async onRemove(o) {
+        var c, h, _, b;
+        !((h = (c = o.getManager()) === null || c === void 0 ? void 0 : c.importer) === null || h === void 0) && h.Importers && ((b = (_ = o.getManager()) === null || _ === void 0 ? void 0 : _.importer) === null || b === void 0 || b.Importers.splice(o.getManager().importer.Importers.indexOf(this._importer), 1))
+    }
+}
+FBXLoadPlugin.PluginType = 

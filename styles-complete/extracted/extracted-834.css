@@ -1,0 +1,13 @@
+/* Extracted CSS Block 834 */
+/* Size: 148 chars */
+
+,
+    uniforms: {
+        tDiffuse: {
+            value: null
+        },
+        v: {
+            value: 1 / 512
+        }
+    },
+    vertexShader: 

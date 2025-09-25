@@ -1,0 +1,24 @@
+/* Extracted CSS Block 316 */
+/* Size: 919 chars */
+
+, o)
+        }
+        [...this._composer.passes].forEach(o => this._composer.removePass(o)),
+        d.forEach(o => this._composer.addPass(o)),
+        this._updated()
+    }
+    dispose() {
+        this._trackedTargets.forEach(d => d.dispose()),
+        this._trackedTargets = [],
+        this._renderer.dispose()
+    }
+    trackTarget(d) {
+        this._trackedTargets.push(d)
+    }
+    removeTrackedTarget(d) {
+        const o = this._trackedTargets.indexOf(d);
+        o >= 0 && this._trackedTargets.splice(o, 1)
+    }
+    createTarget({sizeMultiplier: d, samples: o=0, colorSpace: c=three_module.jf0, type: h=three_module.OUM, format: _=three_module.GWd, depthBuffer: b=!0, depthTexture: _e=!1, depthTextureType: nt=three_module.bkx, depthTextureFormat: it=three_module.zdS, size: at, textureCount: ut=1, ...pt}={}, ht=!0) {
+        this.isWebGL2 || (o = 0),
+        d !== void 0 && at !== void 0 && console.error(

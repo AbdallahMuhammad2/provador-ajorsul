@@ -1,0 +1,35 @@
+/* Extracted CSS Block 928 */
+/* Size: 1449 chars */
+
+, at);
+            const ut = it.getDiffuseTexture();
+            ut && (nt.setBaseColorTexture(ut),
+            nt.getBaseColorTextureInfo().copy(it.getDiffuseTextureInfo()));
+            const pt = it.getSpecularGlossinessTexture();
+            if (pt) {
+                const ht = it.getSpecularGlossinessTextureInfo()
+                  , _t = o.createTexture();
+                await rewriteTexture(pt, _t, (St, At, Et) => {
+                    St.set(At, Et, 3, 255)
+                }
+                ),
+                at.setSpecularTexture(_t),
+                at.setSpecularColorTexture(_t),
+                at.getSpecularTextureInfo().copy(ht),
+                at.getSpecularColorTextureInfo().copy(ht);
+                const vt = it.getGlossinessFactor()
+                  , bt = o.createTexture();
+                await rewriteTexture(pt, bt, (St, At, Et) => {
+                    const Pt = 255 - Math.round(St.get(At, Et, 3) * vt);
+                    St.set(At, Et, 0, 0),
+                    St.set(At, Et, 1, Pt),
+                    St.set(At, Et, 2, 0),
+                    St.set(At, Et, 3, 255)
+                }
+                ),
+                nt.setMetallicRoughnessTexture(bt),
+                nt.getMetallicRoughnessTextureInfo().copy(ht)
+            } else
+                at.setSpecularColorFactor(it.getSpecularFactor()),
+                nt.setRoughnessFactor(1 - it.getGlossinessFactor());
+            nt.setExtension(

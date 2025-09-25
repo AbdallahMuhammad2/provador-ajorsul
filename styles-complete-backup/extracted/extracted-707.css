@@ -1,0 +1,14 @@
+/* Extracted CSS Block 707 */
+/* Size: 184 chars */
+
+
+    }
+    async onAdded(d) {
+        styles_popup.use({
+            target: d.container
+        }),
+        await super.onAdded(d)
+    }
+}
+;
+AssetManagerBasicPopupPlugin.PluginType = 

@@ -1,0 +1,21 @@
+/* Extracted CSS Block 510 */
+/* Size: 882 chars */
+
+)
+            } else
+                this.enabled = !1;
+        const b = (c = this._viewer.renderer.rendererObject.background.getBoxMesh2()) === null || c === void 0 ? void 0 : c.material
+          , _e = (h = b == null ? void 0 : b.uniforms) !== null && h !== void 0 ? h : three_module.zkh.backgroundCube.uniforms;
+        _e.tripodHeight || (_e.tripodHeight = {
+            value: 1
+        }),
+        _e.worldRadius || (_e.worldRadius = {
+            value: 1
+        }),
+        _e.originPosition || (_e.originPosition = {
+            value: new three_module.Pq0
+        }),
+        _e.tripodHeight.value = this.tripodHeight,
+        _e.worldRadius.value = this.worldRadius,
+        _e.originPosition.value.copy(this.originPosition),
+        b && (!this.enabled && b.defines.HDRi_GROUND_PROJ ? delete b.defines.HDRi_GROUND_PROJ : this.enabled && (b.defines.HDRi_GROUND_PROJ = 

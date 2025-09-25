@@ -1,0 +1,35 @@
+/* Extracted CSS Block 234 */
+/* Size: 1148 chars */
+
+,
+                this.parameters = {
+                    radius: tt,
+                    segments: lt,
+                    thetaStart: mt,
+                    thetaLength: ft
+                },
+                lt = Math.max(3, lt);
+                const xt = []
+                  , Ct = []
+                  , Mt = []
+                  , Lt = []
+                  , Nt = new Er
+                  , jt = new mn;
+                Ct.push(0, 0, 0),
+                Mt.push(0, 0, 1),
+                Lt.push(.5, .5);
+                for (let Wt = 0, Qt = 3; Wt <= lt; Wt++,
+                Qt += 3) {
+                    const qt = mt + Wt / lt * ft;
+                    Nt.x = tt * Math.cos(qt),
+                    Nt.y = tt * Math.sin(qt),
+                    Ct.push(Nt.x, Nt.y, Nt.z),
+                    Mt.push(0, 0, 1),
+                    jt.x = (Ct[Qt] / tt + 1) / 2,
+                    jt.y = (Ct[Qt + 1] / tt + 1) / 2,
+                    Lt.push(jt.x, jt.y)
+                }
+                for (let Wt = 1; Wt <= lt; Wt++)
+                    xt.push(Wt, Wt + 1, 0);
+                this.setIndex(xt),
+                this.setAttribute(

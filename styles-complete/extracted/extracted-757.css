@@ -1,0 +1,16 @@
+/* Extracted CSS Block 757 */
+/* Size: 403 chars */
+
+)
+    }
+}
+class EncodingError extends Error {
+}
+const NAME$j = KHR_DRACO_MESH_COMPRESSION;
+class index_modern_KHRDracoMeshCompression extends Extension {
+    constructor(...o) {
+        super(...o),
+        this.extensionName = NAME$j,
+        this.prereadTypes = [index_modern_PropertyType.PRIMITIVE],
+        this.prewriteTypes = [index_modern_PropertyType.ACCESSOR],
+        this.readDependencies = [

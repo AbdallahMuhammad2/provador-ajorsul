@@ -1,0 +1,47 @@
+{
+  "timestamp": "2025-09-18T01:13:36.112Z",
+  "source": "index-minified-backup.js",
+  "sourceSize": "5.37MB",
+  "extraction": {
+    "css": {
+      "blocks": 9,
+      "categories": 6,
+      "files": 6
+    },
+    "javascript": {
+      "modules": 37,
+      "categories": 10,
+      "files": 36
+    }
+  },
+  "output": {
+    "structure": {
+      "styles/": 7,
+      "src/": 37,
+      "html": 1
+    },
+    "totalFiles": 44
+  },
+  "categories": {
+    "css": [
+      "tippy",
+      "loading",
+      "modal",
+      "buttons",
+      "tweakpane",
+      "animations"
+    ],
+    "js": [
+      "animation",
+      "misc",
+      "webpack",
+      "ui",
+      "mediapipe",
+      "ring",
+      "utils",
+      "camera",
+      "css",
+      "webgl"
+    ]
+  }
+}

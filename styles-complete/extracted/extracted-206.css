@@ -1,0 +1,60 @@
+/* Extracted CSS Block 206 */
+/* Size: 2636 chars */
+
+,
+                    side: bt,
+                    depthWrite: !1,
+                    depthTest: !1
+                })
+                  , Qt = new gs(new Zu,Wt);
+                let qt = !1;
+                const Xt = tt.background;
+                Xt ? Xt.isColor && (Wt.color.copy(Xt),
+                tt.background = null,
+                qt = !0) : (Wt.color.copy(Wy),
+                qt = !0);
+                for (let Zt = 0; Zt < 6; Zt++) {
+                    const Yt = Zt % 3;
+                    Yt === 0 ? (xt.up.set(0, Ct[Zt], 0),
+                    xt.lookAt(Mt[Zt], 0, 0)) : Yt === 1 ? (xt.up.set(0, 0, Ct[Zt]),
+                    xt.lookAt(0, Mt[Zt], 0)) : (xt.up.set(0, Ct[Zt], 0),
+                    xt.lookAt(0, 0, Mt[Zt]));
+                    const sr = this._cubeSize;
+                    Ev(ft, Yt * sr, Zt > 2 ? sr : 0, sr, sr),
+                    Lt.setRenderTarget(ft),
+                    qt && Lt.render(Qt, xt),
+                    Lt.render(tt, xt)
+                }
+                Qt.geometry.dispose(),
+                Qt.material.dispose(),
+                Lt.toneMapping = jt,
+                Lt.autoClear = Nt,
+                tt.background = Xt
+            }
+            _textureToCubeUV(tt, lt) {
+                const mt = this._renderer
+                  , ft = tt.mapping === Qr || tt.mapping === Or;
+                ft ? (this._cubemapMaterial === null && (this._cubemapMaterial = Yy()),
+                this._cubemapMaterial.uniforms.flipEnvMap.value = tt.isRenderTargetTexture === !1 ? -1 : 1) : this._equirectMaterial === null && (this._equirectMaterial = Xy());
+                const xt = ft ? this._cubemapMaterial : this._equirectMaterial
+                  , Ct = new gs(this._lodPlanes[0],xt);
+                xt.uniforms.envMap.value = tt;
+                const Mt = this._cubeSize;
+                Ev(lt, 0, 0, 3 * Mt, 2 * Mt),
+                mt.setRenderTarget(lt),
+                mt.render(Ct, U0)
+            }
+            _applyPMREM(tt) {
+                const lt = this._renderer
+                  , mt = lt.autoClear;
+                lt.autoClear = !1;
+                for (let ft = 1; ft < this._lodPlanes.length; ft++) {
+                    const xt = Math.sqrt(this._sigmas[ft] * this._sigmas[ft] - this._sigmas[ft - 1] * this._sigmas[ft - 1])
+                      , Ct = qy[(ft - 1) % qy.length];
+                    this._blur(tt, ft - 1, ft, xt, Ct)
+                }
+                lt.autoClear = mt
+            }
+            _blur(tt, lt, mt, ft, xt) {
+                const Ct = this._pingPongRenderTarget;
+                this._halfBlur(tt, Ct, lt, mt, ft, 

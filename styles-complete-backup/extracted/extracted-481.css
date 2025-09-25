@@ -1,0 +1,15 @@
+/* Extracted CSS Block 481 */
+/* Size: 437 chars */
+
+ && (o.forEach(nt => {
+            nt.reset()
+        }
+        ),
+        this._animationTime = 0);
+        const _e = esm_browser_v4();
+        this._lastAnimId = _e;
+        for (const nt of o)
+            nt.setLoop(this.loopAnimations ? three_module.aMy : three_module.G3T, this.loopRepetitions),
+            nt.play(),
+            _ = Math.max(_, nt.getClip().duration / Math.abs(nt.timeScale));
+        if (this._animationState = 

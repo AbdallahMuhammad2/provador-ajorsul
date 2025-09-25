@@ -1,0 +1,12 @@
+/* Extracted CSS Block 996 */
+/* Size: 351 chars */
+
+,
+                value: () => {
+                    var o;
+                    const c = new Set;
+                    (o = this._viewer) === null || o === void 0 || o.scene.modelRoot.traverse(h => h.geometry && c.add(h.geometry)),
+                    c.forEach(h => autoGPUInstanceMeshes(h))
+                }
+            }, {
+                label: 

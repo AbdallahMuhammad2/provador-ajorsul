@@ -1,0 +1,43 @@
+/* Extracted CSS Block 364 */
+/* Size: 1090 chars */
+
+,
+    flatShading: !1,
+    fog: !0
+}
+  , physicalMaterialPropList = {
+    ...standardMaterialPropList,
+    clearcoat: 0,
+    clearcoatMap: null,
+    clearcoatRoughness: 0,
+    clearcoatRoughnessMap: null,
+    clearcoatNormalScale: new three_module.I9Y(1,1),
+    clearcoatNormalMap: null,
+    reflectivity: .5,
+    iridescence: 0,
+    iridescenceMap: null,
+    iridescenceIOR: 1.3,
+    iridescenceThicknessRange: [100, 400],
+    iridescenceThicknessMap: null,
+    sheen: 0,
+    sheenColor: new three_module.Q1f(0),
+    sheenColorMap: null,
+    sheenRoughness: 1,
+    sheenRoughnessMap: null,
+    transmission: 0,
+    transmissionMap: null,
+    thickness: 0,
+    thicknessMap: null,
+    attenuationDistance: 1 / 0,
+    attenuationColor: new three_module.Q1f(1,1,1),
+    specularIntensity: 1,
+    specularIntensityMap: null,
+    specularColor: new three_module.Q1f(1,1,1),
+    specularColorMap: null
+};
+class MeshStandardMaterial2 extends three_module.uSd {
+    constructor(o) {
+        var c;
+        super(o),
+        this.typeSlug = MeshStandardMaterial2.TypeSlug,
+        this.assetType = 

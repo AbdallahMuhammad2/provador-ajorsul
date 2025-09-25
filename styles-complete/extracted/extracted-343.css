@@ -1,0 +1,20 @@
+/* Extracted CSS Block 343 */
+/* Size: 768 chars */
+
+,
+            controlsEnabled: !1
+        }),
+        this.deleteImportedViewerConfigOnLoad = !0,
+        this.autoDisposeSceneMaps = !0,
+        this.environment = null,
+        this.textureSlots = {},
+        this.background = null,
+        this.backgroundColor = null,
+        this.setDirty = this.setDirty.bind(this),
+        this.updateScene = this.updateScene.bind(this),
+        this.refreshActiveCameraNearFar = this.refreshActiveCameraNearFar.bind(this),
+        this._activeCameraUpdate = this._activeCameraUpdate.bind(this),
+        this._optionsUpdate = this._optionsUpdate.bind(this),
+        this._onSceneMaterialUpdate = this._onSceneMaterialUpdate.bind(this),
+        this._onSceneUpdate = this._onSceneUpdate.bind(this),
+        this.addEventListener(

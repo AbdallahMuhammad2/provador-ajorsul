@@ -1,0 +1,32 @@
+/* Extracted CSS Block 562 */
+/* Size: 826 chars */
+
+)
+                }
+            }, _t)),
+            ht.push(animateAsync({
+                from: it.target.clone(),
+                to: o.target.clone(),
+                duration: c * o.duration,
+                ease: ut,
+                driver: pt,
+                onUpdate: Pt => {
+                    it.target = Pt,
+                    it.targetUpdated()
+                }
+                ,
+                onComplete: () => {
+                    it.target = o.target,
+                    it.targetUpdated()
+                }
+            }, _t))
+        }
+        await Promise.allSettled(ht).catch(St => {
+            if (_)
+                throw St
+        }
+        ),
+        (nt = this._viewer) === null || nt === void 0 || nt.setDirty(),
+        this._animating = !1,
+        this.dispatchEvent({
+            type: 

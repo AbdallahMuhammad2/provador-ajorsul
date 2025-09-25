@@ -1,0 +1,30 @@
+/* Extracted CSS Block 668 */
+/* Size: 1072 chars */
+
+);
+                switch (Qr) {
+                case three_module.RQf:
+                    Or.getter = tr,
+                    Or.inputSize = 4;
+                    break;
+                case three_module.ix0:
+                    Or.getter = fr,
+                    Or.inputSize = 4
+                }
+            }
+            Or.blockCount = (ur.dataWindow.yMax + 1) / Or.scanlineBlockSize;
+            for (let gn = 0; gn < Or.blockCount; gn++)
+                Cr(pr, jr);
+            Or.outputChannels = Or.channels == 3 ? 4 : Or.channels;
+            const qr = Or.width * Or.height * Or.outputChannels;
+            switch (Qr) {
+            case three_module.RQf:
+                Or.byteArray = new Float32Array(qr),
+                Or.channels < Or.outputChannels && Or.byteArray.fill(1, 0, qr);
+                break;
+            case three_module.ix0:
+                Or.byteArray = new Uint16Array(qr),
+                Or.channels < Or.outputChannels && Or.byteArray.fill(15360, 0, qr);
+                break;
+            default:
+                console.error(

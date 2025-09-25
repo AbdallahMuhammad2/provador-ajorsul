@@ -1,0 +1,63 @@
+/* Extracted CSS Block 33 */
+/* Size: 1158 chars */
+
+;
+        display: block;
+        top: 9px;
+        left: 3px;
+        width: 10px;
+        height: 2px;
+        background-color: #fff;
+      }
+    }
+  }
+
+  .treejs-node__disabled {
+    cursor: not-allowed;
+    color: rgba(255, 255, 255, 0.25);
+    .treejs-checkbox {
+      cursor: not-allowed;
+      &:before {
+        cursor: not-allowed;
+        border-color: @greyborder !important;
+        background-color: @bgcolor-disable !important;
+      }
+      &:hover:before {
+        box-shadow: none !important;
+      }
+    }
+    .treejs-node__checked {
+      & > .treejs-checkbox {
+        &:after {
+          border-color: @greyborder;
+        }
+      }
+    }
+    .treejs-node__halfchecked {
+      & > .treejs-checkbox {
+        &:after {
+          background-color: @greyborder;
+        }
+      }
+    }
+  }
+  .treejs-node__disabled.treejs-node__checked {
+    & > .treejs-checkbox {
+      &:after {
+        border-color: @greyborder;
+      }
+    }
+  }
+  .treejs-node__disabled.treejs-node__halfchecked {
+    & > .treejs-checkbox {
+      &:after {
+        background-color: @greyborder;
+      }
+    }
+  }
+
+  .treejs-label {
+    vertical-align: middle;
+  }
+}
+

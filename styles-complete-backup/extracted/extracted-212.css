@@ -1,0 +1,56 @@
+/* Extracted CSS Block 212 */
+/* Size: 3005 chars */
+
+, _n)
+                            };
+                            Xt !== void 0 && Xt.texture.dispose();
+                            const sr = Nt.morphAttributes.position !== void 0
+                              , er = Nt.morphAttributes.normal !== void 0
+                              , rr = Nt.morphAttributes.color !== void 0
+                              , xr = Nt.morphAttributes.position || []
+                              , br = Nt.morphAttributes.normal || []
+                              , yr = Nt.morphAttributes.color || [];
+                            let Pr = 0;
+                            sr === !0 && (Pr = 1),
+                            er === !0 && (Pr = 2),
+                            rr === !0 && (Pr = 3);
+                            let zr = Nt.attributes.position.count * Pr
+                              , Nr = 1;
+                            zr > tt.maxTextureSize && (Nr = Math.ceil(zr / tt.maxTextureSize),
+                            zr = tt.maxTextureSize);
+                            const Vr = new Float32Array(zr * Nr * 4 * qt)
+                              , Gr = new im(Vr,zr,Nr,qt);
+                            Gr.type = ss,
+                            Gr.needsUpdate = !0;
+                            const Hr = 4 * Pr;
+                            for (let dn = 0; dn < qt; dn++) {
+                                const kn = xr[dn]
+                                  , Bn = br[dn]
+                                  , cn = yr[dn]
+                                  , Yr = zr * Nr * 4 * dn;
+                                for (let Jr = 0; Jr < kn.count; Jr++) {
+                                    const sn = Jr * Hr;
+                                    sr === !0 && (Ct.fromBufferAttribute(kn, Jr),
+                                    Vr[Yr + sn + 0] = Ct.x,
+                                    Vr[Yr + sn + 1] = Ct.y,
+                                    Vr[Yr + sn + 2] = Ct.z,
+                                    Vr[Yr + sn + 3] = 0),
+                                    er === !0 && (Ct.fromBufferAttribute(Bn, Jr),
+                                    Vr[Yr + sn + 4] = Ct.x,
+                                    Vr[Yr + sn + 5] = Ct.y,
+                                    Vr[Yr + sn + 6] = Ct.z,
+                                    Vr[Yr + sn + 7] = 0),
+                                    rr === !0 && (Ct.fromBufferAttribute(cn, Jr),
+                                    Vr[Yr + sn + 8] = Ct.x,
+                                    Vr[Yr + sn + 9] = Ct.y,
+                                    Vr[Yr + sn + 10] = Ct.z,
+                                    Vr[Yr + sn + 11] = cn.itemSize === 4 ? Ct.w : 1)
+                                }
+                            }
+                            Xt = {
+                                count: qt,
+                                texture: Gr,
+                                size: new mn(zr,Nr)
+                            },
+                            xt.set(Nt, Xt),
+                            Nt.addEventListener(

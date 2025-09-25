@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-09-18T17:18:18.210Z",
+  "source": "index.js",
+  "extractedModules": 0,
+  "expectedModules": 8,
+  "totalSize": 0,
+  "modules": {},
+  "missing": [
+    "160",
+    "223",
+    "367",
+    "611",
+    "636",
+    "646",
+    "757",
+    "774"
+  ]
+}

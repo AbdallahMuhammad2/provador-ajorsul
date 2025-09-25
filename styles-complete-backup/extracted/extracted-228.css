@@ -1,0 +1,15 @@
+/* Extracted CSS Block 228 */
+/* Size: 699 chars */
+
+, Jo.matrixWorld);
+                        const _w = io.extraUniformsToUpload;
+                        if (_w && Object.entries(_w).forEach( ([zs,V_]) => Ls.setValue(en, zs, V_.value, An)),
+                        io.isShaderMaterial || io.isRawShaderMaterial) {
+                            const zs = io.uniformsGroups;
+                            for (let V_ = 0, ME = zs.length; V_ < ME; V_++)
+                                if (Br.isWebGL2) {
+                                    const yw = zs[V_];
+                                    Pu.update(yw, Up),
+                                    Pu.bind(yw, Up)
+                                } else
+                                    console.warn(

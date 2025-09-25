@@ -1,0 +1,23 @@
+/* Extracted CSS Block 846 */
+/* Size: 900 chars */
+
+);
+        let _ = d.userData[SimpleTextPlugin_1.PluginType];
+        _ || (d.userData[SimpleTextPlugin_1.PluginType] = _ = {}),
+        Object.assign(_, o);
+        const b = d.material;
+        b.map && (b.map._isSimpleTextTexture && b.map.dispose(),
+        b.map = void 0),
+        b.alphaMap && (b.alphaMap._isSimpleTextTexture && b.alphaMap.dispose(),
+        b.alphaMap = void 0),
+        b.bumpMap && (b.bumpMap._isSimpleTextTexture && b.bumpMap.dispose(),
+        b.bumpMap = void 0);
+        const _e = await this.makeTextSvg(_);
+        this.applyToMap && (b.map = _e),
+        this.applyToAlphaMap && (b.alphaMap = _e,
+        b.transparent = !0),
+        this.applyToBumpMap && (b.bumpMap = _e),
+        b.userData.inverseAlphaMap = this.inverseAlphaMap,
+        b.setDirty(),
+        b.needsUpdate = !0,
+        (h = (c = this.uiConfig).uiRefresh) === null || h === void 0 || h.call(c, 

@@ -1,0 +1,22 @@
+/* Extracted CSS Block 118 */
+/* Size: 582 chars */
+
+)
+                        }),
+                        value: Rt,
+                        viewProps: Vt.viewProps
+                    }) : new Iu(wt,{
+                        parser: mr => mr,
+                        props: ir.fromObject({
+                            formatter: El
+                        }),
+                        value: Rt,
+                        viewProps: Vt.viewProps
+                    })
+                }
+            }
+              , Ns = {
+                defaultInterval: 200,
+                defaultLineCount: 3
+            }
+              , xp = Et(

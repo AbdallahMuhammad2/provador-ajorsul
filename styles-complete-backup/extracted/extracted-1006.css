@@ -1,0 +1,12 @@
+/* Extracted CSS Block 1006 */
+/* Size: 264 chars */
+
+, () => {
+            this.setDirty({
+                fadeFrame: !1
+            })
+        }
+        ),
+        this._keyUpListener = this._keyUpListener.bind(this),
+        this._keyDownListener = this._keyDownListener.bind(this),
+        window.addEventListener(

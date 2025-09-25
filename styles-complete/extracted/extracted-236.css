@@ -1,0 +1,19 @@
+/* Extracted CSS Block 236 */
+/* Size: 724 chars */
+
+]
+                      , Wt = new Array(3)
+                      , Qt = {}
+                      , qt = [];
+                    for (let Xt = 0; Xt < Lt; Xt += 3) {
+                        Ct ? (Nt[0] = Ct.getX(Xt),
+                        Nt[1] = Ct.getX(Xt + 1),
+                        Nt[2] = Ct.getX(Xt + 2)) : (Nt[0] = Xt,
+                        Nt[1] = Xt + 1,
+                        Nt[2] = Xt + 2);
+                        const {a: Zt, b: Yt, c: sr} = Yv;
+                        if (Zt.fromBufferAttribute(Mt, Nt[0]),
+                        Yt.fromBufferAttribute(Mt, Nt[1]),
+                        sr.fromBufferAttribute(Mt, Nt[2]),
+                        Yv.getNormal(uy),
+                        Wt[0] = 

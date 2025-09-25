@@ -1,0 +1,18 @@
+/* Extracted CSS Block 997 */
+/* Size: 413 chars */
+
+, h),
+                        b == null || b.forEach(_e => {
+                            _e.updateMatrix(),
+                            _e.position.copy(_).applyMatrix4(_e.matrix),
+                            _e.setDirty && _e.setDirty()
+                        }
+                        )
+                    }
+                    )
+                }
+            }]
+        }
+    }
+}
+ExtrasUiPlugin.PluginType = 

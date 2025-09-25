@@ -1,0 +1,18 @@
+/* Extracted CSS Block 548 */
+/* Size: 537 chars */
+
+)) ? this.makeDiamond(nt.material, {
+                        cacheKey: it || void 0,
+                        normalMapRes: pt,
+                        normalMapPrecision: ut
+                    }, {}) : this.makeDiamondMesh(nt, {
+                        cacheKey: it || void 0,
+                        normalMapRes: pt,
+                        normalMapPrecision: ut
+                    }, {}),
+                    this.refreshUi()
+                }
+                ,
+                limitedUi: !0
+            }, {
+                type: 

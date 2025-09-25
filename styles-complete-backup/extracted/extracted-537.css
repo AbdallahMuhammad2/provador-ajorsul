@@ -1,0 +1,11 @@
+/* Extracted CSS Block 537 */
+/* Size: 392 chars */
+
+ ? this.processState.set(bt.path, {
+                state: bt.state,
+                progress: bt.progress ? 100 * bt.progress : void 0
+            }) : this.processState.delete(bt.path),
+            this._updateMainDiv(this.processState)
+        }
+        ),
+        (_e = (b = o.getManager()) === null || b === void 0 ? void 0 : b.importer) === null || _e === void 0 || _e.addEventListener(

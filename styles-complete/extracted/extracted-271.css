@@ -1,0 +1,45 @@
+/* Extracted CSS Block 271 */
+/* Size: 1694 chars */
+
+
+            }
+            dispose() {
+                this.geometry.dispose(),
+                this.material.dispose()
+            }
+        }
+        class dE extends iu {
+            constructor(tt=10, lt=16, mt=8, ft=64, xt=4473924, Ct=8947848) {
+                xt = new Gn(xt),
+                Ct = new Gn(Ct);
+                const Mt = []
+                  , Lt = [];
+                if (lt > 1)
+                    for (let jt = 0; jt < lt; jt++) {
+                        const Wt = jt / lt * (2 * Math.PI)
+                          , Qt = Math.sin(Wt) * tt
+                          , qt = Math.cos(Wt) * tt;
+                        Mt.push(0, 0, 0),
+                        Mt.push(Qt, 0, qt);
+                        const Xt = 1 & jt ? xt : Ct;
+                        Lt.push(Xt.r, Xt.g, Xt.b),
+                        Lt.push(Xt.r, Xt.g, Xt.b)
+                    }
+                for (let jt = 0; jt < mt; jt++) {
+                    const Wt = 1 & jt ? xt : Ct
+                      , Qt = tt - tt / mt * jt;
+                    for (let qt = 0; qt < ft; qt++) {
+                        let Xt = qt / ft * (2 * Math.PI)
+                          , Zt = Math.sin(Xt) * Qt
+                          , Yt = Math.cos(Xt) * Qt;
+                        Mt.push(Zt, 0, Yt),
+                        Lt.push(Wt.r, Wt.g, Wt.b),
+                        Xt = (qt + 1) / ft * (2 * Math.PI),
+                        Zt = Math.sin(Xt) * Qt,
+                        Yt = Math.cos(Xt) * Qt,
+                        Mt.push(Zt, 0, Yt),
+                        Lt.push(Wt.r, Wt.g, Wt.b)
+                    }
+                }
+                const Nt = new bo;
+                Nt.setAttribute(

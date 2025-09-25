@@ -1,0 +1,27 @@
+/* Extracted CSS Block 109 */
+/* Size: 1068 chars */
+
+ ? 2 : 0))
+                    }),
+                    value: or(0, {
+                        constraint: nv(wt.colorMode, wt.colorType, Rt)
+                    }),
+                    viewProps: wt.viewProps
+                });
+                var zt
+            }
+            class im {
+                constructor(wt, Rt) {
+                    this.onModeSelectChange_ = this.onModeSelectChange_.bind(this),
+                    this.colorType_ = Rt.colorType,
+                    this.parser_ = Rt.parser,
+                    this.value = Rt.value,
+                    this.viewProps = Rt.viewProps,
+                    this.colorMode = or(this.value.rawValue.mode),
+                    this.ccs_ = this.createComponentControllers_(wt),
+                    this.view = new Lo(wt,{
+                        colorMode: this.colorMode,
+                        textViews: [this.ccs_[0].view, this.ccs_[1].view, this.ccs_[2].view],
+                        viewProps: this.viewProps
+                    }),
+                    this.view.modeSelectElement.addEventListener(

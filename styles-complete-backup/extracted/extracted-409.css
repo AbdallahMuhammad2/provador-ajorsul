@@ -1,0 +1,10 @@
+/* Extracted CSS Block 409 */
+/* Size: 269 chars */
+
+ ? nt.vertexColors = o.vertexColors > 0 : nt.vertexColors = o.vertexColors),
+        o.normalScale !== void 0) {
+            const ut = o.normalScale;
+            Array.isArray(ut) === !1 && (nt.normalScale = [ut, ut])
+        }
+        let it = o.type;
+        it !== 

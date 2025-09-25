@@ -1,0 +1,10 @@
+/* Extracted CSS Block 798 */
+/* Size: 388 chars */
+
+, () => {
+                this._xrSession && this._xrLight && (this._viewer.scene.modelRoot.add(this._xrLight),
+                this._preXRState.environment || (this._preXRState.environment = this._viewer.scene.getEnvironment()),
+                this._viewer.scene.setEnvironment(this._xrLight.environment))
+            }
+            )),
+            this._xrManager.setReferenceSpaceType(

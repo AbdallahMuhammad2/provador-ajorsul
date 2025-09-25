@@ -1,0 +1,21 @@
+/* Extracted CSS Block 355 */
+/* Size: 638 chars */
+
+
+                varying vec2 vUv;
+                
+                ${h}
+                
+                void blend(in vec4 a, in vec4 b, inout vec4 c){
+                
+                ${c}
+                
+                }
+                void main() {
+                    vec4 texel = vec4(0);
+                    blend(tDiffuseTexelToLinear ( texture2D( tDiffuse, vUv ) ), tDiffuse2TexelToLinear ( texture2D( tDiffuse2, vUv ) ), texel);
+                    texel = clamp(texel, vec4(0), vec4(MAX_INTENSITY));
+                    gl_FragColor = texel;
+                    #include <colorspace_fragment>
+                }
+            

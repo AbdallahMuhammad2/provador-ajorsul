@@ -1,0 +1,78 @@
+/* Extracted CSS Block 682 */
+/* Size: 1275 chars */
+
+;
+				color.array = [ _color.r / 255.0, _color.g / 255.0, _color.b / 255.0 ];
+
+				attributes.position = position;
+				attributes.color = color;
+				data.attributes = attributes;
+
+				geometry = { data };
+
+				break;
+
+			case rhino.ObjectType.PointSet:
+			case rhino.ObjectType.Mesh:
+
+				geometry = _geometry.toThreejsJSON();
+
+				break;
+
+			case rhino.ObjectType.Brep:
+
+				const faces = _geometry.faces();
+				mesh = new rhino.Mesh();
+
+				for ( let faceIndex = 0; faceIndex < faces.count; faceIndex ++ ) {
+
+					const face = faces.get( faceIndex );
+					const _mesh = face.getMesh( rhino.MeshType.Any );
+
+					if ( _mesh ) {
+
+						mesh.append( _mesh );
+						_mesh.delete();
+
+					}
+
+					face.delete();
+
+				}
+
+				if ( mesh.faces().count > 0 ) {
+
+					mesh.compact();
+					geometry = mesh.toThreejsJSON();
+					faces.delete();
+
+				}
+
+				mesh.delete();
+
+				break;
+
+			case rhino.ObjectType.Extrusion:
+
+				mesh = _geometry.getMesh( rhino.MeshType.Any );
+
+				if ( mesh ) {
+
+					geometry = mesh.toThreejsJSON();
+					mesh.delete();
+
+				}
+
+				break;
+
+			case rhino.ObjectType.TextDot:
+
+				geometry = extractProperties( _geometry );
+
+				break;
+
+			case rhino.ObjectType.Light:
+
+				geometry = extractProperties( _geometry );
+
+				if ( geometry.lightStyle.name === 

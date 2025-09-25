@@ -1,0 +1,10 @@
+/* Extracted CSS Block 786 */
+/* Size: 141 chars */
+
+;
+    const _e = () => {
+        var nt, it;
+        try {
+            b.contentWindow.name
+        } catch (at) {
+            (typeof at == 

@@ -1,0 +1,14 @@
+/* Extracted CSS Block 441 */
+/* Size: 364 chars */
+
+
+                varying vec2 vUv;
+                ${o[0]}
+                void main() {
+                    gl_FragColor = tDiffuseTexelToLinear (texture2D(tDiffuse, vUv));
+                    #glMarker
+                    ${o[1]}
+                    
+                    gl_FragColor.rgb *= gl_FragColor.a; // premultiply alpha
+                }
+                

@@ -1,0 +1,12 @@
+/* Extracted CSS Block 727 */
+/* Size: 338 chars */
+
+ && b.forEach(nt => nt.visible = !0),
+        !((_ = o == null ? void 0 : o.userData) === null || _ === void 0) && _.rootSceneModelRoot && c.viewerConfig === !1 && delete o.userData.__exportViewerConfig,
+        _e
+    }
+    async _exportFile(o, c={}) {
+        var h, _, b;
+        let _e;
+        this.dispatchEvent({
+            type: 

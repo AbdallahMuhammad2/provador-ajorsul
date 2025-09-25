@@ -1,0 +1,10 @@
+/* Extracted CSS Block 989 */
+/* Size: 209 chars */
+
+,
+        onclick: async () => {
+            var At;
+            await d.fitToView((At = d.getPlugin(PickingPlugin)) === null || At === void 0 ? void 0 : At.getSelectedObject())
+        }
+    }, {
+        id: 

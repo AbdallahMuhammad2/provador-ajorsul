@@ -1,0 +1,14 @@
+/* Extracted CSS Block 837 */
+/* Size: 283 chars */
+
+)) === null || _ === void 0 || _.setSelectedObject(it, !0)
+            }
+            (b = this._viewer) === null || b === void 0 || b.scene.setDirty({
+                frameFade: !1,
+                sceneUpdate: !0
+            })
+        }
+    }
+}
+;
+ObjectRotationPlugin.PluginType = 

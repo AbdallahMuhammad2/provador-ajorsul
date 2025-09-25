@@ -1,0 +1,49 @@
+/* Extracted CSS Block 575 */
+/* Size: 1362 chars */
+
+ + taa,
+            uniforms: {
+                currentRT: {
+                    value: null
+                },
+                previousRT: {
+                    value: null
+                },
+                previousRTSize: {
+                    value: new three_module.I9Y
+                },
+                cameraNearFar: {
+                    value: new three_module.I9Y
+                },
+                lastProjectionViewMatrix: {
+                    value: new three_module.kn4
+                },
+                currentProjectionViewMatrix: {
+                    value: new three_module.kn4
+                },
+                projection: {
+                    value: new three_module.kn4
+                },
+                inverseViewMatrix: {
+                    value: new three_module.kn4
+                },
+                jitterSample: {
+                    value: new three_module.I9Y
+                },
+                firstFrame: {
+                    value: !0
+                },
+                tNormalDepth: {
+                    value: null
+                },
+                tVelocity: {
+                    value: null
+                }
+            },
+            defines: {
+                HAS_VELOCITY_BUFFER: 0,
+                QUALITY: 1,
+                UNJITTER: 0,
+                BACKGROUND_TAA: h ? 1 : 0
+            }
+        }, 

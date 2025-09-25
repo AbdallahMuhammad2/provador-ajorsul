@@ -1,0 +1,28 @@
+/* Extracted CSS Block 1060 */
+/* Size: 670 chars */
+
+;
+        _.name = o;
+        const b = new Set;
+        (pt = (ut = this._viewer) == null ? void 0 : ut.scene) == null || pt.traverse(ht => {
+            ht.isMesh && ht.material.name === o && b.add(ht)
+        }
+        ),
+        b.forEach(ht => {
+            var _t;
+            (_t = ht == null ? void 0 : ht.setMaterial) == null || _t.call(ht, _),
+            ht.material.name = o
+        }
+        );
+        const _e = this.materials.findIndex(ht => ht.name === o);
+        _e !== -1 ? this.materials[_e] = {
+            name: o,
+            path: c
+        } : this.materials.push({
+            name: o,
+            path: c
+        })
+    }
+}
+;
+w0.PluginType = 

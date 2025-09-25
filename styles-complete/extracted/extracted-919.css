@@ -1,0 +1,20 @@
+/* Extracted CSS Block 919 */
+/* Size: 527 chars */
+
+,
+                                value: () => {
+                                    this.animateTransform(h, it)
+                                }
+                            }]
+                        }))
+                    }
+                    ]
+                };
+                (b = (_ = h.uiConfig) === null || _ === void 0 ? void 0 : _.children) === null || b === void 0 || b.push(_e)
+            }
+            )
+        }
+    }
+    async onAdded(o) {
+        await super.onAdded(o),
+        o.scene.addEventListener(

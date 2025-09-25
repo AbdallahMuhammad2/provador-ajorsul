@@ -1,0 +1,12 @@
+/* Extracted CSS Block 842 */
+/* Size: 485 chars */
+
+;
+        const Pt = await ((_t = (ht = (pt = this._viewer) === null || pt === void 0 ? void 0 : pt.getManager()) === null || ht === void 0 ? void 0 : ht.importer) === null || _t === void 0 ? void 0 : _t.processImportedSingle(Et, {
+            autoCenter: !1,
+            autoScale: !1
+        }));
+        Pt && ((vt = d.parent) === null || vt === void 0 || vt.add(Pt.modelObject),
+        d.userData.extrudedObject = Pt.modelObject.uuid,
+        Pt.dispatchEvent({
+            type: 

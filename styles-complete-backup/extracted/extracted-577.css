@@ -1,0 +1,11 @@
+/* Extracted CSS Block 577 */
+/* Size: 359 chars */
+
+)) === null || _ === void 0 ? void 0 : _.extensions) === null || b === void 0 || b.push(gltfExporterMaterialsVariantsExtensionExport)
+    }
+    _loaderCreate({loader: o}) {
+        o.isGLTFLoader2 && o.register(c => new GLTFMaterialsVariantsExtensionImport(c))
+    }
+    async onRemove(o) {
+        var c, h, _, b, _e, nt;
+        o.scene.removeEventListener(

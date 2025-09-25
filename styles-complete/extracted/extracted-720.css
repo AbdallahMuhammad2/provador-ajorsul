@@ -1,0 +1,19 @@
+/* Extracted CSS Block 720 */
+/* Size: 508 chars */
+
+ && (_.name = o.name),
+        c.scenes.push(_);
+        const b = [];
+        for (let _e = 0, nt = o.children.length; _e < nt; _e++) {
+            const it = o.children[_e];
+            if (it.visible || h.onlyVisible === !1) {
+                const at = this.processNode(it);
+                at !== null && b.push(at)
+            }
+        }
+        b.length > 0 && (_.nodes = b),
+        this.serializeUserData(o, _)
+    }
+    processObjects(o) {
+        const c = new three_module.Z58;
+        c.name = 

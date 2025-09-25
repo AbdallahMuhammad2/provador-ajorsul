@@ -1,0 +1,59 @@
+/* Extracted CSS Block 227 */
+/* Size: 2945 chars */
+
+, Hr),
+                        Zt.xrCompatible !== !0 && await lt.makeXRCompatible(),
+                        ft.renderState.layers === void 0 || tt.capabilities.isWebGL2 === !1) {
+                            const Jr = {
+                                antialias: ft.renderState.layers !== void 0 || Zt.antialias,
+                                alpha: !0,
+                                depth: Zt.depth,
+                                stencil: Zt.stencil,
+                                framebufferScaleFactor: xt
+                            };
+                            qt = new XRWebGLLayer(ft,lt,Jr),
+                            ft.updateRenderState({
+                                baseLayer: qt
+                            }),
+                            sr = new Rs(qt.framebufferWidth,qt.framebufferHeight,{
+                                format: as,
+                                type: $n,
+                                colorSpace: tt.outputColorSpace,
+                                stencilBuffer: Zt.stencil
+                            })
+                        } else {
+                            let Jr = null
+                              , sn = null
+                              , on = null;
+                            Zt.depth && (on = Zt.stencil ? lt.DEPTH24_STENCIL8 : lt.DEPTH_COMPONENT24,
+                            Jr = Zt.stencil ? Eo : Ys,
+                            sn = Zt.stencil ? Ps : Yo);
+                            const Un = {
+                                colorFormat: lt.RGBA8,
+                                depthFormat: on,
+                                scaleFactor: xt
+                            };
+                            Wt = new XRWebGLBinding(ft,lt),
+                            Qt = Wt.createProjectionLayer(Un),
+                            ft.updateRenderState({
+                                layers: [Qt]
+                            }),
+                            sr = new Rs(Qt.textureWidth,Qt.textureHeight,{
+                                format: as,
+                                type: $n,
+                                depthTexture: new yx(Qt.textureWidth,Qt.textureHeight,sn,void 0,void 0,void 0,void 0,void 0,void 0,Jr),
+                                stencilBuffer: Zt.stencil,
+                                colorSpace: tt.outputColorSpace,
+                                samples: Zt.antialias ? 4 : 0
+                            }),
+                            tt.properties.get(sr).__ignoreDepthValues = Qt.ignoreDepthValues
+                        }
+                        sr.isXRRenderTarget = !0,
+                        this.setFoveation(Lt),
+                        Nt = null,
+                        Ct = await ft.requestReferenceSpace(Mt),
+                        cn.setContext(ft),
+                        cn.start(),
+                        mt.isPresenting = !0,
+                        mt.dispatchEvent({
+                            type: 

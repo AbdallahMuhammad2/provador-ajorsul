@@ -1,0 +1,11 @@
+/* Extracted CSS Block 693 */
+/* Size: 208 chars */
+
+;
+class GLTFMeshOptPlugin extends I$2 {
+    constructor() {
+        super(...arguments),
+        this.dependencies = [AssetManagerPlugin]
+    }
+    async onAdded(o) {
+        const c = document.createElement(

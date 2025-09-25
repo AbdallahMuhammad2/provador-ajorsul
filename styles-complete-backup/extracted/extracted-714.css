@@ -1,0 +1,40 @@
+/* Extracted CSS Block 714 */
+/* Size: 1019 chars */
+
+
+            }
+        },
+        this.cache = {
+            meshes: new Map,
+            attributes: new Map,
+            attributesNormalized: new Map,
+            materials: new Map,
+            textures: new Map,
+            images: new Map
+        }
+    }
+    setPlugins(o) {
+        this.plugins = o
+    }
+    async write(o, c, h={}) {
+        this.options = Object.assign({
+            binary: !1,
+            trs: !1,
+            onlyVisible: !0,
+            maxTextureSize: 1 / 0,
+            animations: [],
+            includeCustomExtensions: !1,
+            ignoreInvalidMorphTargetTracks: !1,
+            ignoreEmptyTextures: !1
+        }, h),
+        this.options.animations.length > 0 && (this.options.trs = !0),
+        this.processInput(o),
+        await Promise.all(this.pending);
+        const _ = this
+          , b = _.buffers
+          , _e = _.json;
+        h = _.options;
+        const nt = _.extensionsUsed
+          , it = _.extensionsRequired
+          , at = new Blob(b,{
+            type: 

@@ -1,0 +1,34 @@
+/* Extracted CSS Block 1122 */
+/* Size: 1467 chars */
+
+),
+            this.currentAnimation && this.currentAnimation.stop(),
+            this.resumingFrom && this.resumingFrom.currentAnimation && this.resumingFrom.currentAnimation.stop(),
+            this.pendingAnimation && (cancelFrame(this.pendingAnimation),
+            this.pendingAnimation = void 0),
+            this.pendingAnimation = frame.update( () => {
+                globalProjectionState.hasAnimatedSinceResize = !0,
+                this.currentAnimation = animateSingleValue(0, animationTarget, {
+                    ..._e,
+                    onUpdate: nt => {
+                        this.mixTargetDelta(nt),
+                        _e.onUpdate && _e.onUpdate(nt)
+                    }
+                    ,
+                    onComplete: () => {
+                        _e.onComplete && _e.onComplete(),
+                        this.completeAnimation()
+                    }
+                }),
+                this.resumingFrom && (this.resumingFrom.currentAnimation = this.currentAnimation),
+                this.pendingAnimation = void 0
+            }
+            )
+        }
+        completeAnimation() {
+            this.resumingFrom && (this.resumingFrom.currentAnimation = void 0,
+            this.resumingFrom.preserveOpacity = void 0);
+            const _e = this.getStack();
+            _e && _e.exitAnimationComplete(),
+            this.resumingFrom = this.currentAnimation = this.animationValues = void 0,
+            this.notifyListeners(

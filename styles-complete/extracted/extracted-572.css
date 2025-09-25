@@ -1,0 +1,17 @@
+/* Extracted CSS Block 572 */
+/* Size: 354 chars */
+
+, !0)
+        }
+    }
+    _onDampingChange() {
+        this._xDamper && this._yDamper && (this._xDamper.setDecayTime(100 * this.damping),
+        this._yDamper.setDecayTime(100 * this.damping))
+    }
+    dispose() {
+        var d;
+        (d = this._input) === null || d === void 0 || d.disconnect()
+    }
+}
+;
+ParallaxCameraControllerPlugin.PluginType = 

@@ -1,0 +1,16 @@
+/* Extracted CSS Block 318 */
+/* Size: 724 chars */
+
+),
+        d.uniforms.frameCount2 && (d.uniforms.frameCount2.value = this.frameCount),
+        this
+    }
+    _setTargetOptions(d, o) {
+        var c, h, _;
+        d.texture.minFilter = (c = o.minFilter) !== null && c !== void 0 ? c : three_module.k6q,
+        d.texture.magFilter = (h = o.magFilter) !== null && h !== void 0 ? h : three_module.k6q,
+        d.texture.generateMipmaps = (_ = o.generateMipmaps) !== null && _ !== void 0 && _,
+        d.texture.generateMipmaps && d.texture.minFilter === three_module.k6q && (d.texture.minFilter = three_module.NZq),
+        d.texture.generateMipmaps || d.texture.minFilter !== three_module.NZq || (d.texture.minFilter = three_module.k6q)
+    }
+    renderTargetToDataUrl(d, o=

@@ -1,0 +1,13 @@
+/* Extracted CSS Block 931 */
+/* Size: 281 chars */
+
+);
+        it.userData.__ringSlot = h,
+        this.ringSlots[h] = o;
+        const at = [];
+        it.traverse(pt => {
+            pt.userData.rotationCount > 1 && at.push(pt)
+        }
+        ),
+        new Box3B().expandByObjects(at, !0, !0),
+        c.toLowerCase().includes(

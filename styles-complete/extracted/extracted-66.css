@@ -1,0 +1,11 @@
+/* Extracted CSS Block 66 */
+/* Size: 275 chars */
+
+, {
+                        bladeController: wt.bladeController,
+                        options: wt.options,
+                        sender: this
+                    })
+                }
+                onDescendantMonitorUpdate_(wt) {
+                    this.emitter.emit(

@@ -1,0 +1,10 @@
+/* Extracted CSS Block 724 */
+/* Size: 364 chars */
+
+ || nt.propertyIndex === void 0) {
+                c.push(_e);
+                continue
+            }
+            if (_e.createInterpolant !== _e.InterpolantFactoryMethodDiscrete && _e.createInterpolant !== _e.InterpolantFactoryMethodLinear) {
+                if (_e.createInterpolant.isInterpolantFactoryMethodGLTFCubicSpline)
+                    throw new Error(

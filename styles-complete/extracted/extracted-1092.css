@@ -1,0 +1,23 @@
+/* Extracted CSS Block 1092 */
+/* Size: 329 chars */
+
+
+  , defaultProps = {
+    delta: 10,
+    preventScrollOnSwipe: !1,
+    rotationAngle: 0,
+    trackMouse: !1,
+    trackTouch: !0,
+    swipeDuration: 1 / 0,
+    touchEventOptions: {
+        passive: !0
+    }
+}
+  , initialState = {
+    first: !0,
+    initial: [0, 0],
+    start: 0,
+    swiping: !1,
+    xy: [0, 0]
+}
+  , mouseMove = 

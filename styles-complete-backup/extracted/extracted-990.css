@@ -1,0 +1,10 @@
+/* Extracted CSS Block 990 */
+/* Size: 218 chars */
+
+,
+        toggle: !0,
+        onclick: async () => {
+            d.getPlugin(CameraViewPlugin) && (d.getPlugin(CameraViewPlugin).viewLooping = !d.getPlugin(CameraViewPlugin).viewLooping)
+        }
+    }, {
+        id: 

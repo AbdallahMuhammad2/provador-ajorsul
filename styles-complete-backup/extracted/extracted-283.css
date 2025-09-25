@@ -1,0 +1,16 @@
+/* Extracted CSS Block 283 */
+/* Size: 451 chars */
+
+)
+                }
+                let pt;
+                const ht = this.workerNextTaskID++
+                  , _t = it.byteLength
+                  , vt = this._getWorker(ht, _t).then(bt => (pt = bt,
+                new Promise( (St, At) => {
+                    pt._callbacks[ht] = {
+                        resolve: St,
+                        reject: At
+                    },
+                    pt.postMessage({
+                        type: 

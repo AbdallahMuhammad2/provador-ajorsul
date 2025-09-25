@@ -1,0 +1,47 @@
+/**
+ * Webpack Module 73
+ * Type: misc
+ * Pattern: 1
+ * Size: 31 bytes
+ * Features: none
+ *
+ * Original parameters: 
+ */
+
+// Original webpack module function
+function webpackModule73() {
+
+        return textureToCanvas
+}
+
+// Export the module function
+export default webpackModule73;
+
+// Module metadata
+export const metadata = {
+    id: '73',
+    type: 'misc',
+    size: 31,
+    features: [],
+    params: ''
+};
+
+// Helper to execute the module with dependencies
+export function executeModule(moduleRegistry, globalScope = {}) {
+    const moduleObj = { exports: {} };
+    const require = (id) => {
+        if (moduleRegistry.has(id)) {
+            return moduleRegistry.get(id);
+        }
+        console.warn('Module ' + id + ' not found in registry');
+        return {};
+    };
+
+    try {
+        webpackModule73.call(globalScope, moduleObj, moduleObj.exports, require);
+        return moduleObj.exports;
+    } catch (error) {
+        console.error('Error executing module 73:', error);
+        return {};
+    }
+}

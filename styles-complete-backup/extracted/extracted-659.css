@@ -1,0 +1,29 @@
+/* Extracted CSS Block 659 */
+/* Size: 766 chars */
+
+,
+        this.isReflector2 = !0,
+        this.enabled = !0,
+        this.reflectorModePhysical = !0,
+        this.reflectionTargetNeedsUpdate = !0,
+        this.transparentReflectionBackground = !0,
+        this.materialExtension = {
+            extraUniforms: {
+                tRefDiffuse: {
+                    value: null
+                },
+                tRefDiffuseSize: {
+                    value: new three_module.I9Y
+                },
+                refTextureMatrix: {
+                    value: null
+                },
+                frameCount: {
+                    value: 0
+                },
+                sceneBoundingRadius: {
+                    value: 0
+                }
+            },
+            extraDefines: {
+                USE_UV: 

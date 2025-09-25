@@ -1,0 +1,51 @@
+/* Extracted CSS Block 998 */
+/* Size: 1491 chars */
+
+, void 0);
+class ACameraHelperWidget extends AHelperWidget {
+    constructor(o) {
+        super(o),
+        this.camera = o,
+        this.traverse(c => {
+            c.userData.__keepShadowDef = !0,
+            c.castShadow = !1,
+            c.receiveShadow = !1
+        }
+        )
+    }
+}
+class CameraHelper2 extends ACameraHelperWidget {
+    constructor(o) {
+        super(o),
+        this._vector = new three_module.Pq0,
+        this._camera = new three_module.i7d;
+        const c = new LineSegmentsGeometry
+          , h = new LineMaterial({
+            color: 16777215,
+            linewidth: .005,
+            vertexColors: !0,
+            dashed: !1,
+            alphaToCoverage: !0,
+            toneMapped: !1,
+            transparent: !0,
+            depthTest: !1,
+            depthWrite: !1
+        })
+          , {vertices: _, colors: b, pointMap: _e} = generateVertices();
+        c.setPositions(_),
+        c.setColors(b),
+        this.line = new LineSegments2(c,h),
+        this.line.frustumCulled = !1,
+        this.add(this.line),
+        this.pointMap = _e,
+        this.update();
+        const nt = new three_module.Q1f(16755200)
+          , it = new three_module.Q1f(16711680)
+          , at = new three_module.Q1f(43775)
+          , ut = new three_module.Q1f(16777215)
+          , pt = new three_module.Q1f(3355443);
+        this.setColors(nt, it, at, ut, pt)
+    }
+    setColors(o, c, h, _, b) {
+        const _e = this.line.geometry
+          , nt = _e.getAttribute(

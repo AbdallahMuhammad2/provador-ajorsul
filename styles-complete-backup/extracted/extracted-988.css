@@ -1,0 +1,14 @@
+/* Extracted CSS Block 988 */
+/* Size: 236 chars */
+
+
+    }
+    ),
+    it.onclick = () => {
+        var At;
+        (At = d.getPlugin(FullScreenPlugin)) === null || At === void 0 || At.toggle(d.container)
+    }
+    ,
+    d.container.appendChild(it),
+    tippy_esm(it, {
+        placement: 

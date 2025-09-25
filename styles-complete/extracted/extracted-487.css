@@ -1,0 +1,28 @@
+/* Extracted CSS Block 487 */
+/* Size: 783 chars */
+
+,at,[ut]);
+        pt.__gltfExport = !1,
+        o.animations.push(pt)
+    }
+}
+const glTFTimelineMarkersExtensionExport = d => ({
+    afterParse(o) {
+        const c = d.json.scenes[d.json.scene || 0];
+        c.extensions = c.extensions || {};
+        const h = {
+            markers: []
+        }
+          , _ = [];
+        if ((Array.isArray(o) ? o : [o]).forEach(b => b.traverse(_e => {
+            _e.userData.__markers && _.push(..._e.userData.__markers)
+        }
+        )),
+        _.sort( (b, _e) => b.frame - _e.frame),
+        !(_.length < 1)) {
+            for (const b of _) {
+                const _e = b.camera;
+                if (_e) {
+                    const nt = d.nodeMap.get(_e);
+                    if (nt === void 0) {
+                        console.warn(

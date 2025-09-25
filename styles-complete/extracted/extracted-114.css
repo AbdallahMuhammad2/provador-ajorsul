@@ -1,0 +1,19 @@
+/* Extracted CSS Block 114 */
+/* Size: 748 chars */
+
+, this.onButtonClick_),
+                    this.textC_ = new Iu(wt,{
+                        parser: Rt.parser,
+                        props: ir.fromObject({
+                            formatter: Rt.formatter
+                        }),
+                        value: this.value,
+                        viewProps: this.viewProps
+                    }),
+                    this.view = new Y_(wt,{
+                        foldable: this.foldable_,
+                        pickerLayout: Rt.pickerLayout
+                    }),
+                    this.view.swatchElement.appendChild(this.swatchC_.view.element),
+                    this.view.textElement.appendChild(this.textC_.view.element),
+                    this.popC_ = Rt.pickerLayout === 

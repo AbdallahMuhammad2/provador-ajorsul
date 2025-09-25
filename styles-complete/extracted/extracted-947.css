@@ -1,0 +1,53 @@
+/* Extracted CSS Block 947 */
+/* Size: 2060 chars */
+
+);
+        if ((h || _) && this.shapeOverlapKeeper.getDiff(additions, removals),
+        h) {
+            for (let b = 0, _e = additions.length; b < _e; b += 2) {
+                const nt = this.getShapeById(additions[b])
+                  , it = this.getShapeById(additions[b + 1]);
+                beginShapeContactEvent.shapeA = nt,
+                beginShapeContactEvent.shapeB = it,
+                nt && (beginShapeContactEvent.bodyA = nt.body),
+                it && (beginShapeContactEvent.bodyB = it.body),
+                this.dispatchEvent(beginShapeContactEvent)
+            }
+            beginShapeContactEvent.bodyA = beginShapeContactEvent.bodyB = beginShapeContactEvent.shapeA = beginShapeContactEvent.shapeB = null
+        }
+        if (_) {
+            for (let b = 0, _e = removals.length; b < _e; b += 2) {
+                const nt = this.getShapeById(removals[b])
+                  , it = this.getShapeById(removals[b + 1]);
+                endShapeContactEvent.shapeA = nt,
+                endShapeContactEvent.shapeB = it,
+                nt && (endShapeContactEvent.bodyA = nt.body),
+                it && (endShapeContactEvent.bodyB = it.body),
+                this.dispatchEvent(endShapeContactEvent)
+            }
+            endShapeContactEvent.bodyA = endShapeContactEvent.bodyB = endShapeContactEvent.shapeA = endShapeContactEvent.shapeB = null
+        }
+    }
+    clearForces() {
+        const o = this.bodies
+          , c = o.length;
+        for (let h = 0; h !== c; h++) {
+            const _ = o[h];
+            _.force,
+            _.torque,
+            _.force.set(0, 0, 0),
+            _.torque.set(0, 0, 0)
+        }
+    }
+}
+new AABB;
+const tmpRay = new Ray
+  , cannon_es_performance = globalThis.performance || {};
+if (!cannon_es_performance.now) {
+    let d = Date.now();
+    cannon_es_performance.timing && cannon_es_performance.timing.navigationStart && (d = cannon_es_performance.timing.navigationStart),
+    cannon_es_performance.now = () => Date.now() - d
+}
+new Vec3;
+const World_step_postStepEvent = {
+    type: 

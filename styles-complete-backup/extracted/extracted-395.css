@@ -1,0 +1,20 @@
+/* Extracted CSS Block 395 */
+/* Size: 463 chars */
+
+,
+                afterRoot: async Dt => {
+                    Et && c.unregisterFile(St),
+                    Pt && c.unregisterFile(At),
+                    It.forEach(Bt => c.unregisterFile(Bt));
+                    const Gt = await importViewer(b, d, _);
+                    Dt.scene && (Dt.scene.__importedViewerConfig = Gt)
+                }
+            }
+        }
+        ),
+        h
+    }
+    )
+}
+const gltfObject3DExtrasParser = d => o => ({
+    name: 

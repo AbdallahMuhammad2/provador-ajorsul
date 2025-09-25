@@ -1,0 +1,10 @@
+/* Extracted CSS Block 969 */
+/* Size: 236 chars */
+
+),
+        this._plugins = [],
+        this._pane.registerPlugin(tweakpane_image_plugin),
+        ui_tpTheme.use({
+            target: this._container
+        }),
+        this.colorMode = (nt = b ?? (localStorage ? localStorage.getItem(

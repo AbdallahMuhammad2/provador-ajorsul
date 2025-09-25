@@ -1,0 +1,14 @@
+/* Extracted CSS Block 756 */
+/* Size: 390 chars */
+
+);
+            {
+                const {quantizationVolume: Pt} = c
+                  , It = Math.max(Pt.max[0] - Pt.min[0], Pt.max[1] - Pt.min[1], Pt.max[2] - Pt.min[2]);
+                b.SetAttributeExplicitQuantization(Et, c.quantizationBits[At], St.getElementSize(), Pt.min, It)
+            }
+        }
+    }
+    const ut = d.getIndices();
+    if (!ut)
+        throw new EncodingError(

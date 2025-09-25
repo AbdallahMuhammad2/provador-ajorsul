@@ -1,0 +1,45 @@
+{
+  "timestamp": "2025-09-18T01:10:17.317Z",
+  "originalSize": "5.37MB",
+  "extracted": {
+    "cssBlocks": 0,
+    "jsModules": 36,
+    "categories": [
+      {
+        "category": "core",
+        "count": 2
+      },
+      {
+        "category": "ring",
+        "count": 9
+      },
+      {
+        "category": "ui",
+        "count": 3
+      },
+      {
+        "category": "utils",
+        "count": 3
+      },
+      {
+        "category": "other",
+        "count": 16
+      },
+      {
+        "category": "mediapipe",
+        "count": 3
+      }
+    ]
+  },
+  "filesCreated": [
+    "styles/main.css",
+    "src/main.js",
+    "index-deobfuscated.html",
+    "src/core/modules.js",
+    "src/ring/modules.js",
+    "src/ui/modules.js",
+    "src/utils/modules.js",
+    "src/other/modules.js",
+    "src/mediapipe/modules.js"
+  ]
+}

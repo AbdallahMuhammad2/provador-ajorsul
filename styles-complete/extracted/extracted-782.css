@@ -1,0 +1,17 @@
+/* Extracted CSS Block 782 */
+/* Size: 819 chars */
+
+, b => {
+            var _e, nt;
+            o && this.enabled && (this._renderer || this._initialize(),
+            this._renderer && (c && this._trackers.forEach(it => {
+                var at, ut;
+                let pt = !0;
+                const ht = it.modelObj.material.side;
+                if (ht !== three_module.$EB) {
+                    const _t = new three_module.Pq0(0,0,1).applyQuaternion(it.cssObj.quaternion)
+                      , vt = (ut = (at = this._viewer) === null || at === void 0 ? void 0 : at.scene.activeCamera) === null || ut === void 0 ? void 0 : ut.cameraObject
+                      , bt = _t.dot(vt.getWorldDirection(new three_module.Pq0));
+                    pt = ht === three_module.hsX ? bt > 0 : bt < 0
+                }
+                it.cssObj.element.style.visibility = pt ? 

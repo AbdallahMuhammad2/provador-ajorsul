@@ -1,0 +1,11 @@
+/* Extracted CSS Block 1052 */
+/* Size: 253 chars */
+
+ && (h != null && h.enabled) && h.stopDamping(),
+            this._viewer.setDirty()
+        }
+        ),
+        o.scene.addSceneObject(this.transformControls, {
+            addToRoot: !0
+        }),
+        o.getPlugin(PickingPlugin).addEventListener(

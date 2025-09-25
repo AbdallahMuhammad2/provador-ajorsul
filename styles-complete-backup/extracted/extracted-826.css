@@ -1,0 +1,17 @@
+/* Extracted CSS Block 826 */
+/* Size: 466 chars */
+
+, h=2, _=2, b={}) {
+        var _e, nt, it;
+        const at = (_e = b.rect) !== null && _e !== void 0 ? _e : {
+            x: 0,
+            y: 0,
+            width: 1,
+            height: 1,
+            assumeClientRect: !1,
+            normalized: !0
+        }
+          , ut = [];
+        for (let pt = 0; pt < _; pt++)
+            for (let ht = 0; ht < h; ht++) {
+                const _t = (it = (nt = b.mimeType) === null || nt === void 0 ? void 0 : nt.split(

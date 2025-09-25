@@ -1,0 +1,47 @@
+/* Extracted CSS Block 1046 */
+/* Size: 1758 chars */
+
+,
+        this._svgGradient = new SvgGradient,
+        this._needsUpdate = !1,
+        this.colors = [new three_module.Q1f(1,1,1), new three_module.Q1f(1,0,0)],
+        this.color1 = this.colors[0],
+        this.color2 = this.colors[1],
+        this.applyToBackground = !1,
+        this.autoRefresh = !0,
+        this.enabled = d
+    }
+    _refreshOptions() {
+        var d, o, c, h, _, b, _e, nt;
+        this.options.type = this.type,
+        this.options.gradientUnits = this.gradientUnits,
+        this.options.linearOptions = {
+            angle: this.angle,
+            x1: (d = this.position1) === null || d === void 0 ? void 0 : d.x,
+            y1: (o = this.position1) === null || o === void 0 ? void 0 : o.y,
+            x2: (c = this.position2) === null || c === void 0 ? void 0 : c.x,
+            y2: (h = this.position2) === null || h === void 0 ? void 0 : h.y
+        },
+        this.options.radialOptions = {
+            cx: (_ = this.center) === null || _ === void 0 ? void 0 : _.x,
+            cy: (b = this.center) === null || b === void 0 ? void 0 : b.y,
+            r: this.radius,
+            fx: (_e = this.focus) === null || _e === void 0 ? void 0 : _e.x,
+            fy: (nt = this.focus) === null || nt === void 0 ? void 0 : nt.y,
+            spreadMethod: this.spreadMethod
+        },
+        this.setDirty()
+    }
+    setDirty() {
+        this._needsUpdate = !0
+    }
+    addColor() {
+        this.colors.push(new three_module.Q1f),
+        this.setDirty()
+    }
+    refreshSvg() {
+        if ((!this.applyToBackground || this._viewer) && (this._refreshOptions(),
+        this._needsUpdate = !1,
+        this._svgElement = this._svgGradient.get(this.colors, this.options),
+        this.applyToBackground)) {
+            const d = 

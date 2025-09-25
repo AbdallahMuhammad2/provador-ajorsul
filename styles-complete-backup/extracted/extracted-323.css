@@ -1,0 +1,16 @@
+/* Extracted CSS Block 323 */
+/* Size: 416 chars */
+
+,
+            value: () => {
+                const o = new three_module.Pq0;
+                d.center(o),
+                o.negate();
+                const c = d.userData.__appliedMeshes;
+                for (const h of c)
+                    h.updateMatrix(),
+                    h.position.copy(o).applyMatrix4(h.matrix),
+                    h.setDirty && h.setDirty()
+            }
+        }, {
+            type: 

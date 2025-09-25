@@ -1,0 +1,12 @@
+/* Extracted CSS Block 417 */
+/* Size: 444 chars */
+
+);
+        const _ = Array.from(((c = o.dataTransfer) === null || c === void 0 ? void 0 : c.files) || [])
+          , b = Array.from(((h = o.dataTransfer) === null || h === void 0 ? void 0 : h.items) || []);
+        if (_.length !== 0 || b.length !== 0)
+            if (b.length > 0) {
+                const _e = b.map(nt => nt.webkitGetAsEntry());
+                this._loadNextEntry(new Map, _e)
+            } else
+                this._emit(

@@ -1,0 +1,24 @@
+/* Extracted CSS Block 614 */
+/* Size: 580 chars */
+
+in b && (_e.indices = b.Indexes.a,
+            _e.weights = b.Weights.a),
+            h.push(_e)
+        }),
+        {
+            rawBones: h,
+            bones: []
+        }
+    }
+    parseMorphTargets(o, c) {
+        const h = [];
+        for (let _ = 0; _ < o.children.length; _++) {
+            const b = o.children[_]
+              , _e = c[b.ID]
+              , nt = {
+                name: _e.attrName,
+                initialWeight: _e.DeformPercent,
+                id: _e.id,
+                fullWeights: _e.FullWeights.a
+            };
+            if (_e.attrType !== 

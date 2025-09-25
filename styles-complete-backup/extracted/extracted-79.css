@@ -1,0 +1,28 @@
+/* Extracted CSS Block 79 */
+/* Size: 1001 chars */
+
+)),
+                    this.element.appendChild(mr),
+                    this.contentsElement = mr
+                }
+            }
+            class xs extends Bo {
+                constructor(wt, Rt) {
+                    const zt = new zo(wt,{
+                        blade: Rt.blade,
+                        viewProps: Rt.viewProps
+                    })
+                      , nr = new ds;
+                    super({
+                        blade: Rt.blade,
+                        rackController: zt,
+                        view: new ko(wt,{
+                            contentsElement: zt.view.element,
+                            empty: nr.empty,
+                            viewProps: Rt.viewProps
+                        })
+                    }),
+                    this.onPageAdd_ = this.onPageAdd_.bind(this),
+                    this.onPageRemove_ = this.onPageRemove_.bind(this),
+                    this.pageSet_ = new Tn( () => null),
+                    this.pageSet_.emitter.on(

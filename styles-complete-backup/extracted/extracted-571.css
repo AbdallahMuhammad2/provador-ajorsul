@@ -1,0 +1,19 @@
+/* Extracted CSS Block 571 */
+/* Size: 923 chars */
+
+)
+                  , _ = h == null ? void 0 : h.camViews.find(b => b.name === this.cameraView);
+                h && _ && h.setCurrentCameraView(_),
+                this._updateFocalDistance(),
+                this._center.copy(this._object.position),
+                this._object.lookAt(this._viewer.scene.activeCamera.target)
+            } else if (this._object) {
+                this._onActiveCameraChange(),
+                this._viewer.scene.activeCamera.setInteractions(!0, ParallaxCameraControllerPlugin_1.PluginType),
+                this._object.position.copy(this._center),
+                this._object.lookAt(this._viewer.scene.activeCamera.target);
+                const h = this._object;
+                h.updateProjectionMatrix(),
+                h.updateMatrixWorld()
+            }
+            (c = (o = this.uiConfig) === null || o === void 0 ? void 0 : o.uiRefresh) === null || c === void 0 || c.call(o, 

@@ -1,0 +1,23 @@
+/* Extracted CSS Block 984 */
+/* Size: 521 chars */
+
+);
+        let h = {
+            topbar: !1
+        };
+        h.content = this.constructContent({
+            type: c.type,
+            title: c.title,
+            text: c.text,
+            content: c.content,
+            buttons: c.buttons
+        }),
+        h.overlay = !0,
+        h.keepOverlay = c.keepOverlay,
+        h.clickOverlayToClose = !1,
+        h.animation = c.animation,
+        h.zIndex = c.zIndex,
+        this.wwise = new js_window(h)
+    }
+    constructContent(o) {
+        let c = utility.createDiv(

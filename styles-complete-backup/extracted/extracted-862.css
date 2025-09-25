@@ -1,0 +1,19 @@
+/* Extracted CSS Block 862 */
+/* Size: 583 chars */
+
+,
+        this.dampingFactor = .05,
+        this.lastQuaternion = new three_module.PTz,
+        this.onDeviceOrientationChangeEvent = o => {
+            this.deviceOrientation = o
+        }
+        ,
+        this.onScreenOrientationChangeEvent = () => {
+            this.screenOrientation = screen.orientation
+        }
+        ,
+        this._initQuaternion = new three_module.PTz,
+        this._initQuaternionInvert = new three_module.PTz,
+        this._initQuaternionDest = new three_module.PTz,
+        this._lastTime = -1,
+        window.isSecureContext === !1 && console.error(

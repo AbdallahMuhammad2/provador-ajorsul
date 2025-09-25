@@ -1,0 +1,7 @@
+/* Extracted CSS Block 1040 */
+/* Size: 163 chars */
+
+, void 0),
+AnimationObjectPlugin_decorate([serialize(), uiSlider(void 0, [0, 1e4], 1, d => ({
+    hidden: () => d.from === void 0
+}))], AnimationObject.prototype, 

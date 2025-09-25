@@ -1,0 +1,11 @@
+/* Extracted CSS Block 471 */
+/* Size: 244 chars */
+
+],
+            onChange: () => {
+                const b = this.getSelectedObject();
+                this.autoFocus && b && this.setSelectedObject(b, !0)
+            }
+        }],
+        o && (this._widget = new o),
+        c && console.error(

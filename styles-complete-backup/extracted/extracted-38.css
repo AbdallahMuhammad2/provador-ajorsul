@@ -1,0 +1,13 @@
+/* Extracted CSS Block 38 */
+/* Size: 377 chars */
+
+)),
+                    this.element.appendChild(this.image_),
+                    this.element.appendChild(this.input)
+                }
+                changeImage(kt) {
+                    this.image_.src = kt
+                }
+                changeDraggingState(kt) {
+                    const Ut = this.element;
+                    kt ? Ut == null || Ut.classList.add(bt(

@@ -1,0 +1,6 @@
+/* Extracted CSS Block 1120 */
+/* Size: 108 chars */
+
+, this.layout.layoutBox);
+            const {visualElement: nt} = this.options;
+            nt && nt.notify(

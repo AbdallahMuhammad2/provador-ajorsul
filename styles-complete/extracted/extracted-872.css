@@ -1,0 +1,20 @@
+/* Extracted CSS Block 872 */
+/* Size: 417 chars */
+
+;
+class FileTransferPlugin extends AViewerPlugin {
+    constructor() {
+        super(...arguments),
+        this.enabled = !0,
+        this.toJSON = void 0,
+        this.defaultActions = {
+            exportFile: async (o, c, h) => {
+                N$2(o, c)
+            }
+        },
+        this.actions = {
+            ...this.defaultActions
+        }
+    }
+    async exportFile(o, c) {
+        c = c || o.name || 

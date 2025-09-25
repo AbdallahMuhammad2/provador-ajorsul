@@ -1,0 +1,405 @@
+/* CONTROLS STYLES */
+/* Extracted from minified bundle */
+
+.button-bar {
+    background: var(--tp-base-background-color);
+    width: fit-content;
+    width: -moz-fit-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 200;
+    padding: .25rem .5rem .5rem;
+    border-radius: .5rem;
+    pointer-events: auto;
+    box-shadow: 0 2px 4px var(--tp-base-shadow-color);
+    gap: 8px;
+    font-size: .85rem;
+    line-height: 130%;
+    font-family: Inter, "Roboto Mono", "Source Code Pro", Menlo, Courier, monospace;
+    opacity: 1;
+    transition: all .25s
+}
+
+.button-bar-button {
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    font-weight: 500;
+    padding: .35rem .5rem;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    color: var(--tp-input-foreground-color, #cccccc);
+    transition: color .25s
+}
+
+.button-bar-button:hover {
+    color: var(--tp-label-foreground-color, #eeeeee)
+}
+
+.button-bar-selected {
+    color: var(--tp-label-foreground-color, #eeeeee)
+}
+
+.button-bar-selected-box {
+    color: var(--tp-label-foreground-color, #eeeeee)
+}
+
+.button-bar>.button-bar-button:not(:last-child)::after {
+    content: .wwise-perspective {
+        perspective: 1000px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh
+    }
+
+    .wwise-wrapper {
+        position: fixed;
+        width: 0;
+        height: 0;
+        font-weight: 400
+    }
+
+    .wwise-wrapper.v-center {
+        top: 50%
+    }
+
+    .wwise-wrapper.h-center {
+        left: 50%
+    }
+
+    .wwise-wrapper.left {
+        left: 0
+    }
+
+    .wwise-wrapper.right {
+        right: 0
+    }
+
+    .wwise-wrapper.top {
+        top: 0
+    }
+
+    .wwise-wrapper.bottom {
+        bottom: 0
+    }
+
+    .wwise *.preset {
+        color: #fafafa
+    }
+
+    .wwise *.preset.ok {
+        background: rgba(45, 193, 80, .95)
+    }
+
+    .wwise *.preset.error {
+        background: rgba(190, 17, 51, .95)
+    }
+
+    .wwise *.preset.info {
+        background: rgba(40, 34, 60, .95)
+    }
+
+    .wwise *.preset.caution {
+        background: rgba(239, 128, 0, .95)
+    }
+
+    .wwise-no-scroll {
+        position: relative;
+        overflow: hidden
+    }
+
+    .wwise-overlay {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(50, 50, 50, .5)
+    }
+
+    .wwise {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        box-shadow: 1px 1px 10px rgba(150, 150, 150, .5);
+        box-sizing: border-box
+    }
+
+    .wwise.no-radius {
+        border-radius: 0
+    }
+
+    .wwise * {
+        box-sizing: border-box
+    }
+
+    .wwise .clear {
+        clear: both
+    }
+
+    .wwise>.content {
+        padding: 0;
+        margin: 0;
+        flex-grow: 1;
+        border-radius: 0 0 4px 4px;
+        background: #fff;
+        color: #333;
+        box-shadow: 0 1px 3px rgba(200, 200, 200, .5) inset
+    }
+
+    .wwise>.content.no-topbar {
+        border-radius: 4px;
+        box-shadow: none
+    }
+
+    .wwise.no-radius>.content,
+    .wwise.no-radius>.content.no-topbar {
+        border-radius: 0
+    }
+
+    .wwise .modal>.main {
+        width: 90vw;
+        max-width: 400px;
+        border-radius: 4px 4px 0 0;
+        text-align: center;
+        padding-bottom: 10px;
+        color: #fff
+    }
+
+    .wwise .modal>.main .icon {
+        display: block;
+        margin: 0 auto;
+        fill: #fff;
+        width: 100px
+    }
+
+    .wwise .modal>.main .title {
+        font-size: 30px
+    }
+
+    .wwise .modal>.main .text {
+        margin: 10px 0;
+        font-weight: 300;
+        font-size: 16px
+    }
+
+    .wwise .modal>.main.no-op {
+        border-radius: 4px
+    }
+
+    .wwise .modal>.main.ok {
+        background: #2dc150
+    }
+
+    .wwise .modal>.main.error {
+        background: #be1133
+    }
+
+    .wwise .modal>.main.info {
+        background: #28223c
+    }
+
+    .wwise .modal>.main.caution {
+        background: #ef8000
+    }
+
+    .wwise .modal>.operation .button-wrapper {
+        text-align: center;
+        margin: 30px 0 20px 0
+    }
+
+    .wwise .modal>.operation .button {
+        display: inline-block;
+        line-height: 18px;
+        padding: 8px 10px;
+        margin: 0 15px;
+        line-height: 18px;
+        width: 100px;
+        border-radius: 4px;
+        border: 1px solid #eee;
+        box-shadow: 1px 1px 3px rgba(220, 220, 220, .8);
+        color: #555;
+        transition: all ease .2s
+    }
+
+    .wwise .modal>.operation .button:hover {
+        background: #f5f5f5;
+        cursor: pointer
+    }
+
+    .wwise .modal>.operation .button.main {
+        color: #fff
+    }
+
+    .wwise .modal>.operation.ok .main {
+        background: #2dc150
+    }
+
+    .wwise .modal>.operation.ok .main:hover {
+        background: rgb(35.3571428571, 151.6428571429, 62.8571428571)
+    }
+
+    .wwise .modal>.operation.error .main {
+        background: #be1133
+    }
+
+    .wwise .modal>.operation.error .main:hover {
+        background: rgb(143.1884057971, 12.8115942029, 38.4347826087)
+    }
+
+    .wwise .modal>.operation.info .main {
+        background: #28223c
+    }
+
+    .wwise .modal>.operation.info .main:hover {
+        background: rgb(18.2978723404, 15.5531914894, 27.4468085106)
+    }
+
+    .wwise .modal>.operation.caution .main {
+        background: #ef8000
+    }
+
+    .wwise .modal>.operation.caution .main:hover {
+        background: rgb(188, 100.6861924686, 0)
+    }
+
+    .wwise .input-wrapper {
+        margin: 15px auto -15px auto
+    }
+
+    .wwise .input-wrapper .input {
+        display: block;
+        margin: 0 auto;
+        width: 95%;
+        max-width: 300px;
+        outline: none;
+        border: none;
+        background: #f3f3f3;
+        padding: 15px;
+        font-size: 16px;
+        border-radius: 5px
+    }
+
+    .wwise .input-wrapper .error {
+        width: 95%;
+        text-align: center;
+        margin-top: 10px;
+        color: red
+    }
+
+    div:has(>.wwise-wrapper) {
+        position: absolute !important
+    }
+
+    .wwise-wrapper {
+        position: absolute !important
+    }
+
+    .wwise .modal>.main {
+        padding-top: 10px
+    }
+
+    .tp-imgv {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-color: rgba(0, 0, 0, 0);
+        border-width: 0;
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+        margin: 0;
+        outline: none;
+        padding: 0
+    }
+
+    .tp-imgv {
+        background-color: var(--in-bg);
+        border-radius: var(--elm-br);
+        box-sizing: border-box;
+        color: var(--in-fg);
+        font-family: inherit;
+        height: var(--bld-us);
+        line-height: var(--bld-us);
+        min-width: 0;
+        width: 100%
+    }
+
+    .tp-imgv:hover {
+        background-color: var(--in-bg-h)
+    }
+
+    .tp-imgv:focus {
+        background-color: var(--in-bg-f)
+    }
+
+    .tp-imgv:active {
+        background-color: var(--in-bg-a)
+    }
+
+    .tp-imgv:disabled {
+        opacity: .5
+    }
+
+    :root {
+        --tp-plugin-image-dragging-color: hsla(230, 100%, 66%, 1.00)
+    }
+
+    .tp-imgv {
+        cursor: pointer;
+        display: inline-flex;
+        height: auto !important;
+        max-height: calc(var(--bld-us)*3);
+        border-radius: 4px;
+        position: relative
+    }
+
+    .tp-imgv.tp-v-disabled {
+        opacity: .5
+    }
+
+    .tp-imgv_input {
+        width: 0;
+        height: 0;
+        pointer-events: none;
+        visibility: hidden
+    }
+
+    .tp-imgv_image {
+        width: 100%;
+        height: -moz-max-content;
+        height: max-content;
+        max-height: calc(var(--bld-us)*3);
+        border: 0
+    }
+
+    .tp-imgv_image_contain {
+        -o-object-fit: contain;
+        object-fit: contain
+    }
+
+    .tp-imgv_image_cover {
+        -o-object-fit: cover;
+        object-fit: cover
+    }
+
+    .tp-imgv_area_root {
+        transition: opacity .16s ease-in-out
+    }
+
+    .tp-imgv_area_dragging {
+        border: 2px dashed var(--tp-plugin-image-dragging-color);
+        border-radius: 4px;
+        opacity: .6
+    }

@@ -1,0 +1,23 @@
+/* Extracted CSS Block 221 */
+/* Size: 1818 chars */
+
+),
+                        Sr.type = Ps,
+                        eo = xt.convert(Sr.type))),
+                        Fo && (Ao ? lt.texStorage2D(Tt.TEXTURE_2D, 1, Kn, pn.width, pn.height) : lt.texImage2D(Tt.TEXTURE_2D, 0, Kn, pn.width, pn.height, 0, to, eo, null));
+                    else if (Sr.isDataTexture)
+                        if (po.length > 0 && _o) {
+                            Ao && Fo && lt.texStorage2D(Tt.TEXTURE_2D, Io, Kn, po[0].width, po[0].height);
+                            for (let Jn = 0, Co = po.length; Jn < Co; Jn++)
+                                Pn = po[Jn],
+                                Ao ? lt.texSubImage2D(Tt.TEXTURE_2D, Jn, 0, 0, Pn.width, Pn.height, to, eo, Pn.data) : lt.texImage2D(Tt.TEXTURE_2D, Jn, Kn, Pn.width, Pn.height, 0, to, eo, Pn.data);
+                            Sr.generateMipmaps = !1
+                        } else
+                            Ao ? (Fo && lt.texStorage2D(Tt.TEXTURE_2D, Io, Kn, pn.width, pn.height),
+                            lt.texSubImage2D(Tt.TEXTURE_2D, 0, 0, 0, pn.width, pn.height, to, eo, pn.data)) : lt.texImage2D(Tt.TEXTURE_2D, 0, Kn, pn.width, pn.height, 0, to, eo, pn.data);
+                    else if (Sr.isCompressedTexture)
+                        if (Sr.isCompressedArrayTexture) {
+                            Ao && Fo && lt.texStorage3D(Tt.TEXTURE_2D_ARRAY, Io, Kn, po[0].width, po[0].height, pn.depth);
+                            for (let Jn = 0, Co = po.length; Jn < Co; Jn++)
+                                Pn = po[Jn],
+                                Sr.format !== as ? to !== null ? Ao ? lt.compressedTexSubImage3D(Tt.TEXTURE_2D_ARRAY, Jn, 0, 0, 0, Pn.width, Pn.height, pn.depth, to, Pn.data, 0, 0) : lt.compressedTexImage3D(Tt.TEXTURE_2D_ARRAY, Jn, Kn, Pn.width, Pn.height, pn.depth, 0, Pn.data, 0, 0) : console.warn(

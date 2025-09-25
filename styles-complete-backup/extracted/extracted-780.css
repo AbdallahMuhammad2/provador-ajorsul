@@ -1,0 +1,4 @@
+/* Extracted CSS Block 780 */
+/* Size: 85 chars */
+
+scale( ${St.view.fullWidth / St.view.width}, ${St.view.fullHeight / St.view.height} )

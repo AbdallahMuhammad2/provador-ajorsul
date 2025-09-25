@@ -1,0 +1,19 @@
+/* Extracted CSS Block 546 */
+/* Size: 548 chars */
+
+);
+            else {
+                console1.error(this._errMessage),
+                this._logoContainer = this._createContainerLogo(),
+                this._lContainer.appendChild(this._logoContainer);
+                const c = (o = this._viewer) === null || o === void 0 ? void 0 : o.getPlugin(LoadingScreenPlugin);
+                c && (LoadingScreenPlugin.LS_DEFAULT_LOGO = logoSvgUrl,
+                c.logoImage = logoSvgUrl)
+            }
+    }
+    unuse() {}
+    async onAdded(o) {
+        await super.onAdded(o)
+    }
+}
+const logoSvg = 

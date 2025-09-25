@@ -1,0 +1,23 @@
+/* Extracted CSS Block 1093 */
+/* Size: 690 chars */
+
+]) && (Jt = !0),
+            Jt && ht.preventScrollOnSwipe && ht.trackTouch && ut.cancelable && ut.preventDefault(),
+            Object.assign(Object.assign({}, pt), {
+                first: !1,
+                eventData: Kt,
+                swiping: !0
+            })
+        }
+        )
+    }
+      , _ = ut => {
+        d( (pt, ht) => {
+            let _t;
+            if (pt.swiping && pt.eventData) {
+                if (ut.timeStamp - pt.start < ht.swipeDuration) {
+                    _t = Object.assign(Object.assign({}, pt.eventData), {
+                        event: ut
+                    }),
+                    ht.onSwiped && ht.onSwiped(_t);
+                    const vt = ht[

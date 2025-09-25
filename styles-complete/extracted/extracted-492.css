@@ -1,0 +1,30 @@
+/* Extracted CSS Block 492 */
+/* Size: 1100 chars */
+
+)], NormalRenderPass);
+class NormalMaterial extends three_module.qBx {
+    constructor() {
+        super()
+    }
+    onBeforeRender(o, c, h, _, b) {
+        var _e, nt, it;
+        let at = b.material;
+        Array.isArray(at) && (at = at[0]),
+        this.normalMap = (_e = at == null ? void 0 : at.normalMap) !== null && _e !== void 0 ? _e : null,
+        this.bumpMap = (nt = at == null ? void 0 : at.bumpMap) !== null && nt !== void 0 ? nt : null,
+        this.bumpScale = at == null ? void 0 : at.bumpScale,
+        at != null && at.normalScale && this.normalScale.copy(at == null ? void 0 : at.normalScale),
+        this.needsUpdate = !0,
+        this.side = (it = at.side) !== null && it !== void 0 ? it : three_module.$EB
+    }
+}
+class NormalBufferPlugin extends GenericFilterPlugin {
+    passCtor(o) {
+        this._normalTarget = o.renderer.createTarget({
+            depthBuffer: !0,
+            type: three_module.ix0,
+            minFilter: three_module.hxR,
+            magFilter: three_module.hxR,
+            generateMipmaps: !1
+        }),
+        this._normalTarget.texture.name = 

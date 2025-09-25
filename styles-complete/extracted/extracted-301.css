@@ -1,0 +1,14 @@
+/* Extracted CSS Block 301 */
+/* Size: 243 chars */
+
+
+    }),
+    () => {
+        d.position.copy(it),
+        d.geometry && d.geometry.translate(-_.x, -_.y, -_.z),
+        d.children.forEach(at => {
+            at.position.sub(_)
+        }
+        ),
+        d.dispatchEvent({
+            type: 

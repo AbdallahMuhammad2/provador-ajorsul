@@ -1,0 +1,35 @@
+/* Extracted CSS Block 389 */
+/* Size: 770 chars */
+
+
+}
+const _identityMatrix = new three_module.kn4;
+class GLTFParser {
+    constructor(o={}, c={}) {
+        this.json = o,
+        this.extensions = {},
+        this.plugins = {},
+        this.options = c,
+        this.cache = new GLTFRegistry,
+        this.associations = new Map,
+        this.primitiveCache = {},
+        this.nodeCache = {},
+        this.meshCache = {
+            refs: {},
+            uses: {}
+        },
+        this.cameraCache = {
+            refs: {},
+            uses: {}
+        },
+        this.lightCache = {
+            refs: {},
+            uses: {}
+        },
+        this.sourceCache = {},
+        this.textureCache = {},
+        this.nodeNamesUsed = {};
+        let h = !1
+          , _ = !1
+          , b = -1;
+        typeof navigator < 

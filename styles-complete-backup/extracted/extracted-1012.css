@@ -1,0 +1,18 @@
+/* Extracted CSS Block 1012 */
+/* Size: 671 chars */
+
+);
+            {
+                const b = this._canvas.captureStream(this.stepMode ? 0 : this._options.frameRate)
+                  , _e = (c = b.getVideoTracks()) === null || c === void 0 ? void 0 : c[0];
+                this._track = _e,
+                this._recorder = new window.MediaRecorder(b,_),
+                this._recorder.onstop = this._onstop,
+                this._recorder.ondataavailable = this._ondataavailable,
+                this._recorder.onerror = this._onerror,
+                this._recorder.onresume = this._onresume,
+                this._recorder.onstart = this._onstart
+            }
+        }
+        this.dispatchEvent({
+            type: 

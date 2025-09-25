@@ -1,0 +1,33 @@
+/* Extracted CSS Block 744 */
+/* Size: 1074 chars */
+
+
+}
+)(BufferViewTarget || (BufferViewTarget = {}));
+class WriterContext {
+    constructor(o, c, h) {
+        this._doc = void 0,
+        this.jsonDoc = void 0,
+        this.options = void 0,
+        this.accessorIndexMap = new Map,
+        this.animationIndexMap = new Map,
+        this.bufferIndexMap = new Map,
+        this.cameraIndexMap = new Map,
+        this.skinIndexMap = new Map,
+        this.materialIndexMap = new Map,
+        this.meshIndexMap = new Map,
+        this.nodeIndexMap = new Map,
+        this.imageIndexMap = new Map,
+        this.textureDefIndexMap = new Map,
+        this.textureInfoDefMap = new Map,
+        this.samplerDefIndexMap = new Map,
+        this.sceneIndexMap = new Map,
+        this.imageBufferViews = [],
+        this.otherBufferViews = new Map,
+        this.otherBufferViewsIndexMap = new Map,
+        this.extensionData = {},
+        this.bufferURIGenerator = void 0,
+        this.imageURIGenerator = void 0,
+        this.logger = void 0,
+        this._accessorUsageMap = new Map,
+        this.accessorUsageGroupedByParent = new Set([

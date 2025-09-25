@@ -1,0 +1,18 @@
+/* Extracted CSS Block 607 */
+/* Size: 807 chars */
+
+],!1)
+    }
+    async onAdded(o) {
+        var c, h, _, b;
+        (h = (c = o.getManager()) === null || c === void 0 ? void 0 : c.importer) === null || h === void 0 || h.Importers.push(this._importer1),
+        (b = (_ = o.getManager()) === null || _ === void 0 ? void 0 : _.importer) === null || b === void 0 || b.Importers.push(this._importer2)
+    }
+    async onDispose(o) {}
+    async onRemove(o) {
+        var c, h;
+        !((h = (c = o.getManager()) === null || c === void 0 ? void 0 : c.importer) === null || h === void 0) && h.Importers && (o.getManager().importer.Importers.splice(o.getManager().importer.Importers.indexOf(this._importer1), 1),
+        o.getManager().importer.Importers.splice(o.getManager().importer.Importers.indexOf(this._importer2), 1))
+    }
+}
+ObjMtlLoadPlugin.PluginType = 

@@ -1,0 +1,10 @@
+{
+  "name": "Emerald Green",
+  "type": "DiamondMaterial",
+  "roughness": 0.0,
+  "metallic": 0.0,
+  "ior": 1.57,
+  "transmission": 0.8,
+  "opacity": 1.0,
+  "color": [0.1, 0.7, 0.3]
+}

@@ -1,0 +1,23 @@
+/* Extracted CSS Block 513 */
+/* Size: 294 chars */
+
+
+#if SSCS_ENABLED
+
+    uniform float sscsIntensity;
+    uniform float sscsRadius;
+    uniform float sscsTolerance;
+
+    ${basicHelpers}
+    
+    #define THREE_PACKING_INCLUDED
+    ${cameraHelpers}
+    
+    ${unpackGbuffer}
+    ${randomHelpers}
+    
+    ${ssrt}
+
+#endif
+            
+            

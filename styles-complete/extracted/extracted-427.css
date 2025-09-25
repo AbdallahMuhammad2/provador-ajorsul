@@ -1,0 +1,13 @@
+/* Extracted CSS Block 427 */
+/* Size: 297 chars */
+
+,
+            passObject: new RenderPass2(this,pt),
+            update() {
+                const vt = this.passObject;
+                vt.scene = ht.scene.modelObject,
+                vt.camera = ht.scene.renderCamera.cameraObject
+            }
+        };
+        const _t = {
+            passId: 

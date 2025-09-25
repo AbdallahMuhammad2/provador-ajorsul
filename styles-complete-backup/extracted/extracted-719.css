@@ -1,0 +1,14 @@
+/* Extracted CSS Block 719 */
+/* Size: 329 chars */
+
+ && (_.name = o.type),
+        c.cameras.push(_) - 1
+    }
+    processAnimation(o, c) {
+        const h = this.json
+          , _ = this.nodeMap;
+        h.animations || (h.animations = []);
+        try {
+            o = GLTFExporter.Utils.mergeMorphTargetTracks(o.clone(), c)
+        } catch (it) {
+            if (console.warn(

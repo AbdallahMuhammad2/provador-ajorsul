@@ -1,0 +1,18 @@
+/* Extracted CSS Block 921 */
+/* Size: 355 chars */
+
+,
+                            camera: o
+                        })
+                    } catch (_) {
+                        console.error(_),
+                        o.enabled = !1
+                    }
+                }
+        }
+        ,
+        this.enabled = d
+    }
+    async onAdded(d) {
+        await super.onAdded(d),
+        d.addEventListener(

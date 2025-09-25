@@ -1,0 +1,12 @@
+/* Extracted CSS Block 899 */
+/* Size: 495 chars */
+
+])
+            for (const c of this.variations[o])
+                CustomContextGrid.Create(VariationConfiguratorGridUiPlugin.PluginType, this.utils.getTitle(c), 5, 20, 0, c.items.map( (h, _) => ({
+                    id: h,
+                    image: this.utils.getItemIcon(c, _, o),
+                    onClick: async b => this.applyVariation(c, b, o, !1),
+                    tooltip: this.utils.getItemTitle(c, _)
+                })), (h, _) => tippy_esm(h, {
+                    placement: 

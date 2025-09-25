@@ -1,0 +1,22 @@
+/* Extracted CSS Block 953 */
+/* Size: 502 chars */
+
+) && (St.uiRef = void 0,
+        St.uiRefresh = void 0),
+        At = St.uiRef,
+        At || (c.appendUiObject({
+            uiConfig: St
+        }, at),
+        At = St.uiRef),
+        At && tweakPaneMoveToParentIndex(At, at, ht++) && c.appendUiObject({
+            uiConfig: St
+        }, at)
+    }
+    let _t = at.children;
+    for (; _t.length > ht; ) {
+        const St = _t[_t.length - 1];
+        at.remove(St),
+        St.dispose(),
+        _t = at.children
+    }
+    at.controller_.props.set(

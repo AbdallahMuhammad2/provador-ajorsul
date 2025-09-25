@@ -1,0 +1,19 @@
+/* Extracted CSS Block 700 */
+/* Size: 554 chars */
+
+)
+    }
+    togglePlaceholders() {
+        var d;
+        this._getPlaceholders().forEach(o => {
+            o.material && (o.material.opacity = Math.min(.75, o.material.opacity || 1),
+            o.material.transparent = !0),
+            o.visible = !o.visible
+        }
+        ),
+        (d = this._viewer) === null || d === void 0 || d.setDirty()
+    }
+    importStageViewerConfig() {
+        var d, o, c;
+        const h = ((d = this.modelRef) === null || d === void 0 ? void 0 : d.modelObject).__importedViewerConfig;
+        if (!h || typeof h != 

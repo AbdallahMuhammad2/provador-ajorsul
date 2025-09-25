@@ -1,0 +1,17 @@
+/* Extracted CSS Block 995 */
+/* Size: 615 chars */
+
+,
+                value: async () => {
+                    var o, c;
+                    const h = (c = (o = this._viewer) === null || o === void 0 ? void 0 : o.getPlugin(AssetManagerPlugin)) === null || c === void 0 ? void 0 : c.storage;
+                    if (h instanceof Storage)
+                        h.clear();
+                    else if (h instanceof Cache) {
+                        const _ = await h.keys();
+                        await Promise.all(_.map(async b => h.delete(b)))
+                    }
+                    localStorage.clear()
+                }
+            }, {
+                label: 

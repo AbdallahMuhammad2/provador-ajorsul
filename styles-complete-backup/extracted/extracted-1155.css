@@ -1,0 +1,17 @@
+/* Extracted CSS Block 1155 */
+/* Size: 961 chars */
+
+, bt)
+            }
+            const b = await ((pt = (ut = (at = this._viewer) == null ? void 0 : at.getManager()) == null ? void 0 : ut.importer) == null ? void 0 : pt.importSinglePath(c, {
+                forceImport: !0
+            }));
+            if (b)
+                if (this._currentRingUrl === c) {
+                    _ && (this._ringTryonPlugin.modelScaleFactor = _.modelScaleFactor,
+                    this._ringTryonPlugin.modelPosition = new __webpackgi_exports__Vector3(_.modelPosition.x,_.modelPosition.y,_.modelPosition.z),
+                    this._ringTryonPlugin.modelRotation = new __webpackgi_exports__Vector3(_.modelRotation.x,_.modelRotation.y,_.modelRotation.z));
+                    const bt = b.modelObject;
+                    bt.userData.finger = this._fingerIndex,
+                    (ht = this._viewer) == null || ht.scene.modelRoot.add(bt);
+                    const St = (_t = this._viewer) == null ? void 0 : _t.getPlugin(

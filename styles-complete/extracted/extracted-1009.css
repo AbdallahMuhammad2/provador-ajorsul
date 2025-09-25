@@ -1,0 +1,15 @@
+/* Extracted CSS Block 1009 */
+/* Size: 540 chars */
+
+,
+            this._recorder && this._currentRecording.length > 0) {
+                const _e = new Blob(this._currentRecording,{
+                    type: this._options.mimeType
+                });
+                (b = this._recordingCallback) === null || b === void 0 || b.call(this, _e)
+            } else
+                this._currentImages.length > 0 && (this._writeImages([...this._currentImages]),
+                this._currentImages = []);
+            this._recorder = void 0,
+            this.dispatchEvent({
+                type: 

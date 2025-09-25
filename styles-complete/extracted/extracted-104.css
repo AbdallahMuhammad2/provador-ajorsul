@@ -1,0 +1,13 @@
+/* Extracted CSS Block 104 */
+/* Size: 438 chars */
+
+)),
+                    this.textView_ = Rt.textView,
+                    Tr.appendChild(this.textView_.element),
+                    this.element.appendChild(Tr),
+                    Rt.alphaViews) {
+                        this.alphaViews_ = {
+                            palette: Rt.alphaViews.palette,
+                            text: Rt.alphaViews.text
+                        };
+                        const $r = wt.createElement(

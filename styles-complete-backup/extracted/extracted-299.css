@@ -1,0 +1,18 @@
+/* Extracted CSS Block 299 */
+/* Size: 603 chars */
+
+];
+    for (let Pt = 0, It = it.length; Pt < It; Pt++) {
+        const Dt = it[Pt]
+          , Gt = d.attributes[Dt];
+        at[Dt] = new three_module.THS(new Gt.array.constructor(Gt.count * Gt.itemSize),Gt.itemSize,Gt.normalized);
+        const Bt = d.morphAttributes[Dt];
+        Bt && (ut[Dt] = new three_module.THS(new Bt.array.constructor(Bt.count * Bt.itemSize),Bt.itemSize,Bt.normalized))
+    }
+    const vt = .5 * o
+      , bt = Math.log10(1 / o)
+      , St = Math.pow(10, bt)
+      , At = vt * St;
+    for (let Pt = 0; Pt < _e; Pt++) {
+        const It = _ ? _.getX(Pt) : Pt;
+        let Dt = 

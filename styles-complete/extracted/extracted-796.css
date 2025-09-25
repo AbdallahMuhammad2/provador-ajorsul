@@ -1,0 +1,18 @@
+/* Extracted CSS Block 796 */
+/* Size: 708 chars */
+
+);
+            const d = HIT_ANGLE_DEG * Math.PI / 180
+              , o = this.placeOnWall ? void 0 : new window.XRRay(new DOMPoint(0,0,0),{
+                x: 0,
+                y: -Math.sin(d),
+                z: -Math.cos(d)
+            });
+            this._viewer.renderer.useTotalFrameCount = !0,
+            this._viewer.resize(),
+            (async () => {
+                var c, h;
+                if (this._xrSession) {
+                    this._touchInputHelper.placeOnWall = this.placeOnWall,
+                    await this._touchInputHelper.setSession(this._xrSession, this._viewer.scene.modelRoot, this._placementBox);
+                    const _ = await this._xrSession.requestReferenceSpace(

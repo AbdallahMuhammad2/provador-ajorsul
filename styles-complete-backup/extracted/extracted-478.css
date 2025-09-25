@@ -1,0 +1,11 @@
+/* Extracted CSS Block 478 */
+/* Size: 361 chars */
+
+, this._drag.bind(this))
+    }
+    _loaderCreate({loader: d}) {
+        d.isGLTFLoader2 && d.register(o => new GLTFTimelineMarkersExtensionImport(o,this))
+    }
+    async onAdded(d) {
+        var o, c, h, _, b, _e;
+        (c = (o = d.getPlugin(AssetManagerPlugin)) === null || o === void 0 ? void 0 : o.importer) === null || c === void 0 || c.addEventListener(

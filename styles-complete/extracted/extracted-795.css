@@ -1,0 +1,10 @@
+/* Extracted CSS Block 795 */
+/* Size: 282 chars */
+
+in b && b.requestLightProbe({
+                reflectionFormat: b.preferredReflectionFormat
+            }).then(_e => {
+                h = new SessionLightProbe(this,o,_e,c, () => {
+                    _ = !0,
+                    this.dispatchEvent({
+                        type: 

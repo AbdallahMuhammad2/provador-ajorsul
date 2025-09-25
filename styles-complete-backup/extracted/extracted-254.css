@@ -1,0 +1,43 @@
+/* Extracted CSS Block 254 */
+/* Size: 2431 chars */
+
+:
+                    Ct = new K0;
+                    break;
+                default:
+                    Ct = new Mo
+                }
+                if (Ct.uuid = tt.uuid,
+                tt.name !== void 0 && (Ct.name = tt.name),
+                tt.matrix !== void 0 ? (Ct.matrix.fromArray(tt.matrix),
+                tt.matrixAutoUpdate !== void 0 && (Ct.matrixAutoUpdate = tt.matrixAutoUpdate),
+                Ct.matrixAutoUpdate && Ct.matrix.decompose(Ct.position, Ct.quaternion, Ct.scale)) : (tt.position !== void 0 && Ct.position.fromArray(tt.position),
+                tt.rotation !== void 0 && Ct.rotation.fromArray(tt.rotation),
+                tt.quaternion !== void 0 && Ct.quaternion.fromArray(tt.quaternion),
+                tt.scale !== void 0 && Ct.scale.fromArray(tt.scale)),
+                tt.up !== void 0 && Ct.up.fromArray(tt.up),
+                tt.castShadow !== void 0 && (Ct.castShadow = tt.castShadow),
+                tt.receiveShadow !== void 0 && (Ct.receiveShadow = tt.receiveShadow),
+                tt.shadow && (tt.shadow.bias !== void 0 && (Ct.shadow.bias = tt.shadow.bias),
+                tt.shadow.normalBias !== void 0 && (Ct.shadow.normalBias = tt.shadow.normalBias),
+                tt.shadow.radius !== void 0 && (Ct.shadow.radius = tt.shadow.radius),
+                tt.shadow.mapSize !== void 0 && Ct.shadow.mapSize.fromArray(tt.shadow.mapSize),
+                tt.shadow.camera !== void 0 && (Ct.shadow.camera = this.parseObject(tt.shadow.camera))),
+                tt.visible !== void 0 && (Ct.visible = tt.visible),
+                tt.frustumCulled !== void 0 && (Ct.frustumCulled = tt.frustumCulled),
+                tt.renderOrder !== void 0 && (Ct.renderOrder = tt.renderOrder),
+                tt.userData !== void 0 && (Ct.userData = tt.userData),
+                tt.layers !== void 0 && (Ct.layers.mask = tt.layers),
+                tt.children !== void 0) {
+                    const qt = tt.children;
+                    for (let Xt = 0; Xt < qt.length; Xt++)
+                        Ct.add(this.parseObject(qt[Xt], lt, mt, ft, xt))
+                }
+                if (tt.animations !== void 0) {
+                    const qt = tt.animations;
+                    for (let Xt = 0; Xt < qt.length; Xt++) {
+                        const Zt = qt[Xt];
+                        Ct.animations.push(xt[Zt])
+                    }
+                }
+                if (tt.type === 

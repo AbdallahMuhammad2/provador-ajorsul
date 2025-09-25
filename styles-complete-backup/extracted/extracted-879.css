@@ -1,0 +1,21 @@
+/* Extracted CSS Block 879 */
+/* Size: 709 chars */
+
+))
+    }
+    constructor(d=document.body, o=!1) {
+        super(d, o),
+        this.canvasUp = !1,
+        this._togglePreview = this._togglePreview.bind(this),
+        this.generateCode = this.generateCode.bind(this)
+    }
+    async onAdded(d) {
+        var o, c, h, _, b, _e;
+        this.parent = this.wrapper,
+        await super.onAdded(d),
+        this._addWrapper(),
+        this._togglePreview(),
+        this.deserialize = this.deserialize.bind(this),
+        this.addView = this.addView.bind(this),
+        this.deleteView = this.deleteView.bind(this),
+        (c = (o = this._viewer) === null || o === void 0 ? void 0 : o.getPlugin(CameraViewPlugin)) === null || c === void 0 || c.addEventListener(

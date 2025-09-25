@@ -1,0 +1,13 @@
+/* Extracted CSS Block 1059 */
+/* Size: 209 chars */
+
+).pop() == o.name)
+    }
+    async onAdded(o) {
+        await super.onAdded(o)
+    }
+    loadPresets(o, c) {
+        this.presets = o,
+        this.basePath = c,
+        this.dispatchEvent({
+            type: 

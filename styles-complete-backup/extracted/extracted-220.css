@@ -1,0 +1,26 @@
+/* Extracted CSS Block 220 */
+/* Size: 1071 chars */
+
+);
+                        continue
+                    }
+                    if (cn.autoUpdate === !1 && cn.needsUpdate === !1)
+                        continue;
+                    ft.copy(cn.mapSize);
+                    const Yr = cn.getFrameExtents();
+                    if (ft.multiply(Yr),
+                    xt.copy(cn.mapSize),
+                    (ft.x > jt || ft.y > jt) && (ft.x > jt && (xt.x = Math.floor(jt / Yr.x),
+                    ft.x = xt.x * Yr.x,
+                    cn.mapSize.x = xt.x),
+                    ft.y > jt && (xt.y = Math.floor(jt / Yr.y),
+                    ft.y = xt.y * Yr.y,
+                    cn.mapSize.y = xt.y)),
+                    cn.map === null || Hr === !0 || _n === !0) {
+                        const sn = this.type !== _t ? {
+                            minFilter: fn,
+                            magFilter: fn
+                        } : {};
+                        cn.map !== null && cn.map.dispose(),
+                        cn.map = new Rs(ft.x,ft.y,sn),
+                        cn.map.texture.name = Bn.name + 

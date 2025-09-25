@@ -1,0 +1,19 @@
+/* Extracted CSS Block 551 */
+/* Size: 963 chars */
+
+, ht => {
+            var _t, vt, bt, St, At;
+            if (!((_t = ht.material) === null || _t === void 0) && _t.isDiamondMaterial) {
+                const Et = ht.material
+                  , Pt = ht.mesh || ht.object;
+                if (Pt.geometry && !(!((vt = this._normalCapture) === null || vt === void 0) && vt.hasCapturedNormalMap(Pt.geometry))) {
+                    const Dt = (At = (St = (bt = Et == null ? void 0 : Et.userData) === null || bt === void 0 ? void 0 : bt.gltfExtensions) === null || St === void 0 ? void 0 : St[DiamondPlugin.DIAMOND_GLTF_EXTENSION]) !== null && At !== void 0 ? At : {};
+                    Dt.cacheKey === void 0 && !Pt.userData._diamondCacheKey && (Et != null && Et.name) && (Dt.cacheKey = Et.name),
+                    this.prepareDiamondMesh(Pt, Dt)
+                }
+                const It = this.getEnvMaps();
+                Et.envMaps = It
+            }
+        }
+        ),
+        o.scene.addEventListener(

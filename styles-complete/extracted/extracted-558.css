@@ -1,0 +1,16 @@
+/* Extracted CSS Block 558 */
+/* Size: 584 chars */
+
+)) === null || c === void 0 ? void 0 : c.postFrameConvergedRecordingDelta();
+        if (b && b > 0 && (_ = b),
+        b !== 0 && (_ *= 1e3,
+        !(_ <= 0 || (this._updaters.forEach(_e => {
+            let nt = _;
+            _e.time + nt < 0 && (nt = -_e.time),
+            _e.time += nt,
+            Math.abs(nt) > .001 && _e.u(nt)
+        }
+        ),
+        this._scrollAnimationState < .001 ? this._scrollAnimationState = 0 : this._scrollAnimationState *= 1 - this.scrollAnimationDamping,
+        this._fadeDisabled)))) {
+            const _e = this._viewer.getPluginByType(

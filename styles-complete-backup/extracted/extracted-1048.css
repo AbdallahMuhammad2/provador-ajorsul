@@ -1,0 +1,21 @@
+/* Extracted CSS Block 1048 */
+/* Size: 564 chars */
+
+
+              , o = B$2(d)
+              , c = new Image;
+            c.src = o;
+            const h = new three_module.gPd(c);
+            c.onload = () => {
+                this._svgTexture === h && (this._svgTexture.needsUpdate = !0,
+                this._viewer.scene.background = this._svgTexture,
+                this._viewer.setDirty())
+            }
+            ,
+            this._svgTexture && this._svgTexture.dispose(),
+            this._svgTexture = h
+        }
+    }
+    async onAdded(d) {
+        await super.onAdded(d),
+        d.addEventListener(

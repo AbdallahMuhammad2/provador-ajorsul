@@ -1,0 +1,15 @@
+/* Extracted CSS Block 1014 */
+/* Size: 215 chars */
+
+,
+            this._onstart({})
+        }
+        ).catch(b => {
+            this._onerror({
+                detail: b
+            })
+        }
+        )
+    }
+    async requestFrame() {
+        if (this._state !== 

@@ -1,0 +1,8 @@
+/* Extracted CSS Block 1053 */
+/* Size: 285 chars */
+
+, c => {
+            this.transformControls && (this.enabled ? c.object ? this.transformControls.attach(c.object) : this.transformControls.detach() : this.transformControls.object && this.transformControls.detach())
+        }
+        ),
+        this.transformControls.addEventListener(

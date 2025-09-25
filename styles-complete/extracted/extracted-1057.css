@@ -1,0 +1,1986 @@
+/* Extracted CSS Block 1057 */
+/* Size: 125674 chars */
+
+) : void 0
+    }),
+    await it.addPlugin(AssetManagerLoadingBarPlugin, !0),
+    await addBasePlugins(it, {
+        ground: c,
+        bloom: h,
+        depthTonemap: _,
+        enableDrop: _e,
+        importPopup: b
+    }),
+    await it.getOrAddPlugin(DiamondPlugin),
+    it
+}
+var __webpackgi_exports__AAssetManagerProcessStatePlugin = __webpackgi_exports__.CZu
+  , __webpackgi_exports__ACESFilmicToneMapping = __webpackgi_exports__.FV
+  , __webpackgi_exports__ACameraControlsPlugin = __webpackgi_exports__.oK2
+  , __webpackgi_exports__ACanvasRecorder = __webpackgi_exports__.SLH
+  , __webpackgi_exports__ALL_WEBGI_EXTENSIONS = __webpackgi_exports__.yo9
+  , __webpackgi_exports__AMaterialManager = __webpackgi_exports__.YJd
+  , __webpackgi_exports__ARPlacementBox = __webpackgi_exports__.qnC
+  , __webpackgi_exports__ARPlugin = __webpackgi_exports__.TtJ
+  , __webpackgi_exports__ARTouchInputHelper = __webpackgi_exports__.rUH
+  , __webpackgi_exports__AShaderMaterial2 = __webpackgi_exports__.oAs
+  , __webpackgi_exports__AViewerPlugin = __webpackgi_exports__.$fV
+  , __webpackgi_exports__AWSClientPlugin = __webpackgi_exports__.upe
+  , __webpackgi_exports__AddBlendPass = __webpackgi_exports__.yPJ
+  , __webpackgi_exports__AddEquation = __webpackgi_exports__.gO9
+  , __webpackgi_exports__AddOperation = __webpackgi_exports__.XrR
+  , __webpackgi_exports__AdditiveAnimationBlendMode = __webpackgi_exports__.DAe
+  , __webpackgi_exports__AdditiveBlending = __webpackgi_exports__.EZo
+  , __webpackgi_exports__AlphaFormat = __webpackgi_exports__.wrO
+  , __webpackgi_exports__AlwaysCompare = __webpackgi_exports__.FFZ
+  , __webpackgi_exports__AlwaysDepth = __webpackgi_exports__.lGu
+  , __webpackgi_exports__AlwaysStencilFunc = __webpackgi_exports__.sKt
+  , __webpackgi_exports__AmbientLight = __webpackgi_exports__.$p8
+  , __webpackgi_exports__AmbientLight2 = __webpackgi_exports__.nJr
+  , __webpackgi_exports__AnimationAction = __webpackgi_exports__.pPE
+  , __webpackgi_exports__AnimationClip = __webpackgi_exports__.tz3
+  , __webpackgi_exports__AnimationLoader = __webpackgi_exports__.kEx
+  , __webpackgi_exports__AnimationMixer = __webpackgi_exports__.Iw4
+  , __webpackgi_exports__AnimationObjectGroup = __webpackgi_exports__.P5j
+  , __webpackgi_exports__AnimationUtils = __webpackgi_exports__.AKb
+  , __webpackgi_exports__AnisotropyPlugin = __webpackgi_exports__.GXy
+  , __webpackgi_exports__ArcCurve = __webpackgi_exports__.ibB
+  , __webpackgi_exports__ArrayCamera = __webpackgi_exports__.nZQ
+  , __webpackgi_exports__ArrowHelper = __webpackgi_exports__.E0M
+  , __webpackgi_exports__AssetExporter = __webpackgi_exports__.GLG
+  , __webpackgi_exports__AssetExporterPlugin = __webpackgi_exports__.$VP
+  , __webpackgi_exports__AssetImporter = __webpackgi_exports__.NeI
+  , __webpackgi_exports__AssetManagerBasicPopupPlugin = __webpackgi_exports__.rzc
+  , __webpackgi_exports__AssetManagerLoadingBarPlugin = __webpackgi_exports__.Kiu
+  , __webpackgi_exports__AssetManagerPlugin = __webpackgi_exports__.XDT
+  , __webpackgi_exports__AsyncCompress = __webpackgi_exports__.XiN
+  , __webpackgi_exports__AsyncDecompress = __webpackgi_exports__._I9
+  , __webpackgi_exports__AsyncDeflate = __webpackgi_exports__.ShE
+  , __webpackgi_exports__AsyncGunzip = __webpackgi_exports__.OXP
+  , __webpackgi_exports__AsyncGzip = __webpackgi_exports__.JZ8
+  , __webpackgi_exports__AsyncInflate = __webpackgi_exports__.gS4
+  , __webpackgi_exports__AsyncUnzipInflate = __webpackgi_exports__.eFx
+  , __webpackgi_exports__AsyncUnzlib = __webpackgi_exports__.peq
+  , __webpackgi_exports__AsyncZipDeflate = __webpackgi_exports__.hw0
+  , __webpackgi_exports__AsyncZlib = __webpackgi_exports__._DG
+  , __webpackgi_exports__Audio = __webpackgi_exports__.fP5
+  , __webpackgi_exports__AudioAnalyser = __webpackgi_exports__.CwR
+  , __webpackgi_exports__AudioContext = __webpackgi_exports__.UtX
+  , __webpackgi_exports__AudioListener = __webpackgi_exports__.Pf$
+  , __webpackgi_exports__AudioLoader = __webpackgi_exports__.Am1
+  , __webpackgi_exports__AxesHelper = __webpackgi_exports__.IzY
+  , __webpackgi_exports__BackSide = __webpackgi_exports__.hsX
+  , __webpackgi_exports__BackgroundPresetGroup = __webpackgi_exports__.XFr
+  , __webpackgi_exports__BaseGroundPlugin = __webpackgi_exports__.Eh1
+  , __webpackgi_exports__BaseRenderer = __webpackgi_exports__.RJS
+  , __webpackgi_exports__BasicDepthPacking = __webpackgi_exports__.Rkk
+  , __webpackgi_exports__BasicShadowMap = __webpackgi_exports__.bTm
+  , __webpackgi_exports__BeringRingAnimation = __webpackgi_exports__.Otl
+  , __webpackgi_exports__BlobLoader = __webpackgi_exports__.pOj
+  , __webpackgi_exports__BloomPlugin = __webpackgi_exports__.jg0
+  , __webpackgi_exports__Bone = __webpackgi_exports__.$Kf
+  , __webpackgi_exports__BooleanKeyframeTrack = __webpackgi_exports__.YOZ
+  , __webpackgi_exports__Box2 = __webpackgi_exports__.UtB
+  , __webpackgi_exports__Box3 = __webpackgi_exports__.NRn
+  , __webpackgi_exports__Box3B = __webpackgi_exports__.DYt
+  , __webpackgi_exports__Box3Helper = __webpackgi_exports__.BND
+  , __webpackgi_exports__BoxGeometry = __webpackgi_exports__.iNn
+  , __webpackgi_exports__BoxHelper = __webpackgi_exports__.IWo
+  , __webpackgi_exports__BoxSelectionWidget = __webpackgi_exports__.SYd
+  , __webpackgi_exports__BufferAttribute = __webpackgi_exports__.THS
+  , __webpackgi_exports__BufferGeometry = __webpackgi_exports__.LoY
+  , __webpackgi_exports__BufferGeometryLoader = __webpackgi_exports__.SUR
+  , __webpackgi_exports__ByteType = __webpackgi_exports__.tJf
+  , __webpackgi_exports__CSGPluginBSP = __webpackgi_exports__.Y3u
+  , __webpackgi_exports__CSGPluginBVH = __webpackgi_exports__.poD
+  , __webpackgi_exports__CSGPluginBase = __webpackgi_exports__.gaG
+  , __webpackgi_exports__CSS3DRendererPlugin = __webpackgi_exports__.z0x
+  , __webpackgi_exports__Cache = __webpackgi_exports__.l2R
+  , __webpackgi_exports__Camera = __webpackgi_exports__.i7d
+  , __webpackgi_exports__CameraController = __webpackgi_exports__.mL7
+  , __webpackgi_exports__CameraHelper = __webpackgi_exports__.WTh
+  , __webpackgi_exports__CameraUiPlugin = __webpackgi_exports__.l5h
+  , __webpackgi_exports__CameraView = __webpackgi_exports__.hzv
+  , __webpackgi_exports__CameraViewControlPlugin = __webpackgi_exports__.f_U
+  , __webpackgi_exports__CameraViewPlugin = __webpackgi_exports__.sxt
+  , __webpackgi_exports__CannonPhysicsPlugin = __webpackgi_exports__.af0
+  , __webpackgi_exports__CanvasMediaRecorder = __webpackgi_exports__.Phj
+  , __webpackgi_exports__CanvasRecorder = __webpackgi_exports__.p5D
+  , __webpackgi_exports__CanvasRecorderPlugin = __webpackgi_exports__.CS6
+  , __webpackgi_exports__CanvasSnipper = __webpackgi_exports__.aKT
+  , __webpackgi_exports__CanvasSnipperPlugin = __webpackgi_exports__.RzO
+  , __webpackgi_exports__CanvasTexture = __webpackgi_exports__.GOR
+  , __webpackgi_exports__CapsuleGeometry = __webpackgi_exports__.qU7
+  , __webpackgi_exports__CatmullRomCurve3 = __webpackgi_exports__.B6O
+  , __webpackgi_exports__ChromaticAberrationPlugin = __webpackgi_exports__.z1d
+  , __webpackgi_exports__CineonToneMapping = __webpackgi_exports__.nNL
+  , __webpackgi_exports__CircleGeometry = __webpackgi_exports__.tcD
+  , __webpackgi_exports__ClampToEdgeWrapping = __webpackgi_exports__.ghU
+  , __webpackgi_exports__ClearcoatTintPlugin = __webpackgi_exports__.Dk8
+  , __webpackgi_exports__Clock = __webpackgi_exports__.zD7
+  , __webpackgi_exports__Color = __webpackgi_exports__.Q1f
+  , __webpackgi_exports__ColorKeyframeTrack = __webpackgi_exports__.T6I
+  , __webpackgi_exports__ColorManagement = __webpackgi_exports__.ppV
+  , __webpackgi_exports__CombinedPostPlugin = __webpackgi_exports__.FvD
+  , __webpackgi_exports__Compress = __webpackgi_exports__.n3b
+  , __webpackgi_exports__CompressedArrayTexture = __webpackgi_exports__.iOZ
+  , __webpackgi_exports__CompressedCubeTexture = __webpackgi_exports__.c5h
+  , __webpackgi_exports__CompressedTexture = __webpackgi_exports__.YSM
+  , __webpackgi_exports__CompressedTextureLoader = __webpackgi_exports__.YRT
+  , __webpackgi_exports__ConeGeometry = __webpackgi_exports__.qFE
+  , __webpackgi_exports__ContactShadowGroundPlugin = __webpackgi_exports__.fCM
+  , __webpackgi_exports__CoreEditorApp = __webpackgi_exports__.afc
+  , __webpackgi_exports__CoreViewerApp = __webpackgi_exports__.hLJ
+  , __webpackgi_exports__CubeCamera = __webpackgi_exports__.F1T
+  , __webpackgi_exports__CubeNormalsCaptureHelper = __webpackgi_exports__.SXA
+  , __webpackgi_exports__CubeReflectionMapping = __webpackgi_exports__.hy7
+  , __webpackgi_exports__CubeRefractionMapping = __webpackgi_exports__.xFO
+  , __webpackgi_exports__CubeTexture = __webpackgi_exports__.b4q
+  , __webpackgi_exports__CubeTextureLoader = __webpackgi_exports__.ScU
+  , __webpackgi_exports__CubeUVReflectionMapping = __webpackgi_exports__.Om
+  , __webpackgi_exports__CubicBezierCurve = __webpackgi_exports__.Z0B
+  , __webpackgi_exports__CubicBezierCurve3 = __webpackgi_exports__.s0K
+  , __webpackgi_exports__CubicInterpolant = __webpackgi_exports__.Pdi
+  , __webpackgi_exports__CullFaceBack = __webpackgi_exports__.Vb5
+  , __webpackgi_exports__CullFaceFront = __webpackgi_exports__.Jnc
+  , __webpackgi_exports__CullFaceFrontBack = __webpackgi_exports__.ywQ
+  , __webpackgi_exports__CullFaceNone = __webpackgi_exports__.WNZ
+  , __webpackgi_exports__Curve = __webpackgi_exports__.Ipv
+  , __webpackgi_exports__CurvePath = __webpackgi_exports__.jGm
+  , __webpackgi_exports__CustomAnimationHelper = __webpackgi_exports__.Ogy
+  , __webpackgi_exports__CustomAnimationHelperPlugin = __webpackgi_exports__.xLk
+  , __webpackgi_exports__CustomBlending = __webpackgi_exports__.bCz
+  , __webpackgi_exports__CustomBumpMapPlugin = __webpackgi_exports__.bGG
+  , __webpackgi_exports__CustomToneMapping = __webpackgi_exports__.g7M
+  , __webpackgi_exports__CylinderGeometry = __webpackgi_exports__.Ho_
+  , __webpackgi_exports__Cylindrical = __webpackgi_exports__.hjs
+  , __webpackgi_exports__DRACOLoader2 = __webpackgi_exports__.Zn9
+  , __webpackgi_exports__Damper = __webpackgi_exports__.AHf
+  , __webpackgi_exports__Data3DTexture = __webpackgi_exports__.dYF
+  , __webpackgi_exports__DataArrayTexture = __webpackgi_exports__.rFo
+  , __webpackgi_exports__DataTexture = __webpackgi_exports__.GYF
+  , __webpackgi_exports__DataTextureLoader = __webpackgi_exports__.BRH
+  , __webpackgi_exports__DataUrlLoader = __webpackgi_exports__.psi
+  , __webpackgi_exports__DataUtils = __webpackgi_exports__.GxU
+  , __webpackgi_exports__DebugPlugin = __webpackgi_exports__.n2t
+  , __webpackgi_exports__DecodeUTF8 = __webpackgi_exports__.yuL
+  , __webpackgi_exports__Decompress = __webpackgi_exports__.YMq
+  , __webpackgi_exports__DecrementStencilOp = __webpackgi_exports__.ROr
+  , __webpackgi_exports__DecrementWrapStencilOp = __webpackgi_exports__.fJr
+  , __webpackgi_exports__DefaultLoadingManager = __webpackgi_exports__.h_9
+  , __webpackgi_exports__Deflate = __webpackgi_exports__.Gyi
+  , __webpackgi_exports__DepthFormat = __webpackgi_exports__.zdS
+  , __webpackgi_exports__DepthOfFieldPass = __webpackgi_exports__.WCV
+  , __webpackgi_exports__DepthOfFieldPlugin = __webpackgi_exports__._Vf
+  , __webpackgi_exports__DepthStencilFormat = __webpackgi_exports__.dcC
+  , __webpackgi_exports__DepthTexture = __webpackgi_exports__.VCu
+  , __webpackgi_exports__DeviceOrientationControls2 = __webpackgi_exports__.n1S
+  , __webpackgi_exports__DeviceOrientationControlsPlugin = __webpackgi_exports__.sOF
+  , __webpackgi_exports__DiamondMaterial = __webpackgi_exports__.aFP
+  , __webpackgi_exports__DiamondPlugin = __webpackgi_exports__.GMU
+  , __webpackgi_exports__DirectionalLight = __webpackgi_exports__.ZyN
+  , __webpackgi_exports__DirectionalLight2 = __webpackgi_exports__.rFg
+  , __webpackgi_exports__DirectionalLightHelper = __webpackgi_exports__.PFK
+  , __webpackgi_exports__DiscreteInterpolant = __webpackgi_exports__.Yhb
+  , __webpackgi_exports__DisplayP3ColorSpace = __webpackgi_exports__.V5c
+  , __webpackgi_exports__DodecahedronGeometry = __webpackgi_exports__.nEu
+  , __webpackgi_exports__DoubleSide = __webpackgi_exports__.$EB
+  , __webpackgi_exports__Dropzone = __webpackgi_exports__.mRE
+  , __webpackgi_exports__DropzonePlugin = __webpackgi_exports__.hSt
+  , __webpackgi_exports__DstAlphaFactor = __webpackgi_exports__.hdd
+  , __webpackgi_exports__DstColorFactor = __webpackgi_exports__.wn6
+  , __webpackgi_exports__DynamicCopyUsage = __webpackgi_exports__.MOq
+  , __webpackgi_exports__DynamicDrawUsage = __webpackgi_exports__.Vnu
+  , __webpackgi_exports__DynamicReadUsage = __webpackgi_exports__.hIf
+  , __webpackgi_exports__EXRExporter2 = __webpackgi_exports__.d5G
+  , __webpackgi_exports__EXRLoadPlugin = __webpackgi_exports__.vr8
+  , __webpackgi_exports__EasingFunctions = __webpackgi_exports__.JCs
+  , __webpackgi_exports__EdgesGeometry = __webpackgi_exports__.TDQ
+  , __webpackgi_exports__EffectComposer2 = __webpackgi_exports__.WYq
+  , __webpackgi_exports__EllipseCurve = __webpackgi_exports__.S20
+  , __webpackgi_exports__EllipseCurve3D = __webpackgi_exports__.LWT
+  , __webpackgi_exports__EncodeUTF8 = __webpackgi_exports__.MJ1
+  , __webpackgi_exports__EncoderMethod = __webpackgi_exports__.KDW
+  , __webpackgi_exports__EnvironmentPresetGroup = __webpackgi_exports__.SQT
+  , __webpackgi_exports__EqualCompare = __webpackgi_exports__.kO0
+  , __webpackgi_exports__EqualDepth = __webpackgi_exports__.U3G
+  , __webpackgi_exports__EqualStencilFunc = __webpackgi_exports__.jsO
+  , __webpackgi_exports__EquirectangularReflectionMapping = __webpackgi_exports__.wfO
+  , __webpackgi_exports__EquirectangularRefractionMapping = __webpackgi_exports__.uV5
+  , __webpackgi_exports__Euler = __webpackgi_exports__.O9p
+  , __webpackgi_exports__EventDispatcher = __webpackgi_exports__.Qev
+  , __webpackgi_exports__ExtrasUiPlugin = __webpackgi_exports__.j8I
+  , __webpackgi_exports__ExtrudeGeometry = __webpackgi_exports__.QCA
+  , __webpackgi_exports__FBXLoadPlugin = __webpackgi_exports__.ol2
+  , __webpackgi_exports__FFMPEGRecorder = __webpackgi_exports__.y74
+  , __webpackgi_exports__FSShadowMaterial = __webpackgi_exports__.lT0
+  , __webpackgi_exports__FileLoader = __webpackgi_exports__.Y9S
+  , __webpackgi_exports__FileTransferPlugin = __webpackgi_exports__.ryq
+  , __webpackgi_exports__FilmicGrainPlugin = __webpackgi_exports__.xcV
+  , __webpackgi_exports__FirstPersonControls2 = __webpackgi_exports__.OMG
+  , __webpackgi_exports__FirstPersonControlsPlugin = __webpackgi_exports__.Vkg
+  , __webpackgi_exports__Float16BufferAttribute = __webpackgi_exports__.Oax
+  , __webpackgi_exports__Float32BufferAttribute = __webpackgi_exports__.qtW
+  , __webpackgi_exports__Float64BufferAttribute = __webpackgi_exports__.V58
+  , __webpackgi_exports__FloatType = __webpackgi_exports__.RQf
+  , __webpackgi_exports__Fog = __webpackgi_exports__.jUj
+  , __webpackgi_exports__FogExp2 = __webpackgi_exports__.cRK
+  , __webpackgi_exports__FragmentClippingExtensionPlugin = __webpackgi_exports__.ziY
+  , __webpackgi_exports__FragmentClippingMode = __webpackgi_exports__.kzd
+  , __webpackgi_exports__FrameFadePlugin = __webpackgi_exports__.VNy
+  , __webpackgi_exports__FramebufferTexture = __webpackgi_exports__.Pem
+  , __webpackgi_exports__FrontSide = __webpackgi_exports__.hB5
+  , __webpackgi_exports__Frustum = __webpackgi_exports__.PPD
+  , __webpackgi_exports__FullScreenPlugin = __webpackgi_exports__.BH6
+  , __webpackgi_exports__GBufferPlugin = __webpackgi_exports__.HSI
+  , __webpackgi_exports__GLBufferAttribute = __webpackgi_exports__.oh6
+  , __webpackgi_exports__GLSL1 = __webpackgi_exports__.Wyr
+  , __webpackgi_exports__GLSL3 = __webpackgi_exports__.Wdf
+  , __webpackgi_exports__GLTFAnimationPlugin = __webpackgi_exports__.P3V
+  , __webpackgi_exports__GLTFDracoExportPlugin = __webpackgi_exports__.s0N
+  , __webpackgi_exports__GLTFDracoExporter = __webpackgi_exports__._Js
+  , __webpackgi_exports__GLTFExporter2 = __webpackgi_exports__.xQA
+  , __webpackgi_exports__GLTFExporterMaterialsVariantsExtensionExport = __webpackgi_exports__.Yeh
+  , __webpackgi_exports__GLTFKHRMaterialVariantsPlugin = __webpackgi_exports__.N30
+  , __webpackgi_exports__GLTFLoader2 = __webpackgi_exports__.P44
+  , __webpackgi_exports__GLTFMaterialsVariantsExtensionImport = __webpackgi_exports__.MdZ
+  , __webpackgi_exports__GLTFMeshGpuInstancingExporter = __webpackgi_exports__.Cc9
+  , __webpackgi_exports__GLTFMeshOptPlugin = __webpackgi_exports__.HjZ
+  , __webpackgi_exports__GLTFSpecGlossinessConverterPlugin = __webpackgi_exports__.UX5
+  , __webpackgi_exports__GLTFWriter2 = __webpackgi_exports__.fGP
+  , __webpackgi_exports__GammaCorrectionExtension = __webpackgi_exports__.T03
+  , __webpackgi_exports__GammaCorrectionPlugin = __webpackgi_exports__.fPK
+  , __webpackgi_exports__GemEnvironmentPresetGroup = __webpackgi_exports__.XpU
+  , __webpackgi_exports__GenericBlendTexturePass = __webpackgi_exports__.hUz
+  , __webpackgi_exports__GenericFilterPlugin = __webpackgi_exports__.pbu
+  , __webpackgi_exports__GeometryGeneratorPlugin = __webpackgi_exports__.jhn
+  , __webpackgi_exports__GreaterCompare = __webpackgi_exports__.eoi
+  , __webpackgi_exports__GreaterDepth = __webpackgi_exports__.K52
+  , __webpackgi_exports__GreaterEqualCompare = __webpackgi_exports__.gWB
+  , __webpackgi_exports__GreaterEqualDepth = __webpackgi_exports__.Gwm
+  , __webpackgi_exports__GreaterEqualStencilFunc = __webpackgi_exports__.TMh
+  , __webpackgi_exports__GreaterStencilFunc = __webpackgi_exports__.RcT
+  , __webpackgi_exports__GridHelper = __webpackgi_exports__.fTw
+  , __webpackgi_exports__GroundPlugin = __webpackgi_exports__.Hx_
+  , __webpackgi_exports__Group = __webpackgi_exports__.YJl
+  , __webpackgi_exports__Gunzip = __webpackgi_exports__.asK
+  , __webpackgi_exports__GyroInputDevice = __webpackgi_exports__._qo
+  , __webpackgi_exports__Gzip = __webpackgi_exports__.Ne
+  , __webpackgi_exports__HDRiGroundPlugin = __webpackgi_exports__.Guc
+  , __webpackgi_exports__HalfFloatType = __webpackgi_exports__.ix0
+  , __webpackgi_exports__HemisphereLight = __webpackgi_exports__.dth
+  , __webpackgi_exports__HemisphereLightHelper = __webpackgi_exports__.R1W
+  , __webpackgi_exports__HierarchyUiPlugin = __webpackgi_exports__.tcR
+  , __webpackgi_exports__IcosahedronGeometry = __webpackgi_exports__.WBB
+  , __webpackgi_exports__ImageBitmapLoader = __webpackgi_exports__.Kzg
+  , __webpackgi_exports__ImageLoader = __webpackgi_exports__.$NF
+  , __webpackgi_exports__ImageSequenceRecorder = __webpackgi_exports__.NuM
+  , __webpackgi_exports__ImageUtils = __webpackgi_exports__.HgN
+  , __webpackgi_exports__Importer = __webpackgi_exports__.l9C
+  , __webpackgi_exports__IncrementStencilOp = __webpackgi_exports__.HLH
+  , __webpackgi_exports__IncrementWrapStencilOp = __webpackgi_exports__.Ru$
+  , __webpackgi_exports__Inflate = __webpackgi_exports__.ELl
+  , __webpackgi_exports__InstancedBufferAttribute = __webpackgi_exports__.uWO
+  , __webpackgi_exports__InstancedBufferGeometry = __webpackgi_exports__.CmU
+  , __webpackgi_exports__InstancedInterleavedBuffer = __webpackgi_exports__.LuO
+  , __webpackgi_exports__InstancedMesh = __webpackgi_exports__.ZLX
+  , __webpackgi_exports__Int16BufferAttribute = __webpackgi_exports__.Hrb
+  , __webpackgi_exports__Int32BufferAttribute = __webpackgi_exports__.vmz
+  , __webpackgi_exports__Int8BufferAttribute = __webpackgi_exports__.wvS
+  , __webpackgi_exports__IntType = __webpackgi_exports__.Yuy
+  , __webpackgi_exports__InteractionPromptPlugin = __webpackgi_exports__.K5h
+  , __webpackgi_exports__InterleavedBuffer = __webpackgi_exports__.eB$
+  , __webpackgi_exports__InterleavedBufferAttribute = __webpackgi_exports__.eHs
+  , __webpackgi_exports__Interpolant = __webpackgi_exports__.lGw
+  , __webpackgi_exports__InterpolateDiscrete = __webpackgi_exports__.ljd
+  , __webpackgi_exports__InterpolateLinear = __webpackgi_exports__.PJ3
+  , __webpackgi_exports__InterpolateSmooth = __webpackgi_exports__.EQC
+  , __webpackgi_exports__InvertStencilOp = __webpackgi_exports__.oVO
+  , __webpackgi_exports__KHR_TEXTURE_BASISU = __webpackgi_exports__.Yj4
+  , __webpackgi_exports__KTX2LoadPlugin = __webpackgi_exports__.ZPL
+  , __webpackgi_exports__KTXLoadPlugin = __webpackgi_exports__.$16
+  , __webpackgi_exports__KeepStencilOp = __webpackgi_exports__.VVr
+  , __webpackgi_exports__KeyframeTrack = __webpackgi_exports__.UJ6
+  , __webpackgi_exports__LOD = __webpackgi_exports__.UpK
+  , __webpackgi_exports__LUTPlugin = __webpackgi_exports__.ZYb
+  , __webpackgi_exports__LatheGeometry = __webpackgi_exports__.nzx
+  , __webpackgi_exports__LayeredMaterialPlugin = __webpackgi_exports__.DLJ
+  , __webpackgi_exports__Layers = __webpackgi_exports__.zgK
+  , __webpackgi_exports__LessCompare = __webpackgi_exports__.vim
+  , __webpackgi_exports__LessDepth = __webpackgi_exports__.brA
+  , __webpackgi_exports__LessEqualCompare = __webpackgi_exports__.TiK
+  , __webpackgi_exports__LessEqualDepth = __webpackgi_exports__.xSv
+  , __webpackgi_exports__LessEqualStencilFunc = __webpackgi_exports__.CR7
+  , __webpackgi_exports__LessStencilFunc = __webpackgi_exports__.kYr
+  , __webpackgi_exports__Light = __webpackgi_exports__.veJ
+  , __webpackgi_exports__LightProbe = __webpackgi_exports__.FZo
+  , __webpackgi_exports__LightsUiPlugin = __webpackgi_exports__.Dvx
+  , __webpackgi_exports__Line = __webpackgi_exports__.N1A
+  , __webpackgi_exports__Line2 = __webpackgi_exports__.XkL
+  , __webpackgi_exports__Line3 = __webpackgi_exports__.cZY
+  , __webpackgi_exports__LineBasicMaterial = __webpackgi_exports__.mrM
+  , __webpackgi_exports__LineCurve = __webpackgi_exports__.GZZ
+  , __webpackgi_exports__LineCurve3 = __webpackgi_exports__.VnP
+  , __webpackgi_exports__LineDashedMaterial = __webpackgi_exports__.Fvt
+  , __webpackgi_exports__LineGeometry = __webpackgi_exports__.vK6
+  , __webpackgi_exports__LineLoop = __webpackgi_exports__.FCc
+  , __webpackgi_exports__LineMaterial = __webpackgi_exports__.GV4
+  , __webpackgi_exports__LineSegments = __webpackgi_exports__.DXC
+  , __webpackgi_exports__LineSegments2 = __webpackgi_exports__.bFd
+  , __webpackgi_exports__LineSegmentsGeometry = __webpackgi_exports__.n31
+  , __webpackgi_exports__LinearDisplayP3ColorSpace = __webpackgi_exports__.qIQ
+  , __webpackgi_exports__LinearEncoding = __webpackgi_exports__.tgE
+  , __webpackgi_exports__LinearFilter = __webpackgi_exports__.k6q
+  , __webpackgi_exports__LinearInterpolant = __webpackgi_exports__.ezk
+  , __webpackgi_exports__LinearMipMapLinearFilter = __webpackgi_exports__.NZq
+  , __webpackgi_exports__LinearMipMapNearestFilter = __webpackgi_exports__.iUH
+  , __webpackgi_exports__LinearMipmapLinearFilter = __webpackgi_exports__.$_I
+  , __webpackgi_exports__LinearMipmapNearestFilter = __webpackgi_exports__.kRr
+  , __webpackgi_exports__LinearSRGBColorSpace = __webpackgi_exports__.Zr2
+  , __webpackgi_exports__LinearToneMapping = __webpackgi_exports__.kyO
+  , __webpackgi_exports__LinearTransfer = __webpackgi_exports__.VxR
+  , __webpackgi_exports__Loader = __webpackgi_exports__.aHM
+  , __webpackgi_exports__LoaderUtils = __webpackgi_exports__.r6x
+  , __webpackgi_exports__LoadingManager = __webpackgi_exports__.KPJ
+  , __webpackgi_exports__LoadingScreenPlugin = __webpackgi_exports__.O0Q
+  , __webpackgi_exports__LoopOnce = __webpackgi_exports__.G3T
+  , __webpackgi_exports__LoopPingPong = __webpackgi_exports__.lc7
+  , __webpackgi_exports__LoopRepeat = __webpackgi_exports__.aMy
+  , __webpackgi_exports__LuminanceAlphaFormat = __webpackgi_exports__.CMB
+  , __webpackgi_exports__LuminanceFormat = __webpackgi_exports__.Kzv
+  , __webpackgi_exports__MOUSE = __webpackgi_exports__.kBv
+  , __webpackgi_exports__MTLLoader2 = __webpackgi_exports__.T6P
+  , __webpackgi_exports__Material = __webpackgi_exports__.imn
+  , __webpackgi_exports__MaterialConfiguratorBasePlugin = __webpackgi_exports__.Bhh
+  , __webpackgi_exports__MaterialConfiguratorPlugin = __webpackgi_exports__.q$N
+  , __webpackgi_exports__MaterialExtender = __webpackgi_exports__.pzC
+  , __webpackgi_exports__MaterialLibPresetGroupPresetGroup = __webpackgi_exports__.xbg
+  , __webpackgi_exports__MaterialLibraryBasePlugin = __webpackgi_exports__.LTv
+  , __webpackgi_exports__MaterialLibraryPlugin = __webpackgi_exports__.usO
+  , __webpackgi_exports__MaterialLoader = __webpackgi_exports__.jut
+  , __webpackgi_exports__MaterialManager = __webpackgi_exports__.Jxy
+  , __webpackgi_exports__MaterialPresetPlugin = __webpackgi_exports__.Kmw
+  , __webpackgi_exports__MaterialPreviewGenerator = __webpackgi_exports__.jR8
+  , __webpackgi_exports__MathUtils = __webpackgi_exports__.cj9
+  , __webpackgi_exports__Matrix3 = __webpackgi_exports__.dwI
+  , __webpackgi_exports__Matrix4 = __webpackgi_exports__.kn4
+  , __webpackgi_exports__MaxEquation = __webpackgi_exports__.$ei
+  , __webpackgi_exports__Mesh = __webpackgi_exports__.eaF
+  , __webpackgi_exports__MeshBasicMaterial = __webpackgi_exports__.V9B
+  , __webpackgi_exports__MeshBasicMaterial2 = __webpackgi_exports__.NLY
+  , __webpackgi_exports__MeshDepthMaterial = __webpackgi_exports__.CSG
+  , __webpackgi_exports__MeshDistanceMaterial = __webpackgi_exports__.aVO
+  , __webpackgi_exports__MeshLambertMaterial = __webpackgi_exports__.G_z
+  , __webpackgi_exports__MeshMatcapMaterial = __webpackgi_exports__.FNr
+  , __webpackgi_exports__MeshNormalMaterial = __webpackgi_exports__.qBx
+  , __webpackgi_exports__MeshOptSimplifyModifierPlugin = __webpackgi_exports__.onB
+  , __webpackgi_exports__MeshPhongMaterial = __webpackgi_exports__.tXL
+  , __webpackgi_exports__MeshPhysicalMaterial = __webpackgi_exports__.uSd
+  , __webpackgi_exports__MeshStandardMaterial = __webpackgi_exports__._4j
+  , __webpackgi_exports__MeshStandardMaterial2 = __webpackgi_exports__.gCR
+  , __webpackgi_exports__MeshToonMaterial = __webpackgi_exports__.Df
+  , __webpackgi_exports__MinEquation = __webpackgi_exports__.znC
+  , __webpackgi_exports__MirroredRepeatWrapping = __webpackgi_exports__.kTW
+  , __webpackgi_exports__MixOperation = __webpackgi_exports__.KRh
+  , __webpackgi_exports__ModelStagePlugin = __webpackgi_exports__.$iG
+  , __webpackgi_exports__ModelStagePresetGroup = __webpackgi_exports__.eti
+  , __webpackgi_exports__MouseInputDevice = __webpackgi_exports__.Um5
+  , __webpackgi_exports__MultiFilterPlugin = __webpackgi_exports__.tF0
+  , __webpackgi_exports__MultiplyBlending = __webpackgi_exports__.EdD
+  , __webpackgi_exports__MultiplyOperation = __webpackgi_exports__.caT
+  , __webpackgi_exports__NearestFilter = __webpackgi_exports__.hxR
+  , __webpackgi_exports__NearestMipMapLinearFilter = __webpackgi_exports__.a$r
+  , __webpackgi_exports__NearestMipMapNearestFilter = __webpackgi_exports__.$O9
+  , __webpackgi_exports__NearestMipmapLinearFilter = __webpackgi_exports__.Cfg
+  , __webpackgi_exports__NearestMipmapNearestFilter = __webpackgi_exports__.pHI
+  , __webpackgi_exports__NeverCompare = __webpackgi_exports__.amv
+  , __webpackgi_exports__NeverDepth = __webpackgi_exports__.eHc
+  , __webpackgi_exports__NeverStencilFunc = __webpackgi_exports__.HPb
+  , __webpackgi_exports__NoBlending = __webpackgi_exports__.XIg
+  , __webpackgi_exports__NoColorSpace = __webpackgi_exports__.jf0
+  , __webpackgi_exports__NoToneMapping = __webpackgi_exports__.y_p
+  , __webpackgi_exports__NoiseBumpMaterialPlugin = __webpackgi_exports__.dFv
+  , __webpackgi_exports__NormalAnimationBlendMode = __webpackgi_exports__.Ke9
+  , __webpackgi_exports__NormalBlending = __webpackgi_exports__.NTi
+  , __webpackgi_exports__NormalBufferPlugin = __webpackgi_exports__.nqf
+  , __webpackgi_exports__NormalCaptureMaterial = __webpackgi_exports__.hws
+  , __webpackgi_exports__NotEqualCompare = __webpackgi_exports__.jzd
+  , __webpackgi_exports__NotEqualDepth = __webpackgi_exports__.bw0
+  , __webpackgi_exports__NotEqualStencilFunc = __webpackgi_exports__.klZ
+  , __webpackgi_exports__NumberKeyframeTrack = __webpackgi_exports__.Hit
+  , __webpackgi_exports__OBJLoader2 = __webpackgi_exports__.DJz
+  , __webpackgi_exports__ObjMtlLoadPlugin = __webpackgi_exports__.UwE
+  , __webpackgi_exports__Object3D = __webpackgi_exports__.B69
+  , __webpackgi_exports__Object3DModel = __webpackgi_exports__.QA8
+  , __webpackgi_exports__Object3DWidgetsPlugin = __webpackgi_exports__.$xz
+  , __webpackgi_exports__ObjectLoader = __webpackgi_exports__.XTe
+  , __webpackgi_exports__ObjectLoader2 = __webpackgi_exports__.zjB
+  , __webpackgi_exports__ObjectPicker = __webpackgi_exports__.sHL
+  , __webpackgi_exports__ObjectProcessorMap = __webpackgi_exports__.Upe
+  , __webpackgi_exports__ObjectRotationPlugin = __webpackgi_exports__.nEH
+  , __webpackgi_exports__ObjectSpaceNormalMap = __webpackgi_exports__.vyJ
+  , __webpackgi_exports__OctahedronGeometry = __webpackgi_exports__.Ufg
+  , __webpackgi_exports__OneFactor = __webpackgi_exports__.qad
+  , __webpackgi_exports__OneMinusDstAlphaFactor = __webpackgi_exports__.Nt7
+  , __webpackgi_exports__OneMinusDstColorFactor = __webpackgi_exports__.aEY
+  , __webpackgi_exports__OneMinusSrcAlphaFactor = __webpackgi_exports__.OuU
+  , __webpackgi_exports__OneMinusSrcColorFactor = __webpackgi_exports__.LiQ
+  , __webpackgi_exports__OrbitControls2 = __webpackgi_exports__.xYO
+  , __webpackgi_exports__OrbitControls3 = __webpackgi_exports__.c07
+  , __webpackgi_exports__OrthographicCamera = __webpackgi_exports__.qUd
+  , __webpackgi_exports__OutlinePlugin = __webpackgi_exports__.I_i
+  , __webpackgi_exports__P3Primaries = __webpackgi_exports__.wqq
+  , __webpackgi_exports__PCFShadowMap = __webpackgi_exports__.QP0
+  , __webpackgi_exports__PCFSoftShadowMap = __webpackgi_exports__.Wk7
+  , __webpackgi_exports__PMREMGenerator = __webpackgi_exports__.BdL
+  , __webpackgi_exports__PMREMGeneratorPlugin = __webpackgi_exports__.Q7O
+  , __webpackgi_exports__ParallaxCameraControllerPlugin = __webpackgi_exports__.uxM
+  , __webpackgi_exports__ParallaxMappingPlugin = __webpackgi_exports__.N9C
+  , __webpackgi_exports__Path = __webpackgi_exports__.wAk
+  , __webpackgi_exports__PerspectiveCamera = __webpackgi_exports__.ubm
+  , __webpackgi_exports__PickingPlugin = __webpackgi_exports__.PG6
+  , __webpackgi_exports__Plane = __webpackgi_exports__.Zcv
+  , __webpackgi_exports__PlaneGeometry = __webpackgi_exports__.bdM
+  , __webpackgi_exports__PlaneHelper = __webpackgi_exports__.ZM4
+  , __webpackgi_exports__PluginPresetGroup = __webpackgi_exports__._EQ
+  , __webpackgi_exports__PointLight = __webpackgi_exports__.HiM
+  , __webpackgi_exports__PointLight2 = __webpackgi_exports__.RXx
+  , __webpackgi_exports__PointLightHelper = __webpackgi_exports__.F1l
+  , __webpackgi_exports__PointerDragHelper = __webpackgi_exports__.W_W
+  , __webpackgi_exports__PointerLockControls2 = __webpackgi_exports__.FnS
+  , __webpackgi_exports__PointerLockControlsPlugin = __webpackgi_exports__.oPt
+  , __webpackgi_exports__Points = __webpackgi_exports__.ONl
+  , __webpackgi_exports__PointsMaterial = __webpackgi_exports__.BH$
+  , __webpackgi_exports__PolarGridHelper = __webpackgi_exports__.hzE
+  , __webpackgi_exports__PolyhedronGeometry = __webpackgi_exports__.pFK
+  , __webpackgi_exports__PopmotionPlugin = __webpackgi_exports__.j9d
+  , __webpackgi_exports__PosePlugin = __webpackgi_exports__.DeC
+  , __webpackgi_exports__PositionalAudio = __webpackgi_exports__.xZx
+  , __webpackgi_exports__PresetGroup = __webpackgi_exports__.ZaL
+  , __webpackgi_exports__PresetLibraryPlugin = __webpackgi_exports__.UwN
+  , __webpackgi_exports__ProgressivePlugin = __webpackgi_exports__.hzf
+  , __webpackgi_exports__PropertyBinding = __webpackgi_exports__.Nwf
+  , __webpackgi_exports__PropertyMixer = __webpackgi_exports__.N2s
+  , __webpackgi_exports__QuadraticBezierCurve = __webpackgi_exports__.dAo
+  , __webpackgi_exports__QuadraticBezierCurve3 = __webpackgi_exports__.CV9
+  , __webpackgi_exports__Quaternion = __webpackgi_exports__.PTz
+  , __webpackgi_exports__QuaternionKeyframeTrack = __webpackgi_exports__.MBL
+  , __webpackgi_exports__QuaternionLinearInterpolant = __webpackgi_exports__.GBG
+  , __webpackgi_exports__RED_GREEN_RGTC2_Format = __webpackgi_exports__.HO_
+  , __webpackgi_exports__RED_RGTC1_Format = __webpackgi_exports__.Kef
+  , __webpackgi_exports__REVISION = __webpackgi_exports__.sPf
+  , __webpackgi_exports__RGBADepthPacking = __webpackgi_exports__.N5j
+  , __webpackgi_exports__RGBAFormat = __webpackgi_exports__.GWd
+  , __webpackgi_exports__RGBAIntegerFormat = __webpackgi_exports__.c90
+  , __webpackgi_exports__RGBA_ASTC_10x10_Format = __webpackgi_exports__.y3Z
+  , __webpackgi_exports__RGBA_ASTC_10x5_Format = __webpackgi_exports__.uB5
+  , __webpackgi_exports__RGBA_ASTC_10x6_Format = __webpackgi_exports__.lyL
+  , __webpackgi_exports__RGBA_ASTC_10x8_Format = __webpackgi_exports__.bC7
+  , __webpackgi_exports__RGBA_ASTC_12x10_Format = __webpackgi_exports__.ojs
+  , __webpackgi_exports__RGBA_ASTC_12x12_Format = __webpackgi_exports__.S$4
+  , __webpackgi_exports__RGBA_ASTC_4x4_Format = __webpackgi_exports__.qa3
+  , __webpackgi_exports__RGBA_ASTC_5x4_Format = __webpackgi_exports__.B_h
+  , __webpackgi_exports__RGBA_ASTC_5x5_Format = __webpackgi_exports__.czI
+  , __webpackgi_exports__RGBA_ASTC_6x5_Format = __webpackgi_exports__.rSH
+  , __webpackgi_exports__RGBA_ASTC_6x6_Format = __webpackgi_exports__.Qrf
+  , __webpackgi_exports__RGBA_ASTC_8x5_Format = __webpackgi_exports__.psI
+  , __webpackgi_exports__RGBA_ASTC_8x6_Format = __webpackgi_exports__.a5J
+  , __webpackgi_exports__RGBA_ASTC_8x8_Format = __webpackgi_exports__._QJ
+  , __webpackgi_exports__RGBA_BPTC_Format = __webpackgi_exports__.Fn
+  , __webpackgi_exports__RGBA_ETC2_EAC_Format = __webpackgi_exports__.KDk
+  , __webpackgi_exports__RGBA_PVRTC_2BPPV1_Format = __webpackgi_exports__.pBf
+  , __webpackgi_exports__RGBA_PVRTC_4BPPV1_Format = __webpackgi_exports__.HXV
+  , __webpackgi_exports__RGBA_S3TC_DXT1_Format = __webpackgi_exports__.Nz6
+  , __webpackgi_exports__RGBA_S3TC_DXT3_Format = __webpackgi_exports__.jR7
+  , __webpackgi_exports__RGBA_S3TC_DXT5_Format = __webpackgi_exports__.BXX
+  , __webpackgi_exports__RGBM16ColorSpace = __webpackgi_exports__.DAr
+  , __webpackgi_exports__RGBM16ColorSpace_ = __webpackgi_exports__.uC4
+  , __webpackgi_exports__RGB_BPTC_SIGNED_Format = __webpackgi_exports__.H23
+  , __webpackgi_exports__RGB_BPTC_UNSIGNED_Format = __webpackgi_exports__.W9U
+  , __webpackgi_exports__RGB_ETC1_Format = __webpackgi_exports__.CVz
+  , __webpackgi_exports__RGB_ETC2_Format = __webpackgi_exports__.Riy
+  , __webpackgi_exports__RGB_PVRTC_2BPPV1_Format = __webpackgi_exports__.kTp
+  , __webpackgi_exports__RGB_PVRTC_4BPPV1_Format = __webpackgi_exports__.k6Q
+  , __webpackgi_exports__RGB_S3TC_DXT1_Format = __webpackgi_exports__.IE4
+  , __webpackgi_exports__RGFormat = __webpackgi_exports__.paN
+  , __webpackgi_exports__RGIntegerFormat = __webpackgi_exports__.TkQ
+  , __webpackgi_exports__RainbowDiamondPlugin = __webpackgi_exports__.qa1
+  , __webpackgi_exports__RandomizedDirectionalLight = __webpackgi_exports__.EZL
+  , __webpackgi_exports__RandomizedDirectionalLightPlugin = __webpackgi_exports__.fMJ
+  , __webpackgi_exports__RawShaderMaterial = __webpackgi_exports__.D$Q
+  , __webpackgi_exports__Ray = __webpackgi_exports__.RlV
+  , __webpackgi_exports__Raycaster = __webpackgi_exports__.tBo
+  , __webpackgi_exports__Rec709Primaries = __webpackgi_exports__.z5
+  , __webpackgi_exports__RectAreaLight = __webpackgi_exports__.ure
+  , __webpackgi_exports__RedFormat = __webpackgi_exports__.VT0
+  , __webpackgi_exports__RedIntegerFormat = __webpackgi_exports__.ZQM
+  , __webpackgi_exports__Reflector2 = __webpackgi_exports__.TyI
+  , __webpackgi_exports__ReinhardToneMapping = __webpackgi_exports__.Mjd
+  , __webpackgi_exports__RenderTarget = __webpackgi_exports__.O0B
+  , __webpackgi_exports__RendererUiPlugin = __webpackgi_exports__.FZz
+  , __webpackgi_exports__RepeatWrapping = __webpackgi_exports__.GJx
+  , __webpackgi_exports__ReplaceStencilOp = __webpackgi_exports__.kG0
+  , __webpackgi_exports__ReverseSubtractEquation = __webpackgi_exports__.nST
+  , __webpackgi_exports__Rhino3dmLoadPlugin = __webpackgi_exports__.AUf
+  , __webpackgi_exports__Rhino3dmLoader2 = __webpackgi_exports__.oXQ
+  , __webpackgi_exports__RingGeometry = __webpackgi_exports__.rKP
+  , __webpackgi_exports__RootScene = __webpackgi_exports__.vMJ
+  , __webpackgi_exports__SIGNED_RED_GREEN_RGTC2_Format = __webpackgi_exports__.CWW
+  , __webpackgi_exports__SIGNED_RED_RGTC1_Format = __webpackgi_exports__.XG_
+  , __webpackgi_exports__SRGBColorSpace = __webpackgi_exports__.er$
+  , __webpackgi_exports__SRGBTransfer = __webpackgi_exports__.KLL
+  , __webpackgi_exports__SSAOPlugin = __webpackgi_exports__.ye
+  , __webpackgi_exports__SSBevelPass = __webpackgi_exports__.czS
+  , __webpackgi_exports__SSBevelPlugin = __webpackgi_exports__.UG9
+  , __webpackgi_exports__SSContactShadows = __webpackgi_exports__.aJo
+  , __webpackgi_exports__SSGIPlugin = __webpackgi_exports__.uC9
+  , __webpackgi_exports__SSRPlugin = __webpackgi_exports__.k9M
+  , __webpackgi_exports__STLLoadPlugin = __webpackgi_exports__.fRH
+  , __webpackgi_exports__Scene = __webpackgi_exports__.Z58
+  , __webpackgi_exports__SceneCamerasUiPlugin = __webpackgi_exports__._I4
+  , __webpackgi_exports__SceneLoopPlugin = __webpackgi_exports__.Sr
+  , __webpackgi_exports__ScrollableCameraViewPlugin = __webpackgi_exports__.zx2
+  , __webpackgi_exports__ScrollableCameraViewPreviewPlugin = __webpackgi_exports__.r1V
+  , __webpackgi_exports__SelectionWidget = __webpackgi_exports__.tI0
+  , __webpackgi_exports__ShaderChunk = __webpackgi_exports__.vxI
+  , __webpackgi_exports__ShaderLib = __webpackgi_exports__.zkh
+  , __webpackgi_exports__ShaderMaterial = __webpackgi_exports__.BKk
+  , __webpackgi_exports__ShaderMaterial2 = __webpackgi_exports__.rNP
+  , __webpackgi_exports__ShaderMaterialEncodingSupport = __webpackgi_exports__.DkA
+  , __webpackgi_exports__ShaderPass2 = __webpackgi_exports__.rpH
+  , __webpackgi_exports__ShadowMapBaker = __webpackgi_exports__.Q4F
+  , __webpackgi_exports__ShadowMaterial = __webpackgi_exports__.q2
+  , __webpackgi_exports__Shape = __webpackgi_exports__.ypk
+  , __webpackgi_exports__ShapeGeometry = __webpackgi_exports__.MSw
+  , __webpackgi_exports__ShapePath = __webpackgi_exports__.Ld9
+  , __webpackgi_exports__ShapeTubeExtrudePlugin = __webpackgi_exports__.YOp
+  , __webpackgi_exports__ShapeUtils = __webpackgi_exports__.xJ6
+  , __webpackgi_exports__ShortType = __webpackgi_exports__.fBL
+  , __webpackgi_exports__SimpleAssetList = __webpackgi_exports__.XTN
+  , __webpackgi_exports__SimpleBackgroundEnvUiPlugin = __webpackgi_exports__.ZXl
+  , __webpackgi_exports__SimpleDataSource = __webpackgi_exports__.O9e
+  , __webpackgi_exports__SimpleEventDispatcher = __webpackgi_exports__.ILd
+  , __webpackgi_exports__SimpleJSONExporter = __webpackgi_exports__.SQN
+  , __webpackgi_exports__SimpleJSONLoader = __webpackgi_exports__.GDD
+  , __webpackgi_exports__SimpleTextExporter = __webpackgi_exports__.HVh
+  , __webpackgi_exports__SimpleTextPlugin = __webpackgi_exports__.X46
+  , __webpackgi_exports__SimpleViewerUi = __webpackgi_exports__.hdr
+  , __webpackgi_exports__SimplifyModifierPlugin = __webpackgi_exports__.CSJ
+  , __webpackgi_exports__Skeleton = __webpackgi_exports__.EAD
+  , __webpackgi_exports__SkeletonHelper = __webpackgi_exports__._xc
+  , __webpackgi_exports__SkinnedMesh = __webpackgi_exports__.I46
+  , __webpackgi_exports__SnowFallPlugin = __webpackgi_exports__.CSm
+  , __webpackgi_exports__Source = __webpackgi_exports__.kLi
+  , __webpackgi_exports__Sphere = __webpackgi_exports__.iyt
+  , __webpackgi_exports__SphereGeometry = __webpackgi_exports__.Gu$
+  , __webpackgi_exports__SphereSelectionWidget = __webpackgi_exports__.s6s
+  , __webpackgi_exports__Spherical = __webpackgi_exports__.YHV
+  , __webpackgi_exports__SphericalHarmonics3 = __webpackgi_exports__.xOk
+  , __webpackgi_exports__SplineCurve = __webpackgi_exports__.xfg
+  , __webpackgi_exports__SpotLight = __webpackgi_exports__.nCl
+  , __webpackgi_exports__SpotLight2 = __webpackgi_exports__.Hs2
+  , __webpackgi_exports__SpotLightHelper = __webpackgi_exports__.Fpm
+  , __webpackgi_exports__Sprite = __webpackgi_exports__.kxk
+  , __webpackgi_exports__SpriteMaterial = __webpackgi_exports__.RoJ
+  , __webpackgi_exports__SrcAlphaFactor = __webpackgi_exports__.ie2
+  , __webpackgi_exports__SrcAlphaSaturateFactor = __webpackgi_exports__.hgQ
+  , __webpackgi_exports__SrcColorFactor = __webpackgi_exports__.f4X
+  , __webpackgi_exports__StaticCopyUsage = __webpackgi_exports__.Hrq
+  , __webpackgi_exports__StaticDrawUsage = __webpackgi_exports__.agE
+  , __webpackgi_exports__StaticReadUsage = __webpackgi_exports__.uXQ
+  , __webpackgi_exports__StereoCamera = __webpackgi_exports__.keZ
+  , __webpackgi_exports__StreamCopyUsage = __webpackgi_exports__.rOG
+  , __webpackgi_exports__StreamDrawUsage = __webpackgi_exports__.Ktl
+  , __webpackgi_exports__StreamReadUsage = __webpackgi_exports__.uov
+  , __webpackgi_exports__StringKeyframeTrack = __webpackgi_exports__.hZF
+  , __webpackgi_exports__SubtractEquation = __webpackgi_exports__.FXf
+  , __webpackgi_exports__SubtractiveBlending = __webpackgi_exports__.Kwu
+  , __webpackgi_exports__SwitchNodeBasePlugin = __webpackgi_exports__.hv1
+  , __webpackgi_exports__SwitchNodePlugin = __webpackgi_exports__.AqU
+  , __webpackgi_exports__TOUCH = __webpackgi_exports__.wtR
+  , __webpackgi_exports__TYPED_ARRAYS = __webpackgi_exports__.cGs
+  , __webpackgi_exports__TangentSpaceNormalMap = __webpackgi_exports__.bI3
+  , __webpackgi_exports__TemporalAAPlugin = __webpackgi_exports__.afA
+  , __webpackgi_exports__TetrahedronGeometry = __webpackgi_exports__.Zpd
+  , __webpackgi_exports__TextSVGOptions = __webpackgi_exports__.gO_
+  , __webpackgi_exports__Texture = __webpackgi_exports__.gPd
+  , __webpackgi_exports__TextureLoader = __webpackgi_exports__.Tap
+  , __webpackgi_exports__ThinFilmLayerPlugin = __webpackgi_exports__.k4W
+  , __webpackgi_exports__ThreeMaterialLoader = __webpackgi_exports__.ndu
+  , __webpackgi_exports__TonemapPlugin = __webpackgi_exports__.el_
+  , __webpackgi_exports__TorusGeometry = __webpackgi_exports__.O3Y
+  , __webpackgi_exports__TorusKnotGeometry = __webpackgi_exports__.UPV
+  , __webpackgi_exports__TrackballControlsPlugin = __webpackgi_exports__.iu6
+  , __webpackgi_exports__TransformAnimationPlugin = __webpackgi_exports__.Ijk
+  , __webpackgi_exports__TransformControls = __webpackgi_exports__.ZU6
+  , __webpackgi_exports__TransformControls2 = __webpackgi_exports__.XXP
+  , __webpackgi_exports__TransformControlsGizmo = __webpackgi_exports__.RQH
+  , __webpackgi_exports__TransformControlsPlane = __webpackgi_exports__.tUF
+  , __webpackgi_exports__TransfrSharePlugin = __webpackgi_exports__.Tww
+  , __webpackgi_exports__Triangle = __webpackgi_exports__.lMl
+  , __webpackgi_exports__TriangleFanDrawMode = __webpackgi_exports__.rYR
+  , __webpackgi_exports__TriangleStripDrawMode = __webpackgi_exports__.O49
+  , __webpackgi_exports__TrianglesDrawMode = __webpackgi_exports__.RJ4
+  , __webpackgi_exports__TriplanarUVMappingPlugin = __webpackgi_exports__.CXS
+  , __webpackgi_exports__TubeGeometry = __webpackgi_exports__.j6
+  , __webpackgi_exports__TubeShapeGeometry = __webpackgi_exports__.G8g
+  , __webpackgi_exports__TweakpaneUiPlugin = __webpackgi_exports__.SOP
+  , __webpackgi_exports__TweakpaneWrapper = __webpackgi_exports__.e2_
+  , __webpackgi_exports__TwoPassDoubleSide = __webpackgi_exports__.GTy
+  , __webpackgi_exports__UChartOptions = __webpackgi_exports__.cOZ
+  , __webpackgi_exports__UPackOptions = __webpackgi_exports__.XxD
+  , __webpackgi_exports__UVMapping = __webpackgi_exports__.UTZ
+  , __webpackgi_exports__Uint16BufferAttribute = __webpackgi_exports__.A$4
+  , __webpackgi_exports__Uint32BufferAttribute = __webpackgi_exports__.MW4
+  , __webpackgi_exports__Uint8BufferAttribute = __webpackgi_exports__.baL
+  , __webpackgi_exports__Uint8ClampedBufferAttribute = __webpackgi_exports__.fc6
+  , __webpackgi_exports__Uncharted2Tonemapping = __webpackgi_exports__.t7h
+  , __webpackgi_exports__Uniform = __webpackgi_exports__.nc$
+  , __webpackgi_exports__UniformsGroup = __webpackgi_exports__.dzP
+  , __webpackgi_exports__UniformsLib = __webpackgi_exports__.fCn
+  , __webpackgi_exports__UniformsUtils = __webpackgi_exports__.LlO
+  , __webpackgi_exports__UnsignedByteType = __webpackgi_exports__.OUM
+  , __webpackgi_exports__UnsignedInt248Type = __webpackgi_exports__.V3x
+  , __webpackgi_exports__UnsignedIntType = __webpackgi_exports__.bkx
+  , __webpackgi_exports__UnsignedShort4444Type = __webpackgi_exports__.Wew
+  , __webpackgi_exports__UnsignedShort5551Type = __webpackgi_exports__.gJ2
+  , __webpackgi_exports__UnsignedShortType = __webpackgi_exports__.cHt
+  , __webpackgi_exports__Unzip = __webpackgi_exports__.HJp
+  , __webpackgi_exports__UnzipInflate = __webpackgi_exports__.mMi
+  , __webpackgi_exports__UnzipPassThrough = __webpackgi_exports__.XLH
+  , __webpackgi_exports__Unzlib = __webpackgi_exports__.TWi
+  , __webpackgi_exports__VJSONPresetGroup = __webpackgi_exports__.DcJ
+  , __webpackgi_exports__VRPluginBasic = __webpackgi_exports__.Kmx
+  , __webpackgi_exports__VSMShadowMap = __webpackgi_exports__.RyA
+  , __webpackgi_exports__VariationConfiguratorEditorUiPlugin = __webpackgi_exports__.NPD
+  , __webpackgi_exports__VariationConfiguratorGridUiPlugin = __webpackgi_exports__.Gpr
+  , __webpackgi_exports__VariationConfiguratorPlugin = __webpackgi_exports__.mKI
+  , __webpackgi_exports__Vector2 = __webpackgi_exports__.I9Y
+  , __webpackgi_exports__Vector3 = __webpackgi_exports__.Pq0
+  , __webpackgi_exports__Vector4 = __webpackgi_exports__.IUQ
+  , __webpackgi_exports__VectorKeyframeTrack = __webpackgi_exports__.RiT
+  , __webpackgi_exports__VelocityBufferPlugin = __webpackgi_exports__.Xkr
+  , __webpackgi_exports__VideoTexture = __webpackgi_exports__.Nv2
+  , __webpackgi_exports__ViewerApp = __webpackgi_exports__.EW5
+  , __webpackgi_exports__ViewerState = __webpackgi_exports__.oJ0
+  , __webpackgi_exports__VignettePlugin = __webpackgi_exports__.Q1b
+  , __webpackgi_exports__VirtualCamerasPlugin = __webpackgi_exports__.jK_
+  , __webpackgi_exports__WaveGroundPlugin = __webpackgi_exports__.gTm
+  , __webpackgi_exports__WebGL1Renderer = __webpackgi_exports__.S3G
+  , __webpackgi_exports__WebGL3DRenderTarget = __webpackgi_exports__.ALV
+  , __webpackgi_exports__WebGLArrayRenderTarget = __webpackgi_exports__.y9J
+  , __webpackgi_exports__WebGLCoordinateSystem = __webpackgi_exports__.TdN
+  , __webpackgi_exports__WebGLCubeRenderTarget = __webpackgi_exports__.o6l
+  , __webpackgi_exports__WebGLMultipleRenderTargets = __webpackgi_exports__.AT1
+  , __webpackgi_exports__WebGLRenderTarget = __webpackgi_exports__.nWS
+  , __webpackgi_exports__WebGLRenderer = __webpackgi_exports__.JeP
+  , __webpackgi_exports__WebGLUtils = __webpackgi_exports__.hfX
+  , __webpackgi_exports__WebGPUCoordinateSystem = __webpackgi_exports__.i7u
+  , __webpackgi_exports__WebGiViewerElement = __webpackgi_exports__.b5D
+  , __webpackgi_exports__WindowiseDialogPlugin = __webpackgi_exports__.Z1R
+  , __webpackgi_exports__Wireframe = __webpackgi_exports__.pWZ
+  , __webpackgi_exports__WireframeGeometry = __webpackgi_exports__.XJ7
+  , __webpackgi_exports__WireframeGeometry2 = __webpackgi_exports__.r3D
+  , __webpackgi_exports__WrapAroundEnding = __webpackgi_exports__.dhZ
+  , __webpackgi_exports__XAtlasPlugin = __webpackgi_exports__.$Tl
+  , __webpackgi_exports__ZeroCurvatureEnding = __webpackgi_exports__.rQf
+  , __webpackgi_exports__ZeroFactor = __webpackgi_exports__.ojh
+  , __webpackgi_exports__ZeroSlopeEnding = __webpackgi_exports__.h2z
+  , __webpackgi_exports__ZeroStencilOp = __webpackgi_exports__.kqe
+  , __webpackgi_exports__Zip = __webpackgi_exports__.qQr
+  , __webpackgi_exports__ZipDeflate = __webpackgi_exports__.D8L
+  , __webpackgi_exports__ZipLoader = __webpackgi_exports__.p9O
+  , __webpackgi_exports__ZipPassThrough = __webpackgi_exports__.uZB
+  , __webpackgi_exports__Zlib = __webpackgi_exports__.KK
+  , __webpackgi_exports___SRGBAFormat = __webpackgi_exports__.Ua6
+  , __webpackgi_exports__absMax = __webpackgi_exports__.TYE
+  , __webpackgi_exports__addBasePlugins = __webpackgi_exports__.rQr
+  , __webpackgi_exports__addBloomData = __webpackgi_exports__.$00
+  , __webpackgi_exports__addDracoLoader = __webpackgi_exports__.ued
+  , __webpackgi_exports__addEditorPlugins = __webpackgi_exports__.p$A
+  , __webpackgi_exports__addGLTFExporter = __webpackgi_exports__.m2A
+  , __webpackgi_exports__addGLTFLoader = __webpackgi_exports__.MqB
+  , __webpackgi_exports__addLUTData = __webpackgi_exports__.Dv6
+  , __webpackgi_exports__addRGBELoader = __webpackgi_exports__.f9i
+  , __webpackgi_exports__addSSBevel = __webpackgi_exports__.qHA
+  , __webpackgi_exports__aesGcmDecrypt = __webpackgi_exports__.sQz
+  , __webpackgi_exports__aesGcmEncrypt = __webpackgi_exports__.G52
+  , __webpackgi_exports__afterMain = __webpackgi_exports__.EP1
+  , __webpackgi_exports__afterRead = __webpackgi_exports__.v5N
+  , __webpackgi_exports__afterWrite = __webpackgi_exports__.SET
+  , __webpackgi_exports__angle = __webpackgi_exports__.g7h
+  , __webpackgi_exports__animate = __webpackgi_exports__.i0Z
+  , __webpackgi_exports__animateAsync = __webpackgi_exports__.GcL
+  , __webpackgi_exports__animateObject = __webpackgi_exports__.z67
+  , __webpackgi_exports__animateSet = __webpackgi_exports__.im4
+  , __webpackgi_exports__animateTarget = __webpackgi_exports__.$bx
+  , __webpackgi_exports__anticipate = __webpackgi_exports__.btx
+  , __webpackgi_exports__applyOffset = __webpackgi_exports__.M7c
+  , __webpackgi_exports__applyStyles = __webpackgi_exports__.ZMO
+  , __webpackgi_exports__arrayBufferToBase64 = __webpackgi_exports__.YiG
+  , __webpackgi_exports__arrow = __webpackgi_exports__.UE8
+  , __webpackgi_exports__attract = __webpackgi_exports__.uHr
+  , __webpackgi_exports__attractExpo = __webpackgi_exports__.YYK
+  , __webpackgi_exports__auto = __webpackgi_exports__.qZL
+  , __webpackgi_exports__autoCenterObject3D = __webpackgi_exports__.XMb
+  , __webpackgi_exports__autoGPUInstanceMeshes = __webpackgi_exports__.utC
+  , __webpackgi_exports__autoScaleObject3D = __webpackgi_exports__.uO_
+  , __webpackgi_exports__backIn = __webpackgi_exports__.dgX
+  , __webpackgi_exports__backInOut = __webpackgi_exports__.ZZ5
+  , __webpackgi_exports__backOut = __webpackgi_exports__.Szj
+  , __webpackgi_exports__base64ToArrayBuffer = __webpackgi_exports__.Ms4
+  , __webpackgi_exports__basePlacements = __webpackgi_exports__.OMj
+  , __webpackgi_exports__basicMaterialPropList = __webpackgi_exports__.D7g
+  , __webpackgi_exports__beforeMain = __webpackgi_exports__.LG_
+  , __webpackgi_exports__beforeRead = __webpackgi_exports__.cis
+  , __webpackgi_exports__beforeWrite = __webpackgi_exports__.pAB
+  , __webpackgi_exports__blobToDataURL = __webpackgi_exports__.y80
+  , __webpackgi_exports__bottom = __webpackgi_exports__.sQg
+  , __webpackgi_exports__bounceIn = __webpackgi_exports__.ipZ
+  , __webpackgi_exports__bounceInOut = __webpackgi_exports__.wmn
+  , __webpackgi_exports__bounceOut = __webpackgi_exports__.Tel
+  , __webpackgi_exports__buildCSGMeshBSP = __webpackgi_exports__.Q5
+  , __webpackgi_exports__buildCSGMeshBVH = __webpackgi_exports__.b1j
+  , __webpackgi_exports__cLinearToRGBM = __webpackgi_exports__.wzf
+  , __webpackgi_exports__cRGBMToLinear = __webpackgi_exports__.Cq_
+  , __webpackgi_exports__circIn = __webpackgi_exports__.poN
+  , __webpackgi_exports__circInOut = __webpackgi_exports__.tnX
+  , __webpackgi_exports__circOut = __webpackgi_exports__.yT
+  , __webpackgi_exports__clamp = __webpackgi_exports__.qE8
+  , __webpackgi_exports__clippingParents = __webpackgi_exports__.WYS
+  , __webpackgi_exports__colorToDataUrl = __webpackgi_exports__.Cp1
+  , __webpackgi_exports__combineDofShader = __webpackgi_exports__.mz1
+  , __webpackgi_exports__compress = __webpackgi_exports__.Bc
+  , __webpackgi_exports__compressSync = __webpackgi_exports__.oSR
+  , __webpackgi_exports__computeAverageGeometryNormal = __webpackgi_exports__.KJu
+  , __webpackgi_exports__computeEigenVectors = __webpackgi_exports__.G1I
+  , __webpackgi_exports__computeGeometryCenter = __webpackgi_exports__.dXm
+  , __webpackgi_exports__computeGeometrySize = __webpackgi_exports__.lRj
+  , __webpackgi_exports__computeMikkTSpaceTangents = __webpackgi_exports__.WL9
+  , __webpackgi_exports__computeMorphedAttributes = __webpackgi_exports__.OkM
+  , __webpackgi_exports__computeOffsetMatrix = __webpackgi_exports__.kRU
+  , __webpackgi_exports__computeScreenSpaceBoundingBox = __webpackgi_exports__.Xpo
+  , __webpackgi_exports__computeStyles = __webpackgi_exports__.KCp
+  , __webpackgi_exports__copyMaterialUserData = __webpackgi_exports__.a17
+  , __webpackgi_exports__copyObject3DUserData = __webpackgi_exports__.prl
+  , __webpackgi_exports__copyProps = __webpackgi_exports__.ij0
+  , __webpackgi_exports__copyTextureUserData = __webpackgi_exports__.MjE
+  , __webpackgi_exports__createAnticipate = __webpackgi_exports__.bhJ
+  , __webpackgi_exports__createAttractor = __webpackgi_exports__.nMR
+  , __webpackgi_exports__createBackIn = __webpackgi_exports__.p4x
+  , __webpackgi_exports__createCanvasElement = __webpackgi_exports__.lPF
+  , __webpackgi_exports__createDiv = __webpackgi_exports__.SwP
+  , __webpackgi_exports__createExpoIn = __webpackgi_exports__.U2C
+  , __webpackgi_exports__createGenericExtensionClass = __webpackgi_exports__.FOd
+  , __webpackgi_exports__createIFrameCSS3DObject = __webpackgi_exports__.WOM
+  , __webpackgi_exports__createImage = __webpackgi_exports__.mFw
+  , __webpackgi_exports__createPopper = __webpackgi_exports__.n4h
+  , __webpackgi_exports__createPopperBase = __webpackgi_exports__.eRo
+  , __webpackgi_exports__createPopperLite = __webpackgi_exports__.LsR
+  , __webpackgi_exports__createRenderTargetKey = __webpackgi_exports__.tJ
+  , __webpackgi_exports__createScriptFromURL = __webpackgi_exports__.bES
+  , __webpackgi_exports__createStyles = __webpackgi_exports__.rU
+  , __webpackgi_exports__csgOperations = __webpackgi_exports__.omb
+  , __webpackgi_exports__css = __webpackgi_exports__.AHW
+  , __webpackgi_exports__cubicBezier = __webpackgi_exports__.AKs
+  , __webpackgi_exports__dataTextureFromColor = __webpackgi_exports__.VxZ
+  , __webpackgi_exports__dataTextureFromVec4 = __webpackgi_exports__.GRd
+  , __webpackgi_exports__decay = __webpackgi_exports__.TVt
+  , __webpackgi_exports__decompress = __webpackgi_exports__.mFv
+  , __webpackgi_exports__decompressSync = __webpackgi_exports__.RqU
+  , __webpackgi_exports__deepAccessObject = __webpackgi_exports__.UKN
+  , __webpackgi_exports__deepCloneAttribute = __webpackgi_exports__.mmZ
+  , __webpackgi_exports__defaultPresets = __webpackgi_exports__.Ikv
+  , __webpackgi_exports__deflate = __webpackgi_exports__.Kcl
+  , __webpackgi_exports__deflateSync = __webpackgi_exports__.pdh
+  , __webpackgi_exports__degreesToRadians = __webpackgi_exports__.tRv
+  , __webpackgi_exports__deinterleaveAttribute = __webpackgi_exports__.nNY
+  , __webpackgi_exports__deinterleaveGeometry = __webpackgi_exports__.LK7
+  , __webpackgi_exports__deserializeObject = __webpackgi_exports__.$q
+  , __webpackgi_exports__deserializers = __webpackgi_exports__.vem
+  , __webpackgi_exports__detectOverflow = __webpackgi_exports__.__B
+  , __webpackgi_exports__diamondMaterialPropList = __webpackgi_exports__.BF2
+  , __webpackgi_exports__distance = __webpackgi_exports__.IoC
+  , __webpackgi_exports__downloadBlob = __webpackgi_exports__.WNF
+  , __webpackgi_exports__downloadFile = __webpackgi_exports__.PE3
+  , __webpackgi_exports__easeIn = __webpackgi_exports__.a6C
+  , __webpackgi_exports__easeInOut = __webpackgi_exports__.am_
+  , __webpackgi_exports__easeOut = __webpackgi_exports__.vTE
+  , __webpackgi_exports__embedUrlRefs = __webpackgi_exports__.VAT
+  , __webpackgi_exports__end = __webpackgi_exports__._N2
+  , __webpackgi_exports__envMapBackground = __webpackgi_exports__.oib
+  , __webpackgi_exports__escapeRegExp = __webpackgi_exports__.NtM
+  , __webpackgi_exports__estimateBytesUsed = __webpackgi_exports__.ru_
+  , __webpackgi_exports__eventListeners = __webpackgi_exports__.GcD
+  , __webpackgi_exports__extractAnimationKey = __webpackgi_exports__.pJG
+  , __webpackgi_exports__flattenUiConfig = __webpackgi_exports__.vxL
+  , __webpackgi_exports__flip = __webpackgi_exports__.UUz
+  , __webpackgi_exports__fontFormatExtensionMap = __webpackgi_exports__.mlk
+  , __webpackgi_exports__generateUiConfig = __webpackgi_exports__.SVi
+  , __webpackgi_exports__generateUiFolder = __webpackgi_exports__.QXJ
+  , __webpackgi_exports__getFileHandle = __webpackgi_exports__.D01
+  , __webpackgi_exports__getFilenameFromPath = __webpackgi_exports__.$7C
+  , __webpackgi_exports__getKeyByValue = __webpackgi_exports__.cdn
+  , __webpackgi_exports__getNewFileHandle = __webpackgi_exports__.vGk
+  , __webpackgi_exports__getOrCall = __webpackgi_exports__.GPz
+  , __webpackgi_exports__getPropertyDescriptor = __webpackgi_exports__.NxN
+  , __webpackgi_exports__getTexelDecoding = __webpackgi_exports__.o7j
+  , __webpackgi_exports__getTexelDecodingFunction = __webpackgi_exports__.yqR
+  , __webpackgi_exports__getTextureDataType = __webpackgi_exports__.U_j
+  , __webpackgi_exports__getTypedArray = __webpackgi_exports__.mB_
+  , __webpackgi_exports__getUrlQueryParam = __webpackgi_exports__.d6c
+  , __webpackgi_exports__glbEncryptionPreparser = __webpackgi_exports__.zhG
+  , __webpackgi_exports__glsl = __webpackgi_exports__.HJb
+  , __webpackgi_exports__gltfExporterMaterialsVariantsExtensionExport = __webpackgi_exports__.e5R
+  , __webpackgi_exports__gunzip = __webpackgi_exports__.kdR
+  , __webpackgi_exports__gunzipSync = __webpackgi_exports__.D85
+  , __webpackgi_exports__gzip = __webpackgi_exports__.ZIX
+  , __webpackgi_exports__gzipSync = __webpackgi_exports__.u3y
+  , __webpackgi_exports__hide = __webpackgi_exports__.jDu
+  , __webpackgi_exports__html = __webpackgi_exports__.qyt
+  , __webpackgi_exports__htmlToCanvas = __webpackgi_exports__.Dtr
+  , __webpackgi_exports__htmlToPng = __webpackgi_exports__.WKP
+  , __webpackgi_exports__htmlToSvg = __webpackgi_exports__.fJV
+  , __webpackgi_exports__iGeometryIgnoredUserData = __webpackgi_exports__.tC7
+  , __webpackgi_exports__iMaterialIgnoredUserData = __webpackgi_exports__.Uan
+  , __webpackgi_exports__iModelIgnoredUserData = __webpackgi_exports__.Uct
+  , __webpackgi_exports__iTextureIgnoredUserData = __webpackgi_exports__.K_U
+  , __webpackgi_exports__imageBitmapToBase64 = __webpackgi_exports__.BFA
+  , __webpackgi_exports__imageDataToCanvas = __webpackgi_exports__.BHX
+  , __webpackgi_exports__imageToCanvas = __webpackgi_exports__.Pee
+  , __webpackgi_exports__imageUrlToImageData = __webpackgi_exports__.$If
+  , __webpackgi_exports__includesAll = __webpackgi_exports__.RFY
+  , __webpackgi_exports__inertia = __webpackgi_exports__.Buv
+  , __webpackgi_exports__inflate = __webpackgi_exports__.UDz
+  , __webpackgi_exports__inflateSync = __webpackgi_exports__.HMP
+  , __webpackgi_exports__interleaveAttributes = __webpackgi_exports__.Zg4
+  , __webpackgi_exports__interpolate = __webpackgi_exports__.GWP
+  , __webpackgi_exports__isAnimatableType = __webpackgi_exports__.r58
+  , __webpackgi_exports__isPoint = __webpackgi_exports__.fTC
+  , __webpackgi_exports__isPoint3D = __webpackgi_exports__.YWz
+  , __webpackgi_exports__isPropertyWritable = __webpackgi_exports__.eAs
+  , __webpackgi_exports__keyframes = __webpackgi_exports__.i7C
+  , __webpackgi_exports__khrMaterialsVariantsGLTF = __webpackgi_exports__.jFo
+  , __webpackgi_exports__left = __webpackgi_exports__.kbd
+  , __webpackgi_exports__lerpAngle = __webpackgi_exports__.nU8
+  , __webpackgi_exports__lerpAngle2 = __webpackgi_exports__.NFx
+  , __webpackgi_exports__linear = __webpackgi_exports__.sns
+  , __webpackgi_exports__longestCommonPrefix = __webpackgi_exports__.S2G
+  , __webpackgi_exports__main = __webpackgi_exports__.iW4
+  , __webpackgi_exports__makeColorSvg = __webpackgi_exports__.Se$
+  , __webpackgi_exports__makeColorSvgCircle = __webpackgi_exports__.Sop
+  , __webpackgi_exports__makeFilter = __webpackgi_exports__.HNH
+  , __webpackgi_exports__makeSamplerUi = __webpackgi_exports__.jGz
+  , __webpackgi_exports__makeSetterFor = __webpackgi_exports__.ll7
+  , __webpackgi_exports__makeTextSvg = __webpackgi_exports__.SrG
+  , __webpackgi_exports__matDefine = __webpackgi_exports__.UGD
+  , __webpackgi_exports__mergeAttributes = __webpackgi_exports__.KVf
+  , __webpackgi_exports__mergeBufferAttributes = __webpackgi_exports__.gDN
+  , __webpackgi_exports__mergeBufferGeometries = __webpackgi_exports__.h0o
+  , __webpackgi_exports__mergeGeometries = __webpackgi_exports__.pPQ
+  , __webpackgi_exports__mergeGroups = __webpackgi_exports__.hLo
+  , __webpackgi_exports__mergeVertices = __webpackgi_exports__.ecu
+  , __webpackgi_exports__mirrorEasing = __webpackgi_exports__.mhB
+  , __webpackgi_exports__mix = __webpackgi_exports__.jhA
+  , __webpackgi_exports__mixColor = __webpackgi_exports__.iou
+  , __webpackgi_exports__mixComplex = __webpackgi_exports__.JL8
+  , __webpackgi_exports__mobileAndTabletCheck = __webpackgi_exports__.G8Z
+  , __webpackgi_exports__modifierPhases = __webpackgi_exports__.GMB
+  , __webpackgi_exports__now = __webpackgi_exports__.tB5
+  , __webpackgi_exports__objectHasOwn = __webpackgi_exports__.GnX
+  , __webpackgi_exports__offset = __webpackgi_exports__.cYW
+  , __webpackgi_exports__onChange = __webpackgi_exports__.k9K
+  , __webpackgi_exports__onChange2 = __webpackgi_exports__.CTC
+  , __webpackgi_exports__onChange3 = __webpackgi_exports__.JW6
+  , __webpackgi_exports__parseFileExtension = __webpackgi_exports__.p7C
+  , __webpackgi_exports__patchShaderEncodingSupport = __webpackgi_exports__.OId
+  , __webpackgi_exports__pathJoin = __webpackgi_exports__.CN_
+  , __webpackgi_exports__physicalMaterialPropList = __webpackgi_exports__.uaX
+  , __webpackgi_exports__pipe = __webpackgi_exports__.FsL
+  , __webpackgi_exports__pivotToBBoxCenter = __webpackgi_exports__.gtD
+  , __webpackgi_exports__pivotToPoint = __webpackgi_exports__.wbL
+  , __webpackgi_exports__placements = __webpackgi_exports__.DDu
+  , __webpackgi_exports__pointFromVector = __webpackgi_exports__.O$W
+  , __webpackgi_exports__popper = __webpackgi_exports__.xfb
+  , __webpackgi_exports__popperGenerator = __webpackgi_exports__.UD3
+  , __webpackgi_exports__popperOffsets = __webpackgi_exports__.ZoD
+  , __webpackgi_exports__prettyScrollbar = __webpackgi_exports__.hQ_
+  , __webpackgi_exports__preventOverflow = __webpackgi_exports__.V7C
+  , __webpackgi_exports__processViewer = __webpackgi_exports__.Sow
+  , __webpackgi_exports__progress = __webpackgi_exports__.qB0
+  , __webpackgi_exports__radiansToDegrees = __webpackgi_exports__.nv6
+  , __webpackgi_exports__read = __webpackgi_exports__.LF4
+  , __webpackgi_exports__readFile = __webpackgi_exports__.TAg
+  , __webpackgi_exports__reference = __webpackgi_exports__.irg
+  , __webpackgi_exports__remoteWorkerURL = __webpackgi_exports__.Ei4
+  , __webpackgi_exports__removeDuplicateGeometries = __webpackgi_exports__.Grb
+  , __webpackgi_exports__replaceAll = __webpackgi_exports__.yhl
+  , __webpackgi_exports__reverseEasing = __webpackgi_exports__.Gmo
+  , __webpackgi_exports__right = __webpackgi_exports__.pGT
+  , __webpackgi_exports__rotateDuplicatedMesh = __webpackgi_exports__.Gsh
+  , __webpackgi_exports__sRGBEncoding = __webpackgi_exports__.S2Q
+  , __webpackgi_exports__safeSetProperty = __webpackgi_exports__.pUp
+  , __webpackgi_exports__serializable = __webpackgi_exports__.sU3
+  , __webpackgi_exports__serialize = __webpackgi_exports__.lKg
+  , __webpackgi_exports__serializeObject = __webpackgi_exports__.gwL
+  , __webpackgi_exports__serializeTextureInExtras = __webpackgi_exports__.EBS
+  , __webpackgi_exports__serializers = __webpackgi_exports__.YCG
+  , __webpackgi_exports__setMeshGeometry = __webpackgi_exports__.gC
+  , __webpackgi_exports__setMeshMaterial = __webpackgi_exports__.R5k
+  , __webpackgi_exports__setThreeRendererMode = __webpackgi_exports__.zB$
+  , __webpackgi_exports__setUrlQueryParam = __webpackgi_exports__.dGw
+  , __webpackgi_exports__setupCoreWebGiViewer = __webpackgi_exports__.tNl
+  , __webpackgi_exports__setupIModel = __webpackgi_exports__.AAd
+  , __webpackgi_exports__setupModesStyles = __webpackgi_exports__.YFt
+  , __webpackgi_exports__setupModesUi = __webpackgi_exports__.IRk
+  , __webpackgi_exports__setupObject3dModel = __webpackgi_exports__.ZVX
+  , __webpackgi_exports__setupSandboxWebGiEditor = __webpackgi_exports__.cTN
+  , __webpackgi_exports__shaderReplaceString = __webpackgi_exports__.PlU
+  , __webpackgi_exports__sign2 = __webpackgi_exports__.Mi5
+  , __webpackgi_exports__slerp = __webpackgi_exports__.nuN
+  , __webpackgi_exports__smooth = __webpackgi_exports__.Jp2
+  , __webpackgi_exports__smoothFrame = __webpackgi_exports__.oDA
+  , __webpackgi_exports__snap = __webpackgi_exports__.n$K
+  , __webpackgi_exports__snapObject = __webpackgi_exports__.w4b
+  , __webpackgi_exports__sphericalFromObject = __webpackgi_exports__.JVv
+  , __webpackgi_exports__spring = __webpackgi_exports__.ozl
+  , __webpackgi_exports__standardMaterialPropList = __webpackgi_exports__.asH
+  , __webpackgi_exports__start = __webpackgi_exports__.niF
+  , __webpackgi_exports__steps = __webpackgi_exports__.CiD
+  , __webpackgi_exports__strFromU8 = __webpackgi_exports__.heq
+  , __webpackgi_exports__strToU8 = __webpackgi_exports__._uk
+  , __webpackgi_exports__supportsRequestStreams = __webpackgi_exports__.xrZ
+  , __webpackgi_exports__svgToCanvas = __webpackgi_exports__.aUi
+  , __webpackgi_exports__svgToPng = __webpackgi_exports__.Tmf
+  , __webpackgi_exports__svgUrl = __webpackgi_exports__.AYr
+  , __webpackgi_exports__texImageToCanvas = __webpackgi_exports__.SVO
+  , __webpackgi_exports__textureDataToImageData = __webpackgi_exports__.mBH
+  , __webpackgi_exports__textureToCanvas = __webpackgi_exports__.z73
+  , __webpackgi_exports__textureToDataUrl = __webpackgi_exports__.cyN
+  , __webpackgi_exports__timeout = __webpackgi_exports__.wRz
+  , __webpackgi_exports__toCreasedNormals = __webpackgi_exports__.pbX
+  , __webpackgi_exports__toDecimal = __webpackgi_exports__.nIf
+  , __webpackgi_exports__toIndexedGeometry = __webpackgi_exports__.RY5
+  , __webpackgi_exports__toTitleCase = __webpackgi_exports__.SnO
+  , __webpackgi_exports__toTrianglesDrawMode = __webpackgi_exports__._cJ
+  , __webpackgi_exports__top = __webpackgi_exports__.Mny
+  , __webpackgi_exports__uiButton = __webpackgi_exports__.X0G
+  , __webpackgi_exports__uiColor = __webpackgi_exports__.mBY
+  , __webpackgi_exports__uiConfig = __webpackgi_exports__.rpQ
+  , __webpackgi_exports__uiDropdown = __webpackgi_exports__.exO
+  , __webpackgi_exports__uiFolder = __webpackgi_exports__.rsv
+  , __webpackgi_exports__uiImage = __webpackgi_exports__.gpt
+  , __webpackgi_exports__uiInput = __webpackgi_exports__.hEL
+  , __webpackgi_exports__uiMonitor = __webpackgi_exports__.LIx
+  , __webpackgi_exports__uiPanel = __webpackgi_exports__.Z5F
+  , __webpackgi_exports__uiSlider = __webpackgi_exports__.Eiw
+  , __webpackgi_exports__uiToggle = __webpackgi_exports__.Jx6
+  , __webpackgi_exports__uiVector = __webpackgi_exports__.q00
+  , __webpackgi_exports__uniform = __webpackgi_exports__.PiW
+  , __webpackgi_exports__unzip = __webpackgi_exports__.$15
+  , __webpackgi_exports__unzipSync = __webpackgi_exports__.AOo
+  , __webpackgi_exports__unzlib = __webpackgi_exports__.VTi
+  , __webpackgi_exports__unzlibSync = __webpackgi_exports__.a8Y
+  , __webpackgi_exports__uploadFile = __webpackgi_exports__.QMY
+  , __webpackgi_exports__vLinearToRGBM = __webpackgi_exports__.d5o
+  , __webpackgi_exports__vRGBMToLinear = __webpackgi_exports__.Fxe
+  , __webpackgi_exports__valueToUiType = __webpackgi_exports__.Nan
+  , __webpackgi_exports__variationPlacements = __webpackgi_exports__.Ols
+  , __webpackgi_exports__velocityPerFrame = __webpackgi_exports__.Ovn
+  , __webpackgi_exports__velocityPerSecond = __webpackgi_exports__.fjO
+  , __webpackgi_exports__verifyPermission = __webpackgi_exports__.pZl
+  , __webpackgi_exports__viewport = __webpackgi_exports__.R9T
+  , __webpackgi_exports__wrap = __webpackgi_exports__.LV7
+  , __webpackgi_exports__write = __webpackgi_exports__.M98
+  , __webpackgi_exports__writeFile = __webpackgi_exports__._h9
+  , __webpackgi_exports__zip = __webpackgi_exports__.yU6
+  , __webpackgi_exports__zipSync = __webpackgi_exports__.LaF
+  , __webpackgi_exports__zlib = __webpackgi_exports__.w58
+  , __webpackgi_exports__zlibSync = __webpackgi_exports__.$ax;
+const WEBGI = Object.freeze(Object.defineProperty({
+    __proto__: null,
+    AAssetManagerProcessStatePlugin: __webpackgi_exports__AAssetManagerProcessStatePlugin,
+    ACESFilmicToneMapping: __webpackgi_exports__ACESFilmicToneMapping,
+    ACameraControlsPlugin: __webpackgi_exports__ACameraControlsPlugin,
+    ACanvasRecorder: __webpackgi_exports__ACanvasRecorder,
+    ALL_WEBGI_EXTENSIONS: __webpackgi_exports__ALL_WEBGI_EXTENSIONS,
+    AMaterialManager: __webpackgi_exports__AMaterialManager,
+    ARPlacementBox: __webpackgi_exports__ARPlacementBox,
+    ARPlugin: __webpackgi_exports__ARPlugin,
+    ARTouchInputHelper: __webpackgi_exports__ARTouchInputHelper,
+    AShaderMaterial2: __webpackgi_exports__AShaderMaterial2,
+    AViewerPlugin: __webpackgi_exports__AViewerPlugin,
+    AWSClientPlugin: __webpackgi_exports__AWSClientPlugin,
+    AddBlendPass: __webpackgi_exports__AddBlendPass,
+    AddEquation: __webpackgi_exports__AddEquation,
+    AddOperation: __webpackgi_exports__AddOperation,
+    AdditiveAnimationBlendMode: __webpackgi_exports__AdditiveAnimationBlendMode,
+    AdditiveBlending: __webpackgi_exports__AdditiveBlending,
+    AlphaFormat: __webpackgi_exports__AlphaFormat,
+    AlwaysCompare: __webpackgi_exports__AlwaysCompare,
+    AlwaysDepth: __webpackgi_exports__AlwaysDepth,
+    AlwaysStencilFunc: __webpackgi_exports__AlwaysStencilFunc,
+    AmbientLight: __webpackgi_exports__AmbientLight,
+    AmbientLight2: __webpackgi_exports__AmbientLight2,
+    AnimationAction: __webpackgi_exports__AnimationAction,
+    AnimationClip: __webpackgi_exports__AnimationClip,
+    AnimationLoader: __webpackgi_exports__AnimationLoader,
+    AnimationMixer: __webpackgi_exports__AnimationMixer,
+    AnimationObjectGroup: __webpackgi_exports__AnimationObjectGroup,
+    AnimationUtils: __webpackgi_exports__AnimationUtils,
+    AnisotropyPlugin: __webpackgi_exports__AnisotropyPlugin,
+    ArcCurve: __webpackgi_exports__ArcCurve,
+    ArrayCamera: __webpackgi_exports__ArrayCamera,
+    ArrowHelper: __webpackgi_exports__ArrowHelper,
+    AssetExporter: __webpackgi_exports__AssetExporter,
+    AssetExporterPlugin: __webpackgi_exports__AssetExporterPlugin,
+    AssetImporter: __webpackgi_exports__AssetImporter,
+    AssetManagerBasicPopupPlugin: __webpackgi_exports__AssetManagerBasicPopupPlugin,
+    AssetManagerLoadingBarPlugin: __webpackgi_exports__AssetManagerLoadingBarPlugin,
+    AssetManagerPlugin: __webpackgi_exports__AssetManagerPlugin,
+    AsyncCompress: __webpackgi_exports__AsyncCompress,
+    AsyncDecompress: __webpackgi_exports__AsyncDecompress,
+    AsyncDeflate: __webpackgi_exports__AsyncDeflate,
+    AsyncGunzip: __webpackgi_exports__AsyncGunzip,
+    AsyncGzip: __webpackgi_exports__AsyncGzip,
+    AsyncInflate: __webpackgi_exports__AsyncInflate,
+    AsyncUnzipInflate: __webpackgi_exports__AsyncUnzipInflate,
+    AsyncUnzlib: __webpackgi_exports__AsyncUnzlib,
+    AsyncZipDeflate: __webpackgi_exports__AsyncZipDeflate,
+    AsyncZlib: __webpackgi_exports__AsyncZlib,
+    Audio: __webpackgi_exports__Audio,
+    AudioAnalyser: __webpackgi_exports__AudioAnalyser,
+    AudioContext: __webpackgi_exports__AudioContext,
+    AudioListener: __webpackgi_exports__AudioListener,
+    AudioLoader: __webpackgi_exports__AudioLoader,
+    AxesHelper: __webpackgi_exports__AxesHelper,
+    BackSide: __webpackgi_exports__BackSide,
+    BackgroundPresetGroup: __webpackgi_exports__BackgroundPresetGroup,
+    BaseGroundPlugin: __webpackgi_exports__BaseGroundPlugin,
+    BaseRenderer: __webpackgi_exports__BaseRenderer,
+    BasicDepthPacking: __webpackgi_exports__BasicDepthPacking,
+    BasicShadowMap: __webpackgi_exports__BasicShadowMap,
+    BeringRingAnimation: __webpackgi_exports__BeringRingAnimation,
+    BlobLoader: __webpackgi_exports__BlobLoader,
+    BloomPlugin: __webpackgi_exports__BloomPlugin,
+    Bone: __webpackgi_exports__Bone,
+    BooleanKeyframeTrack: __webpackgi_exports__BooleanKeyframeTrack,
+    Box2: __webpackgi_exports__Box2,
+    Box3: __webpackgi_exports__Box3,
+    Box3B: __webpackgi_exports__Box3B,
+    Box3Helper: __webpackgi_exports__Box3Helper,
+    BoxGeometry: __webpackgi_exports__BoxGeometry,
+    BoxHelper: __webpackgi_exports__BoxHelper,
+    BoxSelectionWidget: __webpackgi_exports__BoxSelectionWidget,
+    BufferAttribute: __webpackgi_exports__BufferAttribute,
+    BufferGeometry: __webpackgi_exports__BufferGeometry,
+    BufferGeometryLoader: __webpackgi_exports__BufferGeometryLoader,
+    ByteType: __webpackgi_exports__ByteType,
+    CSGPluginBSP: __webpackgi_exports__CSGPluginBSP,
+    CSGPluginBVH: __webpackgi_exports__CSGPluginBVH,
+    CSGPluginBase: __webpackgi_exports__CSGPluginBase,
+    CSS3DRendererPlugin: __webpackgi_exports__CSS3DRendererPlugin,
+    Cache: __webpackgi_exports__Cache,
+    Camera: __webpackgi_exports__Camera,
+    CameraController: __webpackgi_exports__CameraController,
+    CameraHelper: __webpackgi_exports__CameraHelper,
+    CameraUiPlugin: __webpackgi_exports__CameraUiPlugin,
+    CameraView: __webpackgi_exports__CameraView,
+    CameraViewControlPlugin: __webpackgi_exports__CameraViewControlPlugin,
+    CameraViewPlugin: __webpackgi_exports__CameraViewPlugin,
+    CannonPhysicsPlugin: __webpackgi_exports__CannonPhysicsPlugin,
+    CanvasMediaRecorder: __webpackgi_exports__CanvasMediaRecorder,
+    CanvasRecorder: __webpackgi_exports__CanvasRecorder,
+    CanvasRecorderPlugin: __webpackgi_exports__CanvasRecorderPlugin,
+    CanvasSnipper: __webpackgi_exports__CanvasSnipper,
+    CanvasSnipperPlugin: __webpackgi_exports__CanvasSnipperPlugin,
+    CanvasTexture: __webpackgi_exports__CanvasTexture,
+    CapsuleGeometry: __webpackgi_exports__CapsuleGeometry,
+    CatmullRomCurve3: __webpackgi_exports__CatmullRomCurve3,
+    ChromaticAberrationPlugin: __webpackgi_exports__ChromaticAberrationPlugin,
+    CineonToneMapping: __webpackgi_exports__CineonToneMapping,
+    CircleGeometry: __webpackgi_exports__CircleGeometry,
+    ClampToEdgeWrapping: __webpackgi_exports__ClampToEdgeWrapping,
+    ClearcoatTintPlugin: __webpackgi_exports__ClearcoatTintPlugin,
+    Clock: __webpackgi_exports__Clock,
+    Color: __webpackgi_exports__Color,
+    ColorKeyframeTrack: __webpackgi_exports__ColorKeyframeTrack,
+    ColorManagement: __webpackgi_exports__ColorManagement,
+    CombinedPostPlugin: __webpackgi_exports__CombinedPostPlugin,
+    Compress: __webpackgi_exports__Compress,
+    CompressedArrayTexture: __webpackgi_exports__CompressedArrayTexture,
+    CompressedCubeTexture: __webpackgi_exports__CompressedCubeTexture,
+    CompressedTexture: __webpackgi_exports__CompressedTexture,
+    CompressedTextureLoader: __webpackgi_exports__CompressedTextureLoader,
+    ConeGeometry: __webpackgi_exports__ConeGeometry,
+    ContactShadowGroundPlugin: __webpackgi_exports__ContactShadowGroundPlugin,
+    CoreEditorApp: __webpackgi_exports__CoreEditorApp,
+    CoreViewerApp: __webpackgi_exports__CoreViewerApp,
+    CubeCamera: __webpackgi_exports__CubeCamera,
+    CubeNormalsCaptureHelper: __webpackgi_exports__CubeNormalsCaptureHelper,
+    CubeReflectionMapping: __webpackgi_exports__CubeReflectionMapping,
+    CubeRefractionMapping: __webpackgi_exports__CubeRefractionMapping,
+    CubeTexture: __webpackgi_exports__CubeTexture,
+    CubeTextureLoader: __webpackgi_exports__CubeTextureLoader,
+    CubeUVReflectionMapping: __webpackgi_exports__CubeUVReflectionMapping,
+    CubicBezierCurve: __webpackgi_exports__CubicBezierCurve,
+    CubicBezierCurve3: __webpackgi_exports__CubicBezierCurve3,
+    CubicInterpolant: __webpackgi_exports__CubicInterpolant,
+    CullFaceBack: __webpackgi_exports__CullFaceBack,
+    CullFaceFront: __webpackgi_exports__CullFaceFront,
+    CullFaceFrontBack: __webpackgi_exports__CullFaceFrontBack,
+    CullFaceNone: __webpackgi_exports__CullFaceNone,
+    Curve: __webpackgi_exports__Curve,
+    CurvePath: __webpackgi_exports__CurvePath,
+    CustomAnimationHelper: __webpackgi_exports__CustomAnimationHelper,
+    CustomAnimationHelperPlugin: __webpackgi_exports__CustomAnimationHelperPlugin,
+    CustomBlending: __webpackgi_exports__CustomBlending,
+    CustomBumpMapPlugin: __webpackgi_exports__CustomBumpMapPlugin,
+    CustomToneMapping: __webpackgi_exports__CustomToneMapping,
+    CylinderGeometry: __webpackgi_exports__CylinderGeometry,
+    Cylindrical: __webpackgi_exports__Cylindrical,
+    DRACOLoader2: __webpackgi_exports__DRACOLoader2,
+    Damper: __webpackgi_exports__Damper,
+    Data3DTexture: __webpackgi_exports__Data3DTexture,
+    DataArrayTexture: __webpackgi_exports__DataArrayTexture,
+    DataTexture: __webpackgi_exports__DataTexture,
+    DataTextureLoader: __webpackgi_exports__DataTextureLoader,
+    DataUrlLoader: __webpackgi_exports__DataUrlLoader,
+    DataUtils: __webpackgi_exports__DataUtils,
+    DebugPlugin: __webpackgi_exports__DebugPlugin,
+    DecodeUTF8: __webpackgi_exports__DecodeUTF8,
+    Decompress: __webpackgi_exports__Decompress,
+    DecrementStencilOp: __webpackgi_exports__DecrementStencilOp,
+    DecrementWrapStencilOp: __webpackgi_exports__DecrementWrapStencilOp,
+    DefaultLoadingManager: __webpackgi_exports__DefaultLoadingManager,
+    Deflate: __webpackgi_exports__Deflate,
+    DepthFormat: __webpackgi_exports__DepthFormat,
+    DepthOfFieldPass: __webpackgi_exports__DepthOfFieldPass,
+    DepthOfFieldPlugin: __webpackgi_exports__DepthOfFieldPlugin,
+    DepthStencilFormat: __webpackgi_exports__DepthStencilFormat,
+    DepthTexture: __webpackgi_exports__DepthTexture,
+    DeviceOrientationControls2: __webpackgi_exports__DeviceOrientationControls2,
+    DeviceOrientationControlsPlugin: __webpackgi_exports__DeviceOrientationControlsPlugin,
+    DiamondMaterial: __webpackgi_exports__DiamondMaterial,
+    DiamondPlugin: __webpackgi_exports__DiamondPlugin,
+    DirectionalLight: __webpackgi_exports__DirectionalLight,
+    DirectionalLight2: __webpackgi_exports__DirectionalLight2,
+    DirectionalLightHelper: __webpackgi_exports__DirectionalLightHelper,
+    DiscreteInterpolant: __webpackgi_exports__DiscreteInterpolant,
+    DisplayP3ColorSpace: __webpackgi_exports__DisplayP3ColorSpace,
+    DodecahedronGeometry: __webpackgi_exports__DodecahedronGeometry,
+    DoubleSide: __webpackgi_exports__DoubleSide,
+    Dropzone: __webpackgi_exports__Dropzone,
+    DropzonePlugin: __webpackgi_exports__DropzonePlugin,
+    DstAlphaFactor: __webpackgi_exports__DstAlphaFactor,
+    DstColorFactor: __webpackgi_exports__DstColorFactor,
+    DynamicCopyUsage: __webpackgi_exports__DynamicCopyUsage,
+    DynamicDrawUsage: __webpackgi_exports__DynamicDrawUsage,
+    DynamicReadUsage: __webpackgi_exports__DynamicReadUsage,
+    EXRExporter2: __webpackgi_exports__EXRExporter2,
+    EXRLoadPlugin: __webpackgi_exports__EXRLoadPlugin,
+    EasingFunctions: __webpackgi_exports__EasingFunctions,
+    EdgesGeometry: __webpackgi_exports__EdgesGeometry,
+    EffectComposer2: __webpackgi_exports__EffectComposer2,
+    EllipseCurve: __webpackgi_exports__EllipseCurve,
+    EllipseCurve3D: __webpackgi_exports__EllipseCurve3D,
+    EncodeUTF8: __webpackgi_exports__EncodeUTF8,
+    EncoderMethod: __webpackgi_exports__EncoderMethod,
+    EnvironmentPresetGroup: __webpackgi_exports__EnvironmentPresetGroup,
+    EqualCompare: __webpackgi_exports__EqualCompare,
+    EqualDepth: __webpackgi_exports__EqualDepth,
+    EqualStencilFunc: __webpackgi_exports__EqualStencilFunc,
+    EquirectangularReflectionMapping: __webpackgi_exports__EquirectangularReflectionMapping,
+    EquirectangularRefractionMapping: __webpackgi_exports__EquirectangularRefractionMapping,
+    Euler: __webpackgi_exports__Euler,
+    EventDispatcher: __webpackgi_exports__EventDispatcher,
+    ExtrasUiPlugin: __webpackgi_exports__ExtrasUiPlugin,
+    ExtrudeGeometry: __webpackgi_exports__ExtrudeGeometry,
+    FBXLoadPlugin: __webpackgi_exports__FBXLoadPlugin,
+    FFMPEGRecorder: __webpackgi_exports__FFMPEGRecorder,
+    FSShadowMaterial: __webpackgi_exports__FSShadowMaterial,
+    FileLoader: __webpackgi_exports__FileLoader,
+    FileTransferPlugin: __webpackgi_exports__FileTransferPlugin,
+    FilmicGrainPlugin: __webpackgi_exports__FilmicGrainPlugin,
+    FirstPersonControls2: __webpackgi_exports__FirstPersonControls2,
+    FirstPersonControlsPlugin: __webpackgi_exports__FirstPersonControlsPlugin,
+    Float16BufferAttribute: __webpackgi_exports__Float16BufferAttribute,
+    Float32BufferAttribute: __webpackgi_exports__Float32BufferAttribute,
+    Float64BufferAttribute: __webpackgi_exports__Float64BufferAttribute,
+    FloatType: __webpackgi_exports__FloatType,
+    Fog: __webpackgi_exports__Fog,
+    FogExp2: __webpackgi_exports__FogExp2,
+    FragmentClippingExtensionPlugin: __webpackgi_exports__FragmentClippingExtensionPlugin,
+    FragmentClippingMode: __webpackgi_exports__FragmentClippingMode,
+    FrameFadePlugin: __webpackgi_exports__FrameFadePlugin,
+    FramebufferTexture: __webpackgi_exports__FramebufferTexture,
+    FrontSide: __webpackgi_exports__FrontSide,
+    Frustum: __webpackgi_exports__Frustum,
+    FullScreenPlugin: __webpackgi_exports__FullScreenPlugin,
+    GBufferPlugin: __webpackgi_exports__GBufferPlugin,
+    GLBufferAttribute: __webpackgi_exports__GLBufferAttribute,
+    GLSL1: __webpackgi_exports__GLSL1,
+    GLSL3: __webpackgi_exports__GLSL3,
+    GLTFAnimationPlugin: __webpackgi_exports__GLTFAnimationPlugin,
+    GLTFDracoExportPlugin: __webpackgi_exports__GLTFDracoExportPlugin,
+    GLTFDracoExporter: __webpackgi_exports__GLTFDracoExporter,
+    GLTFExporter2: __webpackgi_exports__GLTFExporter2,
+    GLTFExporterMaterialsVariantsExtensionExport: __webpackgi_exports__GLTFExporterMaterialsVariantsExtensionExport,
+    GLTFKHRMaterialVariantsPlugin: __webpackgi_exports__GLTFKHRMaterialVariantsPlugin,
+    GLTFLoader2: __webpackgi_exports__GLTFLoader2,
+    GLTFMaterialsVariantsExtensionImport: __webpackgi_exports__GLTFMaterialsVariantsExtensionImport,
+    GLTFMeshGpuInstancingExporter: __webpackgi_exports__GLTFMeshGpuInstancingExporter,
+    GLTFMeshOptPlugin: __webpackgi_exports__GLTFMeshOptPlugin,
+    GLTFSpecGlossinessConverterPlugin: __webpackgi_exports__GLTFSpecGlossinessConverterPlugin,
+    GLTFWriter2: __webpackgi_exports__GLTFWriter2,
+    GammaCorrectionExtension: __webpackgi_exports__GammaCorrectionExtension,
+    GammaCorrectionPlugin: __webpackgi_exports__GammaCorrectionPlugin,
+    GemEnvironmentPresetGroup: __webpackgi_exports__GemEnvironmentPresetGroup,
+    GenericBlendTexturePass: __webpackgi_exports__GenericBlendTexturePass,
+    GenericFilterPlugin: __webpackgi_exports__GenericFilterPlugin,
+    GeometryGeneratorPlugin: __webpackgi_exports__GeometryGeneratorPlugin,
+    GreaterCompare: __webpackgi_exports__GreaterCompare,
+    GreaterDepth: __webpackgi_exports__GreaterDepth,
+    GreaterEqualCompare: __webpackgi_exports__GreaterEqualCompare,
+    GreaterEqualDepth: __webpackgi_exports__GreaterEqualDepth,
+    GreaterEqualStencilFunc: __webpackgi_exports__GreaterEqualStencilFunc,
+    GreaterStencilFunc: __webpackgi_exports__GreaterStencilFunc,
+    GridHelper: __webpackgi_exports__GridHelper,
+    GroundPlugin: __webpackgi_exports__GroundPlugin,
+    Group: __webpackgi_exports__Group,
+    Gunzip: __webpackgi_exports__Gunzip,
+    GyroInputDevice: __webpackgi_exports__GyroInputDevice,
+    Gzip: __webpackgi_exports__Gzip,
+    HDRiGroundPlugin: __webpackgi_exports__HDRiGroundPlugin,
+    HalfFloatType: __webpackgi_exports__HalfFloatType,
+    HemisphereLight: __webpackgi_exports__HemisphereLight,
+    HemisphereLightHelper: __webpackgi_exports__HemisphereLightHelper,
+    HierarchyUiPlugin: __webpackgi_exports__HierarchyUiPlugin,
+    IcosahedronGeometry: __webpackgi_exports__IcosahedronGeometry,
+    ImageBitmapLoader: __webpackgi_exports__ImageBitmapLoader,
+    ImageLoader: __webpackgi_exports__ImageLoader,
+    ImageSequenceRecorder: __webpackgi_exports__ImageSequenceRecorder,
+    ImageUtils: __webpackgi_exports__ImageUtils,
+    Importer: __webpackgi_exports__Importer,
+    IncrementStencilOp: __webpackgi_exports__IncrementStencilOp,
+    IncrementWrapStencilOp: __webpackgi_exports__IncrementWrapStencilOp,
+    Inflate: __webpackgi_exports__Inflate,
+    InstancedBufferAttribute: __webpackgi_exports__InstancedBufferAttribute,
+    InstancedBufferGeometry: __webpackgi_exports__InstancedBufferGeometry,
+    InstancedInterleavedBuffer: __webpackgi_exports__InstancedInterleavedBuffer,
+    InstancedMesh: __webpackgi_exports__InstancedMesh,
+    Int16BufferAttribute: __webpackgi_exports__Int16BufferAttribute,
+    Int32BufferAttribute: __webpackgi_exports__Int32BufferAttribute,
+    Int8BufferAttribute: __webpackgi_exports__Int8BufferAttribute,
+    IntType: __webpackgi_exports__IntType,
+    InteractionPromptPlugin: __webpackgi_exports__InteractionPromptPlugin,
+    InterleavedBuffer: __webpackgi_exports__InterleavedBuffer,
+    InterleavedBufferAttribute: __webpackgi_exports__InterleavedBufferAttribute,
+    Interpolant: __webpackgi_exports__Interpolant,
+    InterpolateDiscrete: __webpackgi_exports__InterpolateDiscrete,
+    InterpolateLinear: __webpackgi_exports__InterpolateLinear,
+    InterpolateSmooth: __webpackgi_exports__InterpolateSmooth,
+    InvertStencilOp: __webpackgi_exports__InvertStencilOp,
+    KHR_TEXTURE_BASISU: __webpackgi_exports__KHR_TEXTURE_BASISU,
+    KTX2LoadPlugin: __webpackgi_exports__KTX2LoadPlugin,
+    KTXLoadPlugin: __webpackgi_exports__KTXLoadPlugin,
+    KeepStencilOp: __webpackgi_exports__KeepStencilOp,
+    KeyframeTrack: __webpackgi_exports__KeyframeTrack,
+    LOD: __webpackgi_exports__LOD,
+    LUTPlugin: __webpackgi_exports__LUTPlugin,
+    LatheGeometry: __webpackgi_exports__LatheGeometry,
+    LayeredMaterialPlugin: __webpackgi_exports__LayeredMaterialPlugin,
+    Layers: __webpackgi_exports__Layers,
+    LessCompare: __webpackgi_exports__LessCompare,
+    LessDepth: __webpackgi_exports__LessDepth,
+    LessEqualCompare: __webpackgi_exports__LessEqualCompare,
+    LessEqualDepth: __webpackgi_exports__LessEqualDepth,
+    LessEqualStencilFunc: __webpackgi_exports__LessEqualStencilFunc,
+    LessStencilFunc: __webpackgi_exports__LessStencilFunc,
+    Light: __webpackgi_exports__Light,
+    LightProbe: __webpackgi_exports__LightProbe,
+    LightsUiPlugin: __webpackgi_exports__LightsUiPlugin,
+    Line: __webpackgi_exports__Line,
+    Line2: __webpackgi_exports__Line2,
+    Line3: __webpackgi_exports__Line3,
+    LineBasicMaterial: __webpackgi_exports__LineBasicMaterial,
+    LineCurve: __webpackgi_exports__LineCurve,
+    LineCurve3: __webpackgi_exports__LineCurve3,
+    LineDashedMaterial: __webpackgi_exports__LineDashedMaterial,
+    LineGeometry: __webpackgi_exports__LineGeometry,
+    LineLoop: __webpackgi_exports__LineLoop,
+    LineMaterial: __webpackgi_exports__LineMaterial,
+    LineSegments: __webpackgi_exports__LineSegments,
+    LineSegments2: __webpackgi_exports__LineSegments2,
+    LineSegmentsGeometry: __webpackgi_exports__LineSegmentsGeometry,
+    LinearDisplayP3ColorSpace: __webpackgi_exports__LinearDisplayP3ColorSpace,
+    LinearEncoding: __webpackgi_exports__LinearEncoding,
+    LinearFilter: __webpackgi_exports__LinearFilter,
+    LinearInterpolant: __webpackgi_exports__LinearInterpolant,
+    LinearMipMapLinearFilter: __webpackgi_exports__LinearMipMapLinearFilter,
+    LinearMipMapNearestFilter: __webpackgi_exports__LinearMipMapNearestFilter,
+    LinearMipmapLinearFilter: __webpackgi_exports__LinearMipmapLinearFilter,
+    LinearMipmapNearestFilter: __webpackgi_exports__LinearMipmapNearestFilter,
+    LinearSRGBColorSpace: __webpackgi_exports__LinearSRGBColorSpace,
+    LinearToneMapping: __webpackgi_exports__LinearToneMapping,
+    LinearTransfer: __webpackgi_exports__LinearTransfer,
+    Loader: __webpackgi_exports__Loader,
+    LoaderUtils: __webpackgi_exports__LoaderUtils,
+    LoadingManager: __webpackgi_exports__LoadingManager,
+    LoadingScreenPlugin: __webpackgi_exports__LoadingScreenPlugin,
+    LoopOnce: __webpackgi_exports__LoopOnce,
+    LoopPingPong: __webpackgi_exports__LoopPingPong,
+    LoopRepeat: __webpackgi_exports__LoopRepeat,
+    LuminanceAlphaFormat: __webpackgi_exports__LuminanceAlphaFormat,
+    LuminanceFormat: __webpackgi_exports__LuminanceFormat,
+    MOUSE: __webpackgi_exports__MOUSE,
+    MTLLoader2: __webpackgi_exports__MTLLoader2,
+    Material: __webpackgi_exports__Material,
+    MaterialConfiguratorBasePlugin: __webpackgi_exports__MaterialConfiguratorBasePlugin,
+    MaterialConfiguratorPlugin: __webpackgi_exports__MaterialConfiguratorPlugin,
+    MaterialExtender: __webpackgi_exports__MaterialExtender,
+    MaterialLibPresetGroupPresetGroup: __webpackgi_exports__MaterialLibPresetGroupPresetGroup,
+    MaterialLibraryBasePlugin: __webpackgi_exports__MaterialLibraryBasePlugin,
+    MaterialLibraryPlugin: __webpackgi_exports__MaterialLibraryPlugin,
+    MaterialLoader: __webpackgi_exports__MaterialLoader,
+    MaterialManager: __webpackgi_exports__MaterialManager,
+    MaterialPresetPlugin: __webpackgi_exports__MaterialPresetPlugin,
+    MaterialPreviewGenerator: __webpackgi_exports__MaterialPreviewGenerator,
+    MathUtils: __webpackgi_exports__MathUtils,
+    Matrix3: __webpackgi_exports__Matrix3,
+    Matrix4: __webpackgi_exports__Matrix4,
+    MaxEquation: __webpackgi_exports__MaxEquation,
+    Mesh: __webpackgi_exports__Mesh,
+    MeshBasicMaterial: __webpackgi_exports__MeshBasicMaterial,
+    MeshBasicMaterial2: __webpackgi_exports__MeshBasicMaterial2,
+    MeshDepthMaterial: __webpackgi_exports__MeshDepthMaterial,
+    MeshDistanceMaterial: __webpackgi_exports__MeshDistanceMaterial,
+    MeshLambertMaterial: __webpackgi_exports__MeshLambertMaterial,
+    MeshMatcapMaterial: __webpackgi_exports__MeshMatcapMaterial,
+    MeshNormalMaterial: __webpackgi_exports__MeshNormalMaterial,
+    MeshOptSimplifyModifierPlugin: __webpackgi_exports__MeshOptSimplifyModifierPlugin,
+    MeshPhongMaterial: __webpackgi_exports__MeshPhongMaterial,
+    MeshPhysicalMaterial: __webpackgi_exports__MeshPhysicalMaterial,
+    MeshStandardMaterial: __webpackgi_exports__MeshStandardMaterial,
+    MeshStandardMaterial2: __webpackgi_exports__MeshStandardMaterial2,
+    MeshToonMaterial: __webpackgi_exports__MeshToonMaterial,
+    MinEquation: __webpackgi_exports__MinEquation,
+    MirroredRepeatWrapping: __webpackgi_exports__MirroredRepeatWrapping,
+    MixOperation: __webpackgi_exports__MixOperation,
+    ModelStagePlugin: __webpackgi_exports__ModelStagePlugin,
+    ModelStagePresetGroup: __webpackgi_exports__ModelStagePresetGroup,
+    MouseInputDevice: __webpackgi_exports__MouseInputDevice,
+    MultiFilterPlugin: __webpackgi_exports__MultiFilterPlugin,
+    MultiplyBlending: __webpackgi_exports__MultiplyBlending,
+    MultiplyOperation: __webpackgi_exports__MultiplyOperation,
+    NearestFilter: __webpackgi_exports__NearestFilter,
+    NearestMipMapLinearFilter: __webpackgi_exports__NearestMipMapLinearFilter,
+    NearestMipMapNearestFilter: __webpackgi_exports__NearestMipMapNearestFilter,
+    NearestMipmapLinearFilter: __webpackgi_exports__NearestMipmapLinearFilter,
+    NearestMipmapNearestFilter: __webpackgi_exports__NearestMipmapNearestFilter,
+    NeverCompare: __webpackgi_exports__NeverCompare,
+    NeverDepth: __webpackgi_exports__NeverDepth,
+    NeverStencilFunc: __webpackgi_exports__NeverStencilFunc,
+    NoBlending: __webpackgi_exports__NoBlending,
+    NoColorSpace: __webpackgi_exports__NoColorSpace,
+    NoToneMapping: __webpackgi_exports__NoToneMapping,
+    NoiseBumpMaterialPlugin: __webpackgi_exports__NoiseBumpMaterialPlugin,
+    NormalAnimationBlendMode: __webpackgi_exports__NormalAnimationBlendMode,
+    NormalBlending: __webpackgi_exports__NormalBlending,
+    NormalBufferPlugin: __webpackgi_exports__NormalBufferPlugin,
+    NormalCaptureMaterial: __webpackgi_exports__NormalCaptureMaterial,
+    NotEqualCompare: __webpackgi_exports__NotEqualCompare,
+    NotEqualDepth: __webpackgi_exports__NotEqualDepth,
+    NotEqualStencilFunc: __webpackgi_exports__NotEqualStencilFunc,
+    NumberKeyframeTrack: __webpackgi_exports__NumberKeyframeTrack,
+    OBJLoader2: __webpackgi_exports__OBJLoader2,
+    ObjMtlLoadPlugin: __webpackgi_exports__ObjMtlLoadPlugin,
+    Object3D: __webpackgi_exports__Object3D,
+    Object3DModel: __webpackgi_exports__Object3DModel,
+    Object3DWidgetsPlugin: __webpackgi_exports__Object3DWidgetsPlugin,
+    ObjectLoader: __webpackgi_exports__ObjectLoader,
+    ObjectLoader2: __webpackgi_exports__ObjectLoader2,
+    ObjectPicker: __webpackgi_exports__ObjectPicker,
+    ObjectProcessorMap: __webpackgi_exports__ObjectProcessorMap,
+    ObjectRotationPlugin: __webpackgi_exports__ObjectRotationPlugin,
+    ObjectSpaceNormalMap: __webpackgi_exports__ObjectSpaceNormalMap,
+    OctahedronGeometry: __webpackgi_exports__OctahedronGeometry,
+    OneFactor: __webpackgi_exports__OneFactor,
+    OneMinusDstAlphaFactor: __webpackgi_exports__OneMinusDstAlphaFactor,
+    OneMinusDstColorFactor: __webpackgi_exports__OneMinusDstColorFactor,
+    OneMinusSrcAlphaFactor: __webpackgi_exports__OneMinusSrcAlphaFactor,
+    OneMinusSrcColorFactor: __webpackgi_exports__OneMinusSrcColorFactor,
+    OrbitControls2: __webpackgi_exports__OrbitControls2,
+    OrbitControls3: __webpackgi_exports__OrbitControls3,
+    OrthographicCamera: __webpackgi_exports__OrthographicCamera,
+    OutlinePlugin: __webpackgi_exports__OutlinePlugin,
+    P3Primaries: __webpackgi_exports__P3Primaries,
+    PCFShadowMap: __webpackgi_exports__PCFShadowMap,
+    PCFSoftShadowMap: __webpackgi_exports__PCFSoftShadowMap,
+    PMREMGenerator: __webpackgi_exports__PMREMGenerator,
+    PMREMGeneratorPlugin: __webpackgi_exports__PMREMGeneratorPlugin,
+    ParallaxCameraControllerPlugin: __webpackgi_exports__ParallaxCameraControllerPlugin,
+    ParallaxMappingPlugin: __webpackgi_exports__ParallaxMappingPlugin,
+    Path: __webpackgi_exports__Path,
+    PerspectiveCamera: __webpackgi_exports__PerspectiveCamera,
+    PickingPlugin: __webpackgi_exports__PickingPlugin,
+    Plane: __webpackgi_exports__Plane,
+    PlaneGeometry: __webpackgi_exports__PlaneGeometry,
+    PlaneHelper: __webpackgi_exports__PlaneHelper,
+    PluginPresetGroup: __webpackgi_exports__PluginPresetGroup,
+    PointLight: __webpackgi_exports__PointLight,
+    PointLight2: __webpackgi_exports__PointLight2,
+    PointLightHelper: __webpackgi_exports__PointLightHelper,
+    PointerDragHelper: __webpackgi_exports__PointerDragHelper,
+    PointerLockControls2: __webpackgi_exports__PointerLockControls2,
+    PointerLockControlsPlugin: __webpackgi_exports__PointerLockControlsPlugin,
+    Points: __webpackgi_exports__Points,
+    PointsMaterial: __webpackgi_exports__PointsMaterial,
+    PolarGridHelper: __webpackgi_exports__PolarGridHelper,
+    PolyhedronGeometry: __webpackgi_exports__PolyhedronGeometry,
+    PopmotionPlugin: __webpackgi_exports__PopmotionPlugin,
+    PosePlugin: __webpackgi_exports__PosePlugin,
+    PositionalAudio: __webpackgi_exports__PositionalAudio,
+    PresetGroup: __webpackgi_exports__PresetGroup,
+    PresetLibraryPlugin: __webpackgi_exports__PresetLibraryPlugin,
+    ProgressivePlugin: __webpackgi_exports__ProgressivePlugin,
+    PropertyBinding: __webpackgi_exports__PropertyBinding,
+    PropertyMixer: __webpackgi_exports__PropertyMixer,
+    QuadraticBezierCurve: __webpackgi_exports__QuadraticBezierCurve,
+    QuadraticBezierCurve3: __webpackgi_exports__QuadraticBezierCurve3,
+    Quaternion: __webpackgi_exports__Quaternion,
+    QuaternionKeyframeTrack: __webpackgi_exports__QuaternionKeyframeTrack,
+    QuaternionLinearInterpolant: __webpackgi_exports__QuaternionLinearInterpolant,
+    RED_GREEN_RGTC2_Format: __webpackgi_exports__RED_GREEN_RGTC2_Format,
+    RED_RGTC1_Format: __webpackgi_exports__RED_RGTC1_Format,
+    REVISION: __webpackgi_exports__REVISION,
+    RGBADepthPacking: __webpackgi_exports__RGBADepthPacking,
+    RGBAFormat: __webpackgi_exports__RGBAFormat,
+    RGBAIntegerFormat: __webpackgi_exports__RGBAIntegerFormat,
+    RGBA_ASTC_10x10_Format: __webpackgi_exports__RGBA_ASTC_10x10_Format,
+    RGBA_ASTC_10x5_Format: __webpackgi_exports__RGBA_ASTC_10x5_Format,
+    RGBA_ASTC_10x6_Format: __webpackgi_exports__RGBA_ASTC_10x6_Format,
+    RGBA_ASTC_10x8_Format: __webpackgi_exports__RGBA_ASTC_10x8_Format,
+    RGBA_ASTC_12x10_Format: __webpackgi_exports__RGBA_ASTC_12x10_Format,
+    RGBA_ASTC_12x12_Format: __webpackgi_exports__RGBA_ASTC_12x12_Format,
+    RGBA_ASTC_4x4_Format: __webpackgi_exports__RGBA_ASTC_4x4_Format,
+    RGBA_ASTC_5x4_Format: __webpackgi_exports__RGBA_ASTC_5x4_Format,
+    RGBA_ASTC_5x5_Format: __webpackgi_exports__RGBA_ASTC_5x5_Format,
+    RGBA_ASTC_6x5_Format: __webpackgi_exports__RGBA_ASTC_6x5_Format,
+    RGBA_ASTC_6x6_Format: __webpackgi_exports__RGBA_ASTC_6x6_Format,
+    RGBA_ASTC_8x5_Format: __webpackgi_exports__RGBA_ASTC_8x5_Format,
+    RGBA_ASTC_8x6_Format: __webpackgi_exports__RGBA_ASTC_8x6_Format,
+    RGBA_ASTC_8x8_Format: __webpackgi_exports__RGBA_ASTC_8x8_Format,
+    RGBA_BPTC_Format: __webpackgi_exports__RGBA_BPTC_Format,
+    RGBA_ETC2_EAC_Format: __webpackgi_exports__RGBA_ETC2_EAC_Format,
+    RGBA_PVRTC_2BPPV1_Format: __webpackgi_exports__RGBA_PVRTC_2BPPV1_Format,
+    RGBA_PVRTC_4BPPV1_Format: __webpackgi_exports__RGBA_PVRTC_4BPPV1_Format,
+    RGBA_S3TC_DXT1_Format: __webpackgi_exports__RGBA_S3TC_DXT1_Format,
+    RGBA_S3TC_DXT3_Format: __webpackgi_exports__RGBA_S3TC_DXT3_Format,
+    RGBA_S3TC_DXT5_Format: __webpackgi_exports__RGBA_S3TC_DXT5_Format,
+    RGBM16ColorSpace: __webpackgi_exports__RGBM16ColorSpace,
+    RGBM16ColorSpace_: __webpackgi_exports__RGBM16ColorSpace_,
+    RGB_BPTC_SIGNED_Format: __webpackgi_exports__RGB_BPTC_SIGNED_Format,
+    RGB_BPTC_UNSIGNED_Format: __webpackgi_exports__RGB_BPTC_UNSIGNED_Format,
+    RGB_ETC1_Format: __webpackgi_exports__RGB_ETC1_Format,
+    RGB_ETC2_Format: __webpackgi_exports__RGB_ETC2_Format,
+    RGB_PVRTC_2BPPV1_Format: __webpackgi_exports__RGB_PVRTC_2BPPV1_Format,
+    RGB_PVRTC_4BPPV1_Format: __webpackgi_exports__RGB_PVRTC_4BPPV1_Format,
+    RGB_S3TC_DXT1_Format: __webpackgi_exports__RGB_S3TC_DXT1_Format,
+    RGFormat: __webpackgi_exports__RGFormat,
+    RGIntegerFormat: __webpackgi_exports__RGIntegerFormat,
+    RainbowDiamondPlugin: __webpackgi_exports__RainbowDiamondPlugin,
+    RandomizedDirectionalLight: __webpackgi_exports__RandomizedDirectionalLight,
+    RandomizedDirectionalLightPlugin: __webpackgi_exports__RandomizedDirectionalLightPlugin,
+    RawShaderMaterial: __webpackgi_exports__RawShaderMaterial,
+    Ray: __webpackgi_exports__Ray,
+    Raycaster: __webpackgi_exports__Raycaster,
+    Rec709Primaries: __webpackgi_exports__Rec709Primaries,
+    RectAreaLight: __webpackgi_exports__RectAreaLight,
+    RedFormat: __webpackgi_exports__RedFormat,
+    RedIntegerFormat: __webpackgi_exports__RedIntegerFormat,
+    Reflector2: __webpackgi_exports__Reflector2,
+    ReinhardToneMapping: __webpackgi_exports__ReinhardToneMapping,
+    RenderTarget: __webpackgi_exports__RenderTarget,
+    RendererUiPlugin: __webpackgi_exports__RendererUiPlugin,
+    RepeatWrapping: __webpackgi_exports__RepeatWrapping,
+    ReplaceStencilOp: __webpackgi_exports__ReplaceStencilOp,
+    ReverseSubtractEquation: __webpackgi_exports__ReverseSubtractEquation,
+    Rhino3dmLoadPlugin: __webpackgi_exports__Rhino3dmLoadPlugin,
+    Rhino3dmLoader2: __webpackgi_exports__Rhino3dmLoader2,
+    RingGeometry: __webpackgi_exports__RingGeometry,
+    RootScene: __webpackgi_exports__RootScene,
+    SIGNED_RED_GREEN_RGTC2_Format: __webpackgi_exports__SIGNED_RED_GREEN_RGTC2_Format,
+    SIGNED_RED_RGTC1_Format: __webpackgi_exports__SIGNED_RED_RGTC1_Format,
+    SRGBColorSpace: __webpackgi_exports__SRGBColorSpace,
+    SRGBTransfer: __webpackgi_exports__SRGBTransfer,
+    SSAOPlugin: __webpackgi_exports__SSAOPlugin,
+    SSBevelPass: __webpackgi_exports__SSBevelPass,
+    SSBevelPlugin: __webpackgi_exports__SSBevelPlugin,
+    SSContactShadows: __webpackgi_exports__SSContactShadows,
+    SSGIPlugin: __webpackgi_exports__SSGIPlugin,
+    SSRPlugin: __webpackgi_exports__SSRPlugin,
+    STLLoadPlugin: __webpackgi_exports__STLLoadPlugin,
+    Scene: __webpackgi_exports__Scene,
+    SceneCamerasUiPlugin: __webpackgi_exports__SceneCamerasUiPlugin,
+    SceneLoopPlugin: __webpackgi_exports__SceneLoopPlugin,
+    ScrollableCameraViewPlugin: __webpackgi_exports__ScrollableCameraViewPlugin,
+    ScrollableCameraViewPreviewPlugin: __webpackgi_exports__ScrollableCameraViewPreviewPlugin,
+    SelectionWidget: __webpackgi_exports__SelectionWidget,
+    ShaderChunk: __webpackgi_exports__ShaderChunk,
+    ShaderLib: __webpackgi_exports__ShaderLib,
+    ShaderMaterial: __webpackgi_exports__ShaderMaterial,
+    ShaderMaterial2: __webpackgi_exports__ShaderMaterial2,
+    ShaderMaterialEncodingSupport: __webpackgi_exports__ShaderMaterialEncodingSupport,
+    ShaderPass2: __webpackgi_exports__ShaderPass2,
+    ShadowMapBaker: __webpackgi_exports__ShadowMapBaker,
+    ShadowMaterial: __webpackgi_exports__ShadowMaterial,
+    Shape: __webpackgi_exports__Shape,
+    ShapeGeometry: __webpackgi_exports__ShapeGeometry,
+    ShapePath: __webpackgi_exports__ShapePath,
+    ShapeTubeExtrudePlugin: __webpackgi_exports__ShapeTubeExtrudePlugin,
+    ShapeUtils: __webpackgi_exports__ShapeUtils,
+    ShortType: __webpackgi_exports__ShortType,
+    SimpleAssetList: __webpackgi_exports__SimpleAssetList,
+    SimpleBackgroundEnvUiPlugin: __webpackgi_exports__SimpleBackgroundEnvUiPlugin,
+    SimpleDataSource: __webpackgi_exports__SimpleDataSource,
+    SimpleEventDispatcher: __webpackgi_exports__SimpleEventDispatcher,
+    SimpleJSONExporter: __webpackgi_exports__SimpleJSONExporter,
+    SimpleJSONLoader: __webpackgi_exports__SimpleJSONLoader,
+    SimpleTextExporter: __webpackgi_exports__SimpleTextExporter,
+    SimpleTextPlugin: __webpackgi_exports__SimpleTextPlugin,
+    SimpleViewerUi: __webpackgi_exports__SimpleViewerUi,
+    SimplifyModifierPlugin: __webpackgi_exports__SimplifyModifierPlugin,
+    Skeleton: __webpackgi_exports__Skeleton,
+    SkeletonHelper: __webpackgi_exports__SkeletonHelper,
+    SkinnedMesh: __webpackgi_exports__SkinnedMesh,
+    SnowFallPlugin: __webpackgi_exports__SnowFallPlugin,
+    Source: __webpackgi_exports__Source,
+    Sphere: __webpackgi_exports__Sphere,
+    SphereGeometry: __webpackgi_exports__SphereGeometry,
+    SphereSelectionWidget: __webpackgi_exports__SphereSelectionWidget,
+    Spherical: __webpackgi_exports__Spherical,
+    SphericalHarmonics3: __webpackgi_exports__SphericalHarmonics3,
+    SplineCurve: __webpackgi_exports__SplineCurve,
+    SpotLight: __webpackgi_exports__SpotLight,
+    SpotLight2: __webpackgi_exports__SpotLight2,
+    SpotLightHelper: __webpackgi_exports__SpotLightHelper,
+    Sprite: __webpackgi_exports__Sprite,
+    SpriteMaterial: __webpackgi_exports__SpriteMaterial,
+    SrcAlphaFactor: __webpackgi_exports__SrcAlphaFactor,
+    SrcAlphaSaturateFactor: __webpackgi_exports__SrcAlphaSaturateFactor,
+    SrcColorFactor: __webpackgi_exports__SrcColorFactor,
+    StaticCopyUsage: __webpackgi_exports__StaticCopyUsage,
+    StaticDrawUsage: __webpackgi_exports__StaticDrawUsage,
+    StaticReadUsage: __webpackgi_exports__StaticReadUsage,
+    StereoCamera: __webpackgi_exports__StereoCamera,
+    StreamCopyUsage: __webpackgi_exports__StreamCopyUsage,
+    StreamDrawUsage: __webpackgi_exports__StreamDrawUsage,
+    StreamReadUsage: __webpackgi_exports__StreamReadUsage,
+    StringKeyframeTrack: __webpackgi_exports__StringKeyframeTrack,
+    SubtractEquation: __webpackgi_exports__SubtractEquation,
+    SubtractiveBlending: __webpackgi_exports__SubtractiveBlending,
+    SwitchNodeBasePlugin: __webpackgi_exports__SwitchNodeBasePlugin,
+    SwitchNodePlugin: __webpackgi_exports__SwitchNodePlugin,
+    TOUCH: __webpackgi_exports__TOUCH,
+    TYPED_ARRAYS: __webpackgi_exports__TYPED_ARRAYS,
+    TangentSpaceNormalMap: __webpackgi_exports__TangentSpaceNormalMap,
+    TemporalAAPlugin: __webpackgi_exports__TemporalAAPlugin,
+    TetrahedronGeometry: __webpackgi_exports__TetrahedronGeometry,
+    TextSVGOptions: __webpackgi_exports__TextSVGOptions,
+    Texture: __webpackgi_exports__Texture,
+    TextureLoader: __webpackgi_exports__TextureLoader,
+    ThinFilmLayerPlugin: __webpackgi_exports__ThinFilmLayerPlugin,
+    ThreeMaterialLoader: __webpackgi_exports__ThreeMaterialLoader,
+    TonemapPlugin: __webpackgi_exports__TonemapPlugin,
+    TorusGeometry: __webpackgi_exports__TorusGeometry,
+    TorusKnotGeometry: __webpackgi_exports__TorusKnotGeometry,
+    TrackballControlsPlugin: __webpackgi_exports__TrackballControlsPlugin,
+    TransformAnimationPlugin: __webpackgi_exports__TransformAnimationPlugin,
+    TransformControls: __webpackgi_exports__TransformControls,
+    TransformControls2: __webpackgi_exports__TransformControls2,
+    TransformControlsGizmo: __webpackgi_exports__TransformControlsGizmo,
+    TransformControlsPlane: __webpackgi_exports__TransformControlsPlane,
+    TransfrSharePlugin: __webpackgi_exports__TransfrSharePlugin,
+    Triangle: __webpackgi_exports__Triangle,
+    TriangleFanDrawMode: __webpackgi_exports__TriangleFanDrawMode,
+    TriangleStripDrawMode: __webpackgi_exports__TriangleStripDrawMode,
+    TrianglesDrawMode: __webpackgi_exports__TrianglesDrawMode,
+    TriplanarUVMappingPlugin: __webpackgi_exports__TriplanarUVMappingPlugin,
+    TubeGeometry: __webpackgi_exports__TubeGeometry,
+    TubeShapeGeometry: __webpackgi_exports__TubeShapeGeometry,
+    TweakpaneUiPlugin: __webpackgi_exports__TweakpaneUiPlugin,
+    TweakpaneWrapper: __webpackgi_exports__TweakpaneWrapper,
+    TwoPassDoubleSide: __webpackgi_exports__TwoPassDoubleSide,
+    UChartOptions: __webpackgi_exports__UChartOptions,
+    UPackOptions: __webpackgi_exports__UPackOptions,
+    UVMapping: __webpackgi_exports__UVMapping,
+    Uint16BufferAttribute: __webpackgi_exports__Uint16BufferAttribute,
+    Uint32BufferAttribute: __webpackgi_exports__Uint32BufferAttribute,
+    Uint8BufferAttribute: __webpackgi_exports__Uint8BufferAttribute,
+    Uint8ClampedBufferAttribute: __webpackgi_exports__Uint8ClampedBufferAttribute,
+    Uncharted2Tonemapping: __webpackgi_exports__Uncharted2Tonemapping,
+    Uniform: __webpackgi_exports__Uniform,
+    UniformsGroup: __webpackgi_exports__UniformsGroup,
+    UniformsLib: __webpackgi_exports__UniformsLib,
+    UniformsUtils: __webpackgi_exports__UniformsUtils,
+    UnsignedByteType: __webpackgi_exports__UnsignedByteType,
+    UnsignedInt248Type: __webpackgi_exports__UnsignedInt248Type,
+    UnsignedIntType: __webpackgi_exports__UnsignedIntType,
+    UnsignedShort4444Type: __webpackgi_exports__UnsignedShort4444Type,
+    UnsignedShort5551Type: __webpackgi_exports__UnsignedShort5551Type,
+    UnsignedShortType: __webpackgi_exports__UnsignedShortType,
+    Unzip: __webpackgi_exports__Unzip,
+    UnzipInflate: __webpackgi_exports__UnzipInflate,
+    UnzipPassThrough: __webpackgi_exports__UnzipPassThrough,
+    Unzlib: __webpackgi_exports__Unzlib,
+    VJSONPresetGroup: __webpackgi_exports__VJSONPresetGroup,
+    VRPluginBasic: __webpackgi_exports__VRPluginBasic,
+    VSMShadowMap: __webpackgi_exports__VSMShadowMap,
+    VariationConfiguratorEditorUiPlugin: __webpackgi_exports__VariationConfiguratorEditorUiPlugin,
+    VariationConfiguratorGridUiPlugin: __webpackgi_exports__VariationConfiguratorGridUiPlugin,
+    VariationConfiguratorPlugin: __webpackgi_exports__VariationConfiguratorPlugin,
+    Vector2: __webpackgi_exports__Vector2,
+    Vector3: __webpackgi_exports__Vector3,
+    Vector4: __webpackgi_exports__Vector4,
+    VectorKeyframeTrack: __webpackgi_exports__VectorKeyframeTrack,
+    VelocityBufferPlugin: __webpackgi_exports__VelocityBufferPlugin,
+    VideoTexture: __webpackgi_exports__VideoTexture,
+    ViewerApp: __webpackgi_exports__ViewerApp,
+    ViewerState: __webpackgi_exports__ViewerState,
+    VignettePlugin: __webpackgi_exports__VignettePlugin,
+    VirtualCamerasPlugin: __webpackgi_exports__VirtualCamerasPlugin,
+    WaveGroundPlugin: __webpackgi_exports__WaveGroundPlugin,
+    WebGL1Renderer: __webpackgi_exports__WebGL1Renderer,
+    WebGL3DRenderTarget: __webpackgi_exports__WebGL3DRenderTarget,
+    WebGLArrayRenderTarget: __webpackgi_exports__WebGLArrayRenderTarget,
+    WebGLCoordinateSystem: __webpackgi_exports__WebGLCoordinateSystem,
+    WebGLCubeRenderTarget: __webpackgi_exports__WebGLCubeRenderTarget,
+    WebGLMultipleRenderTargets: __webpackgi_exports__WebGLMultipleRenderTargets,
+    WebGLRenderTarget: __webpackgi_exports__WebGLRenderTarget,
+    WebGLRenderer: __webpackgi_exports__WebGLRenderer,
+    WebGLUtils: __webpackgi_exports__WebGLUtils,
+    WebGPUCoordinateSystem: __webpackgi_exports__WebGPUCoordinateSystem,
+    WebGiViewerElement: __webpackgi_exports__WebGiViewerElement,
+    WindowiseDialogPlugin: __webpackgi_exports__WindowiseDialogPlugin,
+    Wireframe: __webpackgi_exports__Wireframe,
+    WireframeGeometry: __webpackgi_exports__WireframeGeometry,
+    WireframeGeometry2: __webpackgi_exports__WireframeGeometry2,
+    WrapAroundEnding: __webpackgi_exports__WrapAroundEnding,
+    XAtlasPlugin: __webpackgi_exports__XAtlasPlugin,
+    ZeroCurvatureEnding: __webpackgi_exports__ZeroCurvatureEnding,
+    ZeroFactor: __webpackgi_exports__ZeroFactor,
+    ZeroSlopeEnding: __webpackgi_exports__ZeroSlopeEnding,
+    ZeroStencilOp: __webpackgi_exports__ZeroStencilOp,
+    Zip: __webpackgi_exports__Zip,
+    ZipDeflate: __webpackgi_exports__ZipDeflate,
+    ZipLoader: __webpackgi_exports__ZipLoader,
+    ZipPassThrough: __webpackgi_exports__ZipPassThrough,
+    Zlib: __webpackgi_exports__Zlib,
+    _SRGBAFormat: __webpackgi_exports___SRGBAFormat,
+    absMax: __webpackgi_exports__absMax,
+    addBasePlugins: __webpackgi_exports__addBasePlugins,
+    addBloomData: __webpackgi_exports__addBloomData,
+    addDracoLoader: __webpackgi_exports__addDracoLoader,
+    addEditorPlugins: __webpackgi_exports__addEditorPlugins,
+    addGLTFExporter: __webpackgi_exports__addGLTFExporter,
+    addGLTFLoader: __webpackgi_exports__addGLTFLoader,
+    addLUTData: __webpackgi_exports__addLUTData,
+    addRGBELoader: __webpackgi_exports__addRGBELoader,
+    addSSBevel: __webpackgi_exports__addSSBevel,
+    aesGcmDecrypt: __webpackgi_exports__aesGcmDecrypt,
+    aesGcmEncrypt: __webpackgi_exports__aesGcmEncrypt,
+    afterMain: __webpackgi_exports__afterMain,
+    afterRead: __webpackgi_exports__afterRead,
+    afterWrite: __webpackgi_exports__afterWrite,
+    angle: __webpackgi_exports__angle,
+    animate: __webpackgi_exports__animate,
+    animateAsync: __webpackgi_exports__animateAsync,
+    animateObject: __webpackgi_exports__animateObject,
+    animateSet: __webpackgi_exports__animateSet,
+    animateTarget: __webpackgi_exports__animateTarget,
+    anticipate: __webpackgi_exports__anticipate,
+    applyOffset: __webpackgi_exports__applyOffset,
+    applyStyles: __webpackgi_exports__applyStyles,
+    arrayBufferToBase64: __webpackgi_exports__arrayBufferToBase64,
+    arrow: __webpackgi_exports__arrow,
+    attract: __webpackgi_exports__attract,
+    attractExpo: __webpackgi_exports__attractExpo,
+    auto: __webpackgi_exports__auto,
+    autoCenterObject3D: __webpackgi_exports__autoCenterObject3D,
+    autoGPUInstanceMeshes: __webpackgi_exports__autoGPUInstanceMeshes,
+    autoScaleObject3D: __webpackgi_exports__autoScaleObject3D,
+    backIn: __webpackgi_exports__backIn,
+    backInOut: __webpackgi_exports__backInOut,
+    backOut: __webpackgi_exports__backOut,
+    base64ToArrayBuffer: __webpackgi_exports__base64ToArrayBuffer,
+    basePlacements: __webpackgi_exports__basePlacements,
+    basicMaterialPropList: __webpackgi_exports__basicMaterialPropList,
+    beforeMain: __webpackgi_exports__beforeMain,
+    beforeRead: __webpackgi_exports__beforeRead,
+    beforeWrite: __webpackgi_exports__beforeWrite,
+    blobToDataURL: __webpackgi_exports__blobToDataURL,
+    bottom: __webpackgi_exports__bottom,
+    bounceIn: __webpackgi_exports__bounceIn,
+    bounceInOut: __webpackgi_exports__bounceInOut,
+    bounceOut: __webpackgi_exports__bounceOut,
+    buildCSGMeshBSP: __webpackgi_exports__buildCSGMeshBSP,
+    buildCSGMeshBVH: __webpackgi_exports__buildCSGMeshBVH,
+    cLinearToRGBM: __webpackgi_exports__cLinearToRGBM,
+    cRGBMToLinear: __webpackgi_exports__cRGBMToLinear,
+    circIn: __webpackgi_exports__circIn,
+    circInOut: __webpackgi_exports__circInOut,
+    circOut: __webpackgi_exports__circOut,
+    clamp: __webpackgi_exports__clamp,
+    clippingParents: __webpackgi_exports__clippingParents,
+    colorToDataUrl: __webpackgi_exports__colorToDataUrl,
+    combineDofShader: __webpackgi_exports__combineDofShader,
+    compress: __webpackgi_exports__compress,
+    compressSync: __webpackgi_exports__compressSync,
+    computeAverageGeometryNormal: __webpackgi_exports__computeAverageGeometryNormal,
+    computeEigenVectors: __webpackgi_exports__computeEigenVectors,
+    computeGeometryCenter: __webpackgi_exports__computeGeometryCenter,
+    computeGeometrySize: __webpackgi_exports__computeGeometrySize,
+    computeMikkTSpaceTangents: __webpackgi_exports__computeMikkTSpaceTangents,
+    computeMorphedAttributes: __webpackgi_exports__computeMorphedAttributes,
+    computeOffsetMatrix: __webpackgi_exports__computeOffsetMatrix,
+    computeScreenSpaceBoundingBox: __webpackgi_exports__computeScreenSpaceBoundingBox,
+    computeStyles: __webpackgi_exports__computeStyles,
+    copyMaterialUserData: __webpackgi_exports__copyMaterialUserData,
+    copyObject3DUserData: __webpackgi_exports__copyObject3DUserData,
+    copyProps: __webpackgi_exports__copyProps,
+    copyTextureUserData: __webpackgi_exports__copyTextureUserData,
+    createAnticipate: __webpackgi_exports__createAnticipate,
+    createAttractor: __webpackgi_exports__createAttractor,
+    createBackIn: __webpackgi_exports__createBackIn,
+    createCanvasElement: __webpackgi_exports__createCanvasElement,
+    createDiv: __webpackgi_exports__createDiv,
+    createExpoIn: __webpackgi_exports__createExpoIn,
+    createGenericExtensionClass: __webpackgi_exports__createGenericExtensionClass,
+    createIFrameCSS3DObject: __webpackgi_exports__createIFrameCSS3DObject,
+    createImage: __webpackgi_exports__createImage,
+    createPopper: __webpackgi_exports__createPopper,
+    createPopperBase: __webpackgi_exports__createPopperBase,
+    createPopperLite: __webpackgi_exports__createPopperLite,
+    createRenderTargetKey: __webpackgi_exports__createRenderTargetKey,
+    createScriptFromURL: __webpackgi_exports__createScriptFromURL,
+    createStyles: __webpackgi_exports__createStyles,
+    csgOperations: __webpackgi_exports__csgOperations,
+    css: __webpackgi_exports__css,
+    cubicBezier: __webpackgi_exports__cubicBezier,
+    dataTextureFromColor: __webpackgi_exports__dataTextureFromColor,
+    dataTextureFromVec4: __webpackgi_exports__dataTextureFromVec4,
+    decay: __webpackgi_exports__decay,
+    decompress: __webpackgi_exports__decompress,
+    decompressSync: __webpackgi_exports__decompressSync,
+    deepAccessObject: __webpackgi_exports__deepAccessObject,
+    deepCloneAttribute: __webpackgi_exports__deepCloneAttribute,
+    defaultPresets: __webpackgi_exports__defaultPresets,
+    deflate: __webpackgi_exports__deflate,
+    deflateSync: __webpackgi_exports__deflateSync,
+    degreesToRadians: __webpackgi_exports__degreesToRadians,
+    deinterleaveAttribute: __webpackgi_exports__deinterleaveAttribute,
+    deinterleaveGeometry: __webpackgi_exports__deinterleaveGeometry,
+    deserializeObject: __webpackgi_exports__deserializeObject,
+    deserializers: __webpackgi_exports__deserializers,
+    detectOverflow: __webpackgi_exports__detectOverflow,
+    diamondMaterialPropList: __webpackgi_exports__diamondMaterialPropList,
+    distance: __webpackgi_exports__distance,
+    downloadBlob: __webpackgi_exports__downloadBlob,
+    downloadFile: __webpackgi_exports__downloadFile,
+    easeIn: __webpackgi_exports__easeIn,
+    easeInOut: __webpackgi_exports__easeInOut,
+    easeOut: __webpackgi_exports__easeOut,
+    embedUrlRefs: __webpackgi_exports__embedUrlRefs,
+    end: __webpackgi_exports__end,
+    envMapBackground: __webpackgi_exports__envMapBackground,
+    escapeRegExp: __webpackgi_exports__escapeRegExp,
+    estimateBytesUsed: __webpackgi_exports__estimateBytesUsed,
+    eventListeners: __webpackgi_exports__eventListeners,
+    extractAnimationKey: __webpackgi_exports__extractAnimationKey,
+    flattenUiConfig: __webpackgi_exports__flattenUiConfig,
+    flip: __webpackgi_exports__flip,
+    fontFormatExtensionMap: __webpackgi_exports__fontFormatExtensionMap,
+    generateUiConfig: __webpackgi_exports__generateUiConfig,
+    generateUiFolder: __webpackgi_exports__generateUiFolder,
+    getFileHandle: __webpackgi_exports__getFileHandle,
+    getFilenameFromPath: __webpackgi_exports__getFilenameFromPath,
+    getKeyByValue: __webpackgi_exports__getKeyByValue,
+    getNewFileHandle: __webpackgi_exports__getNewFileHandle,
+    getOrCall: __webpackgi_exports__getOrCall,
+    getPropertyDescriptor: __webpackgi_exports__getPropertyDescriptor,
+    getTexelDecoding: __webpackgi_exports__getTexelDecoding,
+    getTexelDecodingFunction: __webpackgi_exports__getTexelDecodingFunction,
+    getTextureDataType: __webpackgi_exports__getTextureDataType,
+    getTypedArray: __webpackgi_exports__getTypedArray,
+    getUrlQueryParam: __webpackgi_exports__getUrlQueryParam,
+    glbEncryptionPreparser: __webpackgi_exports__glbEncryptionPreparser,
+    glsl: __webpackgi_exports__glsl,
+    gltfExporterMaterialsVariantsExtensionExport: __webpackgi_exports__gltfExporterMaterialsVariantsExtensionExport,
+    gunzip: __webpackgi_exports__gunzip,
+    gunzipSync: __webpackgi_exports__gunzipSync,
+    gzip: __webpackgi_exports__gzip,
+    gzipSync: __webpackgi_exports__gzipSync,
+    hide: __webpackgi_exports__hide,
+    html: __webpackgi_exports__html,
+    htmlToCanvas: __webpackgi_exports__htmlToCanvas,
+    htmlToPng: __webpackgi_exports__htmlToPng,
+    htmlToSvg: __webpackgi_exports__htmlToSvg,
+    iGeometryIgnoredUserData: __webpackgi_exports__iGeometryIgnoredUserData,
+    iMaterialIgnoredUserData: __webpackgi_exports__iMaterialIgnoredUserData,
+    iModelIgnoredUserData: __webpackgi_exports__iModelIgnoredUserData,
+    iTextureIgnoredUserData: __webpackgi_exports__iTextureIgnoredUserData,
+    imageBitmapToBase64: __webpackgi_exports__imageBitmapToBase64,
+    imageDataToCanvas: __webpackgi_exports__imageDataToCanvas,
+    imageToCanvas: __webpackgi_exports__imageToCanvas,
+    imageUrlToImageData: __webpackgi_exports__imageUrlToImageData,
+    includesAll: __webpackgi_exports__includesAll,
+    inertia: __webpackgi_exports__inertia,
+    inflate: __webpackgi_exports__inflate,
+    inflateSync: __webpackgi_exports__inflateSync,
+    interleaveAttributes: __webpackgi_exports__interleaveAttributes,
+    interpolate: __webpackgi_exports__interpolate,
+    isAnimatableType: __webpackgi_exports__isAnimatableType,
+    isPoint: __webpackgi_exports__isPoint,
+    isPoint3D: __webpackgi_exports__isPoint3D,
+    isPropertyWritable: __webpackgi_exports__isPropertyWritable,
+    keyframes: __webpackgi_exports__keyframes,
+    khrMaterialsVariantsGLTF: __webpackgi_exports__khrMaterialsVariantsGLTF,
+    left: __webpackgi_exports__left,
+    lerpAngle: __webpackgi_exports__lerpAngle,
+    lerpAngle2: __webpackgi_exports__lerpAngle2,
+    linear: __webpackgi_exports__linear,
+    longestCommonPrefix: __webpackgi_exports__longestCommonPrefix,
+    main: __webpackgi_exports__main,
+    makeColorSvg: __webpackgi_exports__makeColorSvg,
+    makeColorSvgCircle: __webpackgi_exports__makeColorSvgCircle,
+    makeFilter: __webpackgi_exports__makeFilter,
+    makeSamplerUi: __webpackgi_exports__makeSamplerUi,
+    makeSetterFor: __webpackgi_exports__makeSetterFor,
+    makeTextSvg: __webpackgi_exports__makeTextSvg,
+    matDefine: __webpackgi_exports__matDefine,
+    mergeAttributes: __webpackgi_exports__mergeAttributes,
+    mergeBufferAttributes: __webpackgi_exports__mergeBufferAttributes,
+    mergeBufferGeometries: __webpackgi_exports__mergeBufferGeometries,
+    mergeGeometries: __webpackgi_exports__mergeGeometries,
+    mergeGroups: __webpackgi_exports__mergeGroups,
+    mergeVertices: __webpackgi_exports__mergeVertices,
+    mirrorEasing: __webpackgi_exports__mirrorEasing,
+    mix: __webpackgi_exports__mix,
+    mixColor: __webpackgi_exports__mixColor,
+    mixComplex: __webpackgi_exports__mixComplex,
+    mobileAndTabletCheck: __webpackgi_exports__mobileAndTabletCheck,
+    modifierPhases: __webpackgi_exports__modifierPhases,
+    now: __webpackgi_exports__now,
+    objectHasOwn: __webpackgi_exports__objectHasOwn,
+    offset: __webpackgi_exports__offset,
+    onChange: __webpackgi_exports__onChange,
+    onChange2: __webpackgi_exports__onChange2,
+    onChange3: __webpackgi_exports__onChange3,
+    parseFileExtension: __webpackgi_exports__parseFileExtension,
+    patchShaderEncodingSupport: __webpackgi_exports__patchShaderEncodingSupport,
+    pathJoin: __webpackgi_exports__pathJoin,
+    physicalMaterialPropList: __webpackgi_exports__physicalMaterialPropList,
+    pipe: __webpackgi_exports__pipe,
+    pivotToBBoxCenter: __webpackgi_exports__pivotToBBoxCenter,
+    pivotToPoint: __webpackgi_exports__pivotToPoint,
+    placements: __webpackgi_exports__placements,
+    pointFromVector: __webpackgi_exports__pointFromVector,
+    popper: __webpackgi_exports__popper,
+    popperGenerator: __webpackgi_exports__popperGenerator,
+    popperOffsets: __webpackgi_exports__popperOffsets,
+    prettyScrollbar: __webpackgi_exports__prettyScrollbar,
+    preventOverflow: __webpackgi_exports__preventOverflow,
+    processViewer: __webpackgi_exports__processViewer,
+    progress: __webpackgi_exports__progress,
+    radiansToDegrees: __webpackgi_exports__radiansToDegrees,
+    read: __webpackgi_exports__read,
+    readFile: __webpackgi_exports__readFile,
+    reference: __webpackgi_exports__reference,
+    remoteWorkerURL: __webpackgi_exports__remoteWorkerURL,
+    removeDuplicateGeometries: __webpackgi_exports__removeDuplicateGeometries,
+    replaceAll: __webpackgi_exports__replaceAll,
+    reverseEasing: __webpackgi_exports__reverseEasing,
+    right: __webpackgi_exports__right,
+    rotateDuplicatedMesh: __webpackgi_exports__rotateDuplicatedMesh,
+    sRGBEncoding: __webpackgi_exports__sRGBEncoding,
+    safeSetProperty: __webpackgi_exports__safeSetProperty,
+    serializable: __webpackgi_exports__serializable,
+    serialize: __webpackgi_exports__serialize,
+    serializeObject: __webpackgi_exports__serializeObject,
+    serializeTextureInExtras: __webpackgi_exports__serializeTextureInExtras,
+    serializers: __webpackgi_exports__serializers,
+    setMeshGeometry: __webpackgi_exports__setMeshGeometry,
+    setMeshMaterial: __webpackgi_exports__setMeshMaterial,
+    setThreeRendererMode: __webpackgi_exports__setThreeRendererMode,
+    setUrlQueryParam: __webpackgi_exports__setUrlQueryParam,
+    setupCoreWebGiViewer: __webpackgi_exports__setupCoreWebGiViewer,
+    setupIModel: __webpackgi_exports__setupIModel,
+    setupModesStyles: __webpackgi_exports__setupModesStyles,
+    setupModesUi: __webpackgi_exports__setupModesUi,
+    setupObject3dModel: __webpackgi_exports__setupObject3dModel,
+    setupSandboxWebGiEditor: __webpackgi_exports__setupSandboxWebGiEditor,
+    shaderReplaceString: __webpackgi_exports__shaderReplaceString,
+    sign2: __webpackgi_exports__sign2,
+    slerp: __webpackgi_exports__slerp,
+    smooth: __webpackgi_exports__smooth,
+    smoothFrame: __webpackgi_exports__smoothFrame,
+    snap: __webpackgi_exports__snap,
+    snapObject: __webpackgi_exports__snapObject,
+    sphericalFromObject: __webpackgi_exports__sphericalFromObject,
+    spring: __webpackgi_exports__spring,
+    standardMaterialPropList: __webpackgi_exports__standardMaterialPropList,
+    start: __webpackgi_exports__start,
+    steps: __webpackgi_exports__steps,
+    strFromU8: __webpackgi_exports__strFromU8,
+    strToU8: __webpackgi_exports__strToU8,
+    supportsRequestStreams: __webpackgi_exports__supportsRequestStreams,
+    svgToCanvas: __webpackgi_exports__svgToCanvas,
+    svgToPng: __webpackgi_exports__svgToPng,
+    svgUrl: __webpackgi_exports__svgUrl,
+    texImageToCanvas: __webpackgi_exports__texImageToCanvas,
+    textureDataToImageData: __webpackgi_exports__textureDataToImageData,
+    textureToCanvas: __webpackgi_exports__textureToCanvas,
+    textureToDataUrl: __webpackgi_exports__textureToDataUrl,
+    timeout: __webpackgi_exports__timeout,
+    toCreasedNormals: __webpackgi_exports__toCreasedNormals,
+    toDecimal: __webpackgi_exports__toDecimal,
+    toIndexedGeometry: __webpackgi_exports__toIndexedGeometry,
+    toTitleCase: __webpackgi_exports__toTitleCase,
+    toTrianglesDrawMode: __webpackgi_exports__toTrianglesDrawMode,
+    top: __webpackgi_exports__top,
+    uiButton: __webpackgi_exports__uiButton,
+    uiColor: __webpackgi_exports__uiColor,
+    uiConfig: __webpackgi_exports__uiConfig,
+    uiDropdown: __webpackgi_exports__uiDropdown,
+    uiFolder: __webpackgi_exports__uiFolder,
+    uiImage: __webpackgi_exports__uiImage,
+    uiInput: __webpackgi_exports__uiInput,
+    uiMonitor: __webpackgi_exports__uiMonitor,
+    uiPanel: __webpackgi_exports__uiPanel,
+    uiSlider: __webpackgi_exports__uiSlider,
+    uiToggle: __webpackgi_exports__uiToggle,
+    uiVector: __webpackgi_exports__uiVector,
+    uniform: __webpackgi_exports__uniform,
+    unzip: __webpackgi_exports__unzip,
+    unzipSync: __webpackgi_exports__unzipSync,
+    unzlib: __webpackgi_exports__unzlib,
+    unzlibSync: __webpackgi_exports__unzlibSync,
+    uploadFile: __webpackgi_exports__uploadFile,
+    vLinearToRGBM: __webpackgi_exports__vLinearToRGBM,
+    vRGBMToLinear: __webpackgi_exports__vRGBMToLinear,
+    valueToUiType: __webpackgi_exports__valueToUiType,
+    variationPlacements: __webpackgi_exports__variationPlacements,
+    velocityPerFrame: __webpackgi_exports__velocityPerFrame,
+    velocityPerSecond: __webpackgi_exports__velocityPerSecond,
+    verifyPermission: __webpackgi_exports__verifyPermission,
+    viewport: __webpackgi_exports__viewport,
+    wrap: __webpackgi_exports__wrap,
+    write: __webpackgi_exports__write,
+    writeFile: __webpackgi_exports__writeFile,
+    zip: __webpackgi_exports__zip,
+    zipSync: __webpackgi_exports__zipSync,
+    zlib: __webpackgi_exports__zlib,
+    zlibSync: __webpackgi_exports__zlibSync
+}, Symbol.toStringTag, {
+    value: 

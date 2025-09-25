@@ -1,0 +1,36 @@
+/* Extracted CSS Block 222 */
+/* Size: 1834 chars */
+
+, Gr),
+                Dr.isWebGLMultipleRenderTargets !== !0 && (Wr.__webglTexture === void 0 && (Wr.__webglTexture = Tt.createTexture()),
+                Wr.__version = Sr.version,
+                Ct.memory.textures++);
+                const kr = Dr.isWebGLCubeRenderTarget === !0
+                  , _r = Dr.isWebGLMultipleRenderTargets === !0
+                  , Br = xr(Dr) || Mt;
+                if (kr) {
+                    Fr.__webglFramebuffer = [];
+                    for (let Lr = 0; Lr < 6; Lr++)
+                        if (Mt && Sr.mipmaps && Sr.mipmaps.length > 0) {
+                            Fr.__webglFramebuffer[Lr] = [];
+                            for (let Xr = 0; Xr < Sr.mipmaps.length; Xr++)
+                                Fr.__webglFramebuffer[Lr][Xr] = Tt.createFramebuffer()
+                        } else
+                            Fr.__webglFramebuffer[Lr] = Tt.createFramebuffer()
+                } else {
+                    if (Mt && Sr.mipmaps && Sr.mipmaps.length > 0) {
+                        Fr.__webglFramebuffer = [];
+                        for (let Lr = 0; Lr < Sr.mipmaps.length; Lr++)
+                            Fr.__webglFramebuffer[Lr] = Tt.createFramebuffer()
+                    } else
+                        Fr.__webglFramebuffer = Tt.createFramebuffer();
+                    if (_r)
+                        if (ft.drawBuffers) {
+                            const Lr = Dr.texture;
+                            for (let Xr = 0, Kr = Lr.length; Xr < Kr; Xr++) {
+                                const An = mt.get(Lr[Xr]);
+                                An.__webglTexture === void 0 && (An.__webglTexture = Tt.createTexture(),
+                                Ct.memory.textures++)
+                            }
+                        } else
+                            console.warn(

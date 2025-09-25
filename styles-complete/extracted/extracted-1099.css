@@ -1,0 +1,12 @@
+/* Extracted CSS Block 1099 */
+/* Size: 344 chars */
+
+, (it, at) => {
+                        const {onTap: ut} = this.node.getProps();
+                        ut && frame.postRender( () => ut(it, at))
+                    }
+                    )
+                }
+                ;
+                this.removeEndListeners(),
+                this.removeEndListeners = addDomEvent(this.node.current, 

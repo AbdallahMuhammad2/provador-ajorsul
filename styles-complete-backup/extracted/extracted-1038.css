@@ -1,0 +1,23 @@
+/* Extracted CSS Block 1038 */
+/* Size: 599 chars */
+
+),
+        this.animSet.forEach(h => h.target = this.target),
+        await animateObject(o, this, {
+            viewer: () => o.setDirty(),
+            renderer: () => o.renderer.reset(),
+            scene: () => {
+                o.scene.setDirty()
+            }
+            ,
+            camera: () => o.scene.activeCamera.setDirty()
+        }),
+        delete this.options.to,
+        delete this.options.from
+    }
+    async animateReverse() {
+        await this.animate(!0)
+    }
+    async removeFromParent2() {
+        const d = Ee$1(this.target);
+        this.parent && d && await d.confirm(

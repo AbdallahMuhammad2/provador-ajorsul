@@ -1,0 +1,64 @@
+/* Extracted CSS Block 1001 */
+/* Size: 1908 chars */
+
+;
+        const o = new TransformControls.ObjectConstructors.MeshBasicMaterial({
+            depthTest: !1,
+            depthWrite: !1,
+            fog: !1,
+            toneMapped: !1,
+            transparent: !0
+        })
+          , c = new TransformControls.ObjectConstructors.LineBasicMaterial({
+            depthTest: !1,
+            depthWrite: !1,
+            fog: !1,
+            toneMapped: !1,
+            transparent: !0
+        })
+          , h = o.clone();
+        h.opacity = .15;
+        const _ = c.clone();
+        _.opacity = 1;
+        const b = o.clone();
+        b.color.setHex(15663205),
+        b.opacity = .95;
+        const _e = o.clone();
+        _e.color.setHex(2014720),
+        _e.opacity = .95;
+        const nt = o.clone();
+        nt.color.setHex(37885),
+        nt.opacity = .95;
+        const it = o.clone();
+        it.color.setHex(16618689),
+        it.__color = b.color.getHex();
+        const at = o.clone();
+        at.color.setHex(12516474),
+        at.__color = _e.color.getHex();
+        const ut = o.clone();
+        ut.color.setHex(11397372),
+        ut.__color = nt.color.getHex();
+        const pt = o.clone();
+        pt.color.setHex(15663205),
+        pt.opacity = .75;
+        const ht = o.clone();
+        ht.color.setHex(2014720),
+        ht.opacity = .75;
+        const _t = o.clone();
+        _t.color.setHex(37885),
+        _t.opacity = .75;
+        const vt = o.clone();
+        vt.color.setHex(12893629),
+        vt.opacity = .75;
+        const bt = o.clone();
+        bt.color.setHex(16777051),
+        bt.opacity = .25;
+        const St = o.clone();
+        St.color.setHex(7895160),
+        St.opacity = .75;
+        const At = new three_module.Ho_(0,.04,.1,12);
+        At.translate(0, .05, 0);
+        const Et = new three_module.iNn(.08,.08,.08);
+        Et.translate(0, .04, 0);
+        const Pt = new three_module.LoY;
+        Pt.setAttribute(

@@ -1,0 +1,19 @@
+/* Extracted CSS Block 95 */
+/* Size: 691 chars */
+
+, {
+                        altKey: wt.altKey,
+                        data: this.computePosition_(Rt ? {
+                            x: Rt.clientX - zt.left,
+                            y: Rt.clientY - zt.top
+                        } : void 0),
+                        sender: this,
+                        shiftKey: wt.shiftKey
+                    }),
+                    this.lastTouch_ = Rt
+                }
+                onTouchEnd_(wt) {
+                    var Rt;
+                    const zt = (Rt = wt.targetTouches.item(0)) !== null && Rt !== void 0 ? Rt : this.lastTouch_
+                      , nr = this.elem_.getBoundingClientRect();
+                    this.emitter.emit(

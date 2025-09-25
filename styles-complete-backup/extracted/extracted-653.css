@@ -1,0 +1,11 @@
+/* Extracted CSS Block 653 */
+/* Size: 212 chars */
+
+,
+            extraUniforms: {
+                transitionOpacity: {
+                    value: 1
+                }
+            },
+            shaderExtender: (h, _, b) => {
+                this.groundMapMode === 

@@ -1,0 +1,12 @@
+/* Extracted CSS Block 274 */
+/* Size: 348 chars */
+
+, new Fn([-lt, lt, 0, lt, lt, 0, lt, -lt, 0, -lt, -lt, 0, -lt, lt, 0],3));
+                const xt = new Gs({
+                    fog: !1,
+                    toneMapped: !1
+                });
+                this.lightPlane = new ep(ft,xt),
+                this.add(this.lightPlane),
+                ft = new bo,
+                ft.setAttribute(
