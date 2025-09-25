@@ -8,11 +8,12 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
-    sourcemap: true
-  },
-  resolve: {
-    alias: {
-      '@': '/src'
+    sourcemap: false,
+    rollupOptions: {
+      input: {
+        main: 'index.html'
+      }
     }
-  }
+  },
+  assetsInclude: ['**/*.glb', '**/*.hdr', '**/*.exr', '**/*.dmat', '**/*.png', '**/*.jpg', '**/*.jpeg', '**/*.svg', '**/*.webp']
 })

@@ -1,0 +1,49 @@
+# Development files
+node_modules
+*.log
+.env*
+
+# TypeScript files (since we're not using TS anymore)
+*.ts
+InstoreRingTryon.ts
+
+# Documentation and reports
+*.md
+DEOBFUSCATION_REPORT.json
+EXTRACTION-REPORT.json
+COMPLETE-EXTRACTION-REPORT.json
+COMPREHENSIVE-EXTRACTION-REPORT.json
+CSS-EXTRACTION-REPORT.json
+JAVASCRIPT-EXTRACTION-REPORT.json
+ULTRA-EXTRACTION-REPORT.json
+WEBPACK-MODULES-REPORT.json
+
+# Backup files
+*-backup.*
+*-old.*
+index.beautified.js
+index-clean.js
+index-deobfuscated.html
+index-minified-backup.js
+index-modular.html
+index-new.html
+index-original-backup.js
+index-readable.js
+index-ultra-complete.html
+index-complete.html
+
+# Test files
+test-*.html
+simple-*.html
+
+# Scripts and configs not needed for production
+extract-modules.js
+vite.config.ts
+
+# Folders that aren't needed
+extracted/
+scripts/
+styles-complete/
+styles-complete-backup/
+templates/
+config/
