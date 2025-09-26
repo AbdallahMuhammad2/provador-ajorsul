@@ -1,16 +1,11 @@
 {
   "name": "ring-virtual-tryon",
   "version": "1.0.0",
-  "description": "Virtual Ring Try-On System - Autonomous jewelry AR experience",
-  "main": "dist/index.js",
-  "type": "module",
+  "description": "Virtual Ring Try-On System",
   "scripts": {
+    "build": "vite build",
     "dev": "vite --host",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "serve": "vite preview --port 3000 --host",
-    "type-check": "tsc --noEmit",
-    "clean": "rm -rf dist"
+    "preview": "vite preview"
   },
   "keywords": [
     "virtual-try-on",
@@ -30,9 +25,6 @@
     "three": "^0.158.0"
   },
   "devDependencies": {
-    "@types/node": "^20.8.0",
-    "@types/three": "^0.180.0",
-    "typescript": "^5.2.0",
     "vite": "^4.4.9"
   },
   "engines": {
