@@ -1,0 +1,27 @@
+{
+  "name": "Diamond Ring",
+  "modelScaleFactor": 0.05,
+  "modelRotation": {
+    "x": 1.5708,
+    "y": 0,
+    "z": 0,
+    "isVector3": true
+  },
+  "modelPosition": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "isVector3": true
+  },
+  "type": "RingTryonPlugin",
+  "resources": {
+    "geometries": {},
+    "materials": {},
+    "textures": {},
+    "images": {},
+    "shapes": {},
+    "skeletons": {},
+    "animations": {},
+    "extras": {}
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "Ring Try-On Configuration",
+  "version": "2.0",
+  "settings": {
+    "tracking": {
+      "confidence": 0.8,
+      "stabilization": true,
+      "handDetection": true
+    },
+    "rendering": {
+      "quality": "high",
+      "shadows": true,
+      "pbr": true,
+      "antialiasing": true
+    },
+    "rings": {
+      "multiRing": true,
+      "autoSizing": true,
+      "materials": ["gold", "silver", "platinum"]
+    },
+    "camera": {
+      "resolution": {
+        "width": 1280,
+        "height": 720
+      },
+      "frameRate": 30
+    }
+  },
+  "assets": {
+    "rings": [
+      {
+        "id": "gold-band",
+        "url": "./rings/2.glb",
+        "config": "./rings/2.json"
+      }
+    ]
+  }
+}

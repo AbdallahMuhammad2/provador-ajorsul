@@ -1,0 +1,21 @@
+{
+  "name": "Silver Ring",
+  "material": "silver", 
+  "type": "band",
+  "modelScaleFactor": 0.15,
+  "modelPosition": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "modelRotation": {
+    "x": 1.5708,
+    "y": 0,
+    "z": 0
+  },
+  "properties": {
+    "metalness": 1.0,
+    "roughness": 0.2,
+    "color": "#C0C0C0"
+  }
+}

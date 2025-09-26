@@ -41,6 +41,7 @@ extract-modules.js
 vite.config.ts
 
 # Folders that aren't needed
+0.0.24/
 extracted/
 scripts/
 styles-complete/

@@ -1,0 +1,27 @@
+{
+  "name": "Anel Teste 1 - Rotação Moderada",
+  "material": "prata",
+  "type": "statement",
+  "modelScaleFactor": 0.45,
+  "modelPosition": {
+    "x": 0,
+    "y": 0.012,
+    "z": -0.01
+  },
+  "modelRotation": {
+    "x": 1.5708,
+    "y": -0.3,
+    "z": 0.1
+  },
+  "properties": {
+    "metalness": 1.0,
+    "roughness": 0.15,
+    "color": "#C0C0C0",
+    "stones": {
+      "color": "#FFFFFF",
+      "metalness": 0.2,
+      "roughness": 0.4,
+      "emissive": "#E6E6E6"
+    }
+  }
+}

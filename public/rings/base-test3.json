@@ -1,0 +1,60 @@
+{
+  "name": "Anel Base - Prata com Zircônias",
+  "material": "prata",
+  "type": "statement",
+  "modelScaleFactor": 0.48,
+  "modelPosition": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "modelRotation": {
+    "x": 1.5708,
+    "y": 1.5,
+    "z": 0
+  }
+,
+  "properties": {
+    "metal": {
+      "color": "#E8E8E8",
+      "metalness": 0.98,
+      "roughness": 0.02,
+      "envMapIntensity": 3.5,
+      "clearcoat": 0.8,
+      "clearcoatRoughness": 0.01
+    },
+    "stones": {
+      "main_diamonds": {
+        "color": "#FAFAFA",
+        "metalness": 0.0,
+        "roughness": 0.03,
+        "envMapIntensity": 4.2,
+        "emissive": "#F0F0F0",
+        "emissiveIntensity": 0.15,
+        "ior": 2.42,
+        "transmission": 0.3,
+        "opacity": 0.95,
+        "clearcoat": 1.0,
+        "clearcoatRoughness": 0.0
+      },
+      "micro_setting": {
+        "color": "#FFFFFF",
+        "metalness": 0.0,
+        "roughness": 0.08,
+        "envMapIntensity": 3.8,
+        "emissive": "#EEEEEE",
+        "emissiveIntensity": 0.08,
+        "ior": 2.42,
+        "transmission": 0.2,
+        "opacity": 0.92,
+        "clearcoat": 0.9,
+        "clearcoatRoughness": 0.02
+      }
+    },
+    "lighting": {
+      "ambientIntensity": 1.2,
+      "directionalIntensity": 2.0,
+      "shadowOpacity": 0.3
+    }
+  }
+}
